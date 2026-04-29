@@ -1,0 +1,14 @@
+# =============================================================================
+# Grafo INVALIDO: Norma con :priority fuera del rango [0, 100].
+# Debe fallar NormShape -> sh:path :priority, sh:maxInclusive 100.
+# =============================================================================
+
+@prefix :    <http://marketplace.com.py/onto/v1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Norma de modalidad correcta (Obligation) pero con priority 200 (invalido).
+:norm-priority-mala a :Obligation ;
+    :priority 200 ;
+    :validFrom "2026-01-01"^^xsd:date ;
+    :validTo "2026-12-31"^^xsd:date ;
+    :defeasible false .

@@ -1,0 +1,95 @@
+# =============================================================================
+# Configuracion del motor de similaridad multidimensional - Bloque 5.
+# =============================================================================
+# Este archivo es la SINGLE SOURCE OF TRUTH de los pesos del composite_score.
+# Lo carga similarity.config.load_config() y lo usa SimilarityEngine.
+#
+# Cuando cambies pesos, NO hace falta recomputar embeddings ni la matriz
+# top-K (esos son artefactos derivados que viven en data/). Lo unico
+# que cambia es el ranking del composite. Si querias re-rankear el top-K
+# precomputado en Neo4j, hay que correr precompute.py de nuevo.
+#
+# Convencion: los pesos suman 1.0 antes de normalizacion. Si un scorer
+# reporta missing en runtime, su peso se redistribuye proporcionalmente
+# entre los scorers disponibles.
+# =============================================================================
+
+# Pesos del composite_score. Deben sumar 1.0 para coincidir con la intuicion,
+# pero el motor renormaliza si no suman exactamente.
+weights:
+  lexical:    0.50   # Peso del cosine sobre embeddings de texto.
+  structural: 0.30   # Peso de Gower sobre atributos categoricos.
+  behavioral: 0.10   # Peso del cosine de ventas mensuales (HOY: missing always).
+  trend:     0.10    # Peso de la similitud lexica con TrendSignals (HOY: 0).
+
+# Threshold por defecto para considerar dos productos similares.
+# Es soft: el caller puede override por query. Calibracion empirica
+# sucede en precompute.py donde logueamos la distribucion P50/P75/P90/P95.
+threshold_default: 0.6
+
+# Cantidad de similares por SKU que persistimos en :SIMILAR_A.
+top_k_default: 10
+
+# Configuracion del modelo de embeddings.
+embeddings:
+  # Mismo modelo que rag/client.py para coherencia.
+  model_name: paraphrase-multilingual-MiniLM-L12-v2
+  # Dimension del vector de salida (verificada empiricamente en Stage 2).
+  dim: 384
+  # Plantilla del texto fuente. Los placeholders se rellenan con .format()
+  # desde precompute.py. Si algun campo falta, se reemplaza por "" antes
+  # del format y luego se compactan los espacios duplicados.
+  #
+  # Diseno final (3a iteracion):
+  # - Incluimos {categoria} como palabra LIBRE (sin prefijo "Categoria:")
+  #   porque para el cold-start con texto libre la senal estructural
+  #   Gower no aplica - solo el lexico. La categoria como palabra
+  #   ayuda a que queries como "esfera dorada" matcheen ESFERAS arriba
+  #   de FIGURAS sin diluir el embedding con tokens administrativos
+  #   ("Categoria:", "Grupo:", "Pais:") que aparecen en TODOS los
+  #   productos identicos.
+  # - Excluimos grupo/pais porque grupo es muy amplio (22 valores) y
+  #   pais no discrimina por tipo de producto.
+  # - Iteraciones previas verificadas en diag_cold_start.py:
+  #   * "{nombre}. {nombre_corto}. Categoria: {cat}. Grupo: {g}. Pais: {p}."
+  #     -> top-1 FIG SANTA, mejor esfera rank 5
+  #   * "{nombre}. {nombre_corto}." -> top-1 FIG SANTA por 0.006,
+  #     mejor esfera rank 2 (mejora pero no alcanza)
+  #   * "{nombre}. {nombre_corto}. {categoria}." -> esperado: esfera top-1
+  text_template: "{nombre}. {nombre_corto}. {categoria}."
+
+# Atributos para Gower estructural. Solo los que existen 100% en Neo4j
+# segun verificacion del Stage 0. Cada uno tiene su tipo y peso (los pesos
+# Gower son INTERNOS al scorer estructural, distintos del peso global del
+# composite).
+structural:
+  attributes:
+    - name: pais_origen
+      type: categorical
+      weight: 1.0
+    - name: perecedero
+      type: boolean       # tratado como categorico binario
+      weight: 1.0
+    - name: unidad
+      type: categorical
+      weight: 0.5         # menor peso porque casi todo es "Unid"
+    - name: categoria_id  # join via PERTENECE_A -> Categoria.id
+      type: categorical
+      weight: 1.5         # mayor peso, es la senal estructural mas fuerte
+    - name: grupo_id      # join via 2-hop PERTENECE_A
+      type: categorical
+      weight: 1.0
+
+# Configuracion de la senal comportamental. HOY no tenemos serie temporal
+# mensual de ventas - cuando Cris/Mauri integren VENTAS_DET por mes esto
+# se rellena. Mientras tanto el scorer reporta missing-everywhere y el
+# composite renormaliza pesos.
+behavioral:
+  available: false
+  source: ""              # placeholder. Ej futuro: "VENTAS_DET por mes"
+  proxy: total_cantidad_historica   # solo si available=true y queremos fallback
+
+# Configuracion de la senal de tendencia. HOY no hay TrendSignals en ABox.
+trend:
+  available: false
+  source: ""              # placeholder. Ej futuro: "scraper trends + RAG"

@@ -1,0 +1,6 @@
+@prefix ns1: <http://test/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:p1 a ns1:Producto ;
+    ns1:sku "ABC-123"^^xsd:string .
+

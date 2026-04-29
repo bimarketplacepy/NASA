@@ -1,0 +1,13 @@
+# =============================================================================
+# Grafo INVALIDO: Producto sin :sku.
+# Debe fallar ProductoShape -> sh:path :sku, sh:minCount 1.
+# =============================================================================
+
+@prefix : <http://marketplace.com.py/onto/v1#> .
+
+:cat-arboles a :Categoria .
+
+# Producto sin :sku - viola minCount 1 en ProductoShape
+:prod-broken a :Producto ;
+    :perteneceA :cat-arboles ;
+    :enStock true .

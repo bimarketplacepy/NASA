@@ -1,0 +1,43 @@
+# =============================================================================
+# Grafo de datos VALIDO - debe conformar con todas las shapes.
+# =============================================================================
+
+@prefix :        <http://marketplace.com.py/onto/v1#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+
+# --- Categoria (referenciada por :perteneceA) ---
+:cat-arboles a :Categoria .
+
+# --- Producto valido ---
+:prod-001 a :Producto ;
+    :sku "ARB_NAVIDAD_180CM" ;
+    :perteneceA :cat-arboles ;
+    :enStock true .
+
+# --- Proveedor valido ---
+:prov-dalian a :Proveedor ;
+    :proveedorId "DAL_MIRO_001" ;
+    :pais "CN" .
+
+# --- Algorithm (instancia, no subclase) ---
+:algo-greedy a :Algorithm .
+
+# --- Norma valida (Obligation con priority 70, validFrom <= validTo) ---
+:norm-stock-min a :Obligation ;
+    :priority 70 ;
+    :validFrom "2026-01-01"^^xsd:date ;
+    :validTo "2026-12-31"^^xsd:date ;
+    :defeasible true .
+
+# --- Decision con PROV-O completo ---
+:dec-001 a :Decision ;
+    prov:atTime "2026-04-28T15:30:00"^^xsd:dateTime ;
+    :invocaAlgoritmo :algo-greedy ;
+    :razonamiento "Producto cold-start, se aplica algoritmo greedy por defecto." .
+
+# --- TrendSignal con confianza valida ---
+:trend-navidad a :TrendSignal ;
+    :trendValue 0.85 ;
+    :confianzaExtraccion 0.92 .

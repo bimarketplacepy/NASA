@@ -1,0 +1,200 @@
+# Diagnostico de columnas - 2026-04-28T10:56:28.940652
+
+======================================================================
+PRODUCTOS (subset navideños cod_sub_seccion=306 con stock)
+======================================================================
+Productos analizados: 2,127
+
+--- pais_origen ---
+  total: 2,127  distintos: 11  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 0 (0.0%)
+  Top 5 valores:
+    'Panamá'                                 -> 1,403 (66.0%)
+    'China'                                  -> 338 (15.9%)
+    'Paraguay'                               -> 186 (8.7%)
+    'Brasil'                                 -> 184 (8.7%)
+    'Estados Unidos'                         -> 9 (0.4%)
+
+--- UNIDAD ---
+  total: 2,127  distintos: 2  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 0 (0.0%)
+  Top 5 valores:
+    'Unid'                                   -> 2,126 (100.0%)
+    'Pqte'                                   -> 1 (0.0%)
+
+--- PERECEDERO ---
+  total: 2,127  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 2,127 (100.0%)
+  Top 5 valores:
+    0                                        -> 2,127 (100.0%)
+
+--- dias_validez ---
+  total: 2,127  distintos: 0  nulos: 2,127 (100.0%)  vacios: 2,127 (100.0%)  ceros: 0 (0.0%)
+  Top 5 valores:
+    None                                     -> 2,127 (100.0%)
+
+--- PRECIO_COMPRA ---
+  total: 2,127  distintos: 875  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 51 (2.4%)
+  Top 5 valores:
+    0.0                                      -> 51 (2.4%)
+    0.91                                     -> 14 (0.7%)
+    1.19                                     -> 12 (0.6%)
+    1.09                                     -> 12 (0.6%)
+    0.49                                     -> 12 (0.6%)
+
+--- PRECIO_COSTO ---
+  total: 2,127  distintos: 1,725  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 6 (0.3%)
+  Top 5 valores:
+    4264.0                                   -> 11 (0.5%)
+    0.0                                      -> 6 (0.3%)
+    14357.0                                  -> 6 (0.3%)
+    8533.0                                   -> 5 (0.2%)
+    8627.0                                   -> 5 (0.2%)
+
+--- PRECIO_COSTO_NETO ---
+  total: 2,127  distintos: 1,739  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 6 (0.3%)
+  Top 5 valores:
+    4857.0                                   -> 11 (0.5%)
+    0.0                                      -> 6 (0.3%)
+    9768.0                                   -> 6 (0.3%)
+    16354.0                                  -> 6 (0.3%)
+    8635.0                                   -> 5 (0.2%)
+
+--- PRECIO_COSTO_ANT ---
+  total: 2,127  distintos: 39  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 2,089 (98.2%)
+  Top 5 valores:
+    0.0                                      -> 2,089 (98.2%)
+    5949.9                                   -> 1 (0.0%)
+    9753.0                                   -> 1 (0.0%)
+    76190.48                                 -> 1 (0.0%)
+    25463.4468                               -> 1 (0.0%)
+
+--- PRECIO_COMPRA_CIF ---
+  total: 2,127  distintos: 1,586  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 51 (2.4%)
+  Top 5 valores:
+    0.0                                      -> 51 (2.4%)
+    0.6075                                   -> 11 (0.5%)
+    2.0789                                   -> 7 (0.3%)
+    1.1215                                   -> 6 (0.3%)
+    2.0456                                   -> 6 (0.3%)
+
+--- PRECIO_VENTA_A ---
+  total: 2,127  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 2,127 (100.0%)
+  Top 5 valores:
+    0.0                                      -> 2,127 (100.0%)
+
+--- PRECIO_VENTA_B ---
+  total: 2,127  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 2,127 (100.0%)
+  Top 5 valores:
+    0.0                                      -> 2,127 (100.0%)
+
+--- PRECIO_VENTA_C ---
+  total: 2,127  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 2,127 (100.0%)
+  Top 5 valores:
+    0.0                                      -> 2,127 (100.0%)
+
+--- peso ---
+  total: 2,127  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 2,127 (100.0%)
+  Top 5 valores:
+    0.0                                      -> 2,127 (100.0%)
+
+--- Volumen_cc ---
+  total: 2,127  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 2,127 (100.0%)
+  Top 5 valores:
+    0.0                                      -> 2,127 (100.0%)
+
+--- DESACTIVADO ---
+  total: 2,127  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 2,127 (100.0%)
+  Top 5 valores:
+    False                                    -> 2,127 (100.0%)
+
+--- nuevo ---
+  total: 2,127  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 2,127 (100.0%)
+  Top 5 valores:
+    False                                    -> 2,127 (100.0%)
+
+--- oferta ---
+  total: 2,127  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 2,127 (100.0%)
+  Top 5 valores:
+    False                                    -> 2,127 (100.0%)
+
+======================================================================
+PROVEEDORES (subset que compraron navideños alguna vez)
+======================================================================
+Proveedores analizados: 104
+
+--- PAIS ---
+  total: 104  distintos: 5  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 0 (0.0%)
+  Top 5 valores:
+    'Paraguay'                               -> 92 (88.5%)
+    'Brasil'                                 -> 4 (3.8%)
+    'Panamá'                                 -> 3 (2.9%)
+    'Estados Unidos'                         -> 3 (2.9%)
+    'China'                                  -> 2 (1.9%)
+
+--- CIUDAD ---
+  total: 104  distintos: 7  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 0 (0.0%)
+  Top 5 valores:
+    'Asuncion'                               -> 93 (89.4%)
+    'Ciudad del Este'                        -> 3 (2.9%)
+    'Fdo. de la Mora'                        -> 2 (1.9%)
+    'San Lorenzo'                            -> 2 (1.9%)
+    'Luque'                                  -> 2 (1.9%)
+
+--- EMAIL ---
+  total: 104  distintos: 43  nulos: 0 (0.0%)  vacios: 62 (59.6%)  ceros: 0 (0.0%)
+  Top 5 valores:
+    ''                                       -> 62 (59.6%)
+    'cobranzas@picisrl.com / ventas@picisrl.com' -> 1 (1.0%)
+    'florenciagimenezm@gmail.com'            -> 1 (1.0%)
+    'JAQUI.MEMMEL@GMAIL.COM'                 -> 1 (1.0%)
+    'IMPRESIONES@MORENETA.NET'               -> 1 (1.0%)
+
+--- TELEFONO_PROVEEDOR ---
+  total: 104  distintos: 104  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 0 (0.0%)
+  Top 5 valores:
+    '0984 313 273'                           -> 1 (1.0%)
+    '0986517594'                             -> 1 (1.0%)
+    '021633841'                              -> 1 (1.0%)
+    '008657985176860'                        -> 1 (1.0%)
+    '583-010'                                -> 1 (1.0%)
+
+--- PALZO_ENTREGA ---
+  total: 104  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 104 (100.0%)
+  Top 5 valores:
+    0                                        -> 104 (100.0%)
+
+--- PALZO_PAGO ---
+  total: 104  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 104 (100.0%)
+  Top 5 valores:
+    0                                        -> 104 (100.0%)
+
+--- PORCENTAJE_BONIF ---
+  total: 104  distintos: 2  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 103 (99.0%)
+  Top 5 valores:
+    0.0                                      -> 103 (99.0%)
+    5.0                                      -> 1 (1.0%)
+
+--- porc_bonif_venta ---
+  total: 104  distintos: 1  nulos: 5 (4.8%)  vacios: 0 (0.0%)  ceros: 104 (100.0%)
+  Top 5 valores:
+    0.0                                      -> 99 (95.2%)
+    nan                                      -> 5 (4.8%)
+
+--- proveedor_exterior ---
+  total: 104  distintos: 2  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 100 (96.2%)
+  Top 5 valores:
+    False                                    -> 100 (96.2%)
+    True                                     -> 4 (3.8%)
+
+--- ACTIVO ---
+  total: 104  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 0 (0.0%)
+  Top 5 valores:
+    1                                        -> 104 (100.0%)
+
+--- dias_estadistica_pedidos ---
+  total: 104  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 0 (0.0%)
+  Top 5 valores:
+    21                                       -> 104 (100.0%)
+
+--- dias_a_reponer_pedidos ---
+  total: 104  distintos: 1  nulos: 0 (0.0%)  vacios: 0 (0.0%)  ceros: 0 (0.0%)
+  Top 5 valores:
+    7                                        -> 104 (100.0%)

@@ -1,0 +1,2781 @@
+# Exploracion Pegasus - 2026-04-27T16:43:48.577184
+
+======================================================================
+1) VALIDACION DE QUERY DE NAVIDENOS
+======================================================================
+ productos_distintos_en_stock
+                         2128
+
+======================================================================
+2) NAVIDENOS TOTALES (con o sin stock)
+======================================================================
+ total_navidenos
+            7520
+
+======================================================================
+3) ESTRUCTURA DE TABLA: PRODUCTOS
+======================================================================
+Columnas (251):
+                    columna     tipo        largo nullable
+                     CODIGO  varchar         14.0       NO
+              CODIGO_BARRAS  varchar         14.0       NO
+       DESCRIPCION_PRODUCTO  varchar         50.0       NO
+                   POSICION  varchar         11.0       NO
+                  COD_GRUPO      int          NaN       NO
+              COD_CATEGORIA      int          NaN       NO
+          COD_SUB_CATEGORIA      int          NaN      YES
+                  COD_MARCA      int          NaN       NO
+                     ORIGEN smallint          NaN       NO
+                 CONTROLADO      bit          NaN       NO
+                   SERVICIO      int          NaN       NO
+                     UNIDAD  varchar          4.0       NO
+         REFERENCIA_TECNICA     text 2147483647.0       NO
+                 CANT_STOCK  decimal          NaN       NO
+                   CANT_PAQ  decimal          NaN      YES
+                   CANT_MIN      int          NaN       NO
+                  CANT_VEND  decimal          NaN       NO
+              PRECIO_COMPRA  decimal          NaN      YES
+          PRECIO_COMPRA_MON smallint          NaN      YES
+               PRECIO_COSTO  decimal          NaN       NO
+           PRECIO_COSTO_MON smallint          NaN      YES
+          PRECIO_COSTO_NETO  decimal          NaN       NO
+      PRECIO_COSTO_NETO_MON smallint          NaN      YES
+           PRECIO_COSTO_ANT  decimal          NaN       NO
+             PRECIO_VENTA_A  decimal          NaN      YES
+             PRECIO_VENTA_B  decimal          NaN       NO
+             PRECIO_VENTA_C  decimal          NaN       NO
+             PRECIO_VENTA_D  decimal          NaN       NO
+             PRECIO_VENTA_E  decimal          NaN       NO
+             PRECIO_VENTA_F  decimal          NaN      YES
+             PRECIO_VENTA_G  decimal          NaN      YES
+             PRECIO_VENTA_H  decimal          NaN      YES
+             PRECIO_VENTA_I  decimal          NaN      YES
+             PRECIO_VENTA_J  decimal          NaN      YES
+             PRECIO_VENTA_K  decimal          NaN      YES
+             PRECIO_VENTA_L  decimal          NaN      YES
+             PRECIO_VENTA_M  decimal          NaN      YES
+             PRECIO_VENTA_N  decimal          NaN      YES
+             PRECIO_VENTA_O  decimal          NaN      YES
+         PRECIO_VENTA_A_MON smallint          NaN      YES
+         PRECIO_VENTA_B_MON smallint          NaN      YES
+         PRECIO_VENTA_C_MON smallint          NaN      YES
+         PRECIO_VENTA_D_MON smallint          NaN      YES
+         PRECIO_VENTA_E_MON smallint          NaN      YES
+         PRECIO_VENTA_F_MON smallint          NaN      YES
+         PRECIO_VENTA_G_MON smallint          NaN      YES
+         PRECIO_VENTA_H_MON smallint          NaN      YES
+         PRECIO_VENTA_I_MON smallint          NaN      YES
+         PRECIO_VENTA_J_MON smallint          NaN      YES
+         PRECIO_VENTA_K_MON smallint          NaN      YES
+         PRECIO_VENTA_L_MON smallint          NaN      YES
+         PRECIO_VENTA_M_MON smallint          NaN      YES
+         PRECIO_VENTA_N_MON smallint          NaN      YES
+         PRECIO_VENTA_O_MON smallint          NaN      YES
+         PRECIO_VENTA_A_IMP      int          NaN      YES
+         PRECIO_VENTA_B_IMP      int          NaN      YES
+         PRECIO_VENTA_C_IMP      int          NaN      YES
+         PRECIO_VENTA_D_IMP      int          NaN      YES
+         PRECIO_VENTA_E_IMP      int          NaN      YES
+         PRECIO_VENTA_F_IMP      int          NaN      YES
+         PRECIO_VENTA_G_IMP      int          NaN      YES
+         PRECIO_VENTA_H_IMP      int          NaN      YES
+         PRECIO_VENTA_I_IMP      int          NaN      YES
+         PRECIO_VENTA_J_IMP      int          NaN      YES
+         PRECIO_VENTA_K_IMP      int          NaN      YES
+         PRECIO_VENTA_L_IMP      int          NaN      YES
+         PRECIO_VENTA_M_IMP      int          NaN      YES
+         PRECIO_VENTA_N_IMP      int          NaN      YES
+         PRECIO_VENTA_O_IMP      int          NaN      YES
+           CALCULO_PRECIO_A smallint          NaN      YES
+           CALCULO_PRECIO_B smallint          NaN      YES
+           CALCULO_PRECIO_C smallint          NaN      YES
+           CALCULO_PRECIO_D smallint          NaN      YES
+           CALCULO_PRECIO_E smallint          NaN      YES
+           CALCULO_PRECIO_F smallint          NaN      YES
+           CALCULO_PRECIO_G smallint          NaN      YES
+           CALCULO_PRECIO_H smallint          NaN      YES
+           CALCULO_PRECIO_I smallint          NaN      YES
+           CALCULO_PRECIO_J smallint          NaN      YES
+           CALCULO_PRECIO_K smallint          NaN      YES
+           CALCULO_PRECIO_L smallint          NaN      YES
+           CALCULO_PRECIO_M smallint          NaN      YES
+           CALCULO_PRECIO_N smallint          NaN      YES
+           CALCULO_PRECIO_O smallint          NaN      YES
+                 DESC_VENTA  decimal          NaN       NO
+              CALCULO_COSTO smallint          NaN       NO
+          PORC_SOBRE_COMPRA  decimal          NaN       NO
+                    IMP_IMP  decimal          NaN       NO
+                 PERECEDERO      int          NaN       NO
+                VENCIMIENTO datetime          NaN      YES
+                  UBICACION smallint          NaN       NO
+                TIPO_FISCAL smallint          NaN       NO
+       ULTIMA_ACTUALIZACION datetime          NaN      YES
+                   COMISION  decimal          NaN       NO
+                  COMPUESTO      bit          NaN       NO
+                 STOCK_AUTO      int          NaN       NO
+               PORCENTAJE_A  decimal          NaN       NO
+               PORCENTAJE_B  decimal          NaN       NO
+               PORCENTAJE_C  decimal          NaN       NO
+               PORCENTAJE_D  decimal          NaN       NO
+               PORCENTAJE_E  decimal          NaN       NO
+               PORCENTAJE_F  decimal          NaN      YES
+               PORCENTAJE_G  decimal          NaN      YES
+               PORCENTAJE_H  decimal          NaN      YES
+               PORCENTAJE_I  decimal          NaN      YES
+               PORCENTAJE_J  decimal          NaN      YES
+               PORCENTAJE_K  decimal          NaN      YES
+               PORCENTAJE_L  decimal          NaN      YES
+               PORCENTAJE_M  decimal          NaN      YES
+               PORCENTAJE_N  decimal          NaN      YES
+               PORCENTAJE_O  decimal          NaN      YES
+                     PORC_A      int          NaN       NO
+                     PORC_B      int          NaN       NO
+                     PORC_C      int          NaN       NO
+                     PORC_D      int          NaN       NO
+                     PORC_E      int          NaN       NO
+                     PORC_F      int          NaN      YES
+                     PORC_G      int          NaN      YES
+                     PORC_H      int          NaN      YES
+                     PORC_I      int          NaN      YES
+                     PORC_J      int          NaN      YES
+                     PORC_K      int          NaN      YES
+                     PORC_L      int          NaN      YES
+                     PORC_M      int          NaN      YES
+                     PORC_N      int          NaN      YES
+                     PORC_O      int          NaN      YES
+       CODIGO_CUENTA_VENTAS  varchar         25.0       NO
+  CODIGO_CUENTA_MERCADERIAS  varchar         25.0       NO
+    CODIGO_CUENTA_COSTO_VTA  varchar         25.0      YES
+                DESACTIVADO      bit          NaN       NO
+                  DESC_AUTO      bit          NaN       NO
+              TIPO_PRODUCTO smallint          NaN      YES
+                Cod_seccion      int          NaN       NO
+            Cod_sub_seccion      int          NaN       NO
+              Dias_de_stock      int          NaN       NO
+                     Percha      int          NaN       NO
+                     Seguro      int          NaN       NO
+                 Produccion smallint          NaN       NO
+              FECHA_ULT_AUD datetime          NaN      YES
+                        POS smallint          NaN       NO
+           APLICA_DESC_CANT smallint          NaN       NO
+           APLICA_DESC_PORC  decimal          NaN       NO
+           CODIGO_BARRA_INT  numeric          NaN       NO
+         PRECIO_VENTA_PROMO  decimal          NaN       NO
+     PRECIO_VENTA_PROMO_MON smallint          NaN       NO
+     PRECIO_VENTA_PROMO_IMP smallint          NaN       NO
+          FOTO_DEL_PRODUCTO    image 2147483647.0      YES
+                 fecha_alta datetime          NaN       NO
+                    usuario  varchar         20.0       NO
+               Porc_gravado  decimal          NaN       NO
+                 Volumen_cc  decimal          NaN       NO
+          PRECIO_COMPRA_CIF  decimal          NaN       NO
+      PRECIO_COMPRA_CIF_MON smallint          NaN       NO
+         Desactivado_compra smallint          NaN       NO
+                     margen  decimal          NaN       NO
+                 margen_max  decimal          NaN       NO
+              cod_proveedor      int          NaN      YES
+           margen_mayorista  decimal          NaN       NO
+          descripcion_corta  varchar         20.0       NO
+                 cod_sector smallint          NaN      YES
+              codigo_envase  varchar         14.0      YES
+                   etiqueta smallint          NaN       NO
+                      fleje smallint          NaN       NO
+                    pesable smallint          NaN       NO
+               dias_validez smallint          NaN      YES
+             cta_ins_activo  varchar         25.0       NO
+             cta_ins_egreso  varchar         25.0       NO
+                imp_imp_mod      int          NaN       NO
+                  fecha_alt datetime          NaN      YES
+                equivalente  decimal          NaN       NO
+                    regimen  tinyint          NaN       NO
+                     tamano  decimal          NaN       NO
+                       peso  decimal          NaN       NO
+        cod_politica_precio      int          NaN      YES
+                      serie smallint          NaN       NO
+                    interes smallint          NaN       NO
+                tasa_aduana  decimal          NaN       NO
+               costo_cierre  decimal          NaN      YES
+                pais_origen  varchar         30.0       NO
+                        web smallint          NaN       NO
+               cod_cate_web      int          NaN       NO
+                  lista_web      int          NaN       NO
+              depositos_web  varchar         20.0      YES
+                detalle_web  varchar         50.0      YES
+              ajuste_precio  decimal          NaN       NO
+               CODIGO_PATIO  varchar         14.0      YES
+           periodo_garantia  varchar         10.0      YES
+                    galones  decimal          NaN       NO
+         nivel_dif_comision  varchar          3.0      YES
+                 codigo_ncm  varchar         20.0      YES
+           FECHA_ULT_COMPRA datetime          NaN      YES
+                   dir_foto  varchar        100.0      YES
+                      nuevo      bit          NaN       NO
+                     oferta      bit          NaN       NO
+        fecha_validez_nuevo datetime          NaN      YES
+              gramos_x_onza  decimal          NaN      YES
+                        mcc smallint          NaN       NO
+                   restring smallint          NaN       NO
+              realiza_venta smallint          NaN       NO
+                 precio_sug smallint          NaN       NO
+                    comanda smallint          NaN      YES
+              alta_rotacion smallint          NaN       NO
+              desc_max_cast  decimal          NaN      YES
+        bonificacion_mobile smallint          NaN       NO
+               descuento_NC      int          NaN       NO
+                 porc_merma  decimal          NaN      YES
+                   gimnasio      int          NaN       NO
+                  bar_patio smallint          NaN       NO
+          costo_gastronomia  decimal          NaN      YES
+              webservice_ok smallint          NaN       NO
+                imp_imp_reg  decimal          NaN       NO
+           porc_gravado_reg  decimal          NaN       NO
+            costo_mayorista  decimal          NaN       NO
+    costo_mayorista_sin_iva  decimal          NaN       NO
+       cod_moneda_mayorista  decimal          NaN       NO
+                    critico smallint          NaN       NO
+        cierre_pos_negativo smallint          NaN      YES
+             cod_temporada1      int          NaN      YES
+              calcula_stock smallint          NaN       NO
+         cta_prod_servicios  varchar         25.0      YES
+                 nivel1_web smallint          NaN      YES
+                 nivel2_web smallint          NaN      YES
+                 nivel3_web smallint          NaN      YES
+                 nivel4_web smallint          NaN      YES
+                 nivel5_web smallint          NaN      YES
+             desactivar_web smallint          NaN       NO
+        reten_prod_agricola smallint          NaN       NO
+              desactivo_pgs smallint          NaN       NO
+               cant_min_web  decimal          NaN       NO
+              tendencia_web smallint          NaN      YES
+               destacar_web smallint          NaN      YES
+               peso_min_web  decimal          NaN      YES
+                    klg_web  decimal          NaN      YES
+                 rango_peso     char         50.0      YES
+                 resol_3739 smallint          NaN       NO
+           fecha_vence_3739 datetime          NaN      YES
+             visualizar_web smallint          NaN       NO
+             cod_temporada2      int          NaN      YES
+             cod_temporada3      int          NaN      YES
+                 sin_puntos smallint          NaN       NO
+    agrupar_promo_mayorista      int          NaN       NO
+              maneja_talles smallint          NaN       NO
+                   agregado      int          NaN       NO
+                     es_top      int          NaN       NO
+               unidad_sifen smallint          NaN      YES
+codigo_cuenta_ventas_exento  varchar         25.0      YES
+              control_x_vto smallint          NaN       NO
+             codigo_balanza      int          NaN       NO
+          reten_prod_ganado smallint          NaN       NO
+                    dir_pdf  varchar        100.0      YES
+    obliga_pesaje_recepcion smallint          NaN       NO
+
+Muestra de 3 filas de PRODUCTOS:
+       CODIGO CODIGO_BARRAS                    DESCRIPCION_PRODUCTO POSICION  COD_GRUPO  COD_CATEGORIA  COD_SUB_CATEGORIA  COD_MARCA  ORIGEN  CONTROLADO  SERVICIO UNIDAD REFERENCIA_TECNICA  CANT_STOCK  CANT_PAQ  CANT_MIN  CANT_VEND  PRECIO_COMPRA  PRECIO_COMPRA_MON  PRECIO_COSTO  PRECIO_COSTO_MON  PRECIO_COSTO_NETO  PRECIO_COSTO_NETO_MON  PRECIO_COSTO_ANT  PRECIO_VENTA_A  PRECIO_VENTA_B  PRECIO_VENTA_C  PRECIO_VENTA_D  PRECIO_VENTA_E  PRECIO_VENTA_F  PRECIO_VENTA_G  PRECIO_VENTA_H  PRECIO_VENTA_I  PRECIO_VENTA_J  PRECIO_VENTA_K  PRECIO_VENTA_L  PRECIO_VENTA_M  PRECIO_VENTA_N  PRECIO_VENTA_O  PRECIO_VENTA_A_MON  PRECIO_VENTA_B_MON  PRECIO_VENTA_C_MON  PRECIO_VENTA_D_MON  PRECIO_VENTA_E_MON  PRECIO_VENTA_F_MON  PRECIO_VENTA_G_MON  PRECIO_VENTA_H_MON  PRECIO_VENTA_I_MON  PRECIO_VENTA_J_MON  PRECIO_VENTA_K_MON  PRECIO_VENTA_L_MON  PRECIO_VENTA_M_MON  PRECIO_VENTA_N_MON  PRECIO_VENTA_O_MON  PRECIO_VENTA_A_IMP  PRECIO_VENTA_B_IMP  PRECIO_VENTA_C_IMP  PRECIO_VENTA_D_IMP  PRECIO_VENTA_E_IMP  PRECIO_VENTA_F_IMP  PRECIO_VENTA_G_IMP  PRECIO_VENTA_H_IMP  PRECIO_VENTA_I_IMP  PRECIO_VENTA_J_IMP  PRECIO_VENTA_K_IMP  PRECIO_VENTA_L_IMP  PRECIO_VENTA_M_IMP  PRECIO_VENTA_N_IMP  PRECIO_VENTA_O_IMP  CALCULO_PRECIO_A  CALCULO_PRECIO_B  CALCULO_PRECIO_C  CALCULO_PRECIO_D  CALCULO_PRECIO_E  CALCULO_PRECIO_F  CALCULO_PRECIO_G  CALCULO_PRECIO_H  CALCULO_PRECIO_I  CALCULO_PRECIO_J  CALCULO_PRECIO_K  CALCULO_PRECIO_L  CALCULO_PRECIO_M  CALCULO_PRECIO_N  CALCULO_PRECIO_O  DESC_VENTA  CALCULO_COSTO  PORC_SOBRE_COMPRA  IMP_IMP  PERECEDERO VENCIMIENTO  UBICACION  TIPO_FISCAL ULTIMA_ACTUALIZACION  COMISION  COMPUESTO  STOCK_AUTO  PORCENTAJE_A  PORCENTAJE_B  PORCENTAJE_C  PORCENTAJE_D  PORCENTAJE_E  PORCENTAJE_F  PORCENTAJE_G  PORCENTAJE_H  PORCENTAJE_I  PORCENTAJE_J  PORCENTAJE_K  PORCENTAJE_L  PORCENTAJE_M  PORCENTAJE_N  PORCENTAJE_O  PORC_A  PORC_B  PORC_C  PORC_D  PORC_E  PORC_F  PORC_G  PORC_H  PORC_I  PORC_J  PORC_K  PORC_L  PORC_M  PORC_N  PORC_O CODIGO_CUENTA_VENTAS CODIGO_CUENTA_MERCADERIAS CODIGO_CUENTA_COSTO_VTA  DESACTIVADO  DESC_AUTO  TIPO_PRODUCTO  Cod_seccion  Cod_sub_seccion  Dias_de_stock  Percha  Seguro  Produccion FECHA_ULT_AUD  POS  APLICA_DESC_CANT  APLICA_DESC_PORC  CODIGO_BARRA_INT  PRECIO_VENTA_PROMO  PRECIO_VENTA_PROMO_MON  PRECIO_VENTA_PROMO_IMP FOTO_DEL_PRODUCTO              fecha_alta usuario  Porc_gravado  Volumen_cc  PRECIO_COMPRA_CIF  PRECIO_COMPRA_CIF_MON  Desactivado_compra  margen  margen_max  cod_proveedor  margen_mayorista    descripcion_corta cod_sector codigo_envase  etiqueta  fleje  pesable dias_validez cta_ins_activo cta_ins_egreso  imp_imp_mod               fecha_alt  equivalente  regimen  tamano  peso cod_politica_precio  serie  interes  tasa_aduana  costo_cierre pais_origen  web  cod_cate_web  lista_web depositos_web detalle_web  ajuste_precio CODIGO_PATIO periodo_garantia  galones nivel_dif_comision codigo_ncm FECHA_ULT_COMPRA dir_foto  nuevo  oferta fecha_validez_nuevo gramos_x_onza  mcc  restring  realiza_venta  precio_sug comanda  alta_rotacion desc_max_cast  bonificacion_mobile  descuento_NC  porc_merma  gimnasio  bar_patio costo_gastronomia  webservice_ok  imp_imp_reg  porc_gravado_reg  costo_mayorista  costo_mayorista_sin_iva  cod_moneda_mayorista  critico cierre_pos_negativo cod_temporada1  calcula_stock cta_prod_servicios nivel1_web nivel2_web nivel3_web nivel4_web nivel5_web  desactivar_web  reten_prod_agricola  desactivo_pgs  cant_min_web  tendencia_web destacar_web peso_min_web klg_web rango_peso  resol_3739 fecha_vence_3739  visualizar_web cod_temporada2 cod_temporada3  sin_puntos  agrupar_promo_mayorista  maneja_talles  agregado  es_top unidad_sifen codigo_cuenta_ventas_exento  control_x_vto  codigo_balanza  reten_prod_ganado dir_pdf  obliga_pesaje_recepcion
+ 047406119509  047406119509 BRANSON ASIENTO PARA EL AUTO SIZE4ME 70                1886             -1                 -1        122       0       False         0   Unid                  -         0.0       1.0         1        0.0      1043518.0                  1           0.0                 1                0.0                      1         1043518.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0                   1                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0         0.0              1                0.0     10.0           0        None          0            0                 None       0.0      False           0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           9.0           0.0           0.0           0.0           0.0           0.0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0                    1                         1                       1         True      False              3           54              298              0       0       0           0          None    0                 0               0.0         3008934.0                 0.0                       1                       0              None 2014-06-03 08:51:59.507      sa         100.0         0.0          1043518.0                      1                   0     0.0         0.0             86               0.0 BRANSON ASIENTO PARA       None          None         0      0        0         None                                          0 2025-11-13 08:30:58.477          0.0        0     0.0   0.0                None      0        0          0.0           0.0    Paraguay    0             0          0          None        None            0.0         None             None      0.0               None       None             None     None  False   False                None          None    0         0              1           0    None              0          None                    0             0         0.0         0          0              None              0          0.0               0.0              0.0                      0.0                   0.0        0                None           None              0               None       None       None       None       None       None               0                    0              0           0.0              0         None         None    None       None           0             None               1           None           None           0                        0              0         0       0         None                        None              0               0                  0    None                        0
+ 047406119936  047406119936    FINLEY- SILLITA PARA COMER TABLE FIT                1886             -1                 -1        122       0       False         0   Unid                  -         0.0       1.0         1        0.0       634980.0                  1           0.0                 1                0.0                      1          634980.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0                   1                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0         0.0              1                0.0     10.0           0        None          0            0                 None       0.0      False           0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           9.0           0.0           0.0           0.0           0.0           0.0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0                    1                         1                       1         True      False              3           54              298              0       0       0           0          None    1                 0               0.0         3008935.0                 0.0                       1                       0              None 2014-06-03 08:51:59.490      sa         100.0         0.0           634980.0                      1                   1     0.0         0.0             86               0.0 FINLEY- SILLITA PARA       None          None         0      0        0         None                                          0 2025-11-13 08:30:59.540          0.0        0     0.0   0.0                None      0        0          0.0           0.0    Paraguay    0             0          0          None        None            0.0         None             None      0.0               None       None             None     None  False   False                None          None    0         0              1           0    None              0          None                    0             0         0.0         0          0              None              0          0.0               0.0              0.0                      0.0                   0.0        0                None           None              0               None       None       None       None       None       None               0                    0              0           0.0              0         None         None    None       None           0             None               1           None           None           0                        0              0         0       0         None                        None              0               0                  0    None                        0
+ 047406120819  047406120819       LITTLE HOOT HAMAQUITA SWING BY ME                1886             -1                 -1        122       0       False         0   Unid                  -         0.0       1.0         1        0.0            0.0                  1           0.0                 1                0.0                      1               0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0                   1                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0         0.0              1                0.0     10.0           0        None          0            0                 None       0.0      False           0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           9.0           0.0           0.0           0.0           0.0           0.0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0                    1                         1                       1         True      False              3           54              298              0       0       0           0          None    1                 0               0.0         3008936.0                 0.0                       1                       0              None 2014-06-03 08:51:59.490      sa         100.0         0.0                0.0                      1                   1     0.0         0.0             86               0.0 LITTLE HOOT HAMAQUIT       None          None         0      0        0         None                                          0 2025-11-13 08:31:10.983          0.0        0     0.0   0.0                None      0        0          0.0           0.0    Paraguay    0             0          0          None        None            0.0         None             None      0.0               None       None             None     None  False   False                None          None    0         0              1           0    None              0          None                    0             0         0.0         0          0              None              0          0.0               0.0              0.0                      0.0                   0.0        0                None           None              0               None       None       None       None       None       None               0                    0              0           0.0              0         None         None    None       None           0             None               1           None           None           0                        0              0         0       0         None                        None              0               0                  0    None                        0
+
+======================================================================
+3) ESTRUCTURA DE TABLA: MOVIMIENTOS_DEPOSITOS
+======================================================================
+Columnas (13):
+      columna     tipo  largo nullable
+ COD_DEPOSITO smallint    NaN       NO
+       CODIGO  varchar   14.0       NO
+     CANTIDAD  decimal    NaN      YES
+    RESERVADO  decimal    NaN       NO
+    Ubicacion  varchar   20.0      YES
+     cant_min  decimal    NaN       NO
+     cant_max  decimal    NaN       NO
+         pila  decimal    NaN       NO
+      puntera  decimal    NaN       NO
+     pestanha  decimal    NaN       NO
+      gondola  decimal    NaN       NO
+       oferta  decimal    NaN       NO
+cod_categoria      int    NaN       NO
+
+Muestra de 3 filas de MOVIMIENTOS_DEPOSITOS:
+ COD_DEPOSITO         CODIGO  CANTIDAD  RESERVADO Ubicacion  cant_min  cant_max  pila  puntera  pestanha  gondola  oferta  cod_categoria
+            1  7450007468618       0.0        0.0      None       1.0       0.0   0.0      0.0       0.0      0.0     0.0              0
+            1  7450008277479       0.0        0.0      None       0.0       0.0   0.0      0.0       0.0      0.0     0.0              0
+            1  7450008323787       0.0        0.0      None       3.0       0.0   0.0      0.0       0.0      0.0     0.0              0
+
+======================================================================
+3) ESTRUCTURA DE TABLA: VENTAS
+======================================================================
+Columnas (140):
+                     columna     tipo  largo nullable
+                     NRO_REG    float    NaN       NO
+                       FECHA datetime    NaN      YES
+                  HORA_VENTA      int    NaN       NO
+                 NRO_FACTURA      int    NaN       NO
+                IVA_INCLUIDO      bit    NaN       NO
+                  COD_MONEDA smallint    NaN       NO
+                COD_DEPOSITO smallint    NaN       NO
+                 COD_CLIENTE      int    NaN       NO
+                     COD_ASO      int    NaN       NO
+                COD_COBRADOR smallint    NaN       NO
+                   NRO_ORDEN  varchar   50.0       NO
+                COD_VENDEDOR smallint    NaN       NO
+                TIPO_DOCUMEN smallint    NaN       NO
+                   COD_LUGAR smallint    NaN       NO
+             ENTREGA_INICIAL  decimal    NaN       NO
+             CANTIDAD_CUOTAS smallint    NaN       NO
+          INICIO_VENCIMIETOS datetime    NaN      YES
+                        DIAS smallint    NaN       NO
+              IMPORTE_EXENTO  decimal    NaN      YES
+             IMPORTE_GRAVADO  decimal    NaN      YES
+            IMPORTE_IMPUESTO  decimal    NaN      YES
+                   DESCUENTO  decimal    NaN       NO
+                 COSTO_VENTA  decimal    NaN      YES
+               MONTO_CREDITO  decimal    NaN      YES
+                MONTO_DEBITO  decimal    NaN      YES
+               VALOR_COBRADO  decimal    NaN       NO
+                   FACTURADO      bit    NaN       NO
+                  REMISIONES  varchar   50.0       NO
+                     IMPRESO      bit    NaN       NO
+                MAXIMO_ITEMS smallint    NaN       NO
+                 OBSERVACION  varchar  100.0       NO
+                      RECETA  varchar   50.0       NO
+                CAMPO_LOGICO smallint    NaN       NO
+                NRO_PLANILLA  decimal    NaN       NO
+                    imp_grab  decimal    NaN      YES
+               COD_CONDICION smallint    NaN       NO
+              NOMBRE_CLIENTE  varchar  255.0      YES
+                         RUC  varchar   11.0       NO
+                   DIRECCION  varchar   50.0       NO
+                    CONTACTO  varchar   30.0       NO
+                    TELEFONO  varchar   15.0       NO
+                  NRO_PEDIDO      int    NaN       NO
+              NRO_FACTURA_NC      int    NaN       NO
+             TIPO_DOCUMEN_NC smallint    NaN       NO
+               CONTABILIZADO smallint    NaN       NO
+          facturar_proveedor smallint    NaN       NO
+              nro_devolucion      int    NaN      YES
+                  fecha_alta datetime    NaN       NO
+                   user_alta  varchar   30.0       NO
+                   fecha_mod datetime    NaN      YES
+                      nro_oc  varchar   25.0       NO
+              impreso_fiscal  tinyint    NaN       NO
+                    nro_vale  varchar   25.0       NO
+                 nro_tarjeta  varchar   25.0       NO
+                   nro_chapa  varchar   15.0       NO
+                 Reg_Grafica  varchar   50.0       NO
+                  fecha_fija smallint    NaN       NO
+                  desc_total  decimal    NaN       NO
+               porc_comision  decimal    NaN       NO
+                         edi smallint    NaN       NO
+                         pos smallint    NaN       NO
+                total_puntos  decimal    NaN       NO
+                  cotizacion  decimal    NaN      YES
+                   fecha_vto datetime    NaN      YES
+                  controlada      bit    NaN       NO
+               porc_vendedor  decimal    NaN       NO
+             porc_supervisor  decimal    NaN       NO
+                  fact_dosif  varchar   25.0      YES
+                  reg_medico  varchar   50.0       NO
+                  nro_camion      int    NaN       NO
+                  cod_chofer      int    NaN       NO
+                    delivery smallint    NaN       NO
+                   imp_cupon smallint    NaN       NO
+                  cant_cupon      int    NaN       NO
+                 porc_fiscal  decimal    NaN       NO
+                  mon_fiscal smallint    NaN       NO
+         tipo_documen_fiscal smallint    NaN       NO
+          nro_factura_fiscal      int    NaN       NO
+                fecha_fiscal datetime    NaN      YES
+           porc_com_aplicado  decimal    NaN       NO
+              comision_venta  decimal    NaN       NO
+                  reg_cambio  decimal    NaN      YES
+                   repositor smallint    NaN       NO
+            nro_autorizacion  numeric    NaN      YES
+          fecha_fin_traslado datetime    NaN      YES
+           cod_transportista      int    NaN       NO
+                        tipo smallint    NaN       NO
+                  controlado smallint    NaN       NO
+                   nro_promo      int    NaN      YES
+                 porc_seguro  decimal    NaN      YES
+                timbrado_doc  varchar   25.0      YES
+            validez_timbrado datetime    NaN      YES
+                  cod_motivo      int    NaN      YES
+                         snc smallint    NaN      YES
+                     snc_reg    float    NaN      YES
+                NRO_DESPACHO  varchar   20.0      YES
+          fecha_cierre_bonif datetime    NaN      YES
+           descuento_cheques      int    NaN       NO
+                    porc_vta  decimal    NaN       NO
+           nro_factura_otras      int    NaN       NO
+          tipo_factura_otras      int    NaN       NO
+               cdc_solicitud   bigint    NaN      YES
+                       otras      int    NaN       NO
+         OTRAS_CONTABILIZADO      int    NaN       NO
+           importe_gravado_5  decimal    NaN       NO
+          importe_impuesto_5  decimal    NaN       NO
+           cod_sucursal_cont      int    NaN       NO
+       cod_autorizacion_desc      int    NaN       NO
+                  tipo_venta smallint    NaN       NO
+           nro_sol_nc_precio      int    NaN       NO
+                   finaciero      int    NaN      YES
+                nro_plan_cdc      int    NaN      YES
+                    timbrado  varchar   30.0      YES
+                vto_timbrado datetime    NaN      YES
+                      sedeco  decimal    NaN       NO
+                      id_cdc  varchar   44.0      YES
+                clifrecuente      int    NaN      YES
+            devolucion_sifen      int    NaN      YES
+               obs_punt_vent  varchar   50.0      YES
+            cobro_automatico      int    NaN       NO
+             llamador_nombre  varchar   20.0      YES
+             llamador_numero      int    NaN      YES
+                  reg_boleta   bigint    NaN       NO
+     fecha_entrega_fast_food datetime    NaN      YES
+                 tot_tickets      int    NaN       NO
+                tot_clientes      int    NaN       NO
+                  nro_ajuste      int    NaN      YES
+                cdc_generado  varchar   50.0      YES
+               cod_prov_fact smallint    NaN       NO
+            listo_para_sifen smallint    NaN      YES
+                       email  varchar   80.0      YES
+        es_para_api_delivery      int    NaN      YES
+                  refacturar smallint    NaN       NO
+       porc_descuento_global  decimal    NaN      YES
+         importe_desc_global  decimal    NaN      YES
+            desde_vta_anular smallint    NaN      YES
+               iTipTra_sifen      int    NaN      YES
+codigo_obligacion_tributaria      int    NaN      YES
+         cod_condicion_cobro smallint    NaN      YES
+              nro_snc_origen   bigint    NaN      YES
+
+Muestra de 3 filas de VENTAS:
+ NRO_REG      FECHA  HORA_VENTA  NRO_FACTURA  IVA_INCLUIDO  COD_MONEDA  COD_DEPOSITO  COD_CLIENTE  COD_ASO  COD_COBRADOR NRO_ORDEN  COD_VENDEDOR  TIPO_DOCUMEN  COD_LUGAR  ENTREGA_INICIAL  CANTIDAD_CUOTAS INICIO_VENCIMIETOS  DIAS  IMPORTE_EXENTO  IMPORTE_GRAVADO  IMPORTE_IMPUESTO  DESCUENTO  COSTO_VENTA  MONTO_CREDITO  MONTO_DEBITO  VALOR_COBRADO  FACTURADO REMISIONES  IMPRESO  MAXIMO_ITEMS OBSERVACION RECETA  CAMPO_LOGICO  NRO_PLANILLA  imp_grab  COD_CONDICION NOMBRE_CLIENTE        RUC DIRECCION CONTACTO TELEFONO  NRO_PEDIDO  NRO_FACTURA_NC  TIPO_DOCUMEN_NC  CONTABILIZADO  facturar_proveedor nro_devolucion              fecha_alta user_alta               fecha_mod nro_oc  impreso_fiscal nro_vale nro_tarjeta nro_chapa Reg_Grafica  fecha_fija  desc_total  porc_comision  edi  pos  total_puntos  cotizacion fecha_vto  controlada  porc_vendedor  porc_supervisor fact_dosif reg_medico  nro_camion  cod_chofer  delivery  imp_cupon  cant_cupon  porc_fiscal  mon_fiscal  tipo_documen_fiscal  nro_factura_fiscal fecha_fiscal  porc_com_aplicado  comision_venta reg_cambio  repositor nro_autorizacion fecha_fin_traslado  cod_transportista  tipo  controlado nro_promo porc_seguro timbrado_doc validez_timbrado cod_motivo  snc snc_reg NRO_DESPACHO fecha_cierre_bonif  descuento_cheques  porc_vta  nro_factura_otras  tipo_factura_otras cdc_solicitud  otras  OTRAS_CONTABILIZADO  importe_gravado_5  importe_impuesto_5  cod_sucursal_cont  cod_autorizacion_desc  tipo_venta  nro_sol_nc_precio finaciero nro_plan_cdc timbrado vto_timbrado  sedeco id_cdc clifrecuente devolucion_sifen obs_punt_vent  cobro_automatico llamador_nombre llamador_numero  reg_boleta fecha_entrega_fast_food  tot_tickets  tot_clientes nro_ajuste cdc_generado  cod_prov_fact listo_para_sifen email es_para_api_delivery  refacturar porc_descuento_global importe_desc_global desde_vta_anular iTipTra_sifen codigo_obligacion_tributaria cod_condicion_cobro nro_snc_origen
+     3.0 2014-04-11         915            2          True           2             1            2        0             0         0             1            12          1              0.0                0         2014-05-20     0          1800.0             0.00              0.00        0.0          0.0            0.0           0.0            0.0      False               False             0                                0           0.0       0.0              1  Obaidulla S.A 80071623-0        xx                xx           0               0                0              1                   0           None 2014-05-20 09:16:34.330   lacosta 2014-09-25 14:16:03.740                      0                                                      1         0.0            0.0    0    0           0.0      4490.0      None       False            0.0              0.0       None          0           0           0         0          0           0        100.0           0                    0                   0         None                0.0             0.0       None          0             None               None                  0     0           0      None        None         None             None       None None    None         None               None                  0       0.0                  0                   0          None      0                    0                0.0                 0.0                  0                      0           0                  0      None         None     None         None     0.0   None         None             None          None                 0            None            None           0                    None            1             1       None         None              0             None  None                 None           0                  None                None             None          None                         None                None           None
+     5.0 2014-05-30         916            4          True           1             1            3        0             0         0             1            12          1              0.0                0         2014-06-06     0             0.0        318272.73          31827.27        0.0          0.0            0.0           0.0            0.0      False               False             0                                0           0.0       0.0              1         Redesa 80029413-0       xxx                xx           0               0                0              1                   0           None 2014-06-06 09:18:52.673   lacosta 2014-09-25 14:12:29.037                      0                                                      1         0.0            0.0    0    0           0.0         0.0      None       False            0.0              0.0       None          0           0           0         0          0           0        100.0           0                    0                   0         None                0.0             0.0       None          0             None               None                  0     0           0      None        None         None             None       None None    None         None               None                  0       0.0                  0                   0          None      0                    0                0.0                 0.0                  0                      0           0                  0      None         None     None         None     0.0   None         None             None          None                 0            None            None           0                    None            1             1       None         None              0             None  None                 None           0                  None                None             None          None                         None                None           None
+     6.0 2014-05-30         926            5          True           1             1            4        0             0         0             1            12          1              0.0                0         2014-06-09     0             0.0       4363636.00         436364.00        0.0          0.0            0.0           0.0            0.0      False               False             0                                0           0.0       0.0              1  Mariza Artaza  2240973-4        xx               xxx           0               0                0              1                   0           None 2014-06-09 09:27:25.340   lacosta 2014-09-25 14:12:44.293                      0                                                      1         0.0            0.0    0    0           0.0         0.0      None       False            0.0              0.0       None          0           0           0         0          0           0        100.0           0                    0                   0         None                0.0             0.0       None          0             None               None                  0     0           0      None        None         None             None       None None    None         None               None                  0       0.0                  0                   0          None      0                    0                0.0                 0.0                  0                      0           0                  0      None         None     None         None     0.0   None         None             None          None                 0            None            None           0                    None            1             1       None         None              0             None  None                 None           0                  None                None             None          None                         None                None           None
+
+======================================================================
+3) ESTRUCTURA DE TABLA: VENTAS_DET
+======================================================================
+Columnas (71):
+               columna     tipo  largo nullable
+               NRO_REG    float    NaN       NO
+             NRO_REMIS      int    NaN       NO
+                CODIGO  varchar   14.0       NO
+           TIPO_FISCAL smallint    NaN       NO
+              UNIDADES  decimal    NaN       NO
+      UNIDADES_CREDITO  decimal    NaN       NO
+                PRECIO  decimal    NaN      YES
+           PRECIO_NETO  decimal    NaN      YES
+              DESC_VEN  decimal    NaN       NO
+             TOT_COSTO  decimal    NaN      YES
+            TOT_PRECIO  decimal    NaN      YES
+               TOT_IMP  decimal    NaN      YES
+                UNIDAD  varchar    4.0      YES
+             ENTREGADO      bit    NaN       NO
+              PRIMARIO  decimal    NaN       NO
+          Nro_servicio    float    NaN       NO
+               IMP_IMP  decimal    NaN       NO
+       Porc_comis_prod  decimal    NaN      YES
+            NRO_PEDIDO  decimal    NaN      YES
+          PRECIO_BRUTO  decimal    NaN      YES
+          Porc_gravado  decimal    NaN      YES
+               cant_nc  decimal    NaN       NO
+          cant_desc_nc  decimal    NaN       NO
+             cant_desc  decimal    NaN       NO
+             Nro_promo   bigint    NaN      YES
+          PRECIO_LISTA  decimal    NaN      YES
+             NRO_LISTA      int    NaN      YES
+     cod_proveedor_ven      int    NaN       NO
+            autorizado  tinyint    NaN      YES
+descripcion_produc_obs  varchar  300.0      YES
+                 kilos  decimal    NaN       NO
+          Nro_Reg_Graf    float    NaN       NO
+          deposito_det smallint    NaN       NO
+           transferido smallint    NaN       NO
+             nro_envio    float    NaN      YES
+           codigo_comp  varchar   14.0      YES
+                  item      int    NaN       NO
+          codigo_barra  varchar   14.0      YES
+          desc_reserva smallint    NaN       NO
+              cant_paq  decimal    NaN       NO
+           costo_ficha  decimal    NaN      YES
+ porc_comis_prod_super  decimal    NaN       NO
+                origen      bit    NaN      YES
+                nro_ot      int    NaN      YES
+      cod_vendedor_aut smallint    NaN       NO
+               sol_aut smallint    NaN       NO
+         PORC_COMISION  decimal    NaN       NO
+        PORC_COMERCIAL  decimal    NaN       NO
+         PORC_APLICADO  decimal    NaN       NO
+          IMP_COMISION  decimal    NaN       NO
+           complemento smallint    NaN       NO
+          precio_final  decimal    NaN      YES
+           vencimiento datetime    NaN      YES
+          dias_validez      int    NaN      YES
+              detalles  varchar  100.0       NO
+         tot_precio_br  decimal    NaN      YES
+            tot_imp_br  decimal    NaN      YES
+              pid_sinc   bigint    NaN       NO
+      fecha_ult_cal_cp datetime    NaN      YES
+            desc_valor  decimal    NaN      YES
+       Porc_comis_tipo     char    1.0      YES
+       nro_pedido_mesa      int    NaN      YES
+       primario_boleta   bigint    NaN       NO
+             cod_talle      int    NaN      YES
+             cod_color      int    NaN      YES
+           observacion  varchar  100.0       NO
+       impreso_comanda      int    NaN       NO
+       cob_electronico      int    NaN      YES
+            reg_boleta   bigint    NaN       NO
+           es_agregado smallint    NaN      YES
+     precio_final_desc  decimal    NaN      YES
+
+Muestra de 3 filas de VENTAS_DET:
+ NRO_REG  NRO_REMIS CODIGO  TIPO_FISCAL  UNIDADES  UNIDADES_CREDITO     PRECIO  PRECIO_NETO  DESC_VEN  TOT_COSTO  TOT_PRECIO   TOT_IMP UNIDAD  ENTREGADO  PRIMARIO  Nro_servicio  IMP_IMP  Porc_comis_prod  NRO_PEDIDO  PRECIO_BRUTO  Porc_gravado  cant_nc  cant_desc_nc  cant_desc  Nro_promo  PRECIO_LISTA  NRO_LISTA  cod_proveedor_ven  autorizado descripcion_produc_obs  kilos  Nro_Reg_Graf  deposito_det  transferido nro_envio codigo_comp  item codigo_barra  desc_reserva  cant_paq  costo_ficha  porc_comis_prod_super origen  nro_ot  cod_vendedor_aut  sol_aut  PORC_COMISION  PORC_COMERCIAL  PORC_APLICADO  IMP_COMISION  complemento precio_final vencimiento dias_validez detalles tot_precio_br tot_imp_br  pid_sinc fecha_ult_cal_cp desc_valor Porc_comis_tipo nro_pedido_mesa  primario_boleta cod_talle cod_color observacion  impreso_comanda cob_electronico  reg_boleta es_agregado precio_final_desc
+     3.0          0   3473            1       1.0               0.0    1800.00       1800.0       0.0     132.34     1800.00      0.00             False       3.0           0.0      0.0              0.0         0.0        1800.0         100.0      0.0           0.0        0.0          0        222.72          0                129           0                   None    0.0           0.0             0            0      None        None     0         None             0       0.0          0.0                    0.0   None       0                 0        0            0.0             0.0            0.0           0.0            0         None        None         None                   None       None         0             None       None            None            None                0      None      None                            0            None           0        None              None
+     5.0          0   6086            0     778.0               0.0     409.09        450.0       0.0       0.00   318272.73  31827.27             False       5.0           0.0     10.0              0.0         0.0         450.0         100.0      0.0           0.0        0.0          0        450.00          0                129           0                   None    0.0           0.0             0            0      None        None     0         None             0       0.0          0.0                    0.0   None       0                 0        0            0.0             0.0            0.0           0.0            0         None        None         None                   None       None         0             None       None            None            None                0      None      None                            0            None           0        None              None
+     6.0          0   6145            0       1.0               0.0 4363636.00    4800000.0       0.0       0.00  4363636.00 436364.00             False       6.0           0.0     10.0              0.0         0.0     4800000.0         100.0      0.0           0.0        0.0          0    4800000.00          0                  2           0                   None    0.0           0.0             0            0      None        None     0         None             0       0.0          0.0                    0.0   None       0                 0        0            0.0             0.0            0.0           0.0            0         None        None         None                   None       None         0             None       None            None            None                0      None      None                            0            None           0        None              None
+
+======================================================================
+4) MUESTRA DE 5 PRODUCTOS NAVIDENOS
+======================================================================
+CODIGO CODIGO_BARRAS                DESCRIPCION_PRODUCTO POSICION  COD_GRUPO  COD_CATEGORIA  COD_SUB_CATEGORIA  COD_MARCA  ORIGEN  CONTROLADO  SERVICIO UNIDAD REFERENCIA_TECNICA  CANT_STOCK  CANT_PAQ  CANT_MIN  CANT_VEND  PRECIO_COMPRA  PRECIO_COMPRA_MON  PRECIO_COSTO  PRECIO_COSTO_MON  PRECIO_COSTO_NETO  PRECIO_COSTO_NETO_MON  PRECIO_COSTO_ANT  PRECIO_VENTA_A  PRECIO_VENTA_B  PRECIO_VENTA_C  PRECIO_VENTA_D  PRECIO_VENTA_E  PRECIO_VENTA_F  PRECIO_VENTA_G  PRECIO_VENTA_H  PRECIO_VENTA_I  PRECIO_VENTA_J  PRECIO_VENTA_K  PRECIO_VENTA_L  PRECIO_VENTA_M  PRECIO_VENTA_N  PRECIO_VENTA_O  PRECIO_VENTA_A_MON  PRECIO_VENTA_B_MON  PRECIO_VENTA_C_MON  PRECIO_VENTA_D_MON  PRECIO_VENTA_E_MON  PRECIO_VENTA_F_MON  PRECIO_VENTA_G_MON  PRECIO_VENTA_H_MON  PRECIO_VENTA_I_MON  PRECIO_VENTA_J_MON  PRECIO_VENTA_K_MON  PRECIO_VENTA_L_MON  PRECIO_VENTA_M_MON  PRECIO_VENTA_N_MON  PRECIO_VENTA_O_MON  PRECIO_VENTA_A_IMP  PRECIO_VENTA_B_IMP  PRECIO_VENTA_C_IMP  PRECIO_VENTA_D_IMP  PRECIO_VENTA_E_IMP  PRECIO_VENTA_F_IMP  PRECIO_VENTA_G_IMP  PRECIO_VENTA_H_IMP  PRECIO_VENTA_I_IMP  PRECIO_VENTA_J_IMP  PRECIO_VENTA_K_IMP  PRECIO_VENTA_L_IMP  PRECIO_VENTA_M_IMP  PRECIO_VENTA_N_IMP  PRECIO_VENTA_O_IMP  CALCULO_PRECIO_A  CALCULO_PRECIO_B  CALCULO_PRECIO_C  CALCULO_PRECIO_D  CALCULO_PRECIO_E  CALCULO_PRECIO_F  CALCULO_PRECIO_G  CALCULO_PRECIO_H  CALCULO_PRECIO_I  CALCULO_PRECIO_J  CALCULO_PRECIO_K  CALCULO_PRECIO_L  CALCULO_PRECIO_M  CALCULO_PRECIO_N  CALCULO_PRECIO_O  DESC_VENTA  CALCULO_COSTO  PORC_SOBRE_COMPRA  IMP_IMP  PERECEDERO VENCIMIENTO  UBICACION  TIPO_FISCAL ULTIMA_ACTUALIZACION  COMISION  COMPUESTO  STOCK_AUTO  PORCENTAJE_A  PORCENTAJE_B  PORCENTAJE_C  PORCENTAJE_D  PORCENTAJE_E  PORCENTAJE_F  PORCENTAJE_G  PORCENTAJE_H  PORCENTAJE_I  PORCENTAJE_J  PORCENTAJE_K  PORCENTAJE_L  PORCENTAJE_M  PORCENTAJE_N  PORCENTAJE_O  PORC_A  PORC_B  PORC_C  PORC_D  PORC_E  PORC_F  PORC_G  PORC_H  PORC_I  PORC_J  PORC_K  PORC_L  PORC_M  PORC_N  PORC_O CODIGO_CUENTA_VENTAS CODIGO_CUENTA_MERCADERIAS CODIGO_CUENTA_COSTO_VTA  DESACTIVADO  DESC_AUTO  TIPO_PRODUCTO  Cod_seccion  Cod_sub_seccion  Dias_de_stock  Percha  Seguro  Produccion FECHA_ULT_AUD  POS  APLICA_DESC_CANT  APLICA_DESC_PORC  CODIGO_BARRA_INT  PRECIO_VENTA_PROMO  PRECIO_VENTA_PROMO_MON  PRECIO_VENTA_PROMO_IMP FOTO_DEL_PRODUCTO              fecha_alta  usuario  Porc_gravado  Volumen_cc  PRECIO_COMPRA_CIF  PRECIO_COMPRA_CIF_MON  Desactivado_compra  margen  margen_max  cod_proveedor  margen_mayorista    descripcion_corta cod_sector codigo_envase  etiqueta  fleje  pesable dias_validez cta_ins_activo cta_ins_egreso  imp_imp_mod               fecha_alt  equivalente  regimen  tamano  peso cod_politica_precio  serie  interes  tasa_aduana  costo_cierre pais_origen  web  cod_cate_web  lista_web depositos_web detalle_web  ajuste_precio CODIGO_PATIO periodo_garantia  galones nivel_dif_comision codigo_ncm FECHA_ULT_COMPRA dir_foto  nuevo  oferta fecha_validez_nuevo  gramos_x_onza  mcc  restring  realiza_venta  precio_sug  comanda  alta_rotacion  desc_max_cast  bonificacion_mobile  descuento_NC  porc_merma  gimnasio  bar_patio costo_gastronomia  webservice_ok  imp_imp_reg  porc_gravado_reg  costo_mayorista  costo_mayorista_sin_iva  cod_moneda_mayorista  critico  cierre_pos_negativo cod_temporada1  calcula_stock cta_prod_servicios nivel1_web nivel2_web nivel3_web nivel4_web nivel5_web  desactivar_web  reten_prod_agricola  desactivo_pgs  cant_min_web  tendencia_web destacar_web peso_min_web klg_web rango_peso  resol_3739 fecha_vence_3739  visualizar_web cod_temporada2 cod_temporada3  sin_puntos  agrupar_promo_mayorista  maneja_talles  agregado  es_top unidad_sifen codigo_cuenta_ventas_exento  control_x_vto  codigo_balanza  reten_prod_ganado dir_pdf  obliga_pesaje_recepcion
+107966        107966          PLATO DECORATIVO 704-04326                1922           6265                 -1        354       0       False         0   Unid                            0.0       1.0         0        0.0           1.25                  2    10748.3946                 1         10730.3137                      1          11517.45             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0         0.0              1                0.0     10.0           0        None          0            0                 None       0.0      False           0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           9.0           0.0           0.0           0.0           0.0           0.0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0                                                                               False      False              3           55              306              0       0       0           0          None    1                 0               0.0         4116634.0                 0.0                       1                       0              None 2020-07-30 13:54:16.737 SRAMIREZ         100.0         0.0             1.5256                      2                   0     0.0         0.0           1393               0.0 PLATO DECORATIVO 704       None          None         0      0        0         None     1010301001             ''            0 2025-10-15 09:57:01.380          0.0        0     0.0   0.0                None      0        0          0.0           0.0    Paraguay    0             0          0          None        None            0.0         None             None      0.0               None       None             None     None  False   False                None            0.0    0         0              1           0        0              0            0.0                    0             0         0.0         0          0              None              0          0.0               0.0              0.0                      0.0                   0.0        0                    0           None              0               None       None       None       None       None       None               1                    0              0           0.0              0         None         None    None       None           0             None               1           None           None           0                        0              0         0       0         None                        None              0               0                  0    None                        0
+114146        114146                BOLA 8CM 130-2500072                1919           6253                 -1        641       1       False         0   Unid                            0.0       1.0         0        0.0           0.58                  2     4962.0000                 1          4962.0000                      1           4962.00             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0         0.0              1                0.0     10.0           0        None          0            0                 None       0.0      False           0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           9.0           0.0           0.0           0.0           0.0           0.0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0                                                                               False      False              3           55              306              0       0       0           0          None    1                 0               0.0         4122814.0                 0.0                       1                       0              None 2020-10-02 10:58:40.470 lfleitas         100.0         0.0             0.7063                      2                   0     0.0         0.0            364               0.0             BOLA 8CM       None          None         0      0        0         None     1010301001             ''            0 2025-12-05 18:26:59.000          0.0        0     0.0   0.0                None      0        0          0.0           0.0      Panamá    1             0          0          None        None            0.0         None             None      0.0               None       None             None     None  False   False                None            0.0    0         0              1           0        0              0            0.0                    0             0         0.0         0          0              None              0          0.0               0.0              0.0                      0.0                   0.0        0                    0           None              0               None       None       None       None       None       None               0                    0              0           0.0              0         None         None    None       None           0             None               1           None           None           0                        0              0         0       0         None                        None              0               0                  0    None                        0
+114142        114142        JGO BOLA 3PZ 8CM 130-1900168                1919           6253                 -1        641       0       False         0   Unid                            0.0       1.0         0        0.0           2.30                  2    19678.0000                 1         19678.0000                      1          19678.00             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0         0.0              1                0.0     10.0           0        None          0            0                 None       0.0      False           0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           9.0           0.0           0.0           0.0           0.0           0.0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0                                                                               False      False              3           55              306              0       0       0           0          None    1                 0               0.0         4122810.0                 0.0                       1                       0              None 2020-10-02 10:50:49.717 lfleitas         100.0         0.0             2.8007                      2                   0     0.0         0.0            364               0.0     Juego Bolas 3pzs       None          None         0      0        0         None     1010301001             ''            0 2025-12-05 18:27:36.087          0.0        0     0.0   0.0                None      0        0          0.0           0.0      Panamá    1             0          0          None        None            0.0         None             None      0.0               None       None             None     None  False   False                None            0.0    0         0              1           0        0              0            0.0                    0             0         0.0         0          0              None              0          0.0               0.0              0.0                      0.0                   0.0        0                    0           None              0               None       None       None       None       None       None               0                    0              0           0.0              0         None         None    None       None           0             None               1           None           None           0                        0              0         0       0         None                        None              0               0                  0    None                        0
+114141        114141 BOLA DECOR 3 SURT. 15CM 130-1200009                1919           6253                 -1        641       1       False         0   Unid                            0.0       1.0         0        0.0           2.02                  2    16222.0000                 1         16222.0000                      1          13262.00             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0         0.0              1                0.0     10.0           0        None          0            0                 None       0.0      False           0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           9.0           0.0           0.0           0.0           0.0           0.0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0                                                                               False      False              3           55              306              0       0       0           0          None    1                 0               0.0         4122809.0                 0.0                       1                       0              None 2020-10-02 10:41:13.660 lfleitas         100.0         0.0             2.3488                      2                   0     0.0         0.0            364               0.0            Bola Deco       None          None         0      0        0         None     1010301001             ''            0 2025-12-05 18:27:07.383          0.0        0     0.0   0.0                None      0        0          0.0           0.0      Panamá    1             0          0          None        None            0.0         None             None      0.0               None       None             None     None  False   False                None            0.0    0         0              1           0        0              0            0.0                    0             0         0.0         0          0              None              0          0.0               0.0              0.0                      0.0                   0.0        0                    0           None              0               None       None       None       None       None       None               0                    0              0           0.0              0         None         None    None       None           0             None               1           None           None           0                        0              0         0       0         None                        None              0               0                  0    None                        0
+114140        114140        BOLA DECOR  15CM 130-1200004                1919           6253                 -1        641       1       False         0   Unid                            0.0       1.0         0        0.0           1.85                  2    15086.7718                 1         15086.7718                      1          13262.00             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0             0.0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                   0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0                 0         0.0              1                0.0     10.0           0        None          0            0                 None       0.0      False           0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           9.0           0.0           0.0           0.0           0.0           0.0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0                                                                               False      False              3           55              306              0       0       0           0          None    1                 0               0.0         4122808.0                 0.0                       1                       0              None 2020-10-02 10:39:25.263 lfleitas         100.0         0.0             2.3483                      2                   0     0.0         0.0            364               0.0 Bola Decoracion 15cm       None          None         0      0        0         None     1010301001             ''            0 2025-12-05 18:27:04.683          0.0        0     0.0   0.0                None      0        0          0.0           0.0      Panamá    1             0          0          None        None            0.0         None             None      0.0               None       None             None     None  False   False                None            0.0    0         0              1           0        0              0            0.0                    0             0         0.0         0          0              None              0          0.0               0.0              0.0                      0.0                   0.0        0                    0           None              0               None       None       None       None       None       None               0                    0              0           0.0              0         None         None    None       None           0             None               1           None           None           0                        0              0         0       0         None                        None              0               0                  0    None                        0
+
+======================================================================
+5) BUSQUEDA DE TABLAS RELACIONADAS
+======================================================================
+Tablas que matchean patrones (proveedor/seccion/deposito/etc):
+esquema                            tabla
+    dbo     autorizacion_usuario_compras
+    dbo                       CATEGORIAS
+    dbo   categorias_productos_depositos
+    dbo                   CATEGORIAS_WEB
+    dbo                     cc_depositos
+    dbo                CHEQUES_DEPOSITOS
+    dbo            CHEQUES_DEPOSITOS_DET
+    dbo                      COMPRADORES
+    dbo       compradores_limite_semanal
+    dbo                          COMPRAS
+    dbo                      compras_anu
+    dbo        COMPRAS_CENTROS_DE_COSTOS
+    dbo                COMPRAS_CONDICION
+    dbo       COMPRAS_COSTOS_IMPORTACION
+    dbo  COMPRAS_COSTOS_IMPORTACION_GRAL
+    dbo                      COMPRAS_DET
+    dbo                  compras_det_anu
+    dbo        compras_det_HISTORICO_INT
+    dbo            compras_HISTORICO_INT
+    dbo        compras_lotes_perecederos
+    dbo                COMPRAS_RECEPCION
+    dbo                   Compras_Talles
+    dbo                compras_x_activos
+    dbo      control_importe_mes_seccion
+    dbo                DEPOSITO_EFECTIVO
+    dbo        DEPOSITO_EFECTIVO_CHEQUES
+    dbo     deposito_efectivo_cierre_adm
+    dbo                        DEPOSITOS
+    dbo                     esta_compras
+    dbo                        fc_rubros
+    dbo                fc_rubros_cuentas
+    dbo fraccionar_patio_sub_seccion_cab
+    dbo fraccionar_patio_sub_seccion_det
+    dbo                gastos_categorias
+    dbo               gimnasio_marcacion
+    dbo                    libro_compras
+    dbo                  marcaciones_aux
+    dbo                 marcaciones2_aux
+    dbo                           MARCAS
+    dbo                margenes_sucursal
+    dbo                   MATRIZ_SECCION
+    dbo            MOVIMIENTOS_DEPOSITOS
+    dbo      MOVIMIENTOS_DEPOSITOS_LOTES
+    dbo     Movimientos_Depositos_Talles
+    dbo            NOTAS_CREDITO_COMPRAS
+    dbo        NOTAS_CREDITO_DET_COMPRAS
+    dbo             NOTAS_DEBITO_COMPRAS
+    dbo         NOTAS_DEBITO_DET_COMPRAS
+    dbo          pedidos_proveedores_aut
+    dbo             PEDIDOS_SUCURSAL_CAB
+    dbo             PEDIDOS_SUCURSAL_DET
+    dbo               presupuesto_rubros
+    dbo              proveedor_condicion
+    dbo               proveedor_sucursal
+    dbo              Proveedor_timbrados
+    dbo                      PROVEEDORES
+    dbo            PTK_FICHA_PROVEEDORES
+    dbo              PTK_FICHA_SECCIONES
+    dbo                 ptk_grupo_rubros
+    dbo             ptk_grupo_rubros_det
+    dbo                    ptk_marcacion
+    dbo                PTK_MARCACION_IPS
+    dbo             ptk_marcacion_manual
+    dbo       ptk_marcacion_manual_reloj
+    dbo              PTK_MARCACION_RELOJ
+    dbo              ptk_salarios_compra
+    dbo         PTK_SECCIONES_DOTACIONES
+    dbo     ranking_categorias_productos
+    dbo          retencion_proveedor_cab
+    dbo                    RUBRO_CLIENTE
+    dbo                  RUBRO_PROVEEDOR
+    dbo                           RUBROS
+    dbo                  salon_secciones
+    dbo              salon_secciones_det
+    dbo           salon_secciones_metros
+    dbo         salon_secciones_personal
+    dbo                          Seccion
+    dbo                   SUB_CATEGORIAS
+    dbo                      Sub_seccion
+    dbo                       SUCURSALES
+    dbo                 sucursales_banco
+    dbo                 sucursales_zonas
+    dbo       SYS_USUARIOS_DEPOSITOS_DES
+    dbo               TARJETAS_DEPOSITOS
+    dbo           TARJETAS_DEPOSITOS_DET
+    dbo                  tarjetas_marcas
+    dbo               usuarios_secciones
+    dbo             VENDEDOR_META_MARCAS
+    dbo        VENDEDOR_META_SUB_SECCION
+    dbo      wt_facturas_orden_de_compra
+    dbo  wt_facturas_orden_de_compra_det
+    dbo            wt_matriz_proveedores
+    dbo            wt_mensajes_proveedor
+
+======================================================================
+6) ESTRUCTURA DE TABLAS RELACIONADAS
+======================================================================
+
+--- [dbo].[autorizacion_usuario_compras] ---
+Filas: 0
+Columnas (8):
+          columna     tipo  largo
+      nro_reg_aut      int    NaN
+          nro_reg    float    NaN
+             tipo      int    NaN
+          usuario  varchar   20.0
+usuario_habilitar  varchar   20.0
+           estado smallint    NaN
+modificado_compra smallint    NaN
+ fecha_habilitado datetime    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg_aut, nro_reg, tipo, usuario, usuario_habilitar, estado, modificado_compra, fecha_habilitado]
+Index: []
+
+--- [dbo].[CATEGORIAS] ---
+Filas: 5,009
+Columnas (9):
+         columna     tipo  largo
+   COD_CATEGORIA      int    NaN
+DESCRIPCION_CATE  varchar   30.0
+     cod_seccion smallint    NaN
+ cod_sub_seccion smallint    NaN
+       cod_grupo smallint    NaN
+          margen  decimal    NaN
+      margen_max  decimal    NaN
+margen_mayorista  decimal    NaN
+       fecha_alt datetime    NaN
+Muestra de 3 filas:
+ COD_CATEGORIA DESCRIPCION_CATE  cod_seccion  cod_sub_seccion  cod_grupo  margen  margen_max  margen_mayorista               fecha_alt
+            -1      Sin Asignar           -1               -1         -1     0.0         0.0               0.0 2016-01-27 11:41:39.027
+          1049          CRISTAL           28              109        222     0.0         0.0               0.0 2020-06-01 09:38:17.450
+          1050         CERAMICA           28              109        222     0.0         0.0               0.0 2020-06-01 09:38:24.753
+
+--- [dbo].[categorias_productos_depositos] ---
+Filas: 0
+Columnas (3):
+      columna    tipo  largo
+cod_categoria     int    NaN
+    categoria varchar   50.0
+        alias varchar    1.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_categoria, categoria, alias]
+Index: []
+
+--- [dbo].[CATEGORIAS_WEB] ---
+Filas: 1
+Columnas (2):
+      columna    tipo  largo
+COD_CATEGORIA     int    NaN
+  DESCRIPCION varchar   30.0
+Muestra de 3 filas:
+ COD_CATEGORIA DESCRIPCION
+             1    Juguetes
+
+--- [dbo].[cc_depositos] ---
+Filas: 0
+Columnas (6):
+    columna     tipo  largo
+         id      int    NaN
+ nro_cierre  decimal    NaN
+nro_cta_pgs smallint    NaN
+      fecha datetime    NaN
+comprobante  varchar   20.0
+    importe  decimal    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [id, nro_cierre, nro_cta_pgs, fecha, comprobante, importe]
+Index: []
+
+--- [dbo].[CHEQUES_DEPOSITOS] ---
+Filas: 4,839
+Columnas (11):
+       columna     tipo  largo
+  NRO_DEPOSITO  decimal    NaN
+    NRO_CUENTA    float    NaN
+         FECHA datetime    NaN
+   OBSERVACION  varchar  100.0
+TOTAL_DEPOSITO  decimal    NaN
+    Nro_boleta  decimal    NaN
+ CONTABILIZADO smallint    NaN
+    cod_cajero      int    NaN
+  NRO_CUSTODIA  decimal    NaN
+fecha_deposito datetime    NaN
+       usuario  varchar  100.0
+Muestra de 3 filas:
+ NRO_DEPOSITO  NRO_CUENTA      FECHA                          OBSERVACION  TOTAL_DEPOSITO  Nro_boleta  CONTABILIZADO  cod_cajero  NRO_CUSTODIA fecha_deposito usuario
+          0.0         3.0 2017-04-10      DIVISERV S.A. FC.Nº001-013-3384       4732513.0   8259167.0              1           1           0.0           None    None
+          4.0         3.0 2014-04-25                 GARANTIA DE ALQUILER       8082000.0   2825608.0              1           1           0.0           None    None
+          5.0         3.0 2014-06-02 COBRO FC.Nº001-013-5 VENTA DE CARTON       4800000.0   5899410.0              1           1           0.0           None    None
+
+--- [dbo].[CHEQUES_DEPOSITOS_DET] ---
+Filas: 6,910
+Columnas (12):
+      columna     tipo  largo
+ NRO_DEPOSITO  decimal    NaN
+      NRO_REG      int    NaN
+  COD_CLIENTE      int    NaN
+    COD_BANCO smallint    NaN
+       CUENTA  varchar   30.0
+   NRO_CHEQUE    float    NaN
+   COD_MONEDA smallint    NaN
+   COTIZACION  decimal    NaN
+      IMPORTE  decimal    NaN
+      COBRADO smallint    NaN
+  FECHA_COBRO datetime    NaN
+CONTABILIZADO smallint    NaN
+Muestra de 3 filas:
+ NRO_DEPOSITO  NRO_REG  COD_CLIENTE  COD_BANCO  CUENTA  NRO_CHEQUE  COD_MONEDA  COTIZACION   IMPORTE  COBRADO FECHA_COBRO  CONTABILIZADO
+          0.0    12785          650          1 5327859   5327859.0           1         0.0 4732513.0        1  2017-04-12              0
+          4.0     9303            2          2     123   2286679.0           1         0.0 8082000.0        1  2014-07-10              0
+          5.0     9304            4          3     321   6362389.0           1         0.0 4800000.0        1  2014-06-04              0
+
+--- [dbo].[COMPRADORES] ---
+Filas: 1
+Columnas (6):
+         columna     tipo        largo
+   COD_COMPRADOR smallint          NaN
+NOMBRE_COMPRADOR  varchar         25.0
+        TELEFONO  varchar         15.0
+          estado smallint          NaN
+        dir_foto  varchar        100.0
+          Imagen    image 2147483647.0
+Muestra de 3 filas:
+ COD_COMPRADOR NOMBRE_COMPRADOR TELEFONO  estado dir_foto Imagen
+             1   Administracion                1     None   None
+
+--- [dbo].[compradores_limite_semanal] ---
+Filas: 0
+Columnas (7):
+      columna     tipo largo
+     primario  decimal  None
+cod_comprador smallint  None
+         anio smallint  None
+  fecha_desde datetime  None
+  fecha_hasta datetime  None
+      importe  decimal  None
+       semana      int  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [primario, cod_comprador, anio, fecha_desde, fecha_hasta, importe, semana]
+Index: []
+
+--- [dbo].[COMPRAS] ---
+Filas: 102,481
+Columnas (117):
+               columna     tipo        largo
+               NRO_REG    float          NaN
+           NRO_FACTURA  varchar         25.0
+          IVA_INCLUIDO      bit          NaN
+            NRO_PEDIDO      int          NaN
+             NRO_ORDEN      int          NaN
+                 FECHA datetime          NaN
+         FECHA_LLEGADA datetime          NaN
+          COD_DEPOSITO smallint          NaN
+            COD_MONEDA smallint          NaN
+          TIPO_DOCUMEN smallint          NaN
+         COD_PROVEEDOR      int          NaN
+       ENTREGA_INICIAL  decimal          NaN
+       CANTIDAD_CUOTAS smallint          NaN
+                  DIAS smallint          NaN
+                 VALOR  decimal          NaN
+               IMP_IVA  decimal          NaN
+         MONTO_CREDITO  decimal          NaN
+          MONTO_DEBITO  decimal          NaN
+           OBSERVACION  varchar        500.0
+      VER_CENTRO_COSTO      int          NaN
+          CAMPO_LOGICO smallint          NaN
+        COSTO_NETO_ADD  decimal          NaN
+       COSTO_BRUTO_ADD  decimal          NaN
+          NRO_DESPACHO  varchar         20.0
+         NRO_RECEPCION  decimal          NaN
+       IMPORTE_GRAVADO  decimal          NaN
+        IMPORTE_EXENTO  decimal          NaN
+      IMPORTE_IMPUESTO  decimal          NaN
+     NC_VALOR_APLICADO  decimal          NaN
+             DESCUENTO  decimal          NaN
+        NRO_FACTURA_NC  varchar         25.0
+       TIPO_DOCUMEN_NC smallint          NaN
+            COTIZACION  decimal          NaN
+            ASIENTO_OK      int          NaN
+         COD_CONDICION smallint          NaN
+         CONTABILIZADO smallint          NaN
+            Modificado smallint          NaN
+           TIPO_COMPRA smallint          NaN
+          NRO_CONCEPTO      int          NaN
+              COD_TIPO smallint          NaN
+             COD_PLAZO smallint          NaN
+            fecha_alta datetime          NaN
+               usuario  varchar         20.0
+        nro_devolucion      int          NaN
+         IMPORT_CONTAB smallint          NaN
+       COSTO_ADIC_NETO  decimal          NaN
+     COD_PROVEEDOR_IMP      int          NaN
+         fecha_factura datetime          NaN
+         tipo_doc_orig smallint          NaN
+         nro_solicitud      int          NaN
+            fecha_orig datetime          NaN
+            monto_orig  decimal          NaN
+        fecha_canje_nc datetime          NaN
+     importe_gravado_5  decimal          NaN
+    importe_gravado_10  decimal          NaN
+        nro_recib_comp      int          NaN
+            total_fact  decimal          NaN
+             fecha_mod datetime          NaN
+    importe_impuesto_5  decimal          NaN
+   importe_impuesto_10  decimal          NaN
+              afecta_a      int          NaN
+              timbrado  varchar         25.0
+      validez_timbrado datetime          NaN
+                e_mail smallint          NaN
+     Nro_recepcion_fac    float          NaN
+        cotiz_mon_prod  decimal          NaN
+         nro_promocion      int          NaN
+             fecha_vto datetime          NaN
+               imp_bol      int          NaN
+           detalle_fac     text 2147483647.0
+           consolidado      bit          NaN
+              aplicado      bit          NaN
+           finiquitada smallint          NaN
+            cod_motivo      int          NaN
+                   edi smallint          NaN
+      facturar_cliente smallint          NaN
+          afecta_costo smallint          NaN
+          bonificacion smallint          NaN
+            Ano_Actual      int          NaN
+            Mes_Actual      int          NaN
+             us_codigo      int          NaN
+         pedido_activo      int          NaN
+                   RUC  varchar         11.0
+        tot_gravada_10  decimal          NaN
+         tot_gravada_5  decimal          NaN
+            tot_exento  decimal          NaN
+         timbrado_prov  varchar         30.0
+         LIBRO_COMPRAS smallint          NaN
+                 salto      int          NaN
+         cuenta_envios smallint          NaN
+          vto_timbrado datetime          NaN
+             canje_snc smallint          NaN
+   reten_prod_agricola smallint          NaN
+         reg_snc_canje    float          NaN
+                id_cdc  varchar         44.0
+     cruce_informacion smallint          NaN
+             fin_talle smallint          NaN
+              MARCA_NC smallint          NaN
+      nro_oc_vinculada smallint          NaN
+       factura_virtual smallint          NaN
+   factura_electronica smallint          NaN
+      listo_para_sifen smallint          NaN
+importe_impuesto_10_mn  decimal          NaN
+ importe_impuesto_5_mn  decimal          NaN
+ importe_gravado_10_mn  decimal          NaN
+  importe_gravado_5_mn  decimal          NaN
+          cdc_generado  varchar         50.0
+     SkipUpdateTrigger smallint          NaN
+        gen_automatica      int          NaN
+         email_enviado      int          NaN
+     fecha_envio_email datetime          NaN
+             facturado      int          NaN
+              recibido      int          NaN
+             entregado      int          NaN
+     importe_exento_mn  decimal          NaN
+       redondeo_sedeco  decimal          NaN
+   desc_redondeosedeco  decimal          NaN
+Muestra de 3 filas:
+ NRO_REG   NRO_FACTURA  IVA_INCLUIDO  NRO_PEDIDO  NRO_ORDEN      FECHA FECHA_LLEGADA  COD_DEPOSITO  COD_MONEDA  TIPO_DOCUMEN  COD_PROVEEDOR  ENTREGA_INICIAL  CANTIDAD_CUOTAS  DIAS       VALOR    IMP_IVA  MONTO_CREDITO  MONTO_DEBITO OBSERVACION  VER_CENTRO_COSTO  CAMPO_LOGICO  COSTO_NETO_ADD  COSTO_BRUTO_ADD NRO_DESPACHO  NRO_RECEPCION  IMPORTE_GRAVADO  IMPORTE_EXENTO  IMPORTE_IMPUESTO  NC_VALOR_APLICADO  DESCUENTO NRO_FACTURA_NC  TIPO_DOCUMEN_NC  COTIZACION  ASIENTO_OK  COD_CONDICION  CONTABILIZADO  Modificado  TIPO_COMPRA  NRO_CONCEPTO  COD_TIPO  COD_PLAZO              fecha_alta usuario  nro_devolucion  IMPORT_CONTAB  COSTO_ADIC_NETO  COD_PROVEEDOR_IMP fecha_factura tipo_doc_orig nro_solicitud fecha_orig monto_orig fecha_canje_nc  importe_gravado_5  importe_gravado_10 nro_recib_comp  total_fact fecha_mod  importe_impuesto_5  importe_impuesto_10  afecta_a timbrado validez_timbrado  e_mail  Nro_recepcion_fac  cotiz_mon_prod nro_promocion  fecha_vto  imp_bol detalle_fac  consolidado  aplicado  finiquitada cod_motivo  edi  facturar_cliente  afecta_costo  bonificacion  Ano_Actual  Mes_Actual  us_codigo  pedido_activo RUC  tot_gravada_10  tot_gravada_5  tot_exento timbrado_prov  LIBRO_COMPRAS salto cuenta_envios vto_timbrado  canje_snc  reten_prod_agricola reg_snc_canje id_cdc  cruce_informacion  fin_talle  MARCA_NC nro_oc_vinculada factura_virtual factura_electronica listo_para_sifen importe_impuesto_10_mn importe_impuesto_5_mn importe_gravado_10_mn importe_gravado_5_mn cdc_generado SkipUpdateTrigger  gen_automatica  email_enviado fecha_envio_email  facturado  recibido  entregado importe_exento_mn  redondeo_sedeco  desc_redondeosedeco
+     3.0 0050010000376          True           0          0 2014-03-29    2014-03-25             1           1             2              2              0.0                1    30 13690307.27 1369030.73            0.0           0.0                             0             0             0.0              0.0            0            0.0      13690307.27             0.0        1369030.73                0.0        0.0           None                0         0.0           0              2              1           0            3             1         0          2 2014-03-29 09:31:54.870    baum               0              0              0.0                  0    2014-03-24          None          None       None       None           None                0.0         13690307.27           None  15059338.0      None                 0.0           1369030.73         0 10292113       2014-10-31       0                0.0             0.0          None 2014-04-28        0        None        False     False            1       None    0                 0             0             0           0           0          0              0                 0.0            0.0         0.0          None              0  None          None         None          0                    0          None   None                  0          0         0             None            None                None             None                   None                  None                  None                 None         None              None               0              0              None          0         0          0              None              0.0                  0.0
+     4.0 0050010000371          True           0          0 2014-03-29    2014-03-27             1           1             2              2              0.0                1    30 41743009.09 4174300.91            0.0           0.0                             0             0             0.0              0.0            0            0.0      41743009.09             0.0        4174300.91                0.0        0.0           None                0         0.0           0              2              1           0            3             1         0          2 2014-03-29 09:35:54.453    baum               0              0              0.0                  0    2014-03-20          None          None       None       None           None                0.0         41743009.09           None  45917310.0      None                 0.0           4174300.91         0 10292113       2014-10-31       0                0.0             0.0          None 2014-04-28        0        None        False     False            1       None    0                 0             0             0           0           0          0              0                 0.0            0.0         0.0          None              0  None          None         None          0                    0          None   None                  0          0         0             None            None                None             None                   None                  None                  None                 None         None              None               0              0              None          0         0          0              None              0.0                  0.0
+     5.0 0050010000374          True           0          0 2014-03-29    2014-03-25             1           1             2              2              0.0                1     0 11526763.64 1152676.36            0.0           0.0                             0             0             0.0              0.0            0            0.0      11526763.64             0.0        1152676.36                0.0        0.0           None                0         0.0           0              1              1           0            3             1         0          1 2014-03-29 09:40:24.760    baum               0              0              0.0                  0    2014-03-24          None          None       None       None           None                0.0         11526763.64           None  12679440.0      None                 0.0           1152676.36         0 10292113       2014-10-31       0                0.0             0.0          None 2014-03-29        0        None        False     False            1       None    0                 0             0             0           0           0          0              0                 0.0            0.0         0.0          None              0  None          None         None          0                    0          None   None                  0          0         0             None            None                None             None                   None                  None                  None                 None         None              None               0              0              None          0         0          0              None              0.0                  0.0
+
+--- [dbo].[compras_anu] ---
+Filas: 0
+Columnas (34):
+            columna     tipo  largo
+            nro_reg    float    NaN
+        nro_factura  varchar   25.0
+       iva_incluido      bit    NaN
+              fecha datetime    NaN
+       cod_deposito smallint    NaN
+         cod_moneda smallint    NaN
+       tipo_documen smallint    NaN
+      cod_proveedor      int    NaN
+              valor  decimal    NaN
+            imp_iva  decimal    NaN
+        observacion  varchar  100.0
+    importe_gravado  decimal    NaN
+     importe_exento  decimal    NaN
+   importe_impuesto  decimal    NaN
+    tipo_documen_nc smallint    NaN
+     nro_factura_nc  varchar   25.0
+         cotizacion  decimal    NaN
+        tipo_compra smallint    NaN
+       nro_concepto      int    NaN
+         fecha_alta datetime    NaN
+            usuario  varchar   20.0
+        usuario_anu  varchar   20.0
+      fecha_factura datetime    NaN
+      tipo_doc_orig smallint    NaN
+         monto_orig  decimal    NaN
+  importe_gravado_5  decimal    NaN
+ importe_gravado_10  decimal    NaN
+ importe_impuesto_5  decimal    NaN
+importe_impuesto_10  decimal    NaN
+           timbrado  varchar   25.0
+   validez_timbrado datetime    NaN
+     nro_devolucion      int    NaN
+         cod_motivo      int    NaN
+      obs_anulacion  varchar  200.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, nro_factura, iva_incluido, fecha, cod_deposito, cod_moneda, tipo_documen, cod_proveedor, valor, imp_iva, observacion, importe_gravado, importe_exento, importe_impuesto, tipo_documen_nc, nro_factura_nc, cotizacion, tipo_compra, nro_concepto, fecha_alta, usuario, usuario_anu, fecha_factura, tipo_doc_orig, monto_orig, importe_gravado_5, importe_gravado_10, importe_impuesto_5, importe_impuesto_10, timbrado, validez_timbrado, nro_devolucion, cod_motivo, obs_anulacion]
+Index: []
+
+--- [dbo].[COMPRAS_CENTROS_DE_COSTOS] ---
+Filas: 14,367
+Columnas (4):
+     columna    tipo  largo
+     NRO_REG   float    NaN
+      CODIGO varchar   14.0
+CENTRO_COSTO     int    NaN
+     IMPORTE decimal    NaN
+Muestra de 3 filas:
+ NRO_REG CODIGO  CENTRO_COSTO  IMPORTE
+    69.0      0             1   2000.0
+   126.0      0             1 180785.0
+   130.0      0             1 240960.0
+
+--- [dbo].[COMPRAS_CONDICION] ---
+Filas: 4
+Columnas (2):
+      columna     tipo  largo
+COD_CONDICION smallint    NaN
+    CONDICION  varchar   30.0
+Muestra de 3 filas:
+ COD_CONDICION    CONDICION
+             1      Contado
+             2      Credito
+             3 Consignacion
+
+--- [dbo].[COMPRAS_COSTOS_IMPORTACION] ---
+Filas: 0
+Columnas (8):
+     columna     tipo  largo
+     NRO_REG    float    NaN
+      CODIGO  varchar   14.0
+COSTO_IMPORT      int    NaN
+     IMPORTE  decimal    NaN
+       VALOR  decimal    NaN
+  COD_MONEDA smallint    NaN
+  COTIZACION  decimal    NaN
+        TASA  decimal    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [NRO_REG, CODIGO, COSTO_IMPORT, IMPORTE, VALOR, COD_MONEDA, COTIZACION, TASA]
+Index: []
+
+--- [dbo].[COMPRAS_COSTOS_IMPORTACION_GRAL] ---
+Filas: 6,904
+Columnas (25):
+                  columna     tipo  largo
+                  NRO_REG    float    NaN
+             COSTO_IMPORT      int    NaN
+               COD_MONEDA smallint    NaN
+                  IMPORTE  decimal    NaN
+                    VALOR  decimal    NaN
+               COTIZACION  decimal    NaN
+            COD_PROVEEDOR      int    NaN
+          IMPORTE_GRAVADO  decimal    NaN
+           IMPORTE_EXENTO  decimal    NaN
+         IMPORTE_IMPUESTO  decimal    NaN
+             TIPO_DOCUMEN smallint    NaN
+                FECHA_DOC datetime    NaN
+                  NRO_DOC  varchar   25.0
+                     item  tinyint    NaN
+                fact_prov smallint    NaN
+                   ins_lc  tinyint    NaN
+            contabilizado  tinyint    NaN
+           derecho_aduana smallint    NaN
+              exportacion      bit    NaN
+cod_proveedor_despachante      int    NaN
+                 TIMBRADO  varchar   25.0
+         VALIDEZ_TIMBRADO datetime    NaN
+                     PROV smallint    NaN
+          factura_virtual smallint    NaN
+      factura_electronica smallint    NaN
+Muestra de 3 filas:
+ NRO_REG  COSTO_IMPORT  COD_MONEDA  IMPORTE  VALOR  COTIZACION  COD_PROVEEDOR  IMPORTE_GRAVADO  IMPORTE_EXENTO  IMPORTE_IMPUESTO  TIPO_DOCUMEN  FECHA_DOC       NRO_DOC  item  fact_prov  ins_lc  contabilizado  derecho_aduana  exportacion  cod_proveedor_despachante TIMBRADO VALIDEZ_TIMBRADO  PROV factura_virtual factura_electronica
+   467.0             2           1      0.0    0.0     4428.00             50              0.0             0.0       16675287.00            20 2014-05-29 363               4          0       0              1               0        False                          0      xxx       2014-04-29     0            None                None
+   467.0             3           2      0.0  638.0     4422.48            141            508.0           130.0             50.77             2 2014-05-26 0010010002265    14          1       1              1               0        False                          0 10492204       2015-05-31     0            None                None
+   467.0             3           2      0.0 3550.0     4422.48            141              0.0          3550.0              0.00             2 2014-05-26 0010010002266    15          1       1              1               0        False                          0 10492204       2015-05-31     0            None                None
+
+--- [dbo].[COMPRAS_DET] ---
+Filas: 759,383
+Columnas (52):
+                      columna     tipo  largo
+                      NRO_REG    float    NaN
+                       CODIGO  varchar   14.0
+                     NRO_LOTE  varchar   30.0
+                  FECHA_VENCE datetime    NaN
+                     CANTIDAD  decimal    NaN
+             UNIDADES_CREDITO  decimal    NaN
+                       PRECIO  decimal    NaN
+ IMPORTE_COSTO_ADICIONAL_NETO  decimal    NaN
+IMPORTE_COSTO_ADICIONAL_BRUTO  decimal    NaN
+                  TIPO_FISCAL smallint    NaN
+                        TOTAL  decimal    NaN
+                    TOTAL_IMP  decimal    NaN
+                       UNIDAD  varchar    4.0
+                     PRIMARIO  decimal    NaN
+                NRO_RECEPCION  decimal    NaN
+                   NRO_PEDIDO  decimal    NaN
+                    CANT_DESC  decimal    NaN
+                   CANT_BONIF  decimal    NaN
+                    DESCUENTO  decimal    NaN
+                      CANT_NC  decimal    NaN
+                 CANT_DESC_NC  decimal    NaN
+                 PRECIO_BRUTO  decimal    NaN
+                  PRECIO_NETO  decimal    NaN
+                     DESC_CAB  decimal    NaN
+                      IMP_IMP  decimal    NaN
+         DESCRIPCION_PRODUCTO  varchar   50.0
+                   total_imp5  decimal    NaN
+                  total_imp10  decimal    NaN
+                        kilos  decimal    NaN
+               COSTO_NETO_ADD  decimal    NaN
+              COSTO_BRUTO_ADD  decimal    NaN
+                  snc_nro_reg   bigint    NaN
+                  snc_cant_st  decimal    NaN
+                  snc_cant_pr  decimal    NaN
+                   snc_precio  decimal    NaN
+             snc_primario_det   bigint    NaN
+                snc_procesado smallint    NaN
+                precio_oferta  decimal    NaN
+                precio_normal  decimal    NaN
+                       nro_oc  numeric    NaN
+          fecha_ultima_compra datetime    NaN
+                  nro_factura  varchar   25.0
+            cod_proveedor_det      int    NaN
+                      regimen smallint    NaN
+                 porc_gravado  decimal    NaN
+                     pid_sinc   bigint    NaN
+                 canje_ventas smallint    NaN
+                   resol_3739 smallint    NaN
+           nro_factura_nc_det  varchar   25.0
+              timbrado_nc_det  varchar   25.0
+                   comp_costo smallint    NaN
+            SkipUpdateTrigger smallint    NaN
+Muestra de 3 filas:
+ NRO_REG CODIGO NRO_LOTE FECHA_VENCE  CANTIDAD  UNIDADES_CREDITO      PRECIO  IMPORTE_COSTO_ADICIONAL_NETO  IMPORTE_COSTO_ADICIONAL_BRUTO  TIPO_FISCAL    TOTAL  TOTAL_IMP UNIDAD  PRIMARIO  NRO_RECEPCION  NRO_PEDIDO  CANT_DESC  CANT_BONIF  DESCUENTO  CANT_NC  CANT_DESC_NC  PRECIO_BRUTO  PRECIO_NETO  DESC_CAB  IMP_IMP DESCRIPCION_PRODUCTO  total_imp5  total_imp10  kilos  COSTO_NETO_ADD  COSTO_BRUTO_ADD snc_nro_reg snc_cant_st snc_cant_pr snc_precio snc_primario_det snc_procesado precio_oferta precio_normal nro_oc fecha_ultima_compra nro_factura cod_proveedor_det  regimen  porc_gravado  pid_sinc canje_ventas resol_3739 nro_factura_nc_det timbrado_nc_det comp_costo SkipUpdateTrigger
+     3.0   2027                 None      48.0               0.0  5591.81818                           0.0                            0.0            0 268407.0    26841.0              1.0            0.0         0.0        0.0         0.0        0.0      0.0           0.0        6151.0          0.0       0.0     10.0                 None         0.0      26841.0    0.0             0.0              0.0        None        None        None       None             None          None          None          None   None                None        None              None        0           0.0         0         None       None               None            None       None              None
+     3.0   2028                 None      36.0               0.0 14993.63636                           0.0                            0.0            0 539771.0    53977.0              2.0            0.0         0.0        0.0         0.0        0.0      0.0           0.0       16493.0          0.0       0.0     10.0                 None         0.0      53977.0    0.0             0.0              0.0        None        None        None       None             None          None          None          None   None                None        None              None        0           0.0         0         None       None               None            None       None              None
+     3.0   2029                 None      36.0               0.0  9968.18182                           0.0                            0.0            0 358855.0    35885.0              3.0            0.0         0.0        0.0         0.0        0.0      0.0           0.0       10965.0          0.0       0.0     10.0                 None         0.0      35885.0    0.0             0.0              0.0        None        None        None       None             None          None          None          None   None                None        None              None        0           0.0         0         None       None               None            None       None              None
+
+--- [dbo].[compras_det_anu] ---
+Filas: 0
+Columnas (31):
+                      columna     tipo  largo
+                      nro_reg    float    NaN
+                       codigo  varchar   14.0
+                     nro_lote  varchar   30.0
+                  fecha_vence datetime    NaN
+                     cantidad  decimal    NaN
+             unidades_credito  decimal    NaN
+                       precio  decimal    NaN
+ importe_costo_adicional_neto  decimal    NaN
+importe_costo_adicional_bruto  decimal    NaN
+                  tipo_fiscal smallint    NaN
+                        total  decimal    NaN
+                    total_imp  decimal    NaN
+                       unidad  varchar    4.0
+                     primario  decimal    NaN
+                nro_recepcion  decimal    NaN
+                   nro_pedido  decimal    NaN
+                    cant_desc  decimal    NaN
+                   cant_bonif  decimal    NaN
+                    descuento  decimal    NaN
+                      cant_nc  decimal    NaN
+                 cant_desc_nc  decimal    NaN
+                 precio_bruto  decimal    NaN
+                  precio_neto  decimal    NaN
+                     desc_cab  decimal    NaN
+                      imp_imp  decimal    NaN
+         descripcion_producto  varchar   50.0
+                   total_imp5  decimal    NaN
+                  total_imp10  decimal    NaN
+                        kilos  decimal    NaN
+               costo_neto_add  decimal    NaN
+              costo_bruto_add  decimal    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, codigo, nro_lote, fecha_vence, cantidad, unidades_credito, precio, importe_costo_adicional_neto, importe_costo_adicional_bruto, tipo_fiscal, total, total_imp, unidad, primario, nro_recepcion, nro_pedido, cant_desc, cant_bonif, descuento, cant_nc, cant_desc_nc, precio_bruto, precio_neto, desc_cab, imp_imp, descripcion_producto, total_imp5, total_imp10, kilos, costo_neto_add, costo_bruto_add]
+Index: []
+
+--- [dbo].[compras_det_HISTORICO_INT] ---
+Filas: 0
+Columnas (29):
+                      columna     tipo  largo
+                      NRO_REG    float    NaN
+                       CODIGO  varchar   14.0
+                     NRO_LOTE  varchar   30.0
+                  FECHA_VENCE datetime    NaN
+                     CANTIDAD  decimal    NaN
+             UNIDADES_CREDITO  decimal    NaN
+                       PRECIO  decimal    NaN
+ IMPORTE_COSTO_ADICIONAL_NETO  decimal    NaN
+IMPORTE_COSTO_ADICIONAL_BRUTO  decimal    NaN
+                  TIPO_FISCAL smallint    NaN
+                        TOTAL  decimal    NaN
+                    TOTAL_IMP  decimal    NaN
+                       UNIDAD  varchar    4.0
+                     PRIMARIO  decimal    NaN
+                NRO_RECEPCION  decimal    NaN
+                   NRO_PEDIDO  decimal    NaN
+                    CANT_DESC  decimal    NaN
+                   CANT_BONIF  decimal    NaN
+                    DESCUENTO  decimal    NaN
+                      CANT_NC  decimal    NaN
+                 CANT_DESC_NC  decimal    NaN
+                 PRECIO_BRUTO  decimal    NaN
+                  PRECIO_NETO  decimal    NaN
+                     DESC_CAB  decimal    NaN
+                      IMP_IMP  decimal    NaN
+         DESCRIPCION_PRODUCTO  varchar   50.0
+                   total_imp5  decimal    NaN
+                  total_imp10  decimal    NaN
+                     pid_sinc   bigint    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [NRO_REG, CODIGO, NRO_LOTE, FECHA_VENCE, CANTIDAD, UNIDADES_CREDITO, PRECIO, IMPORTE_COSTO_ADICIONAL_NETO, IMPORTE_COSTO_ADICIONAL_BRUTO, TIPO_FISCAL, TOTAL, TOTAL_IMP, UNIDAD, PRIMARIO, NRO_RECEPCION, NRO_PEDIDO, CANT_DESC, CANT_BONIF, DESCUENTO, CANT_NC, CANT_DESC_NC, PRECIO_BRUTO, PRECIO_NETO, DESC_CAB, IMP_IMP, DESCRIPCION_PRODUCTO, total_imp5, total_imp10, pid_sinc]
+Index: []
+
+--- [dbo].[compras_HISTORICO_INT] ---
+Filas: 0
+Columnas (75):
+            columna     tipo  largo
+            NRO_REG    float    NaN
+        NRO_FACTURA  varchar   25.0
+       IVA_INCLUIDO      bit    NaN
+         NRO_PEDIDO      int    NaN
+          NRO_ORDEN      int    NaN
+              FECHA datetime    NaN
+      FECHA_LLEGADA datetime    NaN
+       COD_DEPOSITO smallint    NaN
+         COD_MONEDA smallint    NaN
+       TIPO_DOCUMEN smallint    NaN
+      COD_PROVEEDOR      int    NaN
+    ENTREGA_INICIAL  decimal    NaN
+    CANTIDAD_CUOTAS smallint    NaN
+               DIAS smallint    NaN
+              VALOR  decimal    NaN
+            IMP_IVA  decimal    NaN
+      MONTO_CREDITO  decimal    NaN
+       MONTO_DEBITO  decimal    NaN
+        OBSERVACION  varchar  100.0
+   VER_CENTRO_COSTO      int    NaN
+       CAMPO_LOGICO smallint    NaN
+     COSTO_NETO_ADD  decimal    NaN
+    COSTO_BRUTO_ADD  decimal    NaN
+       NRO_DESPACHO  decimal    NaN
+      NRO_RECEPCION  decimal    NaN
+    IMPORTE_GRAVADO  decimal    NaN
+     IMPORTE_EXENTO  decimal    NaN
+   IMPORTE_IMPUESTO  decimal    NaN
+  NC_VALOR_APLICADO  decimal    NaN
+          DESCUENTO  decimal    NaN
+     NRO_FACTURA_NC  varchar   25.0
+    TIPO_DOCUMEN_NC smallint    NaN
+         COTIZACION  decimal    NaN
+         ASIENTO_OK      int    NaN
+      COD_CONDICION smallint    NaN
+      CONTABILIZADO smallint    NaN
+         Modificado smallint    NaN
+        TIPO_COMPRA smallint    NaN
+       NRO_CONCEPTO      int    NaN
+           COD_TIPO smallint    NaN
+          COD_PLAZO smallint    NaN
+         fecha_alta datetime    NaN
+            usuario  varchar   20.0
+     nro_devolucion      int    NaN
+      IMPORT_CONTAB smallint    NaN
+    COSTO_ADIC_NETO  decimal    NaN
+  COD_PROVEEDOR_IMP      int    NaN
+      fecha_factura datetime    NaN
+      tipo_doc_orig smallint    NaN
+      nro_solicitud      int    NaN
+         fecha_orig datetime    NaN
+         monto_orig  decimal    NaN
+     fecha_canje_nc datetime    NaN
+  importe_gravado_5  decimal    NaN
+ importe_gravado_10  decimal    NaN
+     nro_recib_comp      int    NaN
+         total_fact  decimal    NaN
+          fecha_mod datetime    NaN
+         Ano_Actual      int    NaN
+         Mes_Actual      int    NaN
+          us_codigo      int    NaN
+ IMPORTE_IMPUESTO_5  decimal    NaN
+IMPORTE_IMPUESTO_10  decimal    NaN
+      pedido_activo      int    NaN
+                RUC  varchar   11.0
+           afecta_a      int    NaN
+     tot_gravada_10  decimal    NaN
+      tot_gravada_5  decimal    NaN
+         tot_exento  decimal    NaN
+      timbrado_prov  varchar   30.0
+       vto_timbrado datetime    NaN
+      LIBRO_COMPRAS smallint    NaN
+          nro_promo      int    NaN
+              salto      int    NaN
+      cuenta_envios smallint    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [NRO_REG, NRO_FACTURA, IVA_INCLUIDO, NRO_PEDIDO, NRO_ORDEN, FECHA, FECHA_LLEGADA, COD_DEPOSITO, COD_MONEDA, TIPO_DOCUMEN, COD_PROVEEDOR, ENTREGA_INICIAL, CANTIDAD_CUOTAS, DIAS, VALOR, IMP_IVA, MONTO_CREDITO, MONTO_DEBITO, OBSERVACION, VER_CENTRO_COSTO, CAMPO_LOGICO, COSTO_NETO_ADD, COSTO_BRUTO_ADD, NRO_DESPACHO, NRO_RECEPCION, IMPORTE_GRAVADO, IMPORTE_EXENTO, IMPORTE_IMPUESTO, NC_VALOR_APLICADO, DESCUENTO, NRO_FACTURA_NC, TIPO_DOCUMEN_NC, COTIZACION, ASIENTO_OK, COD_CONDICION, CONTABILIZADO, Modificado, TIPO_COMPRA, NRO_CONCEPTO, COD_TIPO, COD_PLAZO, fecha_alta, usuario, nro_devolucion, IMPORT_CONTAB, COSTO_ADIC_NETO, COD_PROVEEDOR_IMP, fecha_factura, tipo_doc_orig, nro_solicitud, fecha_orig, monto_orig, fecha_canje_nc, importe_gravado_5, importe_gravado_10, nro_recib_comp, total_fact, fecha_mod, Ano_Actual, Mes_Actual, us_codigo, IMPORTE_IMPUESTO_5, IMPORTE_IMPUESTO_10, pedido_activo, RUC, afecta_a, tot_gravada_10, tot_gravada_5, tot_exento, timbrado_prov, vto_timbrado, LIBRO_COMPRAS, nro_promo, salto, cuenta_envios]
+Index: []
+
+--- [dbo].[compras_lotes_perecederos] ---
+Filas: 0
+Columnas (5):
+    columna     tipo  largo
+   nro_lote  varchar   30.0
+     codigo  varchar   14.0
+   cantidad  decimal    NaN
+    nro_reg    float    NaN
+fecha_vence datetime    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_lote, codigo, cantidad, nro_reg, fecha_vence]
+Index: []
+
+--- [dbo].[COMPRAS_RECEPCION] ---
+Filas: 0
+Columnas (2):
+      columna  tipo largo
+      NRO_REG float  None
+NRO_RECEPCION float  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [NRO_REG, NRO_RECEPCION]
+Index: []
+
+--- [dbo].[Compras_Talles] ---
+Filas: 0
+Columnas (5):
+  columna    tipo  largo
+  Nro_reg   float    NaN
+   codigo varchar   14.0
+cod_talle     int    NaN
+cod_color     int    NaN
+ cantidad decimal    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [Nro_reg, codigo, cod_talle, cod_color, cantidad]
+Index: []
+
+--- [dbo].[compras_x_activos] ---
+Filas: 0
+Columnas (2):
+       columna  tipo largo
+    nro_activo   int  None
+nro_reg_compra float  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_activo, nro_reg_compra]
+Index: []
+
+--- [dbo].[control_importe_mes_seccion] ---
+Filas: 0
+Columnas (4):
+      columna tipo largo
+cod_proveedor  int  None
+ cod_sucursal  int  None
+  cod_seccion  int  None
+      importe  int  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_proveedor, cod_sucursal, cod_seccion, importe]
+Index: []
+
+--- [dbo].[DEPOSITO_EFECTIVO] ---
+Filas: 25,712
+Columnas (27):
+           columna     tipo  largo
+           Nro_reg      int    NaN
+        COD_CAJERO smallint    NaN
+      NRO_PLANILLA smallint    NaN
+             FECHA datetime    NaN
+              HORA      int    NaN
+ NRO_CUENTA_ORIGEN    float    NaN
+NRO_CUENTA_DESTINO    float    NaN
+      NRO_CONCEPTO      int    NaN
+       OBSERVACION  varchar  100.0
+     MONEDA_ORIGEN smallint    NaN
+    MONEDA_DESTINO smallint    NaN
+           IMPORTE  decimal    NaN
+        COTIZACION  decimal    NaN
+        NRO_CHEQUE    float    NaN
+        Nro_boleta  decimal    NaN
+      Rep_fondo_ch smallint    NaN
+     CONTABILIZADO smallint    NaN
+         pendiente      int    NaN
+ contabilizado_fin smallint    NaN
+                op      int    NaN
+  NRO_DEPOSITO_SEC  numeric    NaN
+ nro_reposicion_ff  numeric    NaN
+        nro_cierre  decimal    NaN
+           usuario  varchar   20.0
+    fecha_deposito datetime    NaN
+   tipo_movimiento      int    NaN
+             serie  varchar    5.0
+Muestra de 3 filas:
+ Nro_reg  COD_CAJERO  NRO_PLANILLA      FECHA  HORA  NRO_CUENTA_ORIGEN  NRO_CUENTA_DESTINO  NRO_CONCEPTO                           OBSERVACION  MONEDA_ORIGEN  MONEDA_DESTINO   IMPORTE  COTIZACION  NRO_CHEQUE  Nro_boleta  Rep_fondo_ch  CONTABILIZADO  pendiente  contabilizado_fin  op  NRO_DEPOSITO_SEC nro_reposicion_ff  nro_cierre usuario fecha_deposito  tipo_movimiento serie
+       3           2             3 2014-06-27  1726                8.0                 3.0            71                RECAUDACION 24/06/2014              1               1 1905000.0         0.0         0.0   5741130.0             0              1          0                  0   0               0.0              None         0.0    None     2014-06-27                0     0
+       4           1             3 2014-05-19  1636                3.0                 2.0            70 REPOSICION CAJA CHICA CHEQUE 14159756              1               1 2313130.0         0.0  14159756.0  14159756.0             0              1          0                  0   1               0.0              None         0.0    None     2014-05-19                0     0
+       5           1             3 2014-05-26   847                3.0                 2.0            70 REPOSICION CAJA CHICA CHEQUE 14159771              1               1 2395940.0         0.0  14159771.0  14159771.0             0              1          0                  0   1               0.0              None         0.0    None     2014-05-26                0     0
+
+--- [dbo].[DEPOSITO_EFECTIVO_CHEQUES] ---
+Filas: 0
+Columnas (9):
+           columna     tipo largo
+           NRO_REG  decimal  None
+        NRO_CIERRE  decimal  None
+              TIPO smallint  None
+     FECHA_PROCESO datetime  None
+NRO_CUENTA_DESTINO    float  None
+        NRO_BOLETA  decimal  None
+    FECHA_DEPOSITO datetime  None
+           IMPORTE  decimal  None
+          PRIMARIO  decimal  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [NRO_REG, NRO_CIERRE, TIPO, FECHA_PROCESO, NRO_CUENTA_DESTINO, NRO_BOLETA, FECHA_DEPOSITO, IMPORTE, PRIMARIO]
+Index: []
+
+--- [dbo].[deposito_efectivo_cierre_adm] ---
+Filas: 0
+Columnas (9):
+           columna     tipo largo
+           nro_reg  decimal  None
+        nro_cierre  decimal  None
+              tipo smallint  None
+     fecha_proceso datetime  None
+nro_cuenta_destino    float  None
+        nro_boleta  decimal  None
+    fecha_deposito datetime  None
+           importe  decimal  None
+          primario  decimal  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, nro_cierre, tipo, fecha_proceso, nro_cuenta_destino, nro_boleta, fecha_deposito, importe, primario]
+Index: []
+
+--- [dbo].[DEPOSITOS] ---
+Filas: 31
+Columnas (28):
+           columna     tipo  largo
+      COD_DEPOSITO smallint    NaN
+   NOMBRE_DEPOSITO  varchar   80.0
+      CENTRO_COSTO      int    NaN
+   ESTADO_DEPOSITO      int    NaN
+      COD_SUCURSAL      int    NaN
+         DIRECCION  varchar   50.0
+          TELEFONO  varchar   15.0
+       COD_CLIENTE      int    NaN
+      CONSIGANCION      int    NaN
+    stock_negativo smallint    NaN
+            insumo      int    NaN
+    resumen_fiscal      int    NaN
+     reserva_lotes smallint    NaN
+     deposito_obra      bit    NaN
+       profesional      int    NaN
+  planilla_computo      int    NaN
+      fecha_inicio datetime    NaN
+fecha_fin_previsto datetime    NaN
+    fecha_fin_obra datetime    NaN
+               adm smallint    NaN
+     lote_negativo smallint    NaN
+      tipo_documen smallint    NaN
+     tipo_deposito smallint    NaN
+         nro_lista      int    NaN
+           cDepsal      int    NaN
+           cDissal      int    NaN
+           cciusal      int    NaN
+        produccion smallint    NaN
+Muestra de 3 filas:
+ COD_DEPOSITO    NOMBRE_DEPOSITO  CENTRO_COSTO  ESTADO_DEPOSITO  COD_SUCURSAL         DIRECCION TELEFONO  COD_CLIENTE  CONSIGANCION  stock_negativo  insumo  resumen_fiscal  reserva_lotes  deposito_obra  profesional  planilla_computo fecha_inicio fecha_fin_previsto fecha_fin_obra  adm  lote_negativo  tipo_documen tipo_deposito nro_lista cDepsal cDissal cciusal  produccion
+            1    Salon de Ventas             1                1             1 Avda. España 2621                     0             0               1       0               0              0          False            0                 0         None               None           None    0              0             0          None      None    None    None    None           0
+            2 Deposito de Gastos             1                1             1               xxx      xxx            0             0               0       1               0              0          False            0                 0         None               None           None    1              0             0          None      None    None    None    None           0
+            3       Dep. Central             1                1             1 Avda. España 2621                     0             0               0       0               0              0          False            0                 0         None               None           None    0              0             0          None      None    None    None    None           0
+
+--- [dbo].[esta_compras] ---
+Filas: 89,113
+Columnas (14):
+      columna     tipo  largo
+      nro_reg    float    NaN
+cod_proveedor      int    NaN
+        fecha datetime    NaN
+ tipo_documen smallint    NaN
+ cod_deposito smallint    NaN
+ cod_sucursal      int    NaN
+     primario  decimal    NaN
+       codigo  varchar   14.0
+     cantidad  decimal    NaN
+      imp_imp  decimal    NaN
+ porc_gravado  decimal    NaN
+     calc_imp      int    NaN
+   tot_compra    money    NaN
+    tot_costo    money    NaN
+Muestra de 3 filas:
+ nro_reg  cod_proveedor      fecha  tipo_documen  cod_deposito  cod_sucursal  primario codigo  cantidad  imp_imp  porc_gravado  calc_imp  tot_compra  tot_costo
+ 96157.0           3077 2025-04-28             3             1             1  775862.0 218172      -1.0     10.0           0.0         1   -112667.0        0.0
+ 96157.0           3077 2025-04-28             3             1             1  775863.0 218187      -1.0     10.0           0.0         1   -112667.0        0.0
+ 96158.0           3077 2025-04-28             3            16             3  775864.0 231861      -1.0     10.0           0.0         1   -126000.0        0.0
+
+--- [dbo].[fc_rubros] ---
+Filas: 0
+Columnas (4):
+       columna     tipo  largo
+         rubro smallint    NaN
+   descripcion  varchar   35.0
+          tipo  tinyint    NaN
+clasif_gestion  tinyint    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [rubro, descripcion, tipo, clasif_gestion]
+Index: []
+
+--- [dbo].[fc_rubros_cuentas] ---
+Filas: 0
+Columnas (3):
+       columna     tipo  largo
+         rubro smallint    NaN
+codigo_empresa smallint    NaN
+ codigo_cuenta  varchar   25.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [rubro, codigo_empresa, codigo_cuenta]
+Index: []
+
+--- [dbo].[fraccionar_patio_sub_seccion_cab] ---
+Filas: 0
+Columnas (4):
+        columna     tipo largo
+        nro_reg      int  None
+          fecha datetime  None
+   cod_deposito      int  None
+cod_sub_seccion      int  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, fecha, cod_deposito, cod_sub_seccion]
+Index: []
+
+--- [dbo].[fraccionar_patio_sub_seccion_det] ---
+Filas: 0
+Columnas (9):
+          columna    tipo  largo
+          nro_reg     int    NaN
+         primario     int    NaN
+     codigo_salen varchar   14.0
+   costo_unitario decimal    NaN
+    codigo_entran varchar   14.0
+costo_gastronomia decimal    NaN
+            costo decimal    NaN
+         cantidad   nchar   10.0
+            total decimal    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, primario, codigo_salen, costo_unitario, codigo_entran, costo_gastronomia, costo, cantidad, total]
+Index: []
+
+--- [dbo].[gastos_categorias] ---
+Filas: 0
+Columnas (2):
+              columna    tipo  largo
+        cod_Categoria     int    NaN
+descripcion_categoria varchar   50.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_Categoria, descripcion_categoria]
+Index: []
+
+--- [dbo].[gimnasio_marcacion] ---
+Filas: 0
+Columnas (6):
+     columna     tipo  largo
+     nro_reg      int    NaN
+ cod_cliente      int    NaN
+       fecha datetime    NaN
+  fecha_alta datetime    NaN
+     fallida      int    NaN
+usuario_alta  varchar   20.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, cod_cliente, fecha, fecha_alta, fallida, usuario_alta]
+Index: []
+
+--- [dbo].[libro_compras] ---
+Filas: 110,930
+Columnas (30):
+               columna     tipo  largo
+               nro_reg   bigint    NaN
+                 tabla  varchar  100.0
+          cod_sucursal      int    NaN
+            fecha_alta datetime    NaN
+             user_alta  varchar   30.0
+                 fecha datetime    NaN
+              cod_tipo smallint    NaN
+                  tipo  varchar   30.0
+               nro_doc  varchar   25.0
+         cod_proveedor      int    NaN
+             proveedor  varchar  256.0
+                   ruc  varchar   11.0
+       importe_gravado  decimal    NaN
+        importe_exento  decimal    NaN
+      importe_impuesto  decimal    NaN
+           tipo_compra  tinyint    NaN
+                estado  tinyint    NaN
+         fecha_proceso datetime    NaN
+     importe_gravado_5  decimal    NaN
+    importe_impuesto_5  decimal    NaN
+              afecta_a      int    NaN
+              timbrado  varchar   25.0
+      validez_timbrado datetime    NaN
+            controlado smallint    NaN
+        base_imponible  decimal    NaN
+           recalculado      int    NaN
+archivo_nombre_90_2021  varchar   60.0
+  fila_archivo_90_2021      int    NaN
+       factura_virtual smallint    NaN
+   factura_electronica smallint    NaN
+Muestra de 3 filas:
+ nro_reg    tabla  cod_sucursal              fecha_alta user_alta      fecha  cod_tipo       tipo       nro_doc  cod_proveedor                                proveedor        ruc  importe_gravado  importe_exento  importe_impuesto  tipo_compra  estado fecha_proceso  importe_gravado_5  importe_impuesto_5  afecta_a timbrado validez_timbrado  controlado  base_imponible  recalculado archivo_nombre_90_2021 fila_archivo_90_2021 factura_virtual factura_electronica
+       1 Dep_Tarj             1 2014-12-16 18:13:59.070  jbenitez 2014-07-31         1 FC CONTADO 0070060012073            308 COOP.DE AHORRO,CREDITOS,SERV.UNIV.LIMIT. 80000958-4         359948.0             0.0           35998.0            5       1    2014-07-31                0.0                 0.0         3 10541481       2015-05-31           1             0.0            0                   None                 None            None                None
+       1   gastos             1 2014-04-15 11:24:57.737      baum 2014-01-17         1 FC CONTADO 0060060160125              5                     Estación Bahia S.R.L 80016742-2              0.0        100000.0               0.0            1       1    2014-01-17                0.0                 0.0         3 31950781       2014-02-28           1             0.0            0                   None                 None            None                None
+       2 Dep_Tarj             1 2015-01-20 16:57:37.763  jbenitez 2014-07-31         1 FC CONTADO 0070060009242            308 COOP.DE AHORRO,CREDITOS,SERV.UNIV.LIMIT. 80000958-4         173766.0             0.0           17376.0            5       1    2014-07-31                0.0                 0.0         3 10541481       2015-05-31           1             0.0            0                   None                 None            None                None
+
+--- [dbo].[marcaciones_aux] ---
+Filas: 0
+Columnas (5):
+   columna     tipo  largo
+     ORDEN      int    NaN
+fecha_HORA datetime    NaN
+FECHA_PROC datetime    NaN
+      TIPO  varchar    1.0
+ US_CODIGO      int    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [ORDEN, fecha_HORA, FECHA_PROC, TIPO, US_CODIGO]
+Index: []
+
+--- [dbo].[marcaciones2_aux] ---
+Filas: 0
+Columnas (8):
+     columna     tipo largo
+       fecha datetime  None
+  entrada_m1 datetime  None
+   salida_m1 datetime  None
+  entrada_m2 datetime  None
+   salida_m2 datetime  None
+REC_NOC_ENTR      int  None
+ REC_NOC_SAL      int  None
+   US_CODIGO      int  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [fecha, entrada_m1, salida_m1, entrada_m2, salida_m2, REC_NOC_ENTR, REC_NOC_SAL, US_CODIGO]
+Index: []
+
+--- [dbo].[MARCAS] ---
+Filas: 2,001
+Columnas (9):
+           columna     tipo  largo
+         COD_MARCA      int    NaN
+             MARCA  varchar   30.0
+         fecha_alt datetime    NaN
+   cod_responsable      int    NaN
+         com_venta  decimal    NaN
+         com_perif  decimal    NaN
+  descuento_maximo  decimal    NaN
+      destacar_web smallint    NaN
+ocultar_filtro_web smallint    NaN
+Muestra de 3 filas:
+ COD_MARCA          MARCA               fecha_alt  cod_responsable  com_venta  com_perif  descuento_maximo  destacar_web  ocultar_filtro_web
+         0                2014-12-01 16:17:22.590                0        0.0        0.0               0.0             0                   1
+         1 LOS ALMENDROS  2007-08-06 15:41:41.247                0        0.0        0.0               0.0             0                   0
+         2         KRAFFT 2014-05-02 08:59:08.263                0        0.0        0.0               0.0             0                   0
+
+--- [dbo].[margenes_sucursal] ---
+Filas: 0
+Columnas (11):
+          columna    tipo  largo
+     cod_sucursal     int    NaN
+      cod_seccion     int    NaN
+  cod_sub_seccion     int    NaN
+        cod_grupo     int    NaN
+    cod_categoria     int    NaN
+cod_sub_categoria     int    NaN
+           codigo varchar   14.0
+             tipo tinyint    NaN
+           margen decimal    NaN
+       margen_max decimal    NaN
+ margen_mayorista decimal    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_sucursal, cod_seccion, cod_sub_seccion, cod_grupo, cod_categoria, cod_sub_categoria, codigo, tipo, margen, margen_max, margen_mayorista]
+Index: []
+
+--- [dbo].[MATRIZ_SECCION] ---
+Filas: 0
+Columnas (3):
+       columna    tipo largo
+   COD_SECCION     int  None
+    MARGEN_MAX decimal  None
+MARGEN_SECCION decimal  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [COD_SECCION, MARGEN_MAX, MARGEN_SECCION]
+Index: []
+
+--- [dbo].[MOVIMIENTOS_DEPOSITOS] ---
+Filas: 446,333
+Columnas (13):
+      columna     tipo  largo
+ COD_DEPOSITO smallint    NaN
+       CODIGO  varchar   14.0
+     CANTIDAD  decimal    NaN
+    RESERVADO  decimal    NaN
+    Ubicacion  varchar   20.0
+     cant_min  decimal    NaN
+     cant_max  decimal    NaN
+         pila  decimal    NaN
+      puntera  decimal    NaN
+     pestanha  decimal    NaN
+      gondola  decimal    NaN
+       oferta  decimal    NaN
+cod_categoria      int    NaN
+Muestra de 3 filas:
+ COD_DEPOSITO         CODIGO  CANTIDAD  RESERVADO Ubicacion  cant_min  cant_max  pila  puntera  pestanha  gondola  oferta  cod_categoria
+            1  7450007468618       0.0        0.0      None       1.0       0.0   0.0      0.0       0.0      0.0     0.0              0
+            1  7450008277479       0.0        0.0      None       0.0       0.0   0.0      0.0       0.0      0.0     0.0              0
+            1  7450008323787       0.0        0.0      None       3.0       0.0   0.0      0.0       0.0      0.0     0.0              0
+
+--- [dbo].[MOVIMIENTOS_DEPOSITOS_LOTES] ---
+Filas: 0
+Columnas (5):
+     columna     tipo  largo
+COD_DEPOSITO smallint    NaN
+      CODIGO  varchar   14.0
+    NRO_LOTE  varchar   30.0
+ FECHA_VENCE datetime    NaN
+    CANTIDAD  decimal    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [COD_DEPOSITO, CODIGO, NRO_LOTE, FECHA_VENCE, CANTIDAD]
+Index: []
+
+--- [dbo].[Movimientos_Depositos_Talles] ---
+Filas: 11
+Columnas (5):
+     columna     tipo  largo
+cod_deposito smallint    NaN
+      codigo  varchar   14.0
+   cod_talle      int    NaN
+   cod_color      int    NaN
+    cantidad  decimal    NaN
+Muestra de 3 filas:
+ cod_deposito codigo  cod_talle  cod_color  cantidad
+            1 125609          1          1       0.0
+            1 125609          1          2       0.0
+            1 125609          1          3       0.0
+
+--- [dbo].[NOTAS_CREDITO_COMPRAS] ---
+Filas: 0
+Columnas (10):
+         columna     tipo  largo
+         NRO_REG    float    NaN
+        NRO_NOTA    float    NaN
+           FECHA datetime    NaN
+    TIPO_DOCUMEN smallint    NaN
+     NRO_FACTURA      int    NaN
+   COD_PROVEEDOR      int    NaN
+DETALLE_DESCARGO  varchar  250.0
+         IMPORTE  decimal    NaN
+  IMPORTE_EXENTO  decimal    NaN
+     IMPORTE_IVA  decimal    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [NRO_REG, NRO_NOTA, FECHA, TIPO_DOCUMEN, NRO_FACTURA, COD_PROVEEDOR, DETALLE_DESCARGO, IMPORTE, IMPORTE_EXENTO, IMPORTE_IVA]
+Index: []
+
+--- [dbo].[NOTAS_CREDITO_DET_COMPRAS] ---
+Filas: 0
+Columnas (9):
+       columna     tipo  largo
+       NRO_REG    float    NaN
+      NRO_NOTA    float    NaN
+        CODIGO  varchar   14.0
+  COD_DEPOSITO smallint    NaN
+      CANTIDAD  decimal    NaN
+CANT_DESC_PREC  decimal    NaN
+        PRECIO  decimal    NaN
+        UNIDAD  varchar    4.0
+      PRIMARIO  decimal    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [NRO_REG, NRO_NOTA, CODIGO, COD_DEPOSITO, CANTIDAD, CANT_DESC_PREC, PRECIO, UNIDAD, PRIMARIO]
+Index: []
+
+--- [dbo].[NOTAS_DEBITO_COMPRAS] ---
+Filas: 0
+Columnas (8):
+      columna     tipo  largo
+      NRO_REG    float    NaN
+   NRO_DEBITO    float    NaN
+        FECHA datetime    NaN
+  NRO_FACTURA      int    NaN
+ TIPO_DOCUMEN smallint    NaN
+COD_PROVEEDOR      int    NaN
+DETALLE_CARCO  varchar  250.0
+      IMPORTE  decimal    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [NRO_REG, NRO_DEBITO, FECHA, NRO_FACTURA, TIPO_DOCUMEN, COD_PROVEEDOR, DETALLE_CARCO, IMPORTE]
+Index: []
+
+--- [dbo].[NOTAS_DEBITO_DET_COMPRAS] ---
+Filas: 0
+Columnas (8):
+     columna     tipo  largo
+     NRO_REG    float    NaN
+    NRO_NOTA    float    NaN
+      CODIGO  varchar   14.0
+COD_DEPOSITO smallint    NaN
+    CANTIDAD  decimal    NaN
+      PRECIO  decimal    NaN
+      UNIDAD  varchar    4.0
+    PRIMARIO  decimal    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [NRO_REG, NRO_NOTA, CODIGO, COD_DEPOSITO, CANTIDAD, PRECIO, UNIDAD, PRIMARIO]
+Index: []
+
+--- [dbo].[pedidos_proveedores_aut] ---
+Filas: 0
+Columnas (12):
+      columna     tipo  largo
+ nro_peticion      int    NaN
+cod_comprador smallint    NaN
+ cod_sucursal      int    NaN
+cod_proveedor      int    NaN
+        total  decimal    NaN
+       codigo  varchar   14.0
+     cant_sug  decimal    NaN
+     cantidad  decimal    NaN
+    autorizar smallint    NaN
+     rechazar smallint    NaN
+     nro_fila smallint    NaN
+autorizado_ok smallint    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_peticion, cod_comprador, cod_sucursal, cod_proveedor, total, codigo, cant_sug, cantidad, autorizar, rechazar, nro_fila, autorizado_ok]
+Index: []
+
+--- [dbo].[PEDIDOS_SUCURSAL_CAB] ---
+Filas: 0
+Columnas (7):
+        columna     tipo  largo
+        nro_reg    float    NaN
+DEPOSITO_ORIGEN smallint    NaN
+DEPOSITO_PEDIDO smallint    NaN
+          fecha datetime    NaN
+      procesado smallint    NaN
+        usuario  varchar   30.0
+    observacion  varchar   60.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, DEPOSITO_ORIGEN, DEPOSITO_PEDIDO, fecha, procesado, usuario, observacion]
+Index: []
+
+--- [dbo].[PEDIDOS_SUCURSAL_DET] ---
+Filas: 0
+Columnas (8):
+    columna    tipo  largo
+    nro_reg   float    NaN
+     codigo varchar   14.0
+cant_origen decimal    NaN
+cant_pedido decimal    NaN
+   cantidad decimal    NaN
+vta_30_dias decimal    NaN
+   sugerido decimal    NaN
+observacion varchar   60.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, codigo, cant_origen, cant_pedido, cantidad, vta_30_dias, sugerido, observacion]
+Index: []
+
+--- [dbo].[presupuesto_rubros] ---
+Filas: 0
+Columnas (2):
+          columna    tipo  largo
+        cod_rubro     int    NaN
+descripcion_rubro varchar   50.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_rubro, descripcion_rubro]
+Index: []
+
+--- [dbo].[proveedor_condicion] ---
+Filas: 3,203
+Columnas (5):
+      columna     tipo  largo
+cod_proveedor      int    NaN
+     tipo_doc smallint    NaN
+cod_condicion smallint    NaN
+    cod_plazo smallint    NaN
+  obserbacion  varchar  100.0
+Muestra de 3 filas:
+ cod_proveedor  tipo_doc  cod_condicion  cod_plazo obserbacion
+             1         2              2          4        None
+             2         2              2          3        None
+             3         1              1          1            
+
+--- [dbo].[proveedor_sucursal] ---
+Filas: 0
+Columnas (8):
+              columna     tipo  largo
+         cod_sucursal      int    NaN
+        cod_proveedor      int    NaN
+          dias_visita  varchar   30.0
+            dias_pago  varchar   30.0
+         dias_entrega  varchar   30.0
+             pid_sinc   bigint    NaN
+           frecuencia smallint    NaN
+negociacion_comercial  varchar   60.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_sucursal, cod_proveedor, dias_visita, dias_pago, dias_entrega, pid_sinc, frecuencia, negociacion_comercial]
+Index: []
+
+--- [dbo].[Proveedor_timbrados] ---
+Filas: 0
+Columnas (4):
+      columna     tipo  largo
+cod_proveedor      int    NaN
+     timbrado  varchar   25.0
+      validez datetime    NaN
+         tipo smallint    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_proveedor, timbrado, validez, tipo]
+Index: []
+
+--- [dbo].[PROVEEDORES] ---
+Filas: 3,857
+Columnas (168):
+                              columna     tipo        largo
+                        COD_PROVEEDOR      int          NaN
+                     NOMBRE_PROVEEDOR  varchar        256.0
+                                  RUC  varchar         11.0
+                            DIRECCION  varchar        100.0
+                             CONTACTO  varchar        250.0
+                   TELEFONO_PROVEEDOR  varchar         15.0
+                        OTRO_TELEFONO  varchar         15.0
+                                EMAIL  varchar         80.0
+                        CODIGO_CUENTA  varchar         25.0
+                           PALZO_PAGO      int          NaN
+                        PALZO_ENTREGA      int          NaN
+                           PROMO_EXHI      bit          NaN
+                          DIAS_VISITA  varchar         15.0
+                            DIAS_PAGO  varchar         15.0
+                                  FAX  varchar         15.0
+                                 PAIS  varchar         15.0
+                           PAGINA_WEB  varchar        200.0
+                         TIPO_DOCUMEN smallint          NaN
+                            COD_RUBRO smallint          NaN
+                               CIUDAD  varchar        100.0
+                        COD_CONDICION smallint          NaN
+                    CODIGO_CUENTA_DIF  varchar         25.0
+                     DIAS_PARA_CHEQUE smallint          NaN
+                        CHEQUE_NOMBRE  varchar        100.0
+                            cod_plazo smallint          NaN
+                            Acepta_ND smallint          NaN
+                    codigo_cuenta_ant  varchar         25.0
+                  codigo_cuenta_trans  varchar         25.0
+                          vencimiento datetime          NaN
+                           autorizado smallint          NaN
+                          observacion  varchar        250.0
+                 codigo_cuenta_gastos  varchar         25.0
+                codigo_cuenta_activos  varchar         25.0
+                              semanas  tinyint          NaN
+                              ACUERDO  tinyint          NaN
+                     PORCENTAJE_BONIF  decimal          NaN
+                         razon_social  varchar        256.0
+                 cod_proveedor_deudor      int          NaN
+                            fecha_alt datetime          NaN
+                        pagar_con_snc      int          NaN
+                                 tipo  varchar          1.0
+                             timbrado  varchar         25.0
+                     validez_timbrado datetime          NaN
+                              regimen  tinyint          NaN
+                               ACTIVO smallint          NaN
+                            Ident_EDI    float          NaN
+                          retener_doc smallint          NaN
+                   proveedor_exterior      bit          NaN
+                         ruc_exterior  varchar         15.0
+                           critCasual smallint          NaN
+                     validar_timbrado      bit          NaN
+                     porc_bonif_venta  decimal          NaN
+                         tipo_contrib smallint          NaN
+                    cod_transportista      int          NaN
+                           contacto_2  varchar        250.0
+                           tipo_ident smallint          NaN
+                       concepto_renta smallint          NaN
+                         ruc_resol_82  varchar         20.0
+                          dv_resol_82 smallint          NaN
+             primer_apellido_resol_82  varchar         50.0
+            segundo_apellido_resol_82  varchar         50.0
+               primer_nombre_resol_82  varchar         50.0
+              segundo_nombre_resol_82  varchar         50.0
+                   tipo_pago_resol_82 smallint          NaN
+                departamento_resol_82  numeric          NaN
+                    distrito_resol_82  numeric          NaN
+                   localidad_resol_82  numeric          NaN
+                pre_lin_fija_resol_82  numeric          NaN
+               telf_lin_fija_resol_82  varchar         15.0
+                 pre_celular_resol_82  numeric          NaN
+                telf_celular_resol_82  varchar         15.0
+                    tipo_emp_resol_82  numeric          NaN
+                    nro_cta_acreditar  varchar         20.0
+                          timbrado_nc  varchar         25.0
+                      validez_timb_nc datetime          NaN
+                        dias_venc_snc smallint          NaN
+                   validez_compra_mes smallint          NaN
+                       limite_credito  decimal          NaN
+                    cod_moneda_limite smallint          NaN
+                          tipo_matriz  tinyint          NaN
+                    SUB_OPERACION_GNB smallint          NaN
+                    COD_BCO_ACREDITAR  varchar         20.0
+                                  irp smallint          NaN
+                             tipo_irp smallint          NaN
+                       porcentaje_irp  decimal          NaN
+                      ent_sin_definir      int          NaN
+                            ent_lunes      int          NaN
+                           ent_martes      int          NaN
+                        ent_miercoles      int          NaN
+                           ent_jueves      int          NaN
+                          ent_viernes      int          NaN
+                           ent_sabado      int          NaN
+                          ent_domingo      int          NaN
+                    acuerdo_comercial smallint          NaN
+                            reten_con smallint          NaN
+                        ped_full_auto smallint          NaN
+                             mes_quin smallint          NaN
+              constancia_no_retencion smallint          NaN
+                   fecha_no_retencion datetime          NaN
+                    detalle_proveedor     text 2147483647.0
+             dias_estadistica_pedidos smallint          NaN
+               dias_a_reponer_pedidos smallint          NaN
+           porc_bonif_venta_mayorista  decimal          NaN
+           porcentaje_bonif_mayorista  decimal          NaN
+                         bonificacion smallint          NaN
+                         afecta_costo smallint          NaN
+                        webservice_ok  tinyint          NaN
+                superpro_fecha_filtro datetime          NaN
+                       usa_nivel_spro smallint          NaN
+                           nivel_spro smallint          NaN
+                     tipo_liquidacion      int          NaN
+                            porc_dcto  decimal          NaN
+                              memo_15      int          NaN
+                            porc_pago  decimal          NaN
+                             porc_vol  decimal          NaN
+                           porc_otros  decimal          NaN
+                        sucursal_pago      int          NaN
+                           forma_pago      int          NaN
+        codigo_cuenta_fact_compensada  varchar         25.0
+                            cod_sipap  varchar         50.0
+                          cta_debitar    float          NaN
+                            tipo_pago smallint          NaN
+                  reten_prod_agricola smallint          NaN
+                habilitado_matriz_app smallint          NaN
+                         pweb_ranking  tinyint          NaN
+                     pweb_perdida_vta  tinyint          NaN
+                         sucursal_cta      int          NaN
+                             tipo_cta      int          NaN
+                           moneda_cta      int          NaN
+                   tipo_transferencia      int          NaN
+                    pedido_por_ventas smallint          NaN
+                       pago_bloqueado      int          NaN
+                     dias_suba_precio      int          NaN
+                               cCiuFD    float          NaN
+                               cDisFD    float          NaN
+                               cDepFD    float          NaN
+                pedidos_multisucursal smallint          NaN
+                      factura_virtual smallint          NaN
+                  factura_electronica smallint          NaN
+                       timbrado_reten  varchar         25.0
+                   validez_timb_reten datetime          NaN
+                 validez_timbrado_ini datetime          NaN
+            excedente_max_cupo_semana  decimal          NaN
+                         cod_analista      int          NaN
+                      frecuencia_pago      int          NaN
+                       condicion_pago      int          NaN
+           permitir_pedido_secundario smallint          NaN
+                    id_departamentofd      int          NaN
+                        id_distritofd      int          NaN
+                          id_ciudadfd      int          NaN
+          tipo_constancia_electronica smallint          NaN
+        numero_constancia_electronica  varchar         15.0
+numero_control_constancia_electronica  varchar         15.0
+    fecha_venc_constancia_electronica datetime          NaN
+                     pago_c_cobertura smallint          NaN
+                              yacobro smallint          NaN
+                  email_alternativo_1  varchar        100.0
+                  email_alternativo_2  varchar        100.0
+                           email_op_1  varchar        100.0
+                           email_op_2  varchar        100.0
+                           email_op_3  varchar        100.0
+                           email_oc_1  varchar        100.0
+                           email_oc_2  varchar        100.0
+                           email_oc_3  varchar        100.0
+                          email_snc_1  varchar        100.0
+                          email_snc_2  varchar        100.0
+                          email_snc_3  varchar        100.0
+          excluir_pago_en_agenda_pago      int          NaN
+Muestra de 3 filas:
+ COD_PROVEEDOR       NOMBRE_PROVEEDOR        RUC                 DIRECCION      CONTACTO TELEFONO_PROVEEDOR OTRO_TELEFONO                      EMAIL CODIGO_CUENTA  PALZO_PAGO  PALZO_ENTREGA  PROMO_EXHI DIAS_VISITA DIAS_PAGO      FAX      PAIS              PAGINA_WEB  TIPO_DOCUMEN  COD_RUBRO       CIUDAD  COD_CONDICION CODIGO_CUENTA_DIF  DIAS_PARA_CHEQUE          CHEQUE_NOMBRE  cod_plazo  Acepta_ND codigo_cuenta_ant codigo_cuenta_trans             vencimiento  autorizado observacion codigo_cuenta_gastos codigo_cuenta_activos  semanas  ACUERDO  PORCENTAJE_BONIF           razon_social cod_proveedor_deudor               fecha_alt  pagar_con_snc tipo timbrado validez_timbrado  regimen  ACTIVO  Ident_EDI  retener_doc  proveedor_exterior    ruc_exterior  critCasual  validar_timbrado porc_bonif_venta  tipo_contrib  cod_transportista contacto_2  tipo_ident  concepto_renta ruc_resol_82 dv_resol_82 primer_apellido_resol_82 segundo_apellido_resol_82 primer_nombre_resol_82 segundo_nombre_resol_82 tipo_pago_resol_82 departamento_resol_82 distrito_resol_82 localidad_resol_82 pre_lin_fija_resol_82 telf_lin_fija_resol_82 pre_celular_resol_82 telf_celular_resol_82 tipo_emp_resol_82 nro_cta_acreditar timbrado_nc validez_timb_nc  dias_venc_snc  validez_compra_mes  limite_credito cod_moneda_limite  tipo_matriz  SUB_OPERACION_GNB COD_BCO_ACREDITAR  irp  tipo_irp  porcentaje_irp  ent_sin_definir  ent_lunes  ent_martes  ent_miercoles  ent_jueves  ent_viernes  ent_sabado  ent_domingo acuerdo_comercial  reten_con  ped_full_auto  mes_quin  constancia_no_retencion fecha_no_retencion detalle_proveedor  dias_estadistica_pedidos  dias_a_reponer_pedidos  porc_bonif_venta_mayorista  porcentaje_bonif_mayorista  bonificacion  afecta_costo  webservice_ok superpro_fecha_filtro  usa_nivel_spro  nivel_spro  tipo_liquidacion porc_dcto  memo_15 porc_pago porc_vol porc_otros sucursal_pago forma_pago codigo_cuenta_fact_compensada cod_sipap  cta_debitar  tipo_pago  reten_prod_agricola  habilitado_matriz_app  pweb_ranking  pweb_perdida_vta  sucursal_cta  tipo_cta  moneda_cta  tipo_transferencia  pedido_por_ventas pago_bloqueado  dias_suba_precio cCiuFD cDisFD cDepFD pedidos_multisucursal factura_virtual factura_electronica timbrado_reten validez_timb_reten validez_timbrado_ini  excedente_max_cupo_semana  cod_analista  frecuencia_pago  condicion_pago  permitir_pedido_secundario id_departamentofd id_distritofd id_ciudadfd tipo_constancia_electronica numero_constancia_electronica numero_control_constancia_electronica fecha_venc_constancia_electronica  pago_c_cobertura  yacobro email_alternativo_1 email_alternativo_2 email_op_1 email_op_2 email_op_3 email_oc_1 email_oc_2 email_oc_3 email_snc_1 email_snc_2 email_snc_3  excluir_pago_en_agenda_pago
+             1 SISTEMA PEGASUS S.R.L. 80044626-7    Pai Perez 1398 c/Azara                          227-882  0971-577-080                               2010101001           0              0       False                     0           Paraguay  www.sistemapegasus.com             0          6     Asuncion              0                                   0 SISTEMA PEGASUS S.R.L.          0          0        1010401001          1010302004 2007-09-23 11:14:58.640           0        None           2010104003            2010104003        1        0               0.0 SISTEMA PEGASUS S.R.L.                 None 2017-03-06 10:00:37.320              0    J 17986944       2030-08-31        0       1        0.0            1               False            None           0              True             None             1                  0       None           0               0         None        None                     None                      None                   None                    None               None                  None              None               None                  None                   None                 None                  None              None                 0    17272349      2025-06-30              0                   0             0.0              None            0                  0                      0         0             1.0                1          0           0              0           0            0           0            0              None          0              0         0                        0               None              None                        21                       7                         0.0                         0.0             0             0              1            2020-12-09               0           0                 0      None        0      None     None       None          None       None                          None      None          0.0          0                    0                      1             1                 1             0         0           0                   0                  0           None                 0   None   None   None                  None            None                None           None               None                 None                        0.0             0                0               0                           0              None          None        None                        None                          None                                  None                              None                 0        0                None                None       None       None       None       None       None       None        None        None        None                            0
+             2     LOS ALMENDROS S.A. 80044939-8 Ruta Gral. Aquino n° 2996 Lucila Acosta           684171/2               lacosta@marketplace.com.py    2010101001           0              0       False       Lunes         0 684171/2  Paraguay www.losalmendros.com.py             0          1        Luque              0                                   0     LOS ALMENDROS S.A.          0          0        1010401001                     2026-03-04 00:00:00.000           1        None           2010104003            2010104003        1        0               0.0     LOS ALMENDROS S.A.                 None 2017-05-23 10:56:38.350              0    J 17168080       2025-04-30        0       1        0.0            1               False            None           0              True             None             1                  0       None           0               0         None        None                     None                      None                   None                    None               None                  None              None               None                  None                   None                 None                  None              None                 0    13236724      2023-10-31              0                   0             0.0              None            0                  0                      0         0             1.0                1          0           0              0           0            0           0            0              None          0              0         0                        0               None              None                        21                       7                         0.0                         0.0             0             0              1            2020-06-07               0           0                 0      None        0      None     None       None          None       None                          None      None          0.0          0                    0                      1             1                 1             0         0           0                   0                  0           None                 0   None   None   None                  None            None                None           None               None                 None                        0.0             0                0               0                           0              None          None        None                        None                          None                                  None                              None                 0        0                None                None       None       None       None       None       None       None        None        None        None                            0
+             3        ZONA LIBRE S.A,        xxx                       xxx                    (507)433-9900                                             2010101002           0              0       False                     0 445-3268 Argentina                                     0          1 Buenos Aires              0                                   0        ZONA LIBRE S.A,          0          0        1010401003          1010302004 2014-04-06 16:35:40.623           0        None           2010104003                              1        0               0.0        ZONA LIBRE S.A,                 None 2016-12-27 10:10:42.357              0    J 12121212       2030-12-31        0       1        0.0            1                True 280-0379-007-16           0              True             None             1                  0       None           0               0         None        None                     None                      None                   None                    None               None                  None              None               None                  None                   None                 None                  None              None                 0        None             NaT              0                   0             0.0              None            0                  0                      0         0             1.0                1          0           0              0           0            0           0            0              None          0              0         0                        0               None              None                        21                       7                         0.0                         0.0             0             0              0                   NaT               0           0                 0      None        0      None     None       None          None       None                          None      None          0.0          0                    0                      0             0                 0             0         0           0                   0                  0           None                 0   None   None   None                  None            None                None           None               None                 None                        0.0             0                0               0                           0              None          None        None                        None                          None                                  None                              None                 0        0                None                None       None       None       None       None       None       None        None        None        None                            0
+
+--- [dbo].[PTK_FICHA_PROVEEDORES] ---
+Filas: 0
+Columnas (5):
+              columna    tipo  largo
+       ID_Proveedores     int    NaN
+          Proveedores    char   50.0
+        codigo_cuenta varchar   25.0
+    codigo_cuenta_int varchar   25.0
+cod_proveedor_general     int    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [ID_Proveedores, Proveedores, codigo_cuenta, codigo_cuenta_int, cod_proveedor_general]
+Index: []
+
+--- [dbo].[PTK_FICHA_SECCIONES] ---
+Filas: 50
+Columnas (7):
+             columna     tipo  largo
+          ID_Seccion      int    NaN
+             Seccion     char   50.0
+     COD_CUENTA_SECC  varchar   25.0
+COD_CUENTA_SECC_AGUI  varchar   25.0
+           fidelidad smallint    NaN
+           accidente smallint    NaN
+        valor_seguro      int    NaN
+Muestra de 3 filas:
+ ID_Seccion                                  Seccion COD_CUENTA_SECC COD_CUENTA_SECC_AGUI  fidelidad  accidente  valor_seguro
+          1 Completar                            ...                                               0          0             0
+          2 SALON DE VENTAS PLANTA BAJA          ...                                               0          0             0
+          3 CONTROL INTERNO                      ...                                               0          0             0
+
+--- [dbo].[ptk_grupo_rubros] ---
+Filas: 3
+Columnas (5):
+        columna     tipo  largo
+     cod_rubros      int    NaN
+    descripcion  varchar   50.0
+     fecha_alta datetime    NaN
+   usuario_alta  varchar   50.0
+pre_liquidacion smallint    NaN
+Muestra de 3 filas:
+ cod_rubros            descripcion              fecha_alta usuario_alta  pre_liquidacion
+          1         Administracion 2007-10-10 15:24:42.467           sa                0
+          2 Liquidación de Haberes 2014-07-22 10:49:19.057     mgimenez                0
+          3              jubilados 2014-07-31 17:05:20.933     mgimenez                0
+
+--- [dbo].[ptk_grupo_rubros_det] ---
+Filas: 25
+Columnas (6):
+       columna     tipo  largo
+    cod_rubros      int    NaN
+id_deducciones      int    NaN
+     fecha_ini datetime    NaN
+     fecha_fin datetime    NaN
+    fecha_alta datetime    NaN
+  usuario_alta  varchar   50.0
+Muestra de 3 filas:
+ cod_rubros  id_deducciones  fecha_ini  fecha_fin              fecha_alta usuario_alta
+          1               1 2001-01-01 2030-12-31 2007-10-10 15:24:42.497           sa
+          1               3 2001-01-01 2030-12-31 2014-07-22 08:18:27.473     mgimenez
+          1               4 2001-01-01 2030-12-31 2007-10-10 15:24:42.497           sa
+
+--- [dbo].[ptk_marcacion] ---
+Filas: 26,366
+Columnas (6):
+    columna     tipo  largo
+  Us_Codigo      int    NaN
+ Fecha_hora datetime    NaN
+       tipo  tinyint    NaN
+     manual  tinyint    NaN
+   primario   bigint    NaN
+observacion  varchar  250.0
+Muestra de 3 filas:
+ Us_Codigo          Fecha_hora  tipo  manual  primario observacion
+         2 2014-04-01 08:00:00     1       1    188338        None
+         3 2014-04-01 08:00:00     1       1    188339        None
+         4 2014-04-01 08:00:00     1       1    188340        None
+
+--- [dbo].[PTK_MARCACION_IPS] ---
+Filas: 7,998
+Columnas (35):
+       columna    tipo  largo
+     us_codigo     int    NaN
+    Ano_Actual     int    NaN
+    Mes_Actual     int    NaN
+            d1 varchar    5.0
+            d2 varchar    5.0
+            d3 varchar    5.0
+            d4 varchar    5.0
+            d5 varchar    5.0
+            d6 varchar    5.0
+            d7 varchar    5.0
+            d8 varchar    5.0
+            d9 varchar    5.0
+           d10 varchar    5.0
+           d11 varchar    5.0
+           d12 varchar    5.0
+           d13 varchar    5.0
+           d14 varchar    5.0
+           d15 varchar    5.0
+           d16 varchar    5.0
+           d17 varchar    5.0
+           d18 varchar    5.0
+           d19 varchar    5.0
+           d20 varchar    5.0
+           d21 varchar    5.0
+           d22 varchar    5.0
+           d23 varchar    5.0
+           d24 varchar    5.0
+           d25 varchar    5.0
+           d26 varchar    5.0
+           d27 varchar    5.0
+           d28 varchar    5.0
+           d29 varchar    5.0
+           d30 varchar    5.0
+           d31 varchar    5.0
+imp_vacaciones   float    NaN
+Muestra de 3 filas:
+ us_codigo  Ano_Actual  Mes_Actual d1 d2 d3 d4 d5 d6 d7 d8 d9 d10 d11 d12 d13 d14 d15 d16 d17 d18 d19 d20 d21 d22 d23 d24 d25 d26 d27 d28 d29 d30 d31  imp_vacaciones
+         1        2014           5  N  N  N  N  N  N  N  N  N   N   N   N   N   N   N   N   N   N   N   N   N   N   N   N   N   N   N   8   8   8   N             0.0
+         1        2014           6  D  8  8  8  8  8  8  D  8   8   8   8   8   8   D   8   8   8   8   8   8   D   8   8   8   8   8   8   D   8   t             0.0
+         1        2014           7  8  8  8  8  8  D  8  8  8   8   8   8   D   8   8   8   8   8   8   D   8   8   8   8   8   8   D   8   8   8   N             0.0
+
+--- [dbo].[ptk_marcacion_manual] ---
+Filas: 8
+Columnas (3):
+   columna     tipo largo
+ Us_Codigo      int  None
+Fecha_hora datetime  None
+      Tipo  tinyint  None
+Muestra de 3 filas:
+ Us_Codigo          Fecha_hora  Tipo
+        49 2015-03-20 13:18:00     1
+       102 2016-02-10 16:41:00     1
+       102 2016-06-15 15:53:00     1
+
+--- [dbo].[ptk_marcacion_manual_reloj] ---
+Filas: 0
+Columnas (3):
+   columna     tipo  largo
+ us_codigo      int    NaN
+fecha_hora datetime    NaN
+      tipo  varchar    1.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [us_codigo, fecha_hora, tipo]
+Index: []
+
+--- [dbo].[PTK_MARCACION_RELOJ] ---
+Filas: 0
+Columnas (5):
+   columna     tipo  largo
+ us_codigo      int    NaN
+fecha_hora datetime    NaN
+      tipo  varchar    1.0
+    manual  tinyint    NaN
+  primario      int    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [us_codigo, fecha_hora, tipo, manual, primario]
+Index: []
+
+--- [dbo].[ptk_salarios_compra] ---
+Filas: 0
+Columnas (7):
+   columna    tipo largo
+id_agencia     int  None
+  param_id     int  None
+ano_actual     int  None
+mes_actual     int  None
+   importe   float  None
+  primario decimal  None
+   NRO_REG   float  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [id_agencia, param_id, ano_actual, mes_actual, importe, primario, NRO_REG]
+Index: []
+
+--- [dbo].[PTK_SECCIONES_DOTACIONES] ---
+Filas: 0
+Columnas (3):
+          columna tipo largo
+       id_agencia  int  None
+       id_seccion  int  None
+dotacion_aprobada  int  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [id_agencia, id_seccion, dotacion_aprobada]
+Index: []
+
+--- [dbo].[ranking_categorias_productos] ---
+Filas: 0
+Columnas (5):
+      columna     tipo  largo
+       codigo  varchar   14.0
+ cod_sucursal smallint    NaN
+participacion  decimal    NaN
+        nivel smallint    NaN
+        fecha datetime    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [codigo, cod_sucursal, participacion, nivel, fecha]
+Index: []
+
+--- [dbo].[retencion_proveedor_cab] ---
+Filas: 0
+Columnas (14):
+       columna     tipo  largo
+       nro_reg  numeric    NaN
+         fecha datetime    NaN
+  tipo_documen smallint    NaN
+ cod_proveedor      int    NaN
+    numero_rpc  varchar   15.0
+       ano_rpc smallint    NaN
+       mes_rpc smallint    NaN
+    jornal_rpc  numeric    NaN
+    compra_reg    float    NaN
+  importe_neto  decimal    NaN
+   importe_iva  decimal    NaN
+  porc_ret_iva  decimal    NaN
+porc_ret_renta  decimal    NaN
+ contabilizado smallint    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, fecha, tipo_documen, cod_proveedor, numero_rpc, ano_rpc, mes_rpc, jornal_rpc, compra_reg, importe_neto, importe_iva, porc_ret_iva, porc_ret_renta, contabilizado]
+Index: []
+
+--- [dbo].[RUBRO_CLIENTE] ---
+Filas: 0
+Columnas (3):
+    columna     tipo  largo
+  COD_RUBRO smallint    NaN
+DESCRIPCION  varchar   35.0
+     estado smallint    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [COD_RUBRO, DESCRIPCION, estado]
+Index: []
+
+--- [dbo].[RUBRO_PROVEEDOR] ---
+Filas: 18
+Columnas (3):
+    columna     tipo  largo
+  COD_RUBRO smallint    NaN
+DESCRIPCION  varchar   35.0
+     estado smallint    NaN
+Muestra de 3 filas:
+ COD_RUBRO           DESCRIPCION  estado
+         1                VARIOS       0
+         2 Servicios Personales        0
+         3          Combustibles       0
+
+--- [dbo].[RUBROS] ---
+Filas: 0
+Columnas (3):
+     columna     tipo  largo
+   cod_rubro      int    NaN
+nombre_rubro  varchar  100.0
+      seguro smallint    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_rubro, nombre_rubro, seguro]
+Index: []
+
+--- [dbo].[salon_secciones] ---
+Filas: 0
+Columnas (2):
+    columna    tipo  largo
+    nro_reg  bigint    NaN
+descripcion varchar   40.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, descripcion]
+Index: []
+
+--- [dbo].[salon_secciones_det] ---
+Filas: 0
+Columnas (7):
+          columna    tipo largo
+          nro_reg  bigint  None
+         primario decimal  None
+      Cod_seccion     int  None
+  Cod_sub_seccion     int  None
+        Cod_grupo     int  None
+    Cod_categoria     int  None
+Cod_Sub_categoria     int  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, primario, Cod_seccion, Cod_sub_seccion, Cod_grupo, Cod_categoria, Cod_Sub_categoria]
+Index: []
+
+--- [dbo].[salon_secciones_metros] ---
+Filas: 0
+Columnas (3):
+       columna     tipo largo
+       nro_reg   bigint  None
+         fecha datetime  None
+metro_cuadrado  decimal  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, fecha, metro_cuadrado]
+Index: []
+
+--- [dbo].[salon_secciones_personal] ---
+Filas: 0
+Columnas (2):
+   columna   tipo largo
+   nro_reg bigint  None
+ID_Seccion    int  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [nro_reg, ID_Seccion]
+Index: []
+
+--- [dbo].[Seccion] ---
+Filas: 31
+Columnas (16):
+         columna     tipo  largo
+     Cod_seccion      int    NaN
+       Secciones  varchar   35.0
+          margen  decimal    NaN
+      margen_max  decimal    NaN
+margen_mayorista  decimal    NaN
+       fecha_alt datetime    NaN
+     cta_compras  varchar   25.0
+      cta_ventas  varchar   25.0
+      cta_costos  varchar   25.0
+    centro_costo      int    NaN
+    max_desc_vta  decimal    NaN
+    seccion_cast      int    NaN
+         prefijo      int    NaN
+       secuencia   bigint    NaN
+      restaurant smallint    NaN
+         inc_web smallint    NaN
+Muestra de 3 filas:
+ Cod_seccion                 Secciones  margen  margen_max  margen_mayorista               fecha_alt cta_compras cta_ventas cta_costos  centro_costo  max_desc_vta  seccion_cast  prefijo  secuencia  restaurant  inc_web
+          -1               SIN ASIGNAR     0.0         0.0               0.0 2025-11-25 14:29:51.060                                               0           0.0             0        0          0           0        0
+          12 * ALQUILERES Y DESCUENTOS     0.0         0.0               0.0 2014-09-06 14:15:42.077                                               0           0.0             0        0          0           0        1
+          27  ACCESORIOS PARA EL HOGAR     0.0         0.0               0.0 2020-06-01 09:29:09.813                                               0           0.0             0        0          0           0        1
+
+--- [dbo].[SUB_CATEGORIAS] ---
+Filas: 16
+Columnas (13):
+             columna     tipo  largo
+   COD_SUB_CATEGORIA      int    NaN
+DESCRIPCION_SUB_CATE  varchar   30.0
+              DESC_A  decimal    NaN
+              DESC_B  decimal    NaN
+              DESC_C  decimal    NaN
+         cod_seccion      int    NaN
+     cod_sub_seccion      int    NaN
+           cod_grupo      int    NaN
+       cod_categoria      int    NaN
+              margen  decimal    NaN
+          margen_max  decimal    NaN
+    margen_mayorista  decimal    NaN
+           fecha_alt datetime    NaN
+Muestra de 3 filas:
+ COD_SUB_CATEGORIA DESCRIPCION_SUB_CATE  DESC_A  DESC_B  DESC_C  cod_seccion  cod_sub_seccion  cod_grupo  cod_categoria  margen  margen_max  margen_mayorista               fecha_alt
+                -1          Sin Asignar     0.0     0.0     0.0           -1               -1         -1             -1     0.0         0.0               0.0 2016-01-27 11:42:43.940
+              1912                 TELA     0.0     0.0     0.0           37              170       1515           5035     0.0         0.0               0.0 2022-03-29 16:11:40.350
+              1913             SILICONA     0.0     0.0     0.0           37              170       1515           5035     0.0         0.0               0.0 2022-03-29 16:11:46.520
+
+--- [dbo].[Sub_seccion] ---
+Filas: 202
+Columnas (12):
+         columna     tipo  largo
+ Cod_sub_seccion      int    NaN
+   Sub_secciones  varchar   35.0
+     cod_seccion smallint    NaN
+          margen  decimal    NaN
+      margen_max  decimal    NaN
+margen_mayorista  decimal    NaN
+       fecha_alt datetime    NaN
+         prefijo      int    NaN
+       secuencia   bigint    NaN
+     gastronomia smallint    NaN
+        comanda1 smallint    NaN
+        comanda2 smallint    NaN
+Muestra de 3 filas:
+ Cod_sub_seccion Sub_secciones  cod_seccion  margen  margen_max  margen_mayorista               fecha_alt  prefijo  secuencia  gastronomia  comanda1  comanda2
+              -1   Sin seccion           -1     0.0         0.0               0.0 2016-01-27 11:39:03.760        0          0            0         0         0
+              16       LOCALES           12     0.0         0.0               0.0 2014-09-06 13:44:13.683        0          0            0         0         0
+              17     GARANTIAS           12     0.0         0.0               0.0 2014-09-06 13:44:06.150        0          0            0         0         0
+
+--- [dbo].[SUCURSALES] ---
+Filas: 5
+Columnas (75):
+                      columna     tipo  largo
+                 COD_SUCURSAL      int    NaN
+              NOMBRE_SUCURSAL  varchar  200.0
+                    DIRECCION  varchar   50.0
+                     CONTACTO  varchar   30.0
+                     TELEFONO  varchar   15.0
+          nro_lista_minorista      int    NaN
+          nro_lista_mayorista      int    NaN
+                 cod_deposito      int    NaN
+                   nro_cuenta    float    NaN
+                 nro_cuenta_b    float    NaN
+               mercaderia_exe  varchar   25.0
+              mercaderia_grav  varchar   25.0
+           cliente_mercaderia  varchar   25.0
+           provee__mercaderia  varchar   25.0
+             prestamo_emitido  varchar   25.0
+            prestamo_recibido  varchar   25.0
+                      insumos  varchar   25.0
+              descentralizado      int    NaN
+             cta_merca_exenta  varchar   25.0
+            cta_merca_gravada  varchar   25.0
+           cta_merca_gravada5  varchar   25.0
+              cta_vtas_exenta  varchar   25.0
+             cta_vtas_gravada  varchar   25.0
+           cta_vtas_gravada_5  varchar   25.0
+               cta_costo_vtas  varchar   25.0
+                  cod_cliente      int    NaN
+                    Ident_EDI    float    NaN
+                 cod_cobrador smallint    NaN
+                     servidor  varchar   50.0
+                         base  varchar   50.0
+                         tipo      int    NaN
+              tipo_doc_cierre smallint    NaN
+           cta_costo_vtas_exe  varchar   25.0
+         cta_costo_vtas_grav5  varchar   25.0
+        cta_costo_vtas_grav10  varchar   25.0
+           tipo_doc_cierre_nc smallint    NaN
+             nro_cuenta_dolar    float    NaN
+              nro_cuenta_peso    float    NaN
+              nro_cuenta_real    float    NaN
+              nro_cuenta_euro    float    NaN
+            rendicion_general smallint    NaN
+                        orden      int    NaN
+avisar_matriz_proveedores_web smallint    NaN
+                webservice_ok smallint    NaN
+                 cta_donacion  varchar   25.0
+                    mayorista smallint    NaN
+                     superpro smallint    NaN
+                       siglas  varchar   10.0
+                factura_laser smallint    NaN
+                 pweb_ranking  tinyint    NaN
+             pweb_perdida_vta  tinyint    NaN
+             cod_sucursal_slc      int    NaN
+                 departamento  varchar  100.0
+                       ciudad  varchar   50.0
+                           m2  decimal    NaN
+                      Scentia smallint    NaN
+        pedidos_multisucursal smallint    NaN
+                          ruc  varchar   10.0
+                      empresa  varchar   50.0
+               ciudad_digital      int    NaN
+             distrito_digital      int    NaN
+          departmento_digital      int    NaN
+            Cod_act_economica      int    NaN
+            Des_act_economica  varchar  120.0
+                     sociedad      int    NaN
+                        email  varchar   50.0
+           departamento_sifen      int    NaN
+               distrito_sifen      int    NaN
+                 ciudad_sifen      int    NaN
+                gerente_local  varchar   40.0
+            gerente_operativo  varchar   40.0
+      gerente_control_interno  varchar   40.0
+              control_interno  varchar   40.0
+         encargado_prevencion  varchar   40.0
+             mercaderia_grav5  varchar   25.0
+Muestra de 3 filas:
+ COD_SUCURSAL NOMBRE_SUCURSAL                DIRECCION CONTACTO TELEFONO  nro_lista_minorista  nro_lista_mayorista  cod_deposito  nro_cuenta  nro_cuenta_b mercaderia_exe mercaderia_grav cliente_mercaderia provee__mercaderia prestamo_emitido prestamo_recibido insumos  descentralizado cta_merca_exenta cta_merca_gravada cta_merca_gravada5 cta_vtas_exenta cta_vtas_gravada cta_vtas_gravada_5 cta_costo_vtas  cod_cliente  Ident_EDI  cod_cobrador          servidor        base  tipo  tipo_doc_cierre cta_costo_vtas_exe cta_costo_vtas_grav5 cta_costo_vtas_grav10  tipo_doc_cierre_nc  nro_cuenta_dolar  nro_cuenta_peso  nro_cuenta_real  nro_cuenta_euro  rendicion_general orden  avisar_matriz_proveedores_web  webservice_ok cta_donacion  mayorista  superpro siglas factura_laser  pweb_ranking  pweb_perdida_vta  cod_sucursal_slc departamento ciudad  m2  Scentia pedidos_multisucursal  ruc empresa ciudad_digital distrito_digital departmento_digital  Cod_act_economica Des_act_economica sociedad email departamento_sifen distrito_sifen ciudad_sifen gerente_local gerente_operativo gerente_control_interno control_interno encargado_prevencion mercaderia_grav5
+            1         CENTRAL                                                               0                    0             1         1.0           1.0     1010301002      1010301001                                                                                                 0       1010301002        1010301001         1010301001      4010101002       4010101001         4010101001     5010101001            1        0.0             1 10.51.80.110,1433 pos_central     1              223         4010101002           4010101001            4010101001                 219               1.0              1.0              1.0              1.0                  1  None                              0              1         None          0       1.0   None          None             1                 1                 0         None   None 0.0        0                  None None    None           None             None                None                  0              None     None  None               None           None         None          None              None                    None            None                 None             None
+            2     Suc. Mermas                                                               0                    0            10        40.0           1.0     1010301002      1010301001                                                                                                 0       1010301002        1010301001         1010301001      4010101002       4010101001         4010101001     5010101001            1        0.0             1 10.51.80.115,1402 pos_central     1              215         4010101002           4010101001            4010101001                 220              40.0             40.0             40.0             40.0                  1  None                              0              0         None          0       NaN   None          None             0                 0                 0         None   None 0.0        0                  None None    None           None             None                None                  0              None     None  None               None           None         None          None              None                    None            None                 None             None
+            3  SAN BERNARDINO Ciudad de San Bernardino                                      0                    0            16        43.0           0.0                                                                                                                                0       1010301002        1010301001         1010301001      4010101002       4010101001         4010101001     5010101001            1        0.0             1 10.51.83.210,1402  pos_verano     1              225         1010301002           1010301001            1010301001                   0              43.0             43.0             43.0             43.0                  1  None                              0              1         None          0       1.0   None          None             1                 0                 0         None   None 0.0        0                  None None    None           None             None                None                  0              None     None  None               None           None         None          None              None                    None            None                 None             None
+
+--- [dbo].[sucursales_banco] ---
+Filas: 0
+Columnas (4):
+        columna     tipo  largo
+      cod_banco smallint    NaN
+   cod_sucursal smallint    NaN
+nombre_sucursal  varchar   50.0
+ciudad_sucursal  varchar   50.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_banco, cod_sucursal, nombre_sucursal, ciudad_sucursal]
+Index: []
+
+--- [dbo].[sucursales_zonas] ---
+Filas: 0
+Columnas (2):
+     columna tipo largo
+cod_sucursal  int  None
+    cod_zona  int  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_sucursal, cod_zona]
+Index: []
+
+--- [dbo].[SYS_USUARIOS_DEPOSITOS_DES] ---
+Filas: 19
+Columnas (3):
+             columna     tipo  largo
+             USUARIO  varchar  100.0
+        COD_DEPOSITO smallint    NaN
+COD_DEPOSITO_DESTINO smallint    NaN
+Muestra de 3 filas:
+ USUARIO  COD_DEPOSITO  COD_DEPOSITO_DESTINO
+ cabente             4                     1
+ cabente             4                     3
+ezaracho             4                     3
+
+--- [dbo].[TARJETAS_DEPOSITOS] ---
+Filas: 339
+Columnas (21):
+          columna     tipo  largo
+     NRO_DEPOSITO  decimal    NaN
+       NRO_CUENTA    float    NaN
+            FECHA datetime    NaN
+      OBSERVACION  varchar  100.0
+       nro_boleta  varchar   25.0
+   TOTAL_DEPOSITO  decimal    NaN
+      COD_TARJETA      int    NaN
+CONTABILIZADO_CAB smallint    NaN
+    fecha_factura datetime    NaN
+     TOT_COM_PROC  decimal    NaN
+      TOT_COM_IVA  decimal    NaN
+     tipo_documen smallint    NaN
+         timbrado  varchar   25.0
+ validez_timbrado datetime    NaN
+     nro_concepto      int    NaN
+   tarjeta_debito      int    NaN
+         COM_PROC  decimal    NaN
+          COM_IVA  decimal    NaN
+        COM_RENTA  decimal    NaN
+       COM_RETIVA  decimal    NaN
+     cod_sucursal      int    NaN
+Muestra de 3 filas:
+ NRO_DEPOSITO  NRO_CUENTA      FECHA                          OBSERVACION  nro_boleta  TOTAL_DEPOSITO  COD_TARJETA  CONTABILIZADO_CAB fecha_factura  TOT_COM_PROC  TOT_COM_IVA  tipo_documen timbrado validez_timbrado  nro_concepto  tarjeta_debito COM_PROC COM_IVA COM_RENTA COM_RETIVA  cod_sucursal
+          0.0         3.0 2014-09-17  CORRESP A FECHA 24/06/14 A 24/07/14 10060020467       323400.00          255                  0    2014-07-31           0.0         0.00             1 10454854       2015-02-28            54               0     None    None      None       None             0
+          1.0         3.0 2014-07-31           FECHA 26/06/14 AL 18/07/14 70060012073      6665378.13          308                  1    2014-07-31      359940.5     35994.05             1 10541481       2015-05-31            54               0     None    None      None       None             0
+          2.0        13.0 2014-07-31 CORRESP A FECHA 19/07/14 AL 24/07/14 70060009242      3217752.48          308                  0    2014-07-31      173763.5     17376.35             1 10541481       2015-05-31            54               0     None    None      None       None             0
+
+--- [dbo].[TARJETAS_DEPOSITOS_DET] ---
+Filas: 115,609
+Columnas (16):
+         columna     tipo  largo
+    NRO_DEPOSITO  decimal    NaN
+     COD_TARJETA smallint    NaN
+     NRO_TARJETA  varchar   50.0
+      COD_MONEDA smallint    NaN
+         IMPORTE  decimal    NaN
+PRIM_COB_FAC_DET   bigint    NaN
+        PRIMARIO  decimal    NaN
+      FECHA_CRED datetime    NaN
+           TOTAL  decimal    NaN
+        COMISION  decimal    NaN
+        COM_PROC  decimal    NaN
+         COM_IVA  decimal    NaN
+      COM_RETRTA  decimal    NaN
+      COM_RETIVA  decimal    NaN
+   CONTABILIZADO smallint    NaN
+     procesadora  tinyint    NaN
+Muestra de 3 filas:
+ NRO_DEPOSITO  COD_TARJETA NRO_TARJETA  COD_MONEDA  IMPORTE  PRIM_COB_FAC_DET  PRIMARIO FECHA_CRED   TOTAL  COMISION  COM_PROC  COM_IVA  COM_RETRTA  COM_RETIVA  CONTABILIZADO procesadora
+          1.0            5                       1 37017.48             -3652       2.0 2014-07-10 39980.0   2962.52    1999.0   199.90       399.8      363.82              0        None
+          1.0            5                       1 54581.80             -3655       3.0 2014-07-10 58950.0   4368.20    2947.5   294.75       589.5      536.45              0        None
+          1.0            5                       1 70359.14             -5167       4.0 2014-07-14 75990.0   5630.86    3799.5   379.95       759.9      691.51              0        None
+
+--- [dbo].[tarjetas_marcas] ---
+Filas: 0
+Columnas (2):
+          columna    tipo  largo
+cod_marca_tarjeta     int    NaN
+    marca_tarjeta varchar  100.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_marca_tarjeta, marca_tarjeta]
+Index: []
+
+--- [dbo].[usuarios_secciones] ---
+Filas: 1
+Columnas (7):
+          columna    tipo  largo
+          usuario varchar  100.0
+         primario decimal    NaN
+      Cod_seccion     int    NaN
+  Cod_sub_seccion     int    NaN
+        Cod_grupo     int    NaN
+    Cod_categoria     int    NaN
+Cod_Sub_categoria     int    NaN
+Muestra de 3 filas:
+  usuario  primario  Cod_seccion  Cod_sub_seccion  Cod_grupo  Cod_categoria  Cod_Sub_categoria
+Angelicad       1.0           -1               -1         -1             -1                 -1
+
+--- [dbo].[VENDEDOR_META_MARCAS] ---
+Filas: 0
+Columnas (6):
+     columna     tipo largo
+cod_vendedor smallint  None
+        anho      int  None
+         mes      int  None
+   cod_marca      int  None
+  cod_moneda smallint  None
+     importe  decimal  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_vendedor, anho, mes, cod_marca, cod_moneda, importe]
+Index: []
+
+--- [dbo].[VENDEDOR_META_SUB_SECCION] ---
+Filas: 0
+Columnas (7):
+        columna     tipo largo
+   cod_vendedor smallint  None
+           anho      int  None
+            mes      int  None
+    cod_seccion      int  None
+cod_sub_seccion      int  None
+     cod_moneda smallint  None
+        importe  decimal  None
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [cod_vendedor, anho, mes, cod_seccion, cod_sub_seccion, cod_moneda, importe]
+Index: []
+
+--- [dbo].[wt_facturas_orden_de_compra] ---
+Filas: 0
+Columnas (9):
+        columna     tipo  largo
+     id_factura   bigint    NaN
+  cod_proveedor      int    NaN
+ numero_factura  varchar   20.0
+condicion_venta  varchar   10.0
+          fecha datetime    NaN
+         nro_oc      int    NaN
+      procesado smallint    NaN
+  webservice_ok smallint    NaN
+            cdc  varchar   44.0
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [id_factura, cod_proveedor, numero_factura, condicion_venta, fecha, nro_oc, procesado, webservice_ok, cdc]
+Index: []
+
+--- [dbo].[wt_facturas_orden_de_compra_det] ---
+Filas: 0
+Columnas (11):
+       columna    tipo  largo
+id_factura_det  bigint    NaN
+    id_factura  bigint    NaN
+        nro_oc     int    NaN
+    nro_pedido     int    NaN
+        codigo varchar   14.0
+ codigo_barras varchar   20.0
+        precio decimal    NaN
+      cantidad decimal    NaN
+   descripcion varchar   50.0
+    precio_aux decimal    NaN
+  cantidad_aux decimal    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [id_factura_det, id_factura, nro_oc, nro_pedido, codigo, codigo_barras, precio, cantidad, descripcion, precio_aux, cantidad_aux]
+Index: []
+
+--- [dbo].[wt_matriz_proveedores] ---
+Filas: 470,868
+Columnas (16):
+                   columna     tipo  largo
+                     fecha datetime    NaN
+       fecha_ultimo_cierre datetime    NaN
+             cod_proveedor      int    NaN
+              cod_sucursal      int    NaN
+                    codigo  varchar   14.0
+              cantidad_sug  decimal    NaN
+                    precio  decimal    NaN
+      precio_ultima_compra  decimal    NaN
+                  cant_paq  decimal    NaN
+ventas_desde_ultima_compra  decimal    NaN
+       fecha_ultima_compra datetime    NaN
+    ultima_compra_cantidad  decimal    NaN
+              stock_actual  decimal    NaN
+               vta_periodo  decimal    NaN
+  venta_ultimo_vencimiento datetime    NaN
+            dias_de_ventas  decimal    NaN
+Muestra de 3 filas:
+     fecha fecha_ultimo_cierre  cod_proveedor  cod_sucursal         codigo  cantidad_sug  precio  precio_ultima_compra  cant_paq  ventas_desde_ultima_compra fecha_ultima_compra  ultima_compra_cantidad  stock_actual  vta_periodo venta_ultimo_vencimiento  dias_de_ventas
+2026-04-26          2026-04-24              2             1  7450008277479           0.0 33386.0               33386.0       1.0                         0.0          2014-11-26                    24.0           0.0          0.0               2016-09-13             0.0
+2026-04-26          2026-04-24              2             1  7450008323787           0.0 65774.0               65774.0       1.0                         0.0          2014-11-29                    12.0           0.0          0.0               2014-12-29             0.0
+2026-04-26          2026-04-24              2             1  7450015758619           0.0 14644.0               14644.0       1.0                         0.0          2014-11-26                    17.0           0.0          0.0               2014-12-16             0.0
+
+--- [dbo].[wt_mensajes_proveedor] ---
+Filas: 0
+Columnas (7):
+       columna     tipo  largo
+    id_mensage   bigint    NaN
+email_recibido  varchar  100.0
+   email_envio  varchar  100.0
+ cod_proveedor      int    NaN
+         fecha datetime    NaN
+       mensaje  varchar 2000.0
+         leido      int    NaN
+Muestra de 3 filas:
+Empty DataFrame
+Columns: [id_mensage, email_recibido, email_envio, cod_proveedor, fecha, mensaje, leido]
+Index: []

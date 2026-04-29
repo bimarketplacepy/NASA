@@ -1,0 +1,18 @@
+neo4j==5.20.0
+chromadb==0.5.23
+sentence-transformers==2.7.0
+pypdf==4.2.0
+pandas==2.2.2
+python-dotenv==1.0.1
+pyodbc==5.1.0
+fpdf2==2.7.9
+
+# Capa semantica (Tarea 1 v2 - Bloque 1)
+owlready2==0.50
+rdflib==7.6.0
+
+# Capa de validacion SHACL (Tarea 1 v2 - Bloque 2)
+pyshacl==0.31.0
+
+# Motor de similaridad multidimensional (Tarea 1 v2 - Bloque 5)
+PyYAML==6.0.2

@@ -1,0 +1,183 @@
+# =============================================================================
+# SHACL Shapes para validacion de datos del marketplace
+# Bloque 2 - Tarea 1 v2
+# =============================================================================
+# Convenciones:
+# - DRY: las cardinalidades ya cubiertas por OWL (ej: :Producto :sku min 1) no
+#   se duplican. SHACL solo agrega lo que OWL no expresa: regex, rangos,
+#   comparaciones cruzadas, sh:in.
+# - Cada constraint con sh:message en espanol y sh:severity explicita.
+# - sh:or se usa para expresar "el nodo debe ser instancia de una de varias
+#   clases" (ej: la modalidad de una Norma).
+# =============================================================================
+
+@prefix :        <http://marketplace.com.py/onto/v1#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+
+# =============================================================================
+# ProductoShape
+# =============================================================================
+# Lo que SHACL agrega sobre OWL:
+# - :sku tiene formato alfanumerico (regex).
+# - :sku es xsd:string (OWL lo declara range pero no fuerza).
+# - :perteneceA debe tener al menos un Categoria (cold-start: warning, no error).
+# =============================================================================
+
+:ProductoShape a sh:NodeShape ;
+    sh:targetClass :Producto ;
+    sh:name "Validacion de Producto"@es ;
+    sh:description "Restricciones sobre instancias de :Producto."@es ;
+
+    sh:property [
+        sh:path :sku ;
+        # NOTA sobre DRY: OWL declara :sku como FunctionalProperty + min 1 sobre :Producto.
+        # SHACL agrega sh:minCount 1 aqui porque pyshacl no enforce restricciones
+        # de cardinalidad de OWL DL por default (eso requiere reasoner separado).
+        # SHACL es el enforcement layer runtime; OWL es el description/inference layer.
+        # Tenerlos ambos es defense-in-depth, no duplicacion viciosa.
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:pattern "^[A-Z0-9_-]+$" ;
+        sh:flags "" ;
+        sh:message "El sku debe estar presente, ser xsd:string y matchear ^[A-Z0-9_-]+$ (alfanumerico mayusculas, guiones o underscores)."@es ;
+        sh:severity sh:Violation
+    ] ;
+
+    sh:property [
+        sh:path :perteneceA ;
+        sh:minCount 1 ;
+        sh:class :Categoria ;
+        sh:message "Producto debe pertenecer al menos a una :Categoria (sin esto no se puede clasificar)."@es ;
+        sh:severity sh:Violation
+    ] .
+
+# =============================================================================
+# ProveedorShape
+# =============================================================================
+# Toda esta shape es agregada (las props no existian en Bloque 1, vienen del
+# Bloque 2). Sin overlap con OWL.
+# =============================================================================
+
+:ProveedorShape a sh:NodeShape ;
+    sh:targetClass :Proveedor ;
+    sh:name "Validacion de Proveedor"@es ;
+    sh:description "Restricciones sobre instancias de :Proveedor."@es ;
+
+    sh:property [
+        sh:path :proveedorId ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:message "Proveedor requiere :proveedorId no vacio."@es ;
+        sh:severity sh:Violation
+    ] ;
+
+    sh:property [
+        sh:path :pais ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:pattern "^[A-Z]{2}$" ;
+        sh:message "Proveedor :pais debe ser codigo ISO-3166 alpha-2 (ej: 'PY', 'CN', 'IN'). Recibido: {?value}."@es ;
+        sh:severity sh:Violation
+    ] .
+
+# =============================================================================
+# NormShape
+# =============================================================================
+# Targetea :Norm y, via inference rdfs, tambien sus subclases (Obligation,
+# Permission, Prohibition).
+#
+# Lo que SHACL agrega sobre OWL:
+# - :priority en rango [0, 100] (OWL solo dice cardinality exactly 1 + xsd:int).
+# - validFrom <= validTo (cross-property check no expresable en OWL DL).
+# - El nodo debe ser instancia de una de las 3 modalidades (cierre).
+# =============================================================================
+
+:NormShape a sh:NodeShape ;
+    sh:targetClass :Norm ;
+    sh:name "Validacion de Norma"@es ;
+    sh:description "Restricciones sobre instancias de :Norm. Subclases incluidas via inference rdfs."@es ;
+
+    sh:property [
+        sh:path :priority ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 100 ;
+        sh:message "Norm :priority debe estar entre 0 y 100 (inclusive). Recibido: {?value}."@es ;
+        sh:severity sh:Violation
+    ] ;
+
+    sh:property [
+        sh:path :validFrom ;
+        sh:lessThanOrEquals :validTo ;
+        sh:message "Norm :validFrom debe ser <= :validTo."@es ;
+        sh:severity sh:Violation
+    ] ;
+
+    # Cierre de modalidad: la norma debe ser instancia de una de las 3 subclases.
+    sh:or (
+        [ sh:class :Obligation ]
+        [ sh:class :Permission ]
+        [ sh:class :Prohibition ]
+    ) ;
+    sh:message "Norm debe ser :Obligation, :Permission o :Prohibition (modalidad deontica obligatoria)."@es ;
+    sh:severity sh:Violation .
+
+# =============================================================================
+# DecisionShape
+# =============================================================================
+# Targetea :Decision (incluye :AlgorithmRecommendation via subclase + inference).
+# =============================================================================
+
+:DecisionShape a sh:NodeShape ;
+    sh:targetClass :Decision ;
+    sh:name "Validacion de Decision"@es ;
+    sh:description "Trazabilidad PROV-O obligatoria + algoritmo invocado + razonamiento documentado."@es ;
+
+    sh:property [
+        sh:path prov:atTime ;
+        sh:minCount 1 ;
+        sh:datatype xsd:dateTime ;
+        sh:message "Decision requiere prov:atTime (timestamp PROV-O obligatorio)."@es ;
+        sh:severity sh:Violation
+    ] ;
+
+    sh:property [
+        sh:path :invocaAlgoritmo ;
+        sh:minCount 1 ;
+        sh:class :Algorithm ;
+        sh:message "Decision debe invocar al menos un :Algorithm."@es ;
+        sh:severity sh:Violation
+    ] ;
+
+    sh:property [
+        sh:path :razonamiento ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 10 ;
+        sh:message "Decision requiere :razonamiento textual (>= 10 caracteres) para auditoria."@es ;
+        sh:severity sh:Violation
+    ] .
+
+# =============================================================================
+# TrendSignalShape
+# =============================================================================
+
+:TrendSignalShape a sh:NodeShape ;
+    sh:targetClass :TrendSignal ;
+    sh:name "Validacion de TrendSignal"@es ;
+
+    sh:property [
+        sh:path :confianzaExtraccion ;
+        sh:minCount 1 ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 1 ;
+        sh:message "TrendSignal :confianzaExtraccion debe estar en [0, 1]. Recibido: {?value}."@es ;
+        sh:severity sh:Violation
+    ] .

@@ -1,0 +1,388 @@
+<http://marketplace.com.py/onto/v1#Proveedor> <http://www.w3.org/2000/01/rdf-schema#label> "Proveedor"@es .
+<http://marketplace.com.py/onto/v1#Decision> <http://www.w3.org/2000/01/rdf-schema#comment> "Acto decisional registrado en el sistema."@es .
+<http://marketplace.com.py/onto/v1#esExterior> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://marketplace.com.py/onto/v1#tieneStock> <http://www.w3.org/2000/01/rdf-schema#range> <http://marketplace.com.py/onto/v1#Stock> .
+<http://marketplace.com.py/onto/v1#tieneStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b29 <http://www.w3.org/2002/07/owl#intersectionOf> _:n141854c8f65a4454bb4cafdbb63aed14b31 .
+_:n141854c8f65a4454bb4cafdbb63aed14b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://marketplace.com.py/onto/v1#SimilarityScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#Producto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#ProductoColdStart> <http://www.w3.org/2000/01/rdf-schema#comment> "Producto sin historico de ventas suficiente. Activa logica de similitud ponderada."@es .
+<http://marketplace.com.py/onto/v1#AlgorithmRecommendation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n141854c8f65a4454bb4cafdbb63aed14b24 .
+_:n141854c8f65a4454bb4cafdbb63aed14b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#ProductoCritico> <http://www.w3.org/2000/01/rdf-schema#label> "ProductoCritico"@es .
+<http://marketplace.com.py/onto/v1#confianzaExtraccion> <http://www.w3.org/2000/01/rdf-schema#comment> "Confianza [0,1] con la que se extrajo el TrendSignal de su fuente (provenance metadata)."@es .
+<http://marketplace.com.py/onto/v1#ProveedorExterior> <http://www.w3.org/2000/01/rdf-schema#comment> "Proveedor con sede fuera de Paraguay (afecta lead-time y normas aduaneras)."@es .
+<http://marketplace.com.py/onto/v1#prohibe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://marketplace.com.py/onto/v1#altaRotacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Producto> .
+_:n141854c8f65a4454bb4cafdbb63aed14b19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Algorithm> .
+<http://marketplace.com.py/onto/v1#AlgorithmRecommendation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://marketplace.com.py/onto/v1#Decision> .
+<http://marketplace.com.py/onto/v1#obliga> <http://www.w3.org/2000/01/rdf-schema#label> "obliga"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://marketplace.com.py/onto/v1#esExterior> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Proveedor> .
+<http://marketplace.com.py/onto/v1#Producto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n141854c8f65a4454bb4cafdbb63aed14b21 .
+<http://marketplace.com.py/onto/v1#Categoria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#defeasible> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://marketplace.com.py/onto/v1#prohibe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Prohibition> .
+<http://marketplace.com.py/onto/v1#tieneHistorial> <http://www.w3.org/2000/01/rdf-schema#comment> "True si el Producto tiene fecha_ultima_compra. Materializado en bridge.py para evitar OWA al inferir ColdStart."@es .
+<http://marketplace.com.py/onto/v1#Stock> <http://www.w3.org/2000/01/rdf-schema#label> "Stock"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n141854c8f65a4454bb4cafdbb63aed14b50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n141854c8f65a4454bb4cafdbb63aed14b48 .
+<http://marketplace.com.py/onto/v1#suministradoPor> <http://www.w3.org/2000/01/rdf-schema#range> <http://marketplace.com.py/onto/v1#Proveedor> .
+_:n141854c8f65a4454bb4cafdbb63aed14b1 <http://www.w3.org/2002/07/owl#members> _:n141854c8f65a4454bb4cafdbb63aed14b2 .
+<http://marketplace.com.py/onto/v1#Grupo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n141854c8f65a4454bb4cafdbb63aed14b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b7 .
+<http://marketplace.com.py/onto/v1#cantidadStock> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://marketplace.com.py/onto/v1#defeasible> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Norm> .
+<http://marketplace.com.py/onto/v1#tieneStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://marketplace.com.py/onto/v1#invocaAlgoritmo> <http://www.w3.org/2000/01/rdf-schema#label> "invocaAlgoritmo"@es .
+<http://marketplace.com.py/onto/v1#ProveedorLocal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://marketplace.com.py/onto/v1#Proveedor> .
+_:n141854c8f65a4454bb4cafdbb63aed14b48 <http://www.w3.org/2002/07/owl#hasValue> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:n141854c8f65a4454bb4cafdbb63aed14b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b3 .
+<http://marketplace.com.py/onto/v1#defeats> <http://www.w3.org/2000/01/rdf-schema#range> <http://marketplace.com.py/onto/v1#Norm> .
+<http://marketplace.com.py/onto/v1#defeats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#tieneHistorial> <http://www.w3.org/2000/01/rdf-schema#label> "tieneHistorial"@es .
+<http://marketplace.com.py/onto/v1#priority> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Norm> .
+<http://marketplace.com.py/onto/v1#Grupo> <http://www.w3.org/2000/01/rdf-schema#label> "Grupo"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Norm> .
+<http://marketplace.com.py/onto/v1#validTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://marketplace.com.py/onto/v1#validFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Norm> .
+_:n141854c8f65a4454bb4cafdbb63aed14b31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b32 .
+<http://marketplace.com.py/onto/v1> <http://purl.org/dc/terms/creator> "Equipo Tarea 1 - NASA Marketplace" .
+<http://marketplace.com.py/onto/v1#enStock> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://marketplace.com.py/onto/v1#invocaAlgoritmo> <http://www.w3.org/2000/01/rdf-schema#comment> "Decision que invoca un Algorithm concreto."@es .
+<http://marketplace.com.py/onto/v1#ProveedorExterior> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://marketplace.com.py/onto/v1#Proveedor> .
+<http://marketplace.com.py/onto/v1> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologia Marketplace SA Paraguay v1"@es .
+<http://marketplace.com.py/onto/v1#Permission> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://marketplace.com.py/onto/v1#Norm> .
+<http://marketplace.com.py/onto/v1#similarA> <http://www.w3.org/2000/01/rdf-schema#comment> "Similitud entre Productos (cold-start). Reificada via SimilarityScore para llevar el valor."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b8 .
+<http://marketplace.com.py/onto/v1#requiere> <http://www.w3.org/2000/01/rdf-schema#domain> _:n141854c8f65a4454bb4cafdbb63aed14b18 .
+<http://marketplace.com.py/onto/v1> <http://www.w3.org/2000/01/rdf-schema#comment> "Capa semantica decisional para retail navideno: dominio + decision + deontico."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b20 .
+<http://marketplace.com.py/onto/v1> <http://purl.org/dc/terms/created> "2026-04-28T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:n141854c8f65a4454bb4cafdbb63aed14b43 <http://www.w3.org/2002/07/owl#intersectionOf> _:n141854c8f65a4454bb4cafdbb63aed14b45 .
+<http://marketplace.com.py/onto/v1#suministradoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#Decision> <http://www.w3.org/2000/01/rdf-schema#label> "Decision"@es .
+<http://marketplace.com.py/onto/v1#ProductoColdStart> <http://www.w3.org/2000/01/rdf-schema#label> "ProductoColdStart"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b10 <http://www.w3.org/2002/07/owl#unionOf> _:n141854c8f65a4454bb4cafdbb63aed14b11 .
+_:n141854c8f65a4454bb4cafdbb63aed14b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Categoria> .
+<http://marketplace.com.py/onto/v1#Producto> <http://www.w3.org/2000/01/rdf-schema#comment> "SKU comercializable del catalogo retail. Identificado por :sku."@es .
+<http://marketplace.com.py/onto/v1#Algorithm> <http://www.w3.org/2000/01/rdf-schema#comment> "Algoritmo de optimizacion candidato (ej: 'GreedyKnapsack', 'MILP', 'ColdStartSimilarity')."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n141854c8f65a4454bb4cafdbb63aed14b34 .
+<http://marketplace.com.py/onto/v1#sku> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://marketplace.com.py/onto/v1#defeats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://marketplace.com.py/onto/v1#razonamiento> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://marketplace.com.py/onto/v1#cantidadStock> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Stock> .
+<http://marketplace.com.py/onto/v1#Obligation> <http://www.w3.org/2000/01/rdf-schema#comment> "Norma que obliga a una accion o estado (ej: 'todo Producto debe tener stock minimo')."@es .
+<http://marketplace.com.py/onto/v1#confianzaExtraccion> <http://www.w3.org/2000/01/rdf-schema#label> "confianzaExtraccion"@es .
+<http://marketplace.com.py/onto/v1#trendValue> <http://www.w3.org/2000/01/rdf-schema#label> "trendValue"@es .
+<http://marketplace.com.py/onto/v1#permite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n141854c8f65a4454bb4cafdbb63aed14b22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://marketplace.com.py/onto/v1#tieneStock> <http://www.w3.org/2000/01/rdf-schema#label> "tieneStock"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://marketplace.com.py/onto/v1#tieneHistorial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Producto> .
+_:n141854c8f65a4454bb4cafdbb63aed14b18 <http://www.w3.org/2002/07/owl#unionOf> _:n141854c8f65a4454bb4cafdbb63aed14b19 .
+<http://marketplace.com.py/onto/v1#altaRotacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n141854c8f65a4454bb4cafdbb63aed14b31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Producto> .
+_:n141854c8f65a4454bb4cafdbb63aed14b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b17 .
+_:n141854c8f65a4454bb4cafdbb63aed14b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b42 .
+<http://marketplace.com.py/onto/v1#ProductoColdStart> <http://www.w3.org/2002/07/owl#equivalentClass> _:n141854c8f65a4454bb4cafdbb63aed14b39 .
+_:n141854c8f65a4454bb4cafdbb63aed14b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#sku> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#perteneceA> <http://www.w3.org/2000/01/rdf-schema#comment> "Pertenencia jerarquica en taxonomia merceologica."@es .
+<http://marketplace.com.py/onto/v1#validTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Norm> .
+<http://marketplace.com.py/onto/v1#perecedero> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:n141854c8f65a4454bb4cafdbb63aed14b24 <http://www.w3.org/2002/07/owl#onProperty> <http://marketplace.com.py/onto/v1#derivadaDe> .
+<http://marketplace.com.py/onto/v1#pais> <http://www.w3.org/2000/01/rdf-schema#label> "pais"@es .
+<http://marketplace.com.py/onto/v1#Obligation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://marketplace.com.py/onto/v1#Norm> .
+_:n141854c8f65a4454bb4cafdbb63aed14b25 <http://www.w3.org/2002/07/owl#intersectionOf> _:n141854c8f65a4454bb4cafdbb63aed14b27 .
+<http://marketplace.com.py/onto/v1#ProductoPerecedero> <http://www.w3.org/2002/07/owl#equivalentClass> _:n141854c8f65a4454bb4cafdbb63aed14b25 .
+<http://marketplace.com.py/onto/v1#Decision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#velocidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#proveedorId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificador unico del Proveedor (codigo interno)."@es .
+<http://marketplace.com.py/onto/v1> <http://www.w3.org/2002/07/owl#versionInfo> "1.2.0-bloque4" .
+<http://marketplace.com.py/onto/v1#requiere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://marketplace.com.py/onto/v1#ProductoAltaRotacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#similarA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n141854c8f65a4454bb4cafdbb63aed14b33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n141854c8f65a4454bb4cafdbb63aed14b33 <http://www.w3.org/2002/07/owl#intersectionOf> _:n141854c8f65a4454bb4cafdbb63aed14b37 .
+_:n141854c8f65a4454bb4cafdbb63aed14b24 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://marketplace.com.py/onto/v1#SubSeccion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#validFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha desde la que la Norma esta vigente."@es .
+<http://marketplace.com.py/onto/v1#Prohibition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://marketplace.com.py/onto/v1#Norm> .
+<http://marketplace.com.py/onto/v1#ProductoAltaRotacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Producto con velocidad de venta superior al umbral del Grupo."@es .
+<http://marketplace.com.py/onto/v1#Seccion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n141854c8f65a4454bb4cafdbb63aed14b15 <http://www.w3.org/2002/07/owl#unionOf> _:n141854c8f65a4454bb4cafdbb63aed14b16 .
+_:n141854c8f65a4454bb4cafdbb63aed14b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://marketplace.com.py/onto/v1#confianzaExtraccion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b48 <http://www.w3.org/2002/07/owl#onProperty> <http://marketplace.com.py/onto/v1#esExterior> .
+<http://marketplace.com.py/onto/v1#DecisionContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#EventoComercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n141854c8f65a4454bb4cafdbb63aed14b49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Proveedor> .
+<http://marketplace.com.py/onto/v1#defeasible> <http://www.w3.org/2000/01/rdf-schema#label> "defeasible"@es .
+<http://marketplace.com.py/onto/v1#velocidad> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#priority> <http://www.w3.org/2000/01/rdf-schema#label> "priority"@es .
+<http://marketplace.com.py/onto/v1#obliga> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Obligation> .
+<http://marketplace.com.py/onto/v1#priority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#fechaUltimaCompra> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://marketplace.com.py/onto/v1#priority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://marketplace.com.py/onto/v1#fechaUltimaCompra> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp de la ultima compra registrada para el Producto."@es .
+<http://marketplace.com.py/onto/v1#altaRotacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#validFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#trendValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:n141854c8f65a4454bb4cafdbb63aed14b21 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://marketplace.com.py/onto/v1#ProveedorExterior> <http://www.w3.org/2002/07/owl#equivalentClass> _:n141854c8f65a4454bb4cafdbb63aed14b43 .
+_:n141854c8f65a4454bb4cafdbb63aed14b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Obligation> .
+<http://marketplace.com.py/onto/v1#perecedero> <http://www.w3.org/2000/01/rdf-schema#label> "perecedero"@es .
+<http://marketplace.com.py/onto/v1#derivadaDe> <http://www.w3.org/2000/01/rdf-schema#label> "derivadaDe"@es .
+<http://marketplace.com.py/onto/v1#AlgorithmRecommendation> <http://www.w3.org/2000/01/rdf-schema#label> "AlgorithmRecommendation"@es .
+<http://marketplace.com.py/onto/v1#tieneHistorial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#validTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha hasta la que la Norma esta vigente (opcional)."@es .
+<http://marketplace.com.py/onto/v1#Obligation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n141854c8f65a4454bb4cafdbb63aed14b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Permission> .
+<http://marketplace.com.py/onto/v1#similarityValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Valor numerico [0,1] de un SimilarityScore."@es .
+<http://marketplace.com.py/onto/v1#Permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#aplicableA> <http://www.w3.org/2000/01/rdf-schema#label> "aplicableA"@es .
+<http://marketplace.com.py/onto/v1#permite> <http://www.w3.org/2000/01/rdf-schema#label> "permite"@es .
+<http://marketplace.com.py/onto/v1#ProductoCritico> <http://www.w3.org/2002/07/owl#equivalentClass> _:n141854c8f65a4454bb4cafdbb63aed14b33 .
+<http://marketplace.com.py/onto/v1#defeasible> <http://www.w3.org/2000/01/rdf-schema#comment> "True si la Norma puede ser derrotada por otra de mayor prioridad."@es .
+<http://marketplace.com.py/onto/v1#Permission> <http://www.w3.org/2000/01/rdf-schema#label> "Permiso"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b46 .
+<http://marketplace.com.py/onto/v1#sku> <http://www.w3.org/2000/01/rdf-schema#comment> "Codigo SKU unico del Producto."@es .
+<http://marketplace.com.py/onto/v1#sku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#SubSeccion> <http://www.w3.org/2000/01/rdf-schema#comment> "Subdivision de una Seccion (ej: 'Adornos')."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n141854c8f65a4454bb4cafdbb63aed14b26 .
+<http://marketplace.com.py/onto/v1#permite> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://marketplace.com.py/onto/v1#razonamiento> <http://www.w3.org/2000/01/rdf-schema#label> "razonamiento"@es .
+<http://marketplace.com.py/onto/v1#perecedero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#Obligation> <http://www.w3.org/2000/01/rdf-schema#label> "Obligacion"@es .
+<http://marketplace.com.py/onto/v1#derivadaDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#AlgorithmRecommendation> .
+<http://marketplace.com.py/onto/v1#Stock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n141854c8f65a4454bb4cafdbb63aed14b22 .
+<http://marketplace.com.py/onto/v1#suministradoPor> <http://www.w3.org/2000/01/rdf-schema#label> "suministradoPor"@es .
+<http://marketplace.com.py/onto/v1#invocaAlgoritmo> <http://www.w3.org/2000/01/rdf-schema#range> <http://marketplace.com.py/onto/v1#Algorithm> .
+<http://marketplace.com.py/onto/v1#enStock> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#priority> <http://www.w3.org/2000/01/rdf-schema#comment> "Prioridad numerica de una Norma (mayor = mas fuerte, usado en :defeats)."@es .
+<http://marketplace.com.py/onto/v1#ProductoCritico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://marketplace.com.py/onto/v1#Producto> .
+_:n141854c8f65a4454bb4cafdbb63aed14b44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n141854c8f65a4454bb4cafdbb63aed14b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b13 .
+_:n141854c8f65a4454bb4cafdbb63aed14b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://marketplace.com.py/onto/v1#priority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#similarA> <http://www.w3.org/2000/01/rdf-schema#range> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#derivadaDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://marketplace.com.py/onto/v1#validFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#ProductoColdStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n141854c8f65a4454bb4cafdbb63aed14b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Norm> .
+<http://marketplace.com.py/onto/v1#derivadaDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://marketplace.com.py/onto/v1#DecisionContext> .
+_:n141854c8f65a4454bb4cafdbb63aed14b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://marketplace.com.py/onto/v1#proveedorId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#obliga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://marketplace.com.py/onto/v1#ProveedorLocal> <http://www.w3.org/2002/07/owl#equivalentClass> _:n141854c8f65a4454bb4cafdbb63aed14b47 .
+<http://marketplace.com.py/onto/v1#SubSeccion> <http://www.w3.org/2000/01/rdf-schema#label> "SubSeccion"@es .
+<http://marketplace.com.py/onto/v1#fechaUltimaCompra> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#aplicableA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://marketplace.com.py/onto/v1#enStock> <http://www.w3.org/2000/01/rdf-schema#comment> "Booleano que indica si el Producto tiene stock disponible (snapshot)."@es .
+<http://marketplace.com.py/onto/v1#suministradoPor> <http://www.w3.org/2000/01/rdf-schema#comment> "Producto suministrado por un Proveedor. Refleja arista del Neo4j v1."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b9 .
+<http://marketplace.com.py/onto/v1#velocidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#Norm> <http://www.w3.org/2000/01/rdf-schema#comment> "Regla deontica del marketplace. Subclases especifican modalidad."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Grupo> .
+_:n141854c8f65a4454bb4cafdbb63aed14b26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://marketplace.com.py/onto/v1#esExterior> <http://www.w3.org/2000/01/rdf-schema#label> "esExterior"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://marketplace.com.py/onto/v1#suministradoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://marketplace.com.py/onto/v1#aplicableA> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que una Norma o Algoritmo aplica a un objeto del dominio."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n141854c8f65a4454bb4cafdbb63aed14b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Categoria> .
+_:n141854c8f65a4454bb4cafdbb63aed14b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Algorithm> .
+<http://marketplace.com.py/onto/v1#similarityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#obliga> <http://www.w3.org/2000/01/rdf-schema#comment> "Acto o estado obligado por una Obligation."@es .
+<http://marketplace.com.py/onto/v1#sku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#ProductoPerecedero> <http://www.w3.org/2000/01/rdf-schema#label> "ProductoPerecedero"@es .
+<http://marketplace.com.py/onto/v1#confianzaExtraccion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#TrendSignal> .
+<http://marketplace.com.py/onto/v1#perecedero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#trendValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#Prohibition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#permite> <http://www.w3.org/2000/01/rdf-schema#comment> "Acto o estado explicitamente permitido por un Permission."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Seccion> .
+<http://marketplace.com.py/onto/v1#enStock> <http://www.w3.org/2000/01/rdf-schema#label> "enStock"@es .
+<http://marketplace.com.py/onto/v1#Prohibition> <http://www.w3.org/2000/01/rdf-schema#comment> "Norma que prohibe una accion (ej: 'prohibido vender perecederos vencidos')."@es .
+<http://marketplace.com.py/onto/v1#confianzaExtraccion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n141854c8f65a4454bb4cafdbb63aed14b40 <http://www.w3.org/2002/07/owl#onProperty> <http://marketplace.com.py/onto/v1#tieneHistorial> .
+<http://marketplace.com.py/onto/v1#ProductoAltaRotacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#ProveedorLocal> <http://www.w3.org/2002/07/owl#disjointWith> <http://marketplace.com.py/onto/v1#ProveedorExterior> .
+<http://marketplace.com.py/onto/v1#pais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#validTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#pais> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+_:n141854c8f65a4454bb4cafdbb63aed14b37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#ProductoPerecedero> <http://www.w3.org/2000/01/rdf-schema#comment> "Producto con vencimiento o degradacion temporal (impacta optimizacion de stock)."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n141854c8f65a4454bb4cafdbb63aed14b40 .
+<http://marketplace.com.py/onto/v1#proveedorId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#tieneHistorial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#TrendSignal> <http://www.w3.org/2000/01/rdf-schema#label> "TrendSignal"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#ProductoPerecedero> .
+<http://marketplace.com.py/onto/v1#requiere> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+_:n141854c8f65a4454bb4cafdbb63aed14b35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b36 .
+<http://marketplace.com.py/onto/v1#enStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#Producto> <http://www.w3.org/2002/07/owl#disjointWith> <http://marketplace.com.py/onto/v1#Proveedor> .
+_:n141854c8f65a4454bb4cafdbb63aed14b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Grupo> .
+_:n141854c8f65a4454bb4cafdbb63aed14b37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b38 .
+<http://marketplace.com.py/onto/v1#Algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#SimilarityScore> <http://www.w3.org/2000/01/rdf-schema#comment> "Resultado de medir similitud entre un Producto cold-start y otro establecido."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b47 <http://www.w3.org/2002/07/owl#intersectionOf> _:n141854c8f65a4454bb4cafdbb63aed14b49 .
+_:n141854c8f65a4454bb4cafdbb63aed14b32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n141854c8f65a4454bb4cafdbb63aed14b30 .
+_:n141854c8f65a4454bb4cafdbb63aed14b30 <http://www.w3.org/2002/07/owl#onProperty> <http://marketplace.com.py/onto/v1#altaRotacion> .
+_:n141854c8f65a4454bb4cafdbb63aed14b36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://marketplace.com.py/onto/v1#Grupo> <http://www.w3.org/2000/01/rdf-schema#comment> "Subdivision de una SubSeccion (ej: 'Arboles artificiales')."@es .
+<http://marketplace.com.py/onto/v1#ProveedorExterior> <http://www.w3.org/2000/01/rdf-schema#label> "ProveedorExterior"@es .
+<http://marketplace.com.py/onto/v1#Prohibition> <http://www.w3.org/2000/01/rdf-schema#label> "Prohibicion"@es .
+<http://marketplace.com.py/onto/v1#ProductoAltaRotacion> <http://www.w3.org/2002/07/owl#equivalentClass> _:n141854c8f65a4454bb4cafdbb63aed14b29 .
+<http://marketplace.com.py/onto/v1#invocaAlgoritmo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://marketplace.com.py/onto/v1#similarityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b40 <http://www.w3.org/2002/07/owl#hasValue> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://marketplace.com.py/onto/v1#similarA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#TrendSignal> <http://www.w3.org/2000/01/rdf-schema#comment> "Senal de tendencia comercial (estacionalidad, demanda externa, etc.) con valor numerico."@es .
+<http://marketplace.com.py/onto/v1#ProductoAltaRotacion> <http://www.w3.org/2000/01/rdf-schema#label> "ProductoAltaRotacion"@es .
+<http://marketplace.com.py/onto/v1#ProductoCritico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#AlgorithmRecommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#defeasible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#razonamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#SimilarityScore> <http://www.w3.org/2000/01/rdf-schema#label> "SimilarityScore"@es .
+<http://marketplace.com.py/onto/v1#proveedorId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Proveedor> .
+_:n141854c8f65a4454bb4cafdbb63aed14b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#SubSeccion> .
+_:n141854c8f65a4454bb4cafdbb63aed14b22 <http://www.w3.org/2002/07/owl#onProperty> <http://marketplace.com.py/onto/v1#cantidadStock> .
+_:n141854c8f65a4454bb4cafdbb63aed14b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#trendValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#tieneStock> <http://www.w3.org/2000/01/rdf-schema#comment> "Asociacion entre un Producto y su entidad Stock."@es .
+<http://marketplace.com.py/onto/v1#fechaUltimaCompra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#ProveedorLocal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#ProductoPerecedero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#prohibe> <http://www.w3.org/2000/01/rdf-schema#label> "prohibe"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Producto> .
+_:n141854c8f65a4454bb4cafdbb63aed14b38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://marketplace.com.py/onto/v1#AlgorithmRecommendation> <http://www.w3.org/2000/01/rdf-schema#comment> "Decision concreta de invocar un Algorithm dado un DecisionContext."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b34 <http://www.w3.org/2002/07/owl#unionOf> _:n141854c8f65a4454bb4cafdbb63aed14b35 .
+_:n141854c8f65a4454bb4cafdbb63aed14b26 <http://www.w3.org/2002/07/owl#onProperty> <http://marketplace.com.py/onto/v1#perecedero> .
+<http://marketplace.com.py/onto/v1#aplicableA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://marketplace.com.py/onto/v1#Categoria> <http://www.w3.org/2000/01/rdf-schema#comment> "Hoja de la jerarquia merceologica donde cuelgan los Productos."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b44 <http://www.w3.org/2002/07/owl#onProperty> <http://marketplace.com.py/onto/v1#esExterior> .
+_:n141854c8f65a4454bb4cafdbb63aed14b49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b50 .
+<http://marketplace.com.py/onto/v1#esExterior> <http://www.w3.org/2000/01/rdf-schema#comment> "True si el Proveedor es del exterior (TIPO_DOCUMEN=20 en Pegasus). Mapea a Neo4j proveedor_exterior."@es .
+<http://marketplace.com.py/onto/v1#requiere> <http://www.w3.org/2000/01/rdf-schema#comment> "Algoritmo o Norma que exige la presencia de algo (input, condicion previa, recurso)."@es .
+<http://marketplace.com.py/onto/v1#ProveedorExterior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#tieneStock> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Producto> .
+<http://marketplace.com.py/onto/v1#validFrom> <http://www.w3.org/2000/01/rdf-schema#label> "validFrom"@es .
+<http://marketplace.com.py/onto/v1#Permission> <http://www.w3.org/2000/01/rdf-schema#comment> "Norma que explicitamente permite una accion (ej: 'permitido vender bajo costo en liquidacion')."@es .
+<http://marketplace.com.py/onto/v1#Norm> <http://www.w3.org/2000/01/rdf-schema#label> "Norma"@es .
+<http://marketplace.com.py/onto/v1#altaRotacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://marketplace.com.py/onto/v1#razonamiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Decision> .
+<http://marketplace.com.py/onto/v1#cantidadStock> <http://www.w3.org/2000/01/rdf-schema#label> "cantidadStock"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:n141854c8f65a4454bb4cafdbb63aed14b22 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://marketplace.com.py/onto/v1#Stock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#Norm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#sku> <http://www.w3.org/2000/01/rdf-schema#label> "sku"@es .
+<http://marketplace.com.py/onto/v1#esExterior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#enStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#tieneHistorial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://marketplace.com.py/onto/v1#defeats> <http://www.w3.org/2000/01/rdf-schema#label> "defeats"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<http://marketplace.com.py/onto/v1#pais> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Proveedor> .
+<http://marketplace.com.py/onto/v1#ProductoPerecedero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#Proveedor> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad que suministra Productos al marketplace."@es .
+<http://marketplace.com.py/onto/v1#permite> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Permission> .
+<http://marketplace.com.py/onto/v1#cantidadStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#EventoComercial> <http://www.w3.org/2000/01/rdf-schema#label> "EventoComercial"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://marketplace.com.py/onto/v1#defeats> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Norm> .
+<http://marketplace.com.py/onto/v1#ProductoColdStart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://marketplace.com.py/onto/v1#Producto> .
+_:n141854c8f65a4454bb4cafdbb63aed14b29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n141854c8f65a4454bb4cafdbb63aed14b46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n141854c8f65a4454bb4cafdbb63aed14b44 .
+_:n141854c8f65a4454bb4cafdbb63aed14b23 <http://www.w3.org/2002/07/owl#onProperty> <http://marketplace.com.py/onto/v1#priority> .
+<http://marketplace.com.py/onto/v1#similarityValue> <http://www.w3.org/2000/01/rdf-schema#label> "similarityValue"@es .
+<http://marketplace.com.py/onto/v1#perecedero> <http://www.w3.org/2000/01/rdf-schema#comment> "True si el Producto es perecedero (vencimiento, degradacion). Mapea a Neo4j perecedero."@es .
+<http://marketplace.com.py/onto/v1#derivadaDe> <http://www.w3.org/2000/01/rdf-schema#comment> "Una AlgorithmRecommendation derivada de un DecisionContext (trazabilidad)."@es .
+<http://marketplace.com.py/onto/v1#defeasible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://marketplace.com.py/onto/v1#razonamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://marketplace.com.py/onto/v1#Stock> <http://www.w3.org/2000/01/rdf-schema#comment> "Estado de inventario de un Producto en un momento dado. Reificado para soportar historial."@es .
+<http://marketplace.com.py/onto/v1#fechaUltimaCompra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#pais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b39 <http://www.w3.org/2002/07/owl#intersectionOf> _:n141854c8f65a4454bb4cafdbb63aed14b41 .
+_:n141854c8f65a4454bb4cafdbb63aed14b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Prohibition> .
+<http://marketplace.com.py/onto/v1#validTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b14 .
+<http://marketplace.com.py/onto/v1#velocidad> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://marketplace.com.py/onto/v1#perteneceA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b30 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://marketplace.com.py/onto/v1#validTo> <http://www.w3.org/2000/01/rdf-schema#label> "validTo"@es .
+<http://marketplace.com.py/onto/v1#obliga> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+_:n141854c8f65a4454bb4cafdbb63aed14b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#SubSeccion> .
+<http://marketplace.com.py/onto/v1#DecisionContext> <http://www.w3.org/2000/01/rdf-schema#label> "DecisionContext"@es .
+<http://marketplace.com.py/onto/v1#perteneceA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://marketplace.com.py/onto/v1#EventoComercial> <http://www.w3.org/2000/01/rdf-schema#comment> "Periodo temporal con caracteristicas comerciales (ej: 'Navidad 2026')."@es .
+<http://marketplace.com.py/onto/v1#validFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://marketplace.com.py/onto/v1#Seccion> <http://www.w3.org/2000/01/rdf-schema#comment> "Nivel mas alto de la jerarquia merceologica (ej: 'Navidad')."@es .
+<http://marketplace.com.py/onto/v1#DecisionContext> <http://www.w3.org/2000/01/rdf-schema#comment> "Snapshot de variables del entorno en el momento de decidir (producto, stock, evento, etc.)."@es .
+<http://marketplace.com.py/onto/v1#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n141854c8f65a4454bb4cafdbb63aed14b23 .
+<http://marketplace.com.py/onto/v1#Seccion> <http://www.w3.org/2000/01/rdf-schema#label> "Seccion"@es .
+<http://marketplace.com.py/onto/v1#similarA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#Proveedor> .
+<http://marketplace.com.py/onto/v1#cantidadStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b4 .
+<http://marketplace.com.py/onto/v1#invocaAlgoritmo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#Decision> .
+<http://marketplace.com.py/onto/v1#similarA> <http://www.w3.org/2000/01/rdf-schema#label> "similarA"@es .
+<http://marketplace.com.py/onto/v1#perteneceA> <http://www.w3.org/2000/01/rdf-schema#domain> _:n141854c8f65a4454bb4cafdbb63aed14b5 .
+<http://marketplace.com.py/onto/v1#altaRotacion> <http://www.w3.org/2000/01/rdf-schema#comment> "True si la velocidad del Producto supera el percentil 75 de la base. Materializado en bridge.py durante export."@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://marketplace.com.py/onto/v1#Algorithm> <http://www.w3.org/2000/01/rdf-schema#label> "Algorithm"@es .
+<http://marketplace.com.py/onto/v1#trendValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Magnitud de un TrendSignal."@es .
+<http://marketplace.com.py/onto/v1#trendValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#TrendSignal> .
+<http://marketplace.com.py/onto/v1#TrendSignal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n141854c8f65a4454bb4cafdbb63aed14b47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n141854c8f65a4454bb4cafdbb63aed14b26 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:n141854c8f65a4454bb4cafdbb63aed14b43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#ProveedorLocal> <http://www.w3.org/2000/01/rdf-schema#comment> "Proveedor con sede en Paraguay (TIPO_DOCUMEN!=20). Disjoint con ProveedorExterior."@es .
+<http://marketplace.com.py/onto/v1#fechaUltimaCompra> <http://www.w3.org/2000/01/rdf-schema#label> "fechaUltimaCompra"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b21 <http://www.w3.org/2002/07/owl#onProperty> <http://marketplace.com.py/onto/v1#sku> .
+<http://marketplace.com.py/onto/v1#similarityValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://marketplace.com.py/onto/v1#SimilarityScore> .
+<http://marketplace.com.py/onto/v1#perecedero> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:n141854c8f65a4454bb4cafdbb63aed14b39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#cantidadStock> <http://www.w3.org/2000/01/rdf-schema#comment> "Cantidad numerica disponible en una entidad Stock."@es .
+<http://marketplace.com.py/onto/v1#ProductoCritico> <http://www.w3.org/2000/01/rdf-schema#comment> "Producto cuya falta impacta fuertemente al negocio (ej: alta rotacion + sin sustituto)."@es .
+<http://marketplace.com.py/onto/v1#proveedorId> <http://www.w3.org/2000/01/rdf-schema#label> "proveedorId"@es .
+<http://marketplace.com.py/onto/v1#razonamiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Justificacion textual de la Decision para auditoria humana."@es .
+<http://marketplace.com.py/onto/v1#requiere> <http://www.w3.org/2000/01/rdf-schema#label> "requiere"@es .
+<http://marketplace.com.py/onto/v1#velocidad> <http://www.w3.org/2000/01/rdf-schema#comment> "Proxy de rotacion = total_cantidad_historica / max(1, dias_desde_alta). Definicion provisoria mientras no haya VENTAS_DET en el grafo."@es .
+<http://marketplace.com.py/onto/v1#prohibe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n141854c8f65a4454bb4cafdbb63aed14b36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://marketplace.com.py/onto/v1#ProductoAltaRotacion> .
+<http://marketplace.com.py/onto/v1#pais> <http://www.w3.org/2000/01/rdf-schema#comment> "Pais sede del Proveedor (afecta normas aduaneras y lead-time)."@es .
+<http://marketplace.com.py/onto/v1#Decision> <http://www.w3.org/2002/07/owl#disjointWith> <http://marketplace.com.py/onto/v1#Algorithm> .
+<http://marketplace.com.py/onto/v1#similarityValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:n141854c8f65a4454bb4cafdbb63aed14b44 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://marketplace.com.py/onto/v1#perteneceA> <http://www.w3.org/2000/01/rdf-schema#label> "perteneceA"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://marketplace.com.py/onto/v1#velocidad> <http://www.w3.org/2000/01/rdf-schema#label> "velocidad"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b28 .
+<http://marketplace.com.py/onto/v1#perteneceA> <http://www.w3.org/2000/01/rdf-schema#range> _:n141854c8f65a4454bb4cafdbb63aed14b10 .
+<http://marketplace.com.py/onto/v1#esExterior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://marketplace.com.py/onto/v1#Categoria> <http://www.w3.org/2000/01/rdf-schema#label> "Categoria"@es .
+<http://marketplace.com.py/onto/v1#prohibe> <http://www.w3.org/2000/01/rdf-schema#comment> "Acto o estado prohibido por una Prohibition."@es .
+<http://marketplace.com.py/onto/v1#defeats> <http://www.w3.org/2000/01/rdf-schema#comment> "Una norma derrota a otra en logica deontica defeasible (resuelve conflictos por prioridad)."@es .
+<http://marketplace.com.py/onto/v1#confianzaExtraccion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:n141854c8f65a4454bb4cafdbb63aed14b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n141854c8f65a4454bb4cafdbb63aed14b12 .
+<http://marketplace.com.py/onto/v1#proveedorId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+_:n141854c8f65a4454bb4cafdbb63aed14b32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://marketplace.com.py/onto/v1#Proveedor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://marketplace.com.py/onto/v1#aplicableA> <http://www.w3.org/2000/01/rdf-schema#domain> _:n141854c8f65a4454bb4cafdbb63aed14b15 .
+<http://marketplace.com.py/onto/v1#ProveedorLocal> <http://www.w3.org/2000/01/rdf-schema#label> "ProveedorLocal"@es .
+_:n141854c8f65a4454bb4cafdbb63aed14b5 <http://www.w3.org/2002/07/owl#unionOf> _:n141854c8f65a4454bb4cafdbb63aed14b6 .
+<http://marketplace.com.py/onto/v1#altaRotacion> <http://www.w3.org/2000/01/rdf-schema#label> "altaRotacion"@es .
+<http://marketplace.com.py/onto/v1#Producto> <http://www.w3.org/2000/01/rdf-schema#label> "Producto"@es .

@@ -1,0 +1,252 @@
+@prefix ns1: <http://marketplace.com.py/onto/v1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://marketplace.com.py/onto/v1#Producto/107966> a ns1:Producto ;
+    ns1:altaRotacion false ;
+    ns1:cantidadStock 1.0 ;
+    ns1:codigo_barras 107966 ;
+    ns1:fecha_alta "2020-07-30T13:54:16.737000+00:00"^^xsd:dateTime ;
+    ns1:fecha_ultima_venta "2026-02-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:nombre "PLATO DECORATIVO 704-04326" ;
+    ns1:nombre_corto "PLATO DECORATIVO 704" ;
+    ns1:pais_origen "Paraguay" ;
+    ns1:perecedero false ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Categoria/6265> ;
+    ns1:precio_costo 10748.3946 ;
+    ns1:precio_venta_actual 22000.0 ;
+    ns1:sku 107966 ;
+    ns1:suministradoPor <http://marketplace.com.py/onto/v1#Proveedor/1393> ;
+    ns1:tieneHistorial false ;
+    ns1:unidad "Unid" ;
+    ns1:velocidad 22.0 .
+
+<http://marketplace.com.py/onto/v1#Producto/112625> a ns1:Producto ;
+    ns1:altaRotacion true ;
+    ns1:cantidadStock 1.0 ;
+    ns1:codigo_barras 112625 ;
+    ns1:fecha_alta "2020-09-07T11:51:35.743000+00:00"^^xsd:dateTime ;
+    ns1:fecha_ultima_venta "2026-04-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:nombre "Caja x 2 Alf de Dulce de leche" ;
+    ns1:nombre_corto "Caja x 2 Alf de Dulc" ;
+    ns1:pais_origen "Paraguay" ;
+    ns1:perecedero true ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Categoria/7360> ;
+    ns1:precio_costo 21818.1816 ;
+    ns1:precio_venta_actual 32000.0 ;
+    ns1:sku 112625 ;
+    ns1:suministradoPor <http://marketplace.com.py/onto/v1#Proveedor/1040> ;
+    ns1:tieneHistorial false ;
+    ns1:unidad "Unid" ;
+    ns1:velocidad 491.0 .
+
+<http://marketplace.com.py/onto/v1#Producto/113982> a ns1:Producto ;
+    ns1:altaRotacion true ;
+    ns1:cantidadStock 0.0 ;
+    ns1:codigo_barras 113982 ;
+    ns1:fecha_alta "2020-10-01T12:06:56.237000+00:00"^^xsd:dateTime ;
+    ns1:fecha_ultima_venta "2024-12-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:nombre "JG PIÑA DECOR 049-571986" ;
+    ns1:nombre_corto "Decoración piña" ;
+    ns1:pais_origen "Panamá" ;
+    ns1:perecedero false ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Categoria/6256> ;
+    ns1:precio_costo 30620.0 ;
+    ns1:precio_venta_actual 65000.0 ;
+    ns1:sku 113982 ;
+    ns1:suministradoPor <http://marketplace.com.py/onto/v1#Proveedor/364> ;
+    ns1:tieneHistorial false ;
+    ns1:unidad "Unid" ;
+    ns1:velocidad 144.0 .
+
+<http://marketplace.com.py/onto/v1#Producto/114243> a ns1:Producto ;
+    ns1:altaRotacion true ;
+    ns1:cantidadStock 12.0 ;
+    ns1:codigo_barras 114243 ;
+    ns1:fecha_alta "2020-10-02T15:58:34.967000+00:00"^^xsd:dateTime ;
+    ns1:fecha_ultima_venta "2025-12-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:nombre "BOLA TRANSPARENTE 80MM 130-9500160" ;
+    ns1:nombre_corto "Bola navideña" ;
+    ns1:pais_origen "Panamá" ;
+    ns1:perecedero false ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Categoria/6253> ;
+    ns1:precio_costo 2697.0 ;
+    ns1:precio_venta_actual 9000.0 ;
+    ns1:sku 114243 ;
+    ns1:suministradoPor <http://marketplace.com.py/onto/v1#Proveedor/364> ;
+    ns1:tieneHistorial false ;
+    ns1:unidad "Unid" ;
+    ns1:velocidad 384.0 .
+
+<http://marketplace.com.py/onto/v1#Producto/114283> a ns1:Producto ;
+    ns1:altaRotacion false ;
+    ns1:cantidadStock 0.0 ;
+    ns1:codigo_barras 114283 ;
+    ns1:fecha_alta "2020-10-03T11:01:51.267000+00:00"^^xsd:dateTime ;
+    ns1:fecha_ultima_venta "2024-12-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:nombre "CARAMELO DECOR  28CM 140-4100317" ;
+    ns1:nombre_corto "Caramelo Deco 28cm" ;
+    ns1:pais_origen "Panamá" ;
+    ns1:perecedero false ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Categoria/6257> ;
+    ns1:precio_costo 22147.0 ;
+    ns1:precio_venta_actual 49000.0 ;
+    ns1:sku 114283 ;
+    ns1:tieneHistorial false ;
+    ns1:unidad "Unid" ;
+    ns1:velocidad 0.0 .
+
+<http://marketplace.com.py/onto/v1#Producto/114731> a ns1:Producto ;
+    ns1:altaRotacion false ;
+    ns1:cantidadStock 1.0 ;
+    ns1:codigo_barras 114731 ;
+    ns1:fecha_alta "2020-10-05T12:08:52.657000+00:00"^^xsd:dateTime ;
+    ns1:fecha_ultima_venta "2024-08-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:nombre "INDIVIDUAL DIA 38CM 180-0500001" ;
+    ns1:nombre_corto "Individual 38cm" ;
+    ns1:pais_origen "Panamá" ;
+    ns1:perecedero false ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Categoria/6290> ;
+    ns1:precio_costo 10076.7718 ;
+    ns1:precio_venta_actual 25000.0 ;
+    ns1:sku 114731 ;
+    ns1:tieneHistorial false ;
+    ns1:unidad "Unid" ;
+    ns1:velocidad 0.0 .
+
+<http://marketplace.com.py/onto/v1#Producto/114739> a ns1:Producto ;
+    ns1:altaRotacion false ;
+    ns1:cantidadStock 1.0 ;
+    ns1:codigo_barras 114739 ;
+    ns1:fecha_alta "2020-10-05T14:32:05.917000+00:00"^^xsd:dateTime ;
+    ns1:nombre "PORTA PLATO 180-7900131" ;
+    ns1:nombre_corto "Porta Plato" ;
+    ns1:pais_origen "Panamá" ;
+    ns1:perecedero false ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Categoria/6265> ;
+    ns1:precio_costo 11054.0 ;
+    ns1:sku 114739 ;
+    ns1:tieneHistorial false ;
+    ns1:unidad "Unid" ;
+    ns1:velocidad 0.0 .
+
+<http://marketplace.com.py/onto/v1#Producto/114796> a ns1:Producto ;
+    ns1:altaRotacion false ;
+    ns1:cantidadStock 0.0 ;
+    ns1:codigo_barras 114796 ;
+    ns1:fecha_alta "2020-10-06T09:18:38.610000+00:00"^^xsd:dateTime ;
+    ns1:fecha_ultima_venta "2025-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:nombre "VELA C/LUZ LED 200-9100070B" ;
+    ns1:nombre_corto "Vela c/ luz led" ;
+    ns1:pais_origen "Panamá" ;
+    ns1:perecedero false ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Categoria/6298> ;
+    ns1:precio_costo 35795.0 ;
+    ns1:precio_venta_actual 69000.0 ;
+    ns1:sku 114796 ;
+    ns1:suministradoPor <http://marketplace.com.py/onto/v1#Proveedor/364> ;
+    ns1:tieneHistorial false ;
+    ns1:unidad "Unid" ;
+    ns1:velocidad 36.0 .
+
+<http://marketplace.com.py/onto/v1#Producto/114813> a ns1:Producto ;
+    ns1:altaRotacion false ;
+    ns1:cantidadStock 0.0 ;
+    ns1:codigo_barras 114813 ;
+    ns1:fecha_alta "2020-10-06T09:58:52.333000+00:00"^^xsd:dateTime ;
+    ns1:fecha_ultima_venta "2025-11-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:nombre "BASE P/ARBOL 201-6100003" ;
+    ns1:nombre_corto "Base Rústica Árbol" ;
+    ns1:pais_origen "Panamá" ;
+    ns1:perecedero false ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Categoria/6257> ;
+    ns1:precio_costo 194879.0 ;
+    ns1:precio_venta_actual 339000.0 ;
+    ns1:sku 114813 ;
+    ns1:suministradoPor <http://marketplace.com.py/onto/v1#Proveedor/364> ;
+    ns1:tieneHistorial false ;
+    ns1:unidad "Unid" ;
+    ns1:velocidad 72.0 .
+
+<http://marketplace.com.py/onto/v1#Producto/114986> a ns1:Producto ;
+    ns1:altaRotacion false ;
+    ns1:cantidadStock 0.0 ;
+    ns1:codigo_barras 114986 ;
+    ns1:fecha_alta "2020-10-07T10:30:24.870000+00:00"^^xsd:dateTime ;
+    ns1:fecha_ultima_venta "2024-12-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:nombre "INDIVIDUAL AL-2020-2-65" ;
+    ns1:nombre_corto "INDIVIDUAL AL-2020-2" ;
+    ns1:pais_origen "China" ;
+    ns1:perecedero false ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Categoria/6291> ;
+    ns1:precio_costo 10981.0 ;
+    ns1:precio_venta_actual 24000.0 ;
+    ns1:sku 114986 ;
+    ns1:tieneHistorial false ;
+    ns1:unidad "Unid" ;
+    ns1:velocidad 0.0 .
+
+<http://marketplace.com.py/onto/v1#Categoria/6253> a ns1:Categoria ;
+    ns1:id 6253 ;
+    ns1:nombre "ESFERAS" ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Grupo/1919> .
+
+<http://marketplace.com.py/onto/v1#Categoria/6256> a ns1:Categoria ;
+    ns1:id 6256 ;
+    ns1:nombre "P/ ARBOL" ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Grupo/1919> .
+
+<http://marketplace.com.py/onto/v1#Categoria/6290> a ns1:Categoria ;
+    ns1:id 6290 ;
+    ns1:nombre "CAMINEROS" ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Grupo/1933> .
+
+<http://marketplace.com.py/onto/v1#Categoria/6291> a ns1:Categoria ;
+    ns1:id 6291 ;
+    ns1:nombre "INDIVIDUALES" ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Grupo/1933> .
+
+<http://marketplace.com.py/onto/v1#Categoria/6298> a ns1:Categoria ;
+    ns1:id 6298 ;
+    ns1:nombre "VELAS" ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Grupo/1934> .
+
+<http://marketplace.com.py/onto/v1#Categoria/7360> a ns1:Categoria ;
+    ns1:id 7360 ;
+    ns1:nombre "ALFAJORES" ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Grupo/2259> .
+
+<http://marketplace.com.py/onto/v1#Proveedor/1040> a ns1:Proveedor ;
+    ns1:email "comercial@dulcemanjarpy.com" ;
+    ns1:esExterior false ;
+    ns1:id 1040 ;
+    ns1:nombre "FIDEM S.R.L" ;
+    ns1:pais "Paraguay" ;
+    ns1:ruc "80065639-3" ;
+    ns1:telefono "0981 349 055" .
+
+<http://marketplace.com.py/onto/v1#Proveedor/1393> a ns1:Proveedor ;
+    ns1:esExterior true ;
+    ns1:id 1393 ;
+    ns1:nombre "MAY´S ZONA LIBRE S.A." ;
+    ns1:pais "China" ;
+    ns1:ruc "0379007165" ;
+    ns1:telefono "(507)433-9900" .
+
+<http://marketplace.com.py/onto/v1#Categoria/6257> a ns1:Categoria ;
+    ns1:id 6257 ;
+    ns1:nombre "VARIOS" ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Grupo/1919> .
+
+<http://marketplace.com.py/onto/v1#Categoria/6265> a ns1:Categoria ;
+    ns1:id 6265 ;
+    ns1:nombre "PORTAPLATOS" ;
+    ns1:perteneceA <http://marketplace.com.py/onto/v1#Grupo/1922> .
+
+<http://marketplace.com.py/onto/v1#Proveedor/364> a ns1:Proveedor ;
+    ns1:esExterior true ;
+    ns1:id 364 ;
+    ns1:nombre "NORITEX" ;
+    ns1:pais "Paraguay" ;
+    ns1:ruc "88888888888" ;
+    ns1:telefono "021-56498498" .
+
