@@ -71,6 +71,11 @@ class ForecastConfig:
     # Monte Carlo interno (n_sims pequeño - decision Cris 2026-04-29)
     n_sims: int = 20
 
+    # Cold-start via similarity engine de Abi (ontology_semantic).
+    # Threshold minimo de score_total para aceptar un sku como donante.
+    # Ver distribucion en logs de precompute_top_k: P75 suele estar ~0.7.
+    umbral_similitud_donante: float = 0.6
+
     # Pesos de la formula confianza_global = sum(w_i * factor_i)
     peso_historia: float = _PESOS_DEFAULT["historia"]
     peso_volatilidad: float = _PESOS_DEFAULT["volatilidad"]

@@ -1,0 +1,208 @@
+# =============================================================================
+# Catalogo de normas deonticas - Marketplace SA Paraguay
+# Tarea 1 v2 - Bloque 6 (logica deontica defeasible)
+# =============================================================================
+# ABox de instancias de :Obligation, :Permission y :Prohibition. Las clases
+# y propiedades base (:priority, :validFrom, :validTo, :defeasible, :defeats)
+# vienen de marketplace.ttl. Este archivo extiende el vocabulario con tres
+# datatype properties especificas del framework de resolver:
+#
+#   :appliesWhen - nombre de un predicado Python registrado (decorator)
+#   :target      - etiqueta abstracta de conflicto compartida entre normas
+#   :source      - justificacion de negocio (string libre)
+#
+# El parser deontic.resolver._parse_normas_ttl carga este archivo y
+# materializa instancias de las dataclasses Norm/Obligation/Permission/Prohibition.
+# =============================================================================
+
+@prefix :        <http://marketplace.com.py/onto/v1#> .
+@prefix mkt:     <http://marketplace.com.py/onto/v1#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# =============================================================================
+# Extension del vocabulario deontico (datatype properties especificas Bloque 6)
+# =============================================================================
+
+:appliesWhen a owl:DatatypeProperty ;
+    rdfs:label "appliesWhen"@es ;
+    rdfs:comment "Nombre del predicado Python (registrado via @register_predicate) que evalua si la Norma aplica al par (decision, contexto)."@es ;
+    rdfs:domain :Norm ;
+    rdfs:range xsd:string ;
+    a owl:FunctionalProperty .
+
+:target a owl:DatatypeProperty ;
+    rdfs:label "target"@es ;
+    rdfs:comment "Etiqueta abstracta del acto/estado regulado. Dos normas con mismo target son candidatas a conflicto si las modalidades son incompatibles (O-F o F-P)."@es ;
+    rdfs:domain :Norm ;
+    rdfs:range xsd:string ;
+    a owl:FunctionalProperty .
+
+:source a owl:DatatypeProperty ;
+    rdfs:label "source"@es ;
+    rdfs:comment "Justificacion de negocio de la norma (string libre) para audit trail."@es ;
+    rdfs:domain :Norm ;
+    rdfs:range xsd:string ;
+    a owl:FunctionalProperty .
+
+# =============================================================================
+# Header del catalogo
+# =============================================================================
+
+<http://marketplace.com.py/onto/v1/normas> a owl:Ontology ;
+    rdfs:label "Catalogo de normas deonticas Marketplace v1"@es ;
+    rdfs:comment "11 normas iniciales: 4 prohibiciones, 4 obligaciones, 3 permisos. Una P derrota a una O via :defeats explicito (excepcion documentada)."@es ;
+    dcterms:creator "Equipo Tarea 1 - NASA Marketplace" ;
+    dcterms:created "2026-04-29T00:00:00"^^xsd:dateTime ;
+    owl:versionInfo "1.0.0-bloque6" ;
+    owl:imports <http://marketplace.com.py/onto/v1> .
+
+# =============================================================================
+# F1 - Prohibido comprar perecedero sin viabilidad temporal
+# =============================================================================
+
+mkt:F_compra_perecedero_sin_viabilidad a :Prohibition ;
+    rdfs:label "F: comprar perecedero sin viabilidad temporal"@es ;
+    :appliesWhen "F_compra_perecedero_sin_viabilidad" ;
+    :target "compra_de_producto" ;
+    :priority 90 ;
+    :defeasible "false"^^xsd:boolean ;
+    :validFrom "2026-01-01T00:00:00"^^xsd:dateTime ;
+    :source "Politica de inventarios: comprar un perecedero cuyo lead time consume el shelf life es perdida segura. No defeasible." .
+
+# =============================================================================
+# F2 - Prohibido comprar > 5000 USD sin aprobacion si presupuesto bajo
+# =============================================================================
+
+mkt:F_compra_grande_sin_aprobacion_presupuesto_bajo a :Prohibition ;
+    rdfs:label "F: compra grande sin aprobacion en contexto de presupuesto bajo"@es ;
+    :appliesWhen "F_compra_grande_sin_aprobacion_presupuesto_bajo" ;
+    :target "compra_grande_critica" ;
+    :priority 80 ;
+    :defeasible "false"^^xsd:boolean ;
+    :validFrom "2026-01-01T00:00:00"^^xsd:dateTime ;
+    :source "Control financiero: compras > 5000 USD requieren aprobacion explicita cuando el presupuesto disponible de la categoria esta bajo el threshold (default 10000 USD)." .
+
+# =============================================================================
+# F3 - Prohibido comprar a proveedor desactivado
+# =============================================================================
+
+mkt:F_compra_a_proveedor_desactivado a :Prohibition ;
+    rdfs:label "F: comprar a proveedor desactivado"@es ;
+    :appliesWhen "F_compra_a_proveedor_desactivado" ;
+    :target "compra_a_proveedor" ;
+    :priority 95 ;
+    :defeasible "false"^^xsd:boolean ;
+    :validFrom "2026-01-01T00:00:00"^^xsd:dateTime ;
+    :source "Higiene de catalogo: un proveedor inactivo es senal de problema (deuda, cierre, fraude). No comprar bajo ningun motivo." .
+
+# =============================================================================
+# F8 - Prohibido importar sin lead time suficiente para el evento
+# =============================================================================
+
+mkt:F_importacion_sin_lead_time_para_evento a :Prohibition ;
+    rdfs:label "F: importacion sin lead time suficiente"@es ;
+    :appliesWhen "F_importacion_sin_lead_time_para_evento" ;
+    :target "importacion_para_evento" ;
+    :priority 85 ;
+    :defeasible "true"^^xsd:boolean ;
+    :validFrom "2026-01-01T00:00:00"^^xsd:dateTime ;
+    :source "Operaciones: importar de proveedor exterior cuando los dias hasta el evento son menores al lead time garantiza atraso. Defeasible: el dispatcher puede admitir excepciones explicitas en eventos especiales." .
+
+# =============================================================================
+# O4 - Obligatorio garantizar 2 proveedores en SKUs criticos
+# =============================================================================
+
+mkt:O_sku_critico_dos_proveedores a :Obligation ;
+    rdfs:label "O: dos proveedores para SKUs criticos"@es ;
+    :appliesWhen "O_sku_critico_dos_proveedores" ;
+    :target "compra_sku_critico" ;
+    :priority 60 ;
+    :defeasible "true"^^xsd:boolean ;
+    :validFrom "2026-01-01T00:00:00"^^xsd:dateTime ;
+    :source "Resiliencia de cadena de suministro: SKUs criticos no deben depender de un solo proveedor. Defeasible: derrotada por aprobacion de excepcion documentada (P5)." .
+
+# =============================================================================
+# P5 - Permitido comprar SKU critico a unico proveedor SI hay aprobacion
+#      ** DERROTA EXPLICITA a O4 via :defeats **
+# =============================================================================
+
+mkt:P_compra_sku_critico_unico_proveedor_con_aprobacion a :Permission ;
+    rdfs:label "P: comprar SKU critico a unico proveedor con aprobacion"@es ;
+    :appliesWhen "P_compra_sku_critico_unico_proveedor_con_aprobacion" ;
+    :target "compra_sku_critico" ;
+    :priority 80 ;
+    :defeasible "false"^^xsd:boolean ;
+    :defeats mkt:O_sku_critico_dos_proveedores ;
+    :validFrom "2026-01-01T00:00:00"^^xsd:dateTime ;
+    :source "Excepcion documentada a O4: cuando el catalogo solo tiene 1 proveedor habilitado para el SKU critico y la decision lleva aprobacion_excepcion=true, la compra esta permitida." .
+
+# =============================================================================
+# O5 - Obligatoria validacion humana si confidence cold-start < 0.5
+# =============================================================================
+
+mkt:O_validacion_humana_coldstart_low_conf a :Obligation ;
+    rdfs:label "O: validacion humana en cold-start de baja confianza"@es ;
+    :appliesWhen "O_validacion_humana_coldstart_low_conf" ;
+    :target "decision_coldstart" ;
+    :priority 70 ;
+    :defeasible "true"^^xsd:boolean ;
+    :validFrom "2026-01-01T00:00:00"^^xsd:dateTime ;
+    :source "Cold-start con confidence < 0.5 (Bloque 5): el motor de similitud no logra respaldar la decision con suficiente evidencia, validacion humana antes de ejecutar." .
+
+# =============================================================================
+# P6 - Permitido exceder budget categoria 15% en temporada pico
+#      VIGENCIA TEMPORAL: 2026-11-15 -> 2027-01-15
+# =============================================================================
+
+mkt:P_excede_budget_categoria_15_temporada_pico a :Permission ;
+    rdfs:label "P: exceder budget categoria 15% en temporada pico"@es ;
+    :appliesWhen "P_excede_budget_categoria_15_temporada_pico" ;
+    :target "compra_excede_budget" ;
+    :priority 65 ;
+    :defeasible "true"^^xsd:boolean ;
+    :validFrom "2026-11-15T00:00:00"^^xsd:dateTime ;
+    :validTo   "2027-01-15T23:59:59"^^xsd:dateTime ;
+    :source "Temporada navidena 2026-2027: el operador puede comprar excediendo hasta 15% el budget mensual de la categoria sin aprobacion adicional. Fuera de esta ventana, la norma no aplica (vigencia)." .
+
+# =============================================================================
+# P7 - Permitido superar MOQ si descuento por volumen lo justifica
+# =============================================================================
+
+mkt:P_compra_supera_moq_con_descuento_volumen a :Permission ;
+    rdfs:label "P: superar MOQ con descuento por volumen"@es ;
+    :appliesWhen "P_compra_supera_moq_con_descuento_volumen" ;
+    :target "compra_volumen_excesivo" ;
+    :priority 50 ;
+    :defeasible "true"^^xsd:boolean ;
+    :validFrom "2026-01-01T00:00:00"^^xsd:dateTime ;
+    :source "Optimizacion de costos: comprar por encima del MOQ esta permitido si el descuento por volumen es >= threshold (default 10%)." .
+
+# =============================================================================
+# O9 - Obligatoria justificacion escrita al comprar a exterior nuevo
+# =============================================================================
+
+mkt:O_justificacion_proveedor_exterior_nuevo a :Obligation ;
+    rdfs:label "O: justificacion escrita al comprar a exterior nuevo"@es ;
+    :appliesWhen "O_justificacion_proveedor_exterior_nuevo" ;
+    :target "compra_proveedor_exterior_nuevo" ;
+    :priority 55 ;
+    :defeasible "true"^^xsd:boolean ;
+    :validFrom "2026-01-01T00:00:00"^^xsd:dateTime ;
+    :source "Compliance aduanero: la primera compra a un proveedor del exterior requiere justificacion escrita en el expediente para auditoria DNCP/aduana." .
+
+# =============================================================================
+# P10 - Permitido relajar criterio de stock minimo en SKUs piloto
+# =============================================================================
+
+mkt:P_relajar_stock_minimo_sku_piloto a :Permission ;
+    rdfs:label "P: relajar stock minimo en SKUs piloto"@es ;
+    :appliesWhen "P_relajar_stock_minimo_sku_piloto" ;
+    :target "stock_minimo" ;
+    :priority 40 ;
+    :defeasible "true"^^xsd:boolean ;
+    :validFrom "2026-01-01T00:00:00"^^xsd:dateTime ;
+    :source "Programa de pilotos: SKUs marcados como piloto pueden operar bajo el stock minimo del Grupo durante la fase de validacion comercial." .

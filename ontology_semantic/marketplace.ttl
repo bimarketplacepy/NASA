@@ -563,3 +563,132 @@
 ] .
 
 :ProveedorLocal owl:disjointWith :ProveedorExterior .
+
+
+# =============================================================================
+# Bloque 8 - Provenance con PROV-O (W3C Provenance Ontology)
+# =============================================================================
+# Importamos PROV-O por prefijo (no via owl:imports). El parser y los SPARQL
+# endpoints conocen el namespace prov: y resuelven los terminos sin necesidad
+# de dereferenciar la URL.
+#
+# Composicion: nuestras clases de dominio se subclasifican bajo las clases
+# core de PROV-O (Activity / Entity / Agent). Las propiedades del dominio se
+# subclasifican bajo las relaciones core (used / wasInformedBy / etc).
+#
+# Importante: prov:Entity y prov:Activity son owl:disjointWith en la spec.
+# Por eso :Decision (Activity) NO se cruza con :DecisionContext / :Norm
+# (Entity).
+# =============================================================================
+
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+# -----------------------------------------------------------------------------
+# Subclassing: clases de dominio bajo PROV-O
+# -----------------------------------------------------------------------------
+
+# Activities: cosas que pasan en el tiempo, consumen inputs, producen outputs.
+:Decision rdfs:subClassOf prov:Activity .
+# :AlgorithmRecommendation hereda transitivamente via :Decision.
+
+# Entities: cosas que existen en el tiempo y se consumen como inputs.
+:DecisionContext rdfs:subClassOf prov:Entity .
+:Norm rdfs:subClassOf prov:Entity .
+:SimilarityScore rdfs:subClassOf prov:Entity .
+:TrendSignal rdfs:subClassOf prov:Entity .
+:Algorithm rdfs:subClassOf prov:Entity .
+
+# -----------------------------------------------------------------------------
+# Agents: quien actua sobre el sistema
+# -----------------------------------------------------------------------------
+
+:DispatcherSystem a owl:Class ;
+    rdfs:subClassOf prov:Agent , prov:SoftwareAgent ;
+    rdfs:label "DispatcherSystem"@es ;
+    rdfs:comment "Sistema de software que decide algoritmo automaticamente sin intervencion humana."@es .
+
+:HumanOperator a owl:Class ;
+    rdfs:subClassOf prov:Agent , prov:Person ;
+    rdfs:label "HumanOperator"@es ;
+    rdfs:comment "Operador humano que toma o aprueba decisiones (validacion, aprobaciones de excepcion)."@es .
+
+# Instancias por defecto. El audit log las referencia salvo override del caller.
+
+:agente_dispatcher_v1 a :DispatcherSystem ;
+    rdfs:label "Dispatcher v1 (sistema autonomo)"@es ;
+    rdfs:comment "Instancia default para decisiones automaticas del AlgorithmDispatcher v1."@es ;
+    :version "1.0.0-bloque8" .
+
+:agente_humano_default a :HumanOperator ;
+    rdfs:label "Operador humano (placeholder)"@es ;
+    rdfs:comment "Placeholder para flujos con validacion humana. En produccion se reemplaza por agente con identidad real."@es .
+
+# -----------------------------------------------------------------------------
+# SubPropertyOf: propiedades de dominio bajo relaciones PROV-O core
+# -----------------------------------------------------------------------------
+
+:invocaAlgoritmo rdfs:subPropertyOf prov:used .
+:derivadaDe rdfs:subPropertyOf prov:wasDerivedFrom .
+
+# Nuevas propiedades introducidas en Bloque 8 -----
+
+:consultedNorma a owl:ObjectProperty ;
+    rdfs:label "consultedNorma"@es ;
+    rdfs:comment "Una Decision consulto/evaluo una Norm durante su pipeline (paso por el filtro de aplicabilidad del Bloque 6)."@es ;
+    rdfs:domain :Decision ;
+    rdfs:range :Norm ;
+    rdfs:subPropertyOf prov:used .
+
+:wasBlockedBy a owl:ObjectProperty ;
+    rdfs:label "wasBlockedBy"@es ;
+    rdfs:comment "Una Decision fue bloqueada por una Prohibition aplicable y no derrotada (Bloque 6). Subclase de prov:used: la decision uso/consulto la norma aunque haya quedado bloqueada por ella."@es ;
+    rdfs:domain :Decision ;
+    rdfs:range :Norm ;
+    rdfs:subPropertyOf prov:used .
+
+:appliedRule a owl:DatatypeProperty ;
+    rdfs:label "appliedRule"@es ;
+    rdfs:comment "rule_id de la regla del dispatcher_rules.yaml que disparo (first-match-wins). String literal porque las reglas no estan en TBox."@es ;
+    rdfs:domain :Decision ;
+    rdfs:range xsd:string ;
+    a owl:FunctionalProperty .
+
+:decisionId a owl:DatatypeProperty ;
+    rdfs:label "decisionId"@es ;
+    rdfs:comment "UUID v4 unico de la decision. Convencion: 'dec_' + uuid4 hex."@es ;
+    rdfs:domain :Decision ;
+    rdfs:range xsd:string ;
+    a owl:FunctionalProperty .
+
+:hadConfidence a owl:DatatypeProperty ;
+    rdfs:label "hadConfidence"@es ;
+    rdfs:comment "Score de confianza [0,1] de la AlgorithmRecommendation producida por la Decision."@es ;
+    rdfs:domain :Decision ;
+    rdfs:range xsd:decimal ;
+    a owl:FunctionalProperty .
+
+:wasBlockedByDeontic a owl:DatatypeProperty ;
+    rdfs:label "wasBlockedByDeontic"@es ;
+    rdfs:comment "True si la Decision quedo bloqueada por evaluacion deontica (Bloque 6) y no se invoco algoritmo."@es ;
+    rdfs:domain :Decision ;
+    rdfs:range xsd:boolean ;
+    a owl:FunctionalProperty .
+
+:hasStageDescriptor a owl:DatatypeProperty ;
+    rdfs:label "hasStageDescriptor"@es ;
+    rdfs:comment "descriptor_id de cada AlgorithmStage de la recomendacion. Multivaluada (una por stage)."@es ;
+    rdfs:domain :Decision ;
+    rdfs:range xsd:string .
+
+:contextSnapshot a owl:DatatypeProperty ;
+    rdfs:label "contextSnapshot"@es ;
+    rdfs:comment "Serializacion JSON del DecisionContext completo (incluyendo similar_top_k, evento_proximo, trend_signal). Necesario para replay() reconstructivo. Functional property: cada DecisionContext tiene exactamente un snapshot."@es ;
+    rdfs:domain :DecisionContext ;
+    rdfs:range xsd:string ;
+    a owl:FunctionalProperty .
+
+:version a owl:DatatypeProperty ;
+    rdfs:label "version"@es ;
+    rdfs:comment "Version semver del Agent (sistema). Para que el audit trail capture que dispatcher v1 vs v2 tomo la decision."@es ;
+    rdfs:domain prov:Agent ;
+    rdfs:range xsd:string .
