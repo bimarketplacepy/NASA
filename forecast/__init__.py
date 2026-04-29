@@ -1,22 +1,22 @@
-"""
-forecast - servicio de forecasting + Monte Carlo (Tarea 3).
-
-Marketplace SA Paraguay - Linea Navidad.
-
-API publica:
-    from forecast import ForecastService, ForecastResult, CaracteristicasSerie, ForecastConfig
-
-    service = ForecastService(ont_client=OntologyClient())
-    result = await service.forecast(sku="114142", semanas_adelante=8)
-"""
+"""forecast - servicio de forecasting + Monte Carlo (Tarea 3)."""
 
 from forecast.config import ForecastConfig
 from forecast.forecast import ForecastService
 from forecast.models import CaracteristicasSerie, ForecastResult
+from forecast.monte_carlo import (
+    Item,
+    MonteCarloSimulator,
+    Restriccion,
+    ResultadoMonteCarlo,
+)
 
 __all__ = [
     "CaracteristicasSerie",
     "ForecastConfig",
     "ForecastResult",
     "ForecastService",
+    "Item",
+    "MonteCarloSimulator",
+    "Restriccion",
+    "ResultadoMonteCarlo",
 ]
