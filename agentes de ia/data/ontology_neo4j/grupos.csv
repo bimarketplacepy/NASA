@@ -1,0 +1,9 @@
+id,nombre,subseccion_id
+GRP_CAT_LUCES,Grupo Luces y Decoracion Luminica,SS_NAV_GEN
+GRP_CAT_ARBOL,Grupo Arboles y Guirnaldas,SS_NAV_GEN
+GRP_CAT_ORNAMENT,Grupo Ornamentos,SS_NAV_GEN
+GRP_CAT_MESA,Grupo Mesa y Vajilla Festiva,SS_NAV_GEN
+GRP_CAT_EMPAQUE,Grupo Empaque y Regaleria,SS_NAV_GEN
+GRP_CAT_TEXTIL,Grupo Textiles Navidenos,SS_NAV_GEN
+GRP_CAT_EXTERIOR,Grupo Decoracion Exterior,SS_NAV_GEN
+GRP_CAT_PREMIUM,Grupo Premium Coleccionable,SS_NAV_GEN

@@ -1,0 +1,14 @@
+{
+  "_descripcion": "SKU trending con TrendSignal de confianza 0.85. Esperado: dispara regla_020_trend_signal_alta_confidence -> affine + ewma(alpha=0.20) + unbounded_deviations + simple_dev + dynamic_control. Confianza 0.75 + bonus 5% por trend alto.",
+  "sku": "555",
+  "tipo_sku": "trending",
+  "nombre": "ARBOL ARTIFICIAL TRENDY",
+  "semanas_historia": 60,
+  "volatilidad_forecast": 0.4,
+  "trend_signal": {
+    "fuente": "google_trends",
+    "valor": 2.1,
+    "confianza": 0.85
+  },
+  "proveedores_disponibles": 2
+}

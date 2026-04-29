@@ -1,0 +1,169 @@
+# =============================================================================
+# Reglas del AlgorithmDispatcher - Tarea 1 v2 - Bloque 7
+# =============================================================================
+# Cada regla mapea un perfil de DecisionContext a una combinacion de
+# descriptores de algoritmos. El dispatcher evalua reglas en orden de
+# prioridad descendente y la primera cuyas condiciones se cumplen TODAS
+# gana (first-match-wins).
+#
+# Sintaxis del campo `algoritmo`:
+#   - shorthand: "descriptor_id_1 + descriptor_id_2 + ..."
+#   - lista:     [descriptor_id_1, descriptor_id_2, ...]
+#
+# Sintaxis de `cuando`:
+#   - lista de expresiones tipo Python contra `context` (DecisionContext).
+#   - Permitido: comparaciones, and/or/not, atributos, subscript, llamadas
+#     a len/min/max/abs/sum/any/all/round/str/int/float/bool.
+#   - PROHIBIDO: lambdas, comprehensions, imports, dunders, asignaciones.
+#
+# Sintaxis de `parametros`:
+#   - keyed por descriptor_id. Valores literales o templates {{ ... }}
+#     que se evaluan con el mismo sandbox que `cuando`.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Familia: SKU establecido (existing) con historia >= 1 ano
+# -----------------------------------------------------------------------------
+
+- id: regla_001_existing_estable
+  nombre: "SKU establecido con baja volatilidad: politica afin + EWMA + cota acotada"
+  prioridad: 90
+  cuando:
+    - "context.tipo_sku == 'existing'"
+    - "context.semanas_historia >= 52"
+    - "context.volatilidad_forecast < 0.3"
+  algoritmo: "affine_ordering_policy + ewma_smoothing + bounded_deviations + simple_absolute_deviation + dynamic_control_framing"
+  parametros:
+    ewma_smoothing:
+      alpha: 0.15
+      K: 1.0
+    bounded_deviations:
+      epsilon_factor: 1.5
+  confianza: 0.90
+
+- id: regla_002_existing_volatil
+  nombre: "SKU establecido con alta volatilidad: misma familia pero con metrica correlacionada"
+  prioridad: 85
+  cuando:
+    - "context.tipo_sku == 'existing'"
+    - "context.semanas_historia >= 52"
+    - "context.volatilidad_forecast >= 0.3"
+  algoritmo: "affine_ordering_policy + ewma_smoothing + bounded_deviations + correlated_deviations + dynamic_control_framing"
+  parametros:
+    ewma_smoothing:
+      alpha: 0.25
+      K: 1.0
+    bounded_deviations:
+      epsilon_factor: 2.0
+  confianza: 0.80
+
+- id: regla_003_existing_historia_corta
+  nombre: "SKU existente con historia corta (< 52 sem): open-loop conservador con EWMA"
+  prioridad: 70
+  cuando:
+    - "context.tipo_sku == 'existing'"
+    - "context.semanas_historia < 52"
+    - "context.semanas_historia >= 12"
+  algoritmo: "open_loop + ewma_smoothing + bounded_deviations + simple_absolute_deviation + static_robust_framing"
+  parametros:
+    ewma_smoothing:
+      alpha: 0.30
+    bounded_deviations:
+      epsilon_factor: 2.5
+  confianza: 0.65
+
+# -----------------------------------------------------------------------------
+# Familia: SKU nuevo (cold-start) usando similar precomputado del Bloque 5
+# -----------------------------------------------------------------------------
+
+- id: regla_010_cold_start_similar_alto
+  nombre: "Cold-start con similar de score alto: hereda parametros del top-1"
+  prioridad: 80
+  cuando:
+    - "context.tipo_sku == 'new'"
+    - "context.similar_top_score >= 0.7"
+  algoritmo: "open_loop + cold_start_similarity + uniform_recency_weighting + bounded_deviations + simple_absolute_deviation + static_robust_framing"
+  parametros:
+    cold_start_similarity:
+      heredar_de_sku: "{{ context.similar_top_sku }}"
+      score_minimo: 0.7
+    bounded_deviations:
+      epsilon_factor: 3.0
+  confianza: 0.65
+
+- id: regla_011_cold_start_similar_dudoso
+  nombre: "Cold-start con similar de score bajo (<0.7): conservador, requiere validacion humana (Bloque 6 norma O5)"
+  prioridad: 75
+  cuando:
+    - "context.tipo_sku == 'new'"
+    - "context.similar_top_score < 0.7"
+    - "context.cold_start_confidence < 0.5"
+  algoritmo: "open_loop + uniform_recency_weighting + bounded_deviations + simple_absolute_deviation + static_robust_framing"
+  parametros:
+    bounded_deviations:
+      epsilon_factor: 4.0
+  confianza: 0.40
+
+# -----------------------------------------------------------------------------
+# Familia: SKU con senal de tendencia
+# -----------------------------------------------------------------------------
+
+- id: regla_020_trend_signal_alta_confidence
+  nombre: "Trend signal con confidence alta: politica afin + cota no-acotada (paper Case 1)"
+  prioridad: 78
+  cuando:
+    - "context.trend_confidence >= 0.8"
+    - "context.tipo_sku == 'trending'"
+  algoritmo: "affine_ordering_policy + ewma_smoothing + unbounded_deviations + simple_absolute_deviation + dynamic_control_framing"
+  parametros:
+    ewma_smoothing:
+      alpha: 0.20
+  confianza: 0.75
+
+- id: regla_021_trend_signal_dudosa
+  nombre: "Trend signal con confidence baja: la ignoramos, tratamos como existing"
+  prioridad: 65
+  cuando:
+    - "context.tipo_sku == 'trending'"
+    - "context.trend_confidence < 0.8"
+    - "context.semanas_historia >= 52"
+  algoritmo: "affine_ordering_policy + ewma_smoothing + bounded_deviations + simple_absolute_deviation + dynamic_control_framing"
+  parametros:
+    ewma_smoothing:
+      alpha: 0.15
+    bounded_deviations:
+      epsilon_factor: 1.8
+  confianza: 0.70
+
+# -----------------------------------------------------------------------------
+# Familia: ajuste para evento proximo (independiente del tipo de SKU)
+# -----------------------------------------------------------------------------
+
+- id: regla_030_evento_proximo_lead_time
+  nombre: "Evento proximo dentro del lead time: ponderar por ventana"
+  prioridad: 88
+  cuando:
+    - "context.evento_dentro_de_lead_time"
+    - "context.tipo_sku == 'existing'"
+    - "context.semanas_historia >= 52"
+  algoritmo: "affine_ordering_policy + lead_time_window_weighting + bounded_deviations + correlated_deviations + dynamic_control_framing"
+  parametros:
+    lead_time_window_weighting:
+      ventana_dias: 21
+    bounded_deviations:
+      epsilon_factor: 2.5
+  confianza: 0.78
+
+# -----------------------------------------------------------------------------
+# Fallback: si ninguna regla anterior dispara
+# -----------------------------------------------------------------------------
+
+- id: regla_999_fallback
+  nombre: "Fallback conservador: open-loop con cota amplia"
+  prioridad: 1
+  cuando: []  # vacio = siempre dispara
+  algoritmo: "open_loop + uniform_recency_weighting + bounded_deviations + simple_absolute_deviation + static_robust_framing"
+  parametros:
+    bounded_deviations:
+      epsilon_factor: 3.0
+  confianza: 0.30

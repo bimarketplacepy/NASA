@@ -1,0 +1,118 @@
+{
+  "recomendacion_id": "REC_1D9D7B40407B",
+  "timestamp": "2026-04-28T18:38:36.952631Z",
+  "operador_id": "demo",
+  "evento_objetivo_id": "EVT_BLACK_FRIDAY_2026",
+  "items": [
+    {
+      "sku": "SKU_002",
+      "proveedor_id": "PROV_ASIA_02",
+      "cantidad": 1476,
+      "costo_unitario": 6.7962,
+      "descuento_aplicado": 0.06,
+      "costo_total": 10031.19,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-07-04",
+      "semanas_buffer_pre_evento": 19.71
+    },
+    {
+      "sku": "SKU_001",
+      "proveedor_id": "PROV_ASIA_01",
+      "cantidad": 762,
+      "costo_unitario": 13.1532,
+      "descuento_aplicado": 0.03,
+      "costo_total": 10022.74,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-06-19",
+      "semanas_buffer_pre_evento": 21.86
+    },
+    {
+      "sku": "SKU_003",
+      "proveedor_id": "PROV_ASIA_02",
+      "cantidad": 745,
+      "costo_unitario": 8.8367,
+      "descuento_aplicado": 0.03,
+      "costo_total": 6583.34,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-07-04",
+      "semanas_buffer_pre_evento": 19.71
+    },
+    {
+      "sku": "SKU_005",
+      "proveedor_id": "PROV_ASIA_01",
+      "cantidad": 812,
+      "costo_unitario": 6.984,
+      "descuento_aplicado": 0.03,
+      "costo_total": 5671.01,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-06-19",
+      "semanas_buffer_pre_evento": 21.86
+    },
+    {
+      "sku": "SKU_004",
+      "proveedor_id": "PROV_REG_01",
+      "cantidad": 187,
+      "costo_unitario": 23.2558,
+      "descuento_aplicado": 0.015,
+      "costo_total": 4348.83,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-05-18",
+      "semanas_buffer_pre_evento": 26.43
+    },
+    {
+      "sku": "SKU_006",
+      "proveedor_id": "PROV_ASIA_01",
+      "cantidad": 658,
+      "costo_unitario": 6.4893,
+      "descuento_aplicado": 0.03,
+      "costo_total": 4269.96,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-06-19",
+      "semanas_buffer_pre_evento": 21.86
+    },
+    {
+      "sku": "SKU_008",
+      "proveedor_id": "PROV_NAC_01",
+      "cantidad": 112,
+      "costo_unitario": 24.6666,
+      "descuento_aplicado": 0.02,
+      "costo_total": 2762.66,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-05-08",
+      "semanas_buffer_pre_evento": 27.86
+    },
+    {
+      "sku": "SKU_007",
+      "proveedor_id": "PROV_REG_01",
+      "cantidad": 246,
+      "costo_unitario": 20.63,
+      "descuento_aplicado": 0.0,
+      "costo_total": 5074.98,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-05-18",
+      "semanas_buffer_pre_evento": 26.43
+    }
+  ],
+  "metricas": {
+    "stock_muerto_esperado": 18584.94411239053,
+    "stock_muerto_p95": 20361.679827087475,
+    "ventas_perdidas_esperadas": 1566.9459027564096,
+    "ventas_perdidas_p95": 2130.79834235668,
+    "costo_total": 48764.7123,
+    "retorno_esperado": -24279.41987153689,
+    "retorno_p5": -30627.38501610375,
+    "retorno_p95": -17946.5167564664,
+    "var_95": 30627.38501610375,
+    "cvar_95": 32260.46807245066,
+    "probabilidad_perdida": 1.0,
+    "sharpe_ratio": -6.238897411829874
+  },
+  "vulnerabilidades": [],
+  "grafo_causal_id": "GRAFO_REC_1D9D7B40407B",
+  "justificacion_texto": "Plan generado con ruta heuristica (metodo solicitado=saa, timeout=30s). Se priorizo factibilidad y costo con evaluacion Monte Carlo. VaR95 estimado=30627.39. Observaciones: Recorte por presupuesto activado: total=92505.76 presupuesto=50000.00",
+  "nivel_confianza_global": 0.05,
+  "perfil_operador_aplicado": "demo:v1",
+  "estado": "BORRADOR",
+  "presupuesto_consumido": 48764.71,
+  "presupuesto_total": 50000.0
+}

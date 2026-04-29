@@ -1,0 +1,25 @@
+{
+  "_descripcion": "SKU critico con 1 solo proveedor disponible + aprobacion_excepcion=true. Esperado: PERMITIDA porque P_compra_sku_critico_unico_proveedor_con_aprobacion derrota a O_sku_critico_dos_proveedores via :defeats.",
+  "decision": {
+    "tipo": "compra",
+    "monto_usd": 4000.0,
+    "lead_time_dias": 5.0,
+    "aprobacion_supervisor": true,
+    "aprobacion_excepcion": true,
+    "validacion_humana": false,
+    "justificacion_escrita": false,
+    "exceso_budget_pct": 0.0,
+    "cantidad": 50.0,
+    "descuento_volumen_pct": 0.0
+  },
+  "contexto": {
+    "now": "2026-04-29T10:00:00+00:00",
+    "perecedero": false,
+    "sku_critico": true,
+    "sku_piloto": false,
+    "cold_start": false,
+    "proveedor_activo": true,
+    "proveedor_exterior": false,
+    "proveedores_disponibles": 1
+  }
+}

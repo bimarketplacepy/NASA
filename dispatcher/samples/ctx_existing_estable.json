@@ -1,0 +1,14 @@
+{
+  "_descripcion": "SKU establecido con 2 anos de historia y baja volatilidad (0.18). Esperado: dispara regla_001_existing_estable -> affine + ewma(alpha=0.15) + bounded(eps=1.5) + dynamic_control. Confianza 0.90.",
+  "sku": "247329",
+  "tipo_sku": "existing",
+  "nombre": "ESFERA DECOR 10x10",
+  "categoria": "DECORACION",
+  "semanas_historia": 104,
+  "cantidad_stock": 200.0,
+  "velocidad": 12.0,
+  "volatilidad_forecast": 0.18,
+  "cold_start_confidence": 1.0,
+  "similar_top_k": [],
+  "proveedores_disponibles": 3
+}

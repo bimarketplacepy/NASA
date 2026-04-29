@@ -1,0 +1,104 @@
+@prefix : <http://marketplace.com.py/onto/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+###############################################################################
+# Catalogo de algoritmos de la biblioteca de optimizacion (Tarea 4 - Mati).
+#
+# Cada algoritmo es un individuo de la clase :Algorithm declarada en el TBox
+# de Abi (marketplace.ttl). El dispatcher de Abi (Bloque 7) consulta este
+# grafo para elegir cual invocar segun el contexto del SKU.
+#
+# Cargar al grafo via:
+#     python -m optimization.owl.cargar_catalogo
+###############################################################################
+
+# ---------------------------------------------------------------------------
+# Open-Loop Baseline
+# ---------------------------------------------------------------------------
+:OpenLoopAlgorithm a :Algorithm ;
+    :id "open_loop" ;
+    :nombre "Open-Loop Baseline" ;
+    :requiereSemanasMinimas 0 ;
+    :soportaUnbounded false ;
+    :soportaColdStart true ;
+    :complejidad "baja" ;
+    :paper_seccion "1.0" ;
+    rdfs:label "Open-Loop Baseline"@es ;
+    rdfs:comment "Baseline trivial: cantidad = suma de la media del horizonte. Sin retroalimentacion."@es .
+
+# ---------------------------------------------------------------------------
+# Cold-start Heredado
+# ---------------------------------------------------------------------------
+:ColdInheritAlgorithm a :Algorithm ;
+    :id "cold_inherit" ;
+    :nombre "Cold-start Heredado" ;
+    :requiereSemanasMinimas 0 ;
+    :soportaUnbounded false ;
+    :soportaColdStart true ;
+    :requiereSkuDonante true ;
+    :complejidad "baja" ;
+    :paper_seccion "4.0" ;
+    rdfs:label "Cold-start Heredado"@es ;
+    rdfs:comment "SKUs nuevos: hereda parametros del SKU donante (similarity engine de Abi) con factor de descuento por incertidumbre."@es .
+
+# ---------------------------------------------------------------------------
+# Inventory Buffer Robusto
+# ---------------------------------------------------------------------------
+:InvBufferAlgorithm a :Algorithm ;
+    :id "inv_buffer" ;
+    :nombre "Inventory Buffer Robusto" ;
+    :requiereSemanasMinimas 8 ;
+    :soportaUnbounded false ;
+    :soportaColdStart false ;
+    :soportaPerecederos true ;
+    :complejidad "media" ;
+    :paper_seccion "3.2" ;
+    rdfs:label "Inventory Buffer Robusto"@es ;
+    rdfs:comment "Usa percentiles directos del Monte Carlo (p50 central, p5/p95 intervalos) con buffer extra para perecederos."@es .
+
+# ---------------------------------------------------------------------------
+# Safety Stock (heuristica p95)
+# ---------------------------------------------------------------------------
+:SafetyStockAlgorithm a :Algorithm ;
+    :id "safety_stock" ;
+    :nombre "Safety Stock heuristico" ;
+    :requiereSemanasMinimas 4 ;
+    :soportaUnbounded true ;
+    :soportaColdStart false ;
+    :complejidad "baja" ;
+    :paper_seccion "1.0" ;
+    rdfs:label "Safety Stock"@es ;
+    rdfs:comment "Heuristica conservadora: cantidad = p95. Util para alta criticidad o fallback."@es .
+
+# ---------------------------------------------------------------------------
+# Affine Policy + EWMA (version simple)
+# ---------------------------------------------------------------------------
+:AffineSimpleAlgorithm a :Algorithm ;
+    :id "affine_simple" ;
+    :nombre "Affine Policy + EWMA Bounded" ;
+    :requiereSemanasMinimas 52 ;
+    :volatilidadMaxima "0.45"^^xsd:decimal ;
+    :soportaUnbounded false ;
+    :soportaColdStart false ;
+    :complejidad "alta" ;
+    :paper_seccion "2.1, 2.4, 3.2" ;
+    rdfs:label "Affine Policy con EWMA"@es ;
+    rdfs:comment "Politica afin con suavizado exponencial. Requiere historial extenso y volatilidad acotada."@es .
+
+# ---------------------------------------------------------------------------
+# Robust Satisficing (cash-constrained)
+# ---------------------------------------------------------------------------
+:RobustSatisficingAlgorithm a :Algorithm ;
+    :id "robust_satisficing" ;
+    :nombre "Robust Satisficing cash-constrained" ;
+    :requiereSemanasMinimas 8 ;
+    :soportaUnbounded true ;
+    :soportaColdStart false ;
+    :soportaCashConstraint true ;
+    :complejidad "media" ;
+    :paper_seccion "3.4" ;
+    rdfs:label "Robust Satisficing"@es ;
+    rdfs:comment "Maximiza service level dado el cash disponible. Usa MILP simple en cerrado."@es .

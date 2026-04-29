@@ -1,0 +1,14 @@
+{
+  "operador_id": "operador_demo",
+  "aversion_stockout": 0.6,
+  "aversion_capital_inmovilizado": 0.5,
+  "sensibilidad_precio": 0.5,
+  "sensibilidad_lead_time": 0.5,
+  "sensibilidad_calidad": 0.5,
+  "preferencia_proveedor_conocido": 0.4,
+  "tolerancia_riesgo": 0.5,
+  "horizonte_planeacion_preferido_semanas": 8,
+  "historial_feedback": [],
+  "version": 1,
+  "confianza_perfil": 0.2
+}

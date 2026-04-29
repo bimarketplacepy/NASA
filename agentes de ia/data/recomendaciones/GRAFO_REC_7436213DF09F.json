@@ -1,0 +1,402 @@
+{
+  "grafo_id": "GRAFO_REC_7436213DF09F",
+  "recomendacion_id": "REC_7436213DF09F",
+  "nodos": [
+    {
+      "id": "evento:EVT_BLACK_FRIDAY_2026",
+      "tipo": "evento",
+      "label": "EVT_BLACK_FRIDAY_2026",
+      "peso_influencia": 1.0,
+      "metadata": {
+        "recomendacion_id": "REC_7436213DF09F"
+      }
+    },
+    {
+      "id": "sku:SKU_002",
+      "tipo": "sku",
+      "label": "SKU_002",
+      "peso_influencia": 0.2953,
+      "metadata": {
+        "cantidad": 1476,
+        "costo_total": 10031.19
+      }
+    },
+    {
+      "id": "prov:PROV_ASIA_02",
+      "tipo": "proveedor",
+      "label": "PROV_ASIA_02",
+      "peso_influencia": 0.2057,
+      "metadata": {
+        "costo_total": 10031.19
+      }
+    },
+    {
+      "id": "sku:SKU_001",
+      "tipo": "sku",
+      "label": "SKU_001",
+      "peso_influencia": 0.1525,
+      "metadata": {
+        "cantidad": 762,
+        "costo_total": 10022.74
+      }
+    },
+    {
+      "id": "prov:PROV_ASIA_01",
+      "tipo": "proveedor",
+      "label": "PROV_ASIA_01",
+      "peso_influencia": 0.2055,
+      "metadata": {
+        "costo_total": 10022.74
+      }
+    },
+    {
+      "id": "sku:SKU_003",
+      "tipo": "sku",
+      "label": "SKU_003",
+      "peso_influencia": 0.1491,
+      "metadata": {
+        "cantidad": 745,
+        "costo_total": 6583.34
+      }
+    },
+    {
+      "id": "sku:SKU_005",
+      "tipo": "sku",
+      "label": "SKU_005",
+      "peso_influencia": 0.1625,
+      "metadata": {
+        "cantidad": 812,
+        "costo_total": 5671.01
+      }
+    },
+    {
+      "id": "sku:SKU_004",
+      "tipo": "sku",
+      "label": "SKU_004",
+      "peso_influencia": 0.0374,
+      "metadata": {
+        "cantidad": 187,
+        "costo_total": 4348.83
+      }
+    },
+    {
+      "id": "prov:PROV_REG_01",
+      "tipo": "proveedor",
+      "label": "PROV_REG_01",
+      "peso_influencia": 0.0892,
+      "metadata": {
+        "costo_total": 4348.83
+      }
+    },
+    {
+      "id": "sku:SKU_006",
+      "tipo": "sku",
+      "label": "SKU_006",
+      "peso_influencia": 0.1317,
+      "metadata": {
+        "cantidad": 658,
+        "costo_total": 4269.96
+      }
+    },
+    {
+      "id": "sku:SKU_008",
+      "tipo": "sku",
+      "label": "SKU_008",
+      "peso_influencia": 0.0224,
+      "metadata": {
+        "cantidad": 112,
+        "costo_total": 2762.66
+      }
+    },
+    {
+      "id": "prov:PROV_NAC_01",
+      "tipo": "proveedor",
+      "label": "PROV_NAC_01",
+      "peso_influencia": 0.0567,
+      "metadata": {
+        "costo_total": 2762.66
+      }
+    },
+    {
+      "id": "sku:SKU_007",
+      "tipo": "sku",
+      "label": "SKU_007",
+      "peso_influencia": 0.0492,
+      "metadata": {
+        "cantidad": 246,
+        "costo_total": 5074.98
+      }
+    },
+    {
+      "id": "vuln:CAIDA_DEMANDA:8",
+      "tipo": "vulnerabilidad",
+      "label": "CAIDA_DEMANDA",
+      "peso_influencia": 0.2296539854333185,
+      "metadata": {
+        "severidad": "ALTA",
+        "impacto_p95": 18325.65
+      }
+    },
+    {
+      "id": "vuln:RETRASO_ADUANERO:5",
+      "tipo": "vulnerabilidad",
+      "label": "RETRASO_ADUANERO",
+      "peso_influencia": 0.13501731067405098,
+      "metadata": {
+        "severidad": "MEDIA",
+        "impacto_p95": 11192.94
+      }
+    },
+    {
+      "id": "vuln:TIPO_CAMBIO_ADVERSO:5",
+      "tipo": "vulnerabilidad",
+      "label": "TIPO_CAMBIO_ADVERSO",
+      "peso_influencia": 0.15001934800801645,
+      "metadata": {
+        "severidad": "MEDIA",
+        "impacto_p95": 9876.12
+      }
+    }
+  ],
+  "aristas": [
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_002",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.2953,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_002",
+      "target_id": "prov:PROV_ASIA_02",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.2057,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_001",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.1525,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_001",
+      "target_id": "prov:PROV_ASIA_01",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.2055,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_003",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.1491,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_003",
+      "target_id": "prov:PROV_ASIA_02",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.135,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_005",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.1625,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_005",
+      "target_id": "prov:PROV_ASIA_01",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.1163,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_004",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.0374,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_004",
+      "target_id": "prov:PROV_REG_01",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.0892,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_006",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.1317,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_006",
+      "target_id": "prov:PROV_ASIA_01",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.0876,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_008",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.0224,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_008",
+      "target_id": "prov:PROV_NAC_01",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.0567,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_007",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.0492,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_007",
+      "target_id": "prov:PROV_REG_01",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.1041,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_002",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El plan presenta riesgo de sobrestock ante escenario de baja demanda."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_001",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El plan presenta riesgo de sobrestock ante escenario de baja demanda."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_003",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El plan presenta riesgo de sobrestock ante escenario de baja demanda."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_005",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El plan presenta riesgo de sobrestock ante escenario de baja demanda."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_004",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El plan presenta riesgo de sobrestock ante escenario de baja demanda."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_006",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El plan presenta riesgo de sobrestock ante escenario de baja demanda."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_008",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El plan presenta riesgo de sobrestock ante escenario de baja demanda."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_007",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El plan presenta riesgo de sobrestock ante escenario de baja demanda."
+    },
+    {
+      "source_id": "vuln:RETRASO_ADUANERO:5",
+      "target_id": "sku:SKU_002",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Dependencia de proveedores internacionales con riesgo logistico."
+    },
+    {
+      "source_id": "vuln:RETRASO_ADUANERO:5",
+      "target_id": "sku:SKU_001",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Dependencia de proveedores internacionales con riesgo logistico."
+    },
+    {
+      "source_id": "vuln:RETRASO_ADUANERO:5",
+      "target_id": "sku:SKU_003",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Dependencia de proveedores internacionales con riesgo logistico."
+    },
+    {
+      "source_id": "vuln:RETRASO_ADUANERO:5",
+      "target_id": "sku:SKU_005",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Dependencia de proveedores internacionales con riesgo logistico."
+    },
+    {
+      "source_id": "vuln:RETRASO_ADUANERO:5",
+      "target_id": "sku:SKU_006",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Dependencia de proveedores internacionales con riesgo logistico."
+    },
+    {
+      "source_id": "vuln:TIPO_CAMBIO_ADVERSO:5",
+      "target_id": "sku:SKU_002",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Un movimiento adverso de tipo de cambio impactaria el costo total."
+    },
+    {
+      "source_id": "vuln:TIPO_CAMBIO_ADVERSO:5",
+      "target_id": "sku:SKU_001",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Un movimiento adverso de tipo de cambio impactaria el costo total."
+    },
+    {
+      "source_id": "vuln:TIPO_CAMBIO_ADVERSO:5",
+      "target_id": "sku:SKU_003",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Un movimiento adverso de tipo de cambio impactaria el costo total."
+    },
+    {
+      "source_id": "vuln:TIPO_CAMBIO_ADVERSO:5",
+      "target_id": "sku:SKU_005",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Un movimiento adverso de tipo de cambio impactaria el costo total."
+    },
+    {
+      "source_id": "vuln:TIPO_CAMBIO_ADVERSO:5",
+      "target_id": "sku:SKU_006",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Un movimiento adverso de tipo de cambio impactaria el costo total."
+    }
+  ],
+  "nodo_central_id": "evento:EVT_BLACK_FRIDAY_2026"
+}

@@ -1,0 +1,868 @@
+{
+  "trend_aa2df91330e6": {
+    "nodo_id": "trend_aa2df91330e6",
+    "tipo": "tendencia",
+    "datos": {
+      "trend_id": "trend_aa2df91330e6",
+      "descripcion": "Esferas: Estas esferas de Navidad LED doradas son lo mas, estilo nordico minimalista #navidad #decoracion #esferas #led",
+      "palabras_clave": [
+        "esferas",
+        "navidad",
+        "doradas",
+        "mas",
+        "estilo",
+        "nordico",
+        "minimalista",
+        "decoracion",
+        "led"
+      ],
+      "fuente": "TIKTOK",
+      "fecha_deteccion": "2026-04-29T17:29:38.497943Z",
+      "metadata_fuente": {
+        "score_match_semantico": 0.5093363982860039,
+        "validacion_semantica": "APROBADA"
+      },
+      "velocidad_crecimiento": 1000.0,
+      "confianza_extraccion": 0.5880473333333334,
+      "productos_existentes_similares": [
+        {
+          "sku": "247137",
+          "score": 0.18181818181818182,
+          "nombre": "JG BOLA DECOR 6PZ 130-5002170",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247027",
+          "score": 0.18181818181818182,
+          "nombre": "JG BOLAS 4PZ 10X10X10CM 130-1900836",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247046",
+          "score": 0.18181818181818182,
+          "nombre": "JG BOLAS 3PZ 12X12X36CM 130-2502417",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247054",
+          "score": 0.18181818181818182,
+          "nombre": "BOLAS 10CM EN CAJA PVC 4PZS 130-2502505",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247037",
+          "score": 0.18181818181818182,
+          "nombre": "JG BOLAS 6PZ 8X16X24CM 130-2502287",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247135",
+          "score": 0.18181818181818182,
+          "nombre": "JG BOLAS 4PZ 130-5002169",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "224470",
+          "score": 0.18181818181818182,
+          "nombre": "ESFERAS NAVIDEÑAS DORADAS LRE5006-A61",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "250572",
+          "score": 0.18181818181818182,
+          "nombre": "JGO TREN LED 36PZAS 90CM B 831-D065-2507",
+          "categoria": "6284",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "139111",
+          "score": 0.18181818181818182,
+          "nombre": "DECORACION DE NAVIDAD NB21134-19",
+          "categoria": "6257",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247025",
+          "score": 0.18181818181818182,
+          "nombre": "JG BOLAS 4PZ 130-1900834",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        }
+      ],
+      "validado_shacl": true,
+      "provisional": true
+    },
+    "origen": "tendencia",
+    "confianza": 0.5880473333333334,
+    "fuentes": [
+      "TIKTOK"
+    ],
+    "fecha_creacion": "2026-04-29T17:29:38.497943Z",
+    "requiere_revision": false
+  },
+  "trend_926afd6c698b": {
+    "nodo_id": "trend_926afd6c698b",
+    "tipo": "tendencia",
+    "datos": {
+      "trend_id": "trend_926afd6c698b",
+      "descripcion": "Esfera: Esfera dorada minimalista para arbol navideno, look 2026 #navidad #esferas #doradas #nordico",
+      "palabras_clave": [
+        "esfera",
+        "dorada",
+        "minimalista",
+        "arbol",
+        "navideno",
+        "look",
+        "2026",
+        "navidad",
+        "esferas",
+        "doradas"
+      ],
+      "fuente": "TIKTOK",
+      "fecha_deteccion": "2026-04-29T17:29:38.497973Z",
+      "metadata_fuente": {
+        "score_match_semantico": 0.6669458196562449,
+        "validacion_semantica": "APROBADA"
+      },
+      "velocidad_crecimiento": 1000.0,
+      "confianza_extraccion": 0.31198666666666663,
+      "productos_existentes_similares": [
+        {
+          "sku": "223439",
+          "score": 0.3333333333333333,
+          "nombre": "SETx6 ESFERAS DORADAS 5CM LRD5006ABC",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "223440",
+          "score": 0.3333333333333333,
+          "nombre": "SETx6 ESFERAS DORADAS 5CM LRH5006ABC",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248126",
+          "score": 0.25,
+          "nombre": "JG  ADORNO P/ARBOL 4PC ESFERAS DORADAS 130-0500186",
+          "categoria": "6256",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "254502",
+          "score": 0.16666666666666666,
+          "nombre": "CAJA IMPRESA DE NAVIDAD PARA COLGAR  NB2519-5729",
+          "categoria": "6273",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247137",
+          "score": 0.16666666666666666,
+          "nombre": "JG BOLA DECOR 6PZ 130-5002170",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247027",
+          "score": 0.16666666666666666,
+          "nombre": "JG BOLAS 4PZ 10X10X10CM 130-1900836",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248051",
+          "score": 0.16666666666666666,
+          "nombre": "ARBOL DE NAVIDAD C/FRUTAS VERDE/ROJO 80CM 1085450",
+          "categoria": "6258",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248069",
+          "score": 0.16666666666666666,
+          "nombre": "ARBOL NAVIDAD IPANEMA 720 RAMAS VERDE 210CM1088438",
+          "categoria": "6260",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248065",
+          "score": 0.16666666666666666,
+          "nombre": "ARBOL NAVIDAD IPANEMA 150 RAMAS VERDE 120CM1088435",
+          "categoria": "6259",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247141",
+          "score": 0.16666666666666666,
+          "nombre": "FALDA P/ARBOL 58X24X66CM 202-1100019",
+          "categoria": "6256",
+          "precio_referencia": 0.0
+        }
+      ],
+      "validado_shacl": true,
+      "provisional": true
+    },
+    "origen": "tendencia",
+    "confianza": 0.31198666666666663,
+    "fuentes": [
+      "TIKTOK"
+    ],
+    "fecha_creacion": "2026-04-29T17:29:38.497973Z",
+    "requiere_revision": true
+  },
+  "trend_0754574bab0e": {
+    "nodo_id": "trend_0754574bab0e",
+    "tipo": "tendencia",
+    "datos": {
+      "trend_id": "trend_0754574bab0e",
+      "descripcion": "Wifi: Arboles artificiales preiluminados con app WiFi para programar luces desde el celular. La novedad de este 2026 #arbol #wifi #smart #navidad #luces",
+      "palabras_clave": [
+        "wifi",
+        "arboles",
+        "artificiales",
+        "preiluminados",
+        "programar",
+        "luces",
+        "desde",
+        "celular",
+        "novedad",
+        "2026"
+      ],
+      "fuente": "INSTAGRAM",
+      "fecha_deteccion": "2026-04-29T17:29:38.497986Z",
+      "metadata_fuente": {
+        "score_match_semantico": 0.5749038879326791,
+        "validacion_semantica": "APROBADA"
+      },
+      "velocidad_crecimiento": 1000.0,
+      "confianza_extraccion": 0.37926666666666664,
+      "productos_existentes_similares": [
+        {
+          "sku": "223569",
+          "score": 0.11764705882352941,
+          "nombre": "VELA NAVIDAD 2024 BOHO CON FLOR GIA00622",
+          "categoria": "6298",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "254502",
+          "score": 0.11764705882352941,
+          "nombre": "CAJA IMPRESA DE NAVIDAD PARA COLGAR  NB2519-5729",
+          "categoria": "6273",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "254801",
+          "score": 0.11764705882352941,
+          "nombre": "ESTRELLA TOPE DE ARBOL CON PURPURINA SZ2550-101",
+          "categoria": "6256",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248051",
+          "score": 0.11764705882352941,
+          "nombre": "ARBOL DE NAVIDAD C/FRUTAS VERDE/ROJO 80CM 1085450",
+          "categoria": "6258",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248069",
+          "score": 0.11764705882352941,
+          "nombre": "ARBOL NAVIDAD IPANEMA 720 RAMAS VERDE 210CM1088438",
+          "categoria": "6260",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248065",
+          "score": 0.11764705882352941,
+          "nombre": "ARBOL NAVIDAD IPANEMA 150 RAMAS VERDE 120CM1088435",
+          "categoria": "6259",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247141",
+          "score": 0.11764705882352941,
+          "nombre": "FALDA P/ARBOL 58X24X66CM 202-1100019",
+          "categoria": "6256",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "217288",
+          "score": 0.11764705882352941,
+          "nombre": "831-T002-2415 BOLSA ARBOL NAVIDAD",
+          "categoria": "6271",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248052",
+          "score": 0.11764705882352941,
+          "nombre": "ARBOL NAVIDAD VERDE/ROJO/GRANATE 150CM 1085453",
+          "categoria": "6285",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "217287",
+          "score": 0.11764705882352941,
+          "nombre": "831-T002-2416 BOLSA ARBOL NAVIDAD",
+          "categoria": "7373",
+          "precio_referencia": 0.0
+        }
+      ],
+      "validado_shacl": true,
+      "provisional": true
+    },
+    "origen": "tendencia",
+    "confianza": 0.37926666666666664,
+    "fuentes": [
+      "INSTAGRAM"
+    ],
+    "fecha_creacion": "2026-04-29T17:29:38.497986Z",
+    "requiere_revision": true
+  },
+  "trend_4c133da14807": {
+    "nodo_id": "trend_4c133da14807",
+    "tipo": "tendencia",
+    "datos": {
+      "trend_id": "trend_4c133da14807",
+      "descripcion": "Arbol: Arbol artificial 2.10m con luces controladas por app Bluetooth, increible #arbol #bluetooth #navidad #smart",
+      "palabras_clave": [
+        "arbol",
+        "artificial",
+        "2.10m",
+        "luces",
+        "controladas",
+        "bluetooth",
+        "increible",
+        "navidad",
+        "smart"
+      ],
+      "fuente": "INSTAGRAM",
+      "fecha_deteccion": "2026-04-29T17:29:38.497995Z",
+      "metadata_fuente": {
+        "score_match_semantico": 0.3850083774910616,
+        "validacion_semantica": "APROBADA"
+      },
+      "velocidad_crecimiento": 1000.0,
+      "confianza_extraccion": 0.33754666666666666,
+      "productos_existentes_similares": [
+        {
+          "sku": "223569",
+          "score": 0.15384615384615385,
+          "nombre": "VELA NAVIDAD 2024 BOHO CON FLOR GIA00622",
+          "categoria": "6298",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "62900",
+          "score": 0.15384615384615385,
+          "nombre": "LUZ 100F MULTI VERD 10MTS 220V",
+          "categoria": "6285",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "254801",
+          "score": 0.15384615384615385,
+          "nombre": "ESTRELLA TOPE DE ARBOL CON PURPURINA SZ2550-101",
+          "categoria": "6256",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248051",
+          "score": 0.15384615384615385,
+          "nombre": "ARBOL DE NAVIDAD C/FRUTAS VERDE/ROJO 80CM 1085450",
+          "categoria": "6258",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248069",
+          "score": 0.15384615384615385,
+          "nombre": "ARBOL NAVIDAD IPANEMA 720 RAMAS VERDE 210CM1088438",
+          "categoria": "6260",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248065",
+          "score": 0.15384615384615385,
+          "nombre": "ARBOL NAVIDAD IPANEMA 150 RAMAS VERDE 120CM1088435",
+          "categoria": "6259",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247141",
+          "score": 0.15384615384615385,
+          "nombre": "FALDA P/ARBOL 58X24X66CM 202-1100019",
+          "categoria": "6256",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "217288",
+          "score": 0.15384615384615385,
+          "nombre": "831-T002-2415 BOLSA ARBOL NAVIDAD",
+          "categoria": "6271",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248052",
+          "score": 0.15384615384615385,
+          "nombre": "ARBOL NAVIDAD VERDE/ROJO/GRANATE 150CM 1085453",
+          "categoria": "6285",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "217287",
+          "score": 0.15384615384615385,
+          "nombre": "831-T002-2416 BOLSA ARBOL NAVIDAD",
+          "categoria": "7373",
+          "precio_referencia": 0.0
+        }
+      ],
+      "validado_shacl": true,
+      "provisional": true
+    },
+    "origen": "tendencia",
+    "confianza": 0.33754666666666666,
+    "fuentes": [
+      "INSTAGRAM"
+    ],
+    "fecha_creacion": "2026-04-29T17:29:38.497995Z",
+    "requiere_revision": true
+  },
+  "trend_7ace181833a9": {
+    "nodo_id": "trend_7ace181833a9",
+    "tipo": "tendencia",
+    "datos": {
+      "trend_id": "trend_7ace181833a9",
+      "descripcion": "Bluetooth: Lamparas inflables animatronic con bluetooth speaker y sincronizacion de luces a la musica para fiestas navidenas #navidad #inflable #bluetooth #luces",
+      "palabras_clave": [
+        "bluetooth",
+        "lamparas",
+        "inflables",
+        "animatronic",
+        "speaker",
+        "sincronizacion",
+        "luces",
+        "musica",
+        "fiestas",
+        "navidenas"
+      ],
+      "fuente": "PINTEREST",
+      "fecha_deteccion": "2026-04-29T17:29:38.498004Z",
+      "metadata_fuente": {
+        "score_match_semantico": 0.4683443028738865,
+        "validacion_semantica": "APROBADA"
+      },
+      "velocidad_crecimiento": 686.1,
+      "confianza_extraccion": 0.2941106666666667,
+      "productos_existentes_similares": [
+        {
+          "sku": "223569",
+          "score": 0.14285714285714285,
+          "nombre": "VELA NAVIDAD 2024 BOHO CON FLOR GIA00622",
+          "categoria": "6298",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "254502",
+          "score": 0.14285714285714285,
+          "nombre": "CAJA IMPRESA DE NAVIDAD PARA COLGAR  NB2519-5729",
+          "categoria": "6273",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "217218",
+          "score": 0.14285714285714285,
+          "nombre": "831-XMSM224-2404 TREN CON LUZ-MUSICA",
+          "categoria": "6284",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "217219",
+          "score": 0.14285714285714285,
+          "nombre": "831-XMSM224-2405 TREN CON LUZ-MUSICA",
+          "categoria": "6284",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248339",
+          "score": 0.14285714285714285,
+          "nombre": "ADORNO NAVIDAD C/MUSICA  C/MUS 10X10X14.5CM 200-74",
+          "categoria": "6257",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "245913",
+          "score": 0.14285714285714285,
+          "nombre": "TALLO NAVIDAD CON FLOR ROJA 75X16X3CM 140-3400220",
+          "categoria": "7370",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "194415",
+          "score": 0.14285714285714285,
+          "nombre": "CASA NAVIDAD CON LUZ 200-7200126/1",
+          "categoria": "6257",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "245918",
+          "score": 0.14285714285714285,
+          "nombre": "PINO D/NAVIDAD C/BASE PIÑA 35X15X15CM 140-3400229",
+          "categoria": "7370",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "254780",
+          "score": 0.14285714285714285,
+          "nombre": "TREN DE NAVIDAD CON SONIDO Y LUZ 6PCS X 1.5V SZ251",
+          "categoria": "6284",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "245915",
+          "score": 0.14285714285714285,
+          "nombre": "PINO D/NAVIDAD CON PIÑA 32X12X4CM 140-3400224",
+          "categoria": "7370",
+          "precio_referencia": 0.0
+        }
+      ],
+      "validado_shacl": true,
+      "provisional": true
+    },
+    "origen": "tendencia",
+    "confianza": 0.2941106666666667,
+    "fuentes": [
+      "PINTEREST"
+    ],
+    "fecha_creacion": "2026-04-29T17:29:38.498004Z",
+    "requiere_revision": true
+  },
+  "trend_fc22b964690a": {
+    "nodo_id": "trend_fc22b964690a",
+    "tipo": "tendencia",
+    "datos": {
+      "trend_id": "trend_fc22b964690a",
+      "descripcion": "Inflable: Inflable navideno con bluetooth speaker, una rareza para fiestas en casa, animatronic moves con la musica #navidad #inflable #animatronic",
+      "palabras_clave": [
+        "inflable",
+        "navideno",
+        "bluetooth",
+        "speaker",
+        "rareza",
+        "fiestas",
+        "casa",
+        "animatronic",
+        "moves",
+        "musica"
+      ],
+      "fuente": "PINTEREST",
+      "fecha_deteccion": "2026-04-29T17:29:38.498012Z",
+      "metadata_fuente": {
+        "score_match_semantico": 0.3839900354373753,
+        "validacion_semantica": "APROBADA"
+      },
+      "velocidad_crecimiento": 480.6,
+      "confianza_extraccion": 0.2858906666666667,
+      "productos_existentes_similares": [
+        {
+          "sku": "194415",
+          "score": 0.21428571428571427,
+          "nombre": "CASA NAVIDAD CON LUZ 200-7200126/1",
+          "categoria": "6257",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "223569",
+          "score": 0.14285714285714285,
+          "nombre": "VELA NAVIDAD 2024 BOHO CON FLOR GIA00622",
+          "categoria": "6298",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "254502",
+          "score": 0.14285714285714285,
+          "nombre": "CAJA IMPRESA DE NAVIDAD PARA COLGAR  NB2519-5729",
+          "categoria": "6273",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "217218",
+          "score": 0.14285714285714285,
+          "nombre": "831-XMSM224-2404 TREN CON LUZ-MUSICA",
+          "categoria": "6284",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "217219",
+          "score": 0.14285714285714285,
+          "nombre": "831-XMSM224-2405 TREN CON LUZ-MUSICA",
+          "categoria": "6284",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "248339",
+          "score": 0.14285714285714285,
+          "nombre": "ADORNO NAVIDAD C/MUSICA  C/MUS 10X10X14.5CM 200-74",
+          "categoria": "6257",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "245913",
+          "score": 0.14285714285714285,
+          "nombre": "TALLO NAVIDAD CON FLOR ROJA 75X16X3CM 140-3400220",
+          "categoria": "7370",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "245918",
+          "score": 0.14285714285714285,
+          "nombre": "PINO D/NAVIDAD C/BASE PIÑA 35X15X15CM 140-3400229",
+          "categoria": "7370",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "254780",
+          "score": 0.14285714285714285,
+          "nombre": "TREN DE NAVIDAD CON SONIDO Y LUZ 6PCS X 1.5V SZ251",
+          "categoria": "6284",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "246761",
+          "score": 0.14285714285714285,
+          "nombre": "CASA DECOR CON LUZ C/LU 11.2X6.7X 201-2800766",
+          "categoria": "6257",
+          "precio_referencia": 0.0
+        }
+      ],
+      "validado_shacl": true,
+      "provisional": true
+    },
+    "origen": "tendencia",
+    "confianza": 0.2858906666666667,
+    "fuentes": [
+      "PINTEREST"
+    ],
+    "fecha_creacion": "2026-04-29T17:29:38.498012Z",
+    "requiere_revision": true
+  },
+  "trend_00c70ec703b5": {
+    "nodo_id": "trend_00c70ec703b5",
+    "tipo": "tendencia",
+    "datos": {
+      "trend_id": "trend_00c70ec703b5",
+      "descripcion": "Navidad: navidad navideno christmas xmas santa noel",
+      "palabras_clave": [
+        "navidad",
+        "navideno",
+        "christmas",
+        "xmas",
+        "santa",
+        "noel"
+      ],
+      "fuente": "OTHER",
+      "fecha_deteccion": "2026-04-29T17:29:38.498022Z",
+      "metadata_fuente": {
+        "score_match_semantico": 0.4275126681533484,
+        "validacion_semantica": "APROBADA"
+      },
+      "velocidad_crecimiento": 1.22,
+      "confianza_extraccion": 0.2667154666666667,
+      "productos_existentes_similares": [
+        {
+          "sku": "254882",
+          "score": 0.25,
+          "nombre": "ESTACA DE METAL CON SANTA MERRY CHRISTMAS XM2597-2",
+          "categoria": "6257",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "245976",
+          "score": 0.2222222222222222,
+          "nombre": "SANTA DECOR ALTO 20X9X66CM 150-8101079",
+          "categoria": "6287",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "250528",
+          "score": 0.2,
+          "nombre": "FIG SANTA HNIE ESC 3 831-XMFE104- 2514B4",
+          "categoria": "6255",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247199",
+          "score": 0.18181818181818182,
+          "nombre": "BOLA D/AGUA 7.70X7.80X7.10CM 200-7600242",
+          "categoria": "6253",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "197489",
+          "score": 0.16666666666666666,
+          "nombre": "CARTA PARA SANTA",
+          "categoria": "6281",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "256027",
+          "score": 0.16666666666666666,
+          "nombre": "Llavero Navidad F",
+          "categoria": "6280",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "246005",
+          "score": 0.16666666666666666,
+          "nombre": "INDIVIDUAL SANTA 45X33CM 170-2800459",
+          "categoria": "6291",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "194059",
+          "score": 0.16666666666666666,
+          "nombre": "Kit 6 posavasos Flor de Navidad",
+          "categoria": "6295",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "219827",
+          "score": 0.16666666666666666,
+          "nombre": "1021867 SERVILLETA PAPEL NAVIDAD",
+          "categoria": "6296",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "215293",
+          "score": 0.16666666666666666,
+          "nombre": "SANTA 150-8100966A",
+          "categoria": "6257",
+          "precio_referencia": 0.0
+        }
+      ],
+      "validado_shacl": true,
+      "provisional": true
+    },
+    "origen": "tendencia",
+    "confianza": 0.2667154666666667,
+    "fuentes": [
+      "OTHER"
+    ],
+    "fecha_creacion": "2026-04-29T17:29:38.498022Z",
+    "requiere_revision": true
+  },
+  "trend_f365f866dce3": {
+    "nodo_id": "trend_f365f866dce3",
+    "tipo": "tendencia",
+    "datos": {
+      "trend_id": "trend_f365f866dce3",
+      "descripcion": "Santa: Coleccionable figura Santa Claus 27cm vintage trending en TikTok diciembre 2026 #santa #figura #navidad #coleccionable",
+      "palabras_clave": [
+        "santa",
+        "coleccionable",
+        "figura",
+        "claus",
+        "27cm",
+        "vintage",
+        "trending",
+        "tiktok",
+        "diciembre",
+        "2026"
+      ],
+      "fuente": "TIKTOK",
+      "fecha_deteccion": "2026-04-29T17:29:38.498032Z",
+      "metadata_fuente": {
+        "score_match_semantico": 0.48926476618734205,
+        "validacion_semantica": "APROBADA"
+      },
+      "velocidad_crecimiento": 1000.0,
+      "confianza_extraccion": 0.3134746666666667,
+      "productos_existentes_similares": [
+        {
+          "sku": "250541",
+          "score": 0.2727272727272727,
+          "nombre": "FIG SANTA 27CM ROJO 12 831-XMTX254- 2540",
+          "categoria": "6255",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "250528",
+          "score": 0.2727272727272727,
+          "nombre": "FIG SANTA HNIE ESC 3 831-XMFE104- 2514B4",
+          "categoria": "6255",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "245976",
+          "score": 0.2727272727272727,
+          "nombre": "SANTA DECOR ALTO 20X9X66CM 150-8101079",
+          "categoria": "6287",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "250530",
+          "score": 0.18181818181818182,
+          "nombre": "FIG SANTA HNIE 56CM  831-XMFE104- 2505B4",
+          "categoria": "6255",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "250526",
+          "score": 0.18181818181818182,
+          "nombre": "FIG SANTA HNIE 64CM  831-XMFE104- 2503B4",
+          "categoria": "6255",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "254754",
+          "score": 0.18181818181818182,
+          "nombre": "SANTA CLAUS CH 831-XMTX254- 2556",
+          "categoria": "6257",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "250534",
+          "score": 0.18181818181818182,
+          "nombre": "FIG OSO 12X22CM SUR2 7 831-XMSM220- 2479",
+          "categoria": "6255",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "247378",
+          "score": 0.18181818181818182,
+          "nombre": "VELA 7.3X7.6X10.8CM 200-6400597",
+          "categoria": "6298",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "191866",
+          "score": 0.18181818181818182,
+          "nombre": "PLATO DE POSTRE COUP NATAL Ø20,5CM SANTA CLAUS",
+          "categoria": "6264",
+          "precio_referencia": 0.0
+        },
+        {
+          "sku": "250556",
+          "score": 0.18181818181818182,
+          "nombre": "ORNA SANTA HNIE 53CM 831-XMFE104- 2517B4",
+          "categoria": "6255",
+          "precio_referencia": 0.0
+        }
+      ],
+      "validado_shacl": true,
+      "provisional": true
+    },
+    "origen": "tendencia",
+    "confianza": 0.3134746666666667,
+    "fuentes": [
+      "TIKTOK"
+    ],
+    "fecha_creacion": "2026-04-29T17:29:38.498032Z",
+    "requiere_revision": true
+  }
+}

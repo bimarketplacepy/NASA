@@ -1,0 +1,500 @@
+{
+  "nodos_provisionales": [
+    {
+      "nodo_id": "NODO_D909370056",
+      "tipo": "producto",
+      "datos": {
+        "query": "arbol led navideno",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-28T14:13:09.563603Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_24D2FCCB7F",
+      "tipo": "producto",
+      "datos": {
+        "query": "arbol led navideno",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-28T14:20:35.607545Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_C063787B46",
+      "tipo": "producto",
+      "datos": {
+        "query": "arbol led navideno",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-28T14:26:33.805733Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_B911237F10",
+      "tipo": "producto",
+      "datos": {
+        "query": "arbol led navideno",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-28T14:55:47.577621Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_2ABBBB068A",
+      "tipo": "producto",
+      "datos": {
+        "query": "arbol led navideno",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-28T16:34:48.685797Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_405D76DC22",
+      "tipo": "producto",
+      "datos": {
+        "query": "¿Cuáles son las tendencias navideñas actuales?",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T00:20:57.537029Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_F00BEBF775",
+      "tipo": "producto",
+      "datos": {
+        "query": "recomendame un producto",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:15:11.329230Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_02B044D755",
+      "tipo": "producto",
+      "datos": {
+        "query": "estas",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:15:28.796232Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_DC9FA0B762",
+      "tipo": "producto",
+      "datos": {
+        "query": "estas ahi???",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:15:47.163372Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_5DB2CB166A",
+      "tipo": "producto",
+      "datos": {
+        "query": "estas",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:17:46.690882Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_2B92CF5AC0",
+      "tipo": "producto",
+      "datos": {
+        "query": "estas",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:19:02.961142Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_5D94009F40",
+      "tipo": "producto",
+      "datos": {
+        "query": "seguis ahi??",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:19:25.064141Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_F7A1C2898C",
+      "tipo": "producto",
+      "datos": {
+        "query": "que productos me recomendas comprar???",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:19:59.297784Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_26F3F87A5D",
+      "tipo": "producto",
+      "datos": {
+        "query": "estas",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:20:08.869962Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_3ADDFE257B",
+      "tipo": "producto",
+      "datos": {
+        "query": "que productos",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:20:29.243313Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_1B8AD978AA",
+      "tipo": "producto",
+      "datos": {
+        "query": "estas?",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:21:46.129047Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_E99BA42C37",
+      "tipo": "producto",
+      "datos": {
+        "query": "que productos?",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:21:54.590073Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_218134FB8A",
+      "tipo": "producto",
+      "datos": {
+        "query": "estas??",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:32:23.409269Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_4AD4E2726E",
+      "tipo": "producto",
+      "datos": {
+        "query": "que productos recomiendas comprar",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:33:24.911494Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_AF525F4DEE",
+      "tipo": "producto",
+      "datos": {
+        "query": "hola, que productos recomiendas",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:35:06.991489Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_8244520862",
+      "tipo": "producto",
+      "datos": {
+        "query": "estas",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:35:21.832063Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_7E8C433CA3",
+      "tipo": "producto",
+      "datos": {
+        "query": "hola",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:36:08.769659Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_9145E83154",
+      "tipo": "producto",
+      "datos": {
+        "query": "estas",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T11:40:32.195660Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_0F8EBA4A76",
+      "tipo": "producto",
+      "datos": {
+        "query": "hola",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T12:15:53.809736Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_EA7D1CC107",
+      "tipo": "producto",
+      "datos": {
+        "query": "seguis",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T12:21:10.155414Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_3E1F460C73",
+      "tipo": "producto",
+      "datos": {
+        "query": "que productos recomiendas comprar",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T12:22:06.409219Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_FDF922940A",
+      "tipo": "producto",
+      "datos": {
+        "query": "estas ahora?",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T12:23:43.118146Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_1593B4E76A",
+      "tipo": "producto",
+      "datos": {
+        "query": "que productos recomiendas comprar",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T12:24:04.877555Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_B9EE210026",
+      "tipo": "producto",
+      "datos": {
+        "query": "quiero probar de nuevo",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T12:24:39.203485Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_C928ED759F",
+      "tipo": "producto",
+      "datos": {
+        "query": "estas",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T12:33:41.652952Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_9150CC9779",
+      "tipo": "producto",
+      "datos": {
+        "query": "seguis ahi??",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T14:46:32.113164Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_3FAFD188C1",
+      "tipo": "producto",
+      "datos": {
+        "query": "arbol led navideno",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T15:59:10.561694Z",
+      "requiere_revision": true
+    },
+    {
+      "nodo_id": "NODO_B7EE356DCD",
+      "tipo": "producto",
+      "datos": {
+        "query": "arbol led navideno",
+        "estado": "pendiente_validacion"
+      },
+      "origen": "web_research",
+      "confianza": 0.55,
+      "fuentes": [
+        "mock://web-search"
+      ],
+      "fecha_creacion": "2026-04-29T16:01:00.230714Z",
+      "requiere_revision": true
+    }
+  ],
+  "aristas": []
+}

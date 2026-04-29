@@ -1,0 +1,20 @@
+{
+  "operador_id": "operador_demo",
+  "aversion_stockout": 0.6,
+  "aversion_capital_inmovilizado": 0.5,
+  "sensibilidad_precio": 0.5,
+  "sensibilidad_lead_time": 0.6000000000000001,
+  "sensibilidad_calidad": 0.5,
+  "preferencia_proveedor_conocido": 0.4,
+  "tolerancia_riesgo": 0.5,
+  "horizonte_planeacion_preferido_semanas": 8,
+  "historial_feedback": [
+    "FDB_76DF652D",
+    "FDB_7E29EC54",
+    "FDB_CCE0442D",
+    "FDB_19989084",
+    "FDB_B4B316A2"
+  ],
+  "version": 6,
+  "confianza_perfil": 0.33000000000000007
+}

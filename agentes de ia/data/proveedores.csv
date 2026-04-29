@@ -1,0 +1,7 @@
+proveedor_id,nombre,pais,region,lead_time_dias_min,lead_time_dias_max,confiabilidad,reputacion_score,moneda,permite_negociacion_volumen,email,telefono,idioma_preferido
+PROV_NAC_01,Norte Festivo SA,Argentina,nacional,7,14,0.93,0.89,ARS,True,ventas@nortefestivo.ar,+54-11-4000-1001,es
+PROV_NAC_02,Navidad Urbana SRL,Argentina,nacional,10,20,0.9,0.84,ARS,True,contacto@navidadurbana.ar,+54-11-4000-1002,es
+PROV_ASIA_01,Shenzhen Bright Decor Co.,China,asia,45,60,0.82,0.8,USD,True,sales@brightdecor.cn,+86-755-1000-2001,en
+PROV_ASIA_02,Yiwu Holiday MegaTrade,China,asia,60,75,0.78,0.75,USD,True,biz@holidaymega.cn,+86-579-2000-3001,en
+PROV_EUR_01,Milano Natale Premium,Italia,europa,30,45,0.88,0.93,EUR,False,sales@milanonatale.it,+39-02-7000-5001,it
+PROV_REG_01,Sul Festas Ltda,Brasil,regional,15,25,0.87,0.83,USD,True,comercial@sulfestas.br,+55-11-5000-7001,pt

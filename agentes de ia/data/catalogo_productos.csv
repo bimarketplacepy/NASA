@@ -1,0 +1,51 @@
+sku,nombre,categoria_id,perecedero,vida_util_dias,precio_referencia,margen_objetivo,descripcion,tags
+SKU_001,Luces y Decoracion Luminica SKU_001,CAT_LUCES,False,,26.14,0.259,Producto navideno sintetico SKU_001 de Luces y Decoracion Luminica,navidad;retail;temporada
+SKU_002,Luces y Decoracion Luminica SKU_002,CAT_LUCES,False,,17.94,0.328,Producto navideno sintetico SKU_002 de Luces y Decoracion Luminica,navidad;retail;temporada
+SKU_003,Luces y Decoracion Luminica SKU_003,CAT_LUCES,False,,29.61,0.487,Producto navideno sintetico SKU_003 de Luces y Decoracion Luminica,navidad;retail;temporada
+SKU_004,Luces y Decoracion Luminica SKU_004,CAT_LUCES,False,,31.23,0.28,Producto navideno sintetico SKU_004 de Luces y Decoracion Luminica,navidad;retail;temporada
+SKU_005,Luces y Decoracion Luminica SKU_005,CAT_LUCES,False,,13.9,0.26,Producto navideno sintetico SKU_005 de Luces y Decoracion Luminica,navidad;retail;temporada
+SKU_006,Luces y Decoracion Luminica SKU_006,CAT_LUCES,False,,16.67,0.427,Producto navideno sintetico SKU_006 de Luces y Decoracion Luminica,navidad;retail;temporada
+SKU_007,Arboles y Guirnaldas SKU_007,CAT_ARBOL,True,42.0,39.38,0.501,Producto navideno sintetico SKU_007 de Arboles y Guirnaldas,navidad;retail;temporada
+SKU_008,Arboles y Guirnaldas SKU_008,CAT_ARBOL,False,,34.78,0.397,Producto navideno sintetico SKU_008 de Arboles y Guirnaldas,navidad;retail;temporada
+SKU_009,Arboles y Guirnaldas SKU_009,CAT_ARBOL,False,,37.82,0.347,Producto navideno sintetico SKU_009 de Arboles y Guirnaldas,navidad;retail;temporada
+SKU_010,Arboles y Guirnaldas SKU_010,CAT_ARBOL,False,,29.93,0.516,Producto navideno sintetico SKU_010 de Arboles y Guirnaldas,navidad;retail;temporada
+SKU_011,Arboles y Guirnaldas SKU_011,CAT_ARBOL,False,,48.61,0.398,Producto navideno sintetico SKU_011 de Arboles y Guirnaldas,navidad;retail;temporada
+SKU_012,Arboles y Guirnaldas SKU_012,CAT_ARBOL,False,,47.25,0.325,Producto navideno sintetico SKU_012 de Arboles y Guirnaldas,navidad;retail;temporada
+SKU_013,Ornamentos SKU_013,CAT_ORNAMENT,False,,14.26,0.286,Producto navideno sintetico SKU_013 de Ornamentos,navidad;retail;temporada
+SKU_014,Ornamentos SKU_014,CAT_ORNAMENT,False,,19.2,0.376,Producto navideno sintetico SKU_014 de Ornamentos,navidad;retail;temporada
+SKU_015,Ornamentos SKU_015,CAT_ORNAMENT,False,,15.96,0.343,Producto navideno sintetico SKU_015 de Ornamentos,navidad;retail;temporada
+SKU_016,Ornamentos SKU_016,CAT_ORNAMENT,True,59.0,11.01,0.438,Producto navideno sintetico SKU_016 de Ornamentos,navidad;retail;temporada
+SKU_017,Ornamentos SKU_017,CAT_ORNAMENT,False,,15.52,0.382,Producto navideno sintetico SKU_017 de Ornamentos,navidad;retail;temporada
+SKU_018,Ornamentos SKU_018,CAT_ORNAMENT,False,,10.7,0.54,Producto navideno sintetico SKU_018 de Ornamentos,navidad;retail;temporada
+SKU_019,Mesa y Vajilla Festiva SKU_019,CAT_MESA,False,,23.02,0.552,Producto navideno sintetico SKU_019 de Mesa y Vajilla Festiva,navidad;retail;temporada
+SKU_020,Mesa y Vajilla Festiva SKU_020,CAT_MESA,False,,17.75,0.497,Producto navideno sintetico SKU_020 de Mesa y Vajilla Festiva,navidad;retail;temporada
+SKU_021,Mesa y Vajilla Festiva SKU_021,CAT_MESA,True,44.0,17.09,0.521,Producto navideno sintetico SKU_021 de Mesa y Vajilla Festiva,navidad;retail;temporada
+SKU_022,Mesa y Vajilla Festiva SKU_022,CAT_MESA,False,,14.88,0.549,Producto navideno sintetico SKU_022 de Mesa y Vajilla Festiva,navidad;retail;temporada
+SKU_023,Mesa y Vajilla Festiva SKU_023,CAT_MESA,False,,25.35,0.383,Producto navideno sintetico SKU_023 de Mesa y Vajilla Festiva,navidad;retail;temporada
+SKU_024,Mesa y Vajilla Festiva SKU_024,CAT_MESA,False,,17.24,0.542,Producto navideno sintetico SKU_024 de Mesa y Vajilla Festiva,navidad;retail;temporada
+SKU_025,Empaque y Regaleria SKU_025,CAT_EMPAQUE,False,,6.21,0.374,Producto navideno sintetico SKU_025 de Empaque y Regaleria,navidad;retail;temporada
+SKU_026,Empaque y Regaleria SKU_026,CAT_EMPAQUE,False,,6.34,0.496,Producto navideno sintetico SKU_026 de Empaque y Regaleria,navidad;retail;temporada
+SKU_027,Empaque y Regaleria SKU_027,CAT_EMPAQUE,False,,8.13,0.275,Producto navideno sintetico SKU_027 de Empaque y Regaleria,navidad;retail;temporada
+SKU_028,Empaque y Regaleria SKU_028,CAT_EMPAQUE,False,,7.75,0.437,Producto navideno sintetico SKU_028 de Empaque y Regaleria,navidad;retail;temporada
+SKU_029,Empaque y Regaleria SKU_029,CAT_EMPAQUE,False,,7.86,0.412,Producto navideno sintetico SKU_029 de Empaque y Regaleria,navidad;retail;temporada
+SKU_030,Empaque y Regaleria SKU_030,CAT_EMPAQUE,False,,7.9,0.574,Producto navideno sintetico SKU_030 de Empaque y Regaleria,navidad;retail;temporada
+SKU_031,Textiles Navidenos SKU_031,CAT_TEXTIL,False,,38.25,0.327,Producto navideno sintetico SKU_031 de Textiles Navidenos,navidad;retail;temporada
+SKU_032,Textiles Navidenos SKU_032,CAT_TEXTIL,False,,18.74,0.519,Producto navideno sintetico SKU_032 de Textiles Navidenos,navidad;retail;temporada
+SKU_033,Textiles Navidenos SKU_033,CAT_TEXTIL,True,82.0,18.19,0.261,Producto navideno sintetico SKU_033 de Textiles Navidenos,navidad;retail;temporada
+SKU_034,Textiles Navidenos SKU_034,CAT_TEXTIL,False,,16.72,0.344,Producto navideno sintetico SKU_034 de Textiles Navidenos,navidad;retail;temporada
+SKU_035,Textiles Navidenos SKU_035,CAT_TEXTIL,False,,24.95,0.58,Producto navideno sintetico SKU_035 de Textiles Navidenos,navidad;retail;temporada
+SKU_036,Textiles Navidenos SKU_036,CAT_TEXTIL,False,,28.81,0.36,Producto navideno sintetico SKU_036 de Textiles Navidenos,navidad;retail;temporada
+SKU_037,Decoracion Exterior SKU_037,CAT_EXTERIOR,False,,40.68,0.388,Producto navideno sintetico SKU_037 de Decoracion Exterior,navidad;retail;temporada
+SKU_038,Decoracion Exterior SKU_038,CAT_EXTERIOR,False,,33.2,0.411,Producto navideno sintetico SKU_038 de Decoracion Exterior,navidad;retail;temporada
+SKU_039,Decoracion Exterior SKU_039,CAT_EXTERIOR,False,,33.34,0.336,Producto navideno sintetico SKU_039 de Decoracion Exterior,navidad;retail;temporada
+SKU_040,Decoracion Exterior SKU_040,CAT_EXTERIOR,False,,50.39,0.342,Producto navideno sintetico SKU_040 de Decoracion Exterior,navidad;retail;temporada
+SKU_041,Decoracion Exterior SKU_041,CAT_EXTERIOR,False,,51.72,0.564,Producto navideno sintetico SKU_041 de Decoracion Exterior,navidad;retail;temporada
+SKU_042,Decoracion Exterior SKU_042,CAT_EXTERIOR,False,,48.9,0.327,Producto navideno sintetico SKU_042 de Decoracion Exterior,navidad;retail;temporada
+SKU_043,Decoracion Exterior SKU_043,CAT_EXTERIOR,False,,34.86,0.428,Producto navideno sintetico SKU_043 de Decoracion Exterior,navidad;retail;temporada
+SKU_044,Premium Coleccionable SKU_044,CAT_PREMIUM,True,33.0,61.9,0.551,Producto navideno sintetico SKU_044 de Premium Coleccionable,navidad;retail;temporada
+SKU_045,Premium Coleccionable SKU_045,CAT_PREMIUM,False,,59.93,0.306,Producto navideno sintetico SKU_045 de Premium Coleccionable,navidad;retail;temporada
+SKU_046,Premium Coleccionable SKU_046,CAT_PREMIUM,False,,61.66,0.459,Producto navideno sintetico SKU_046 de Premium Coleccionable,navidad;retail;temporada
+SKU_047,Premium Coleccionable SKU_047,CAT_PREMIUM,False,,74.03,0.459,Producto navideno sintetico SKU_047 de Premium Coleccionable,navidad;retail;temporada
+SKU_048,Premium Coleccionable SKU_048,CAT_PREMIUM,False,,61.75,0.338,Producto navideno sintetico SKU_048 de Premium Coleccionable,navidad;retail;temporada
+SKU_049,Premium Coleccionable SKU_049,CAT_PREMIUM,False,,70.14,0.58,Producto navideno sintetico SKU_049 de Premium Coleccionable,navidad;retail;temporada
+SKU_050,Premium Coleccionable SKU_050,CAT_PREMIUM,False,,59.11,0.29,Producto navideno sintetico SKU_050 de Premium Coleccionable,navidad;retail;temporada

@@ -1,0 +1,63 @@
+{
+  "recomendacion_id": "REC_E65EFBAF92D7",
+  "timestamp": "2026-04-29T15:56:57.434781Z",
+  "operador_id": "operador_demo",
+  "evento_objetivo_id": "EVT_BLACK_FRIDAY_2026",
+  "items": [
+    {
+      "sku": "SKU_002",
+      "proveedor_id": "PROV_ASIA_02",
+      "cantidad": 1476,
+      "costo_unitario": 6.7962,
+      "descuento_aplicado": 0.06,
+      "costo_total": 10031.19,
+      "fecha_pedido_estimada": "2026-04-29",
+      "fecha_arribo_estimada": "2026-07-05",
+      "semanas_buffer_pre_evento": 19.57
+    },
+    {
+      "sku": "SKU_001",
+      "proveedor_id": "PROV_ASIA_01",
+      "cantidad": 762,
+      "costo_unitario": 13.1532,
+      "descuento_aplicado": 0.03,
+      "costo_total": 10022.74,
+      "fecha_pedido_estimada": "2026-04-29",
+      "fecha_arribo_estimada": "2026-06-20",
+      "semanas_buffer_pre_evento": 21.71
+    },
+    {
+      "sku": "SKU_003",
+      "proveedor_id": "PROV_ASIA_02",
+      "cantidad": 745,
+      "costo_unitario": 8.8367,
+      "descuento_aplicado": 0.03,
+      "costo_total": 6583.34,
+      "fecha_pedido_estimada": "2026-04-29",
+      "fecha_arribo_estimada": "2026-07-05",
+      "semanas_buffer_pre_evento": 19.57
+    }
+  ],
+  "metricas": {
+    "stock_muerto_esperado": 13880.599036847967,
+    "stock_muerto_p95": 14559.823860410694,
+    "ventas_perdidas_esperadas": 0.0,
+    "ventas_perdidas_p95": 0.0,
+    "costo_total": 26637.271099999998,
+    "retorno_esperado": -23878.67151976992,
+    "retorno_p5": -26889.454133829557,
+    "retorno_p95": -20813.70058649909,
+    "var_95": 26889.454133829557,
+    "cvar_95": 27573.597171413283,
+    "probabilidad_perdida": 1.0,
+    "sharpe_ratio": -13.083165091989045
+  },
+  "vulnerabilidades": [],
+  "grafo_causal_id": "GRAFO_REC_E65EFBAF92D7",
+  "justificacion_texto": "Plan generado con ruta heuristica (metodo solicitado=saa, timeout=30s). Se priorizo factibilidad y costo con evaluacion Monte Carlo. VaR95 estimado=26889.45. Observaciones: Recorte por presupuesto activado: total=53287.69 presupuesto=28000.00",
+  "nivel_confianza_global": 0.05,
+  "perfil_operador_aplicado": "operador_demo:v1",
+  "estado": "BORRADOR",
+  "presupuesto_consumido": 26637.27,
+  "presupuesto_total": 28000.0
+}

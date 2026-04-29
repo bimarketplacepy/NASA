@@ -1,0 +1,116 @@
+# =============================================================================
+# SHACL Shapes para validacion de datos del marketplace
+# Bloque 2 - Tarea 1 v2
+# =============================================================================
+
+@prefix :        <http://marketplace.com.py/onto/v1#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+
+:ProductoShape a sh:NodeShape ;
+    sh:targetClass :Producto ;
+    sh:name "Validacion de Producto"@es ;
+    sh:property [
+        sh:path :sku ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:pattern "^[A-Z0-9_-]+$" ;
+        sh:flags "" ;
+        sh:message "El sku debe estar presente, ser xsd:string y matchear ^[A-Z0-9_-]+$ (alfanumerico mayusculas, guiones o underscores)."@es ;
+        sh:severity sh:Violation
+    ] ;
+    sh:property [
+        sh:path :perteneceA ;
+        sh:minCount 1 ;
+        sh:class :Categoria ;
+        sh:message "Producto debe pertenecer al menos a una :Categoria (sin esto no se puede clasificar)."@es ;
+        sh:severity sh:Violation
+    ] .
+
+:ProveedorShape a sh:NodeShape ;
+    sh:targetClass :Proveedor ;
+    sh:name "Validacion de Proveedor"@es ;
+    sh:property [
+        sh:path :proveedorId ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:message "Proveedor requiere :proveedorId no vacio."@es ;
+        sh:severity sh:Violation
+    ] ;
+    sh:property [
+        sh:path :pais ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:pattern "^[A-Z]{2}$" ;
+        sh:message "Proveedor :pais debe ser codigo ISO-3166 alpha-2 (ej: 'PY', 'CN', 'IN'). Recibido: {?value}."@es ;
+        sh:severity sh:Violation
+    ] .
+
+:NormShape a sh:NodeShape ;
+    sh:targetClass :Norm ;
+    sh:name "Validacion de Norma"@es ;
+    sh:property [
+        sh:path :priority ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 100 ;
+        sh:message "Norm :priority debe estar entre 0 y 100 (inclusive). Recibido: {?value}."@es ;
+        sh:severity sh:Violation
+    ] ;
+    sh:property [
+        sh:path :validFrom ;
+        sh:lessThanOrEquals :validTo ;
+        sh:message "Norm :validFrom debe ser <= :validTo."@es ;
+        sh:severity sh:Violation
+    ] ;
+    sh:or (
+        [ sh:class :Obligation ]
+        [ sh:class :Permission ]
+        [ sh:class :Prohibition ]
+    ) ;
+    sh:message "Norm debe ser :Obligation, :Permission o :Prohibition (modalidad deontica obligatoria)."@es ;
+    sh:severity sh:Violation .
+
+:DecisionShape a sh:NodeShape ;
+    sh:targetClass :Decision ;
+    sh:name "Validacion de Decision"@es ;
+    sh:property [
+        sh:path prov:atTime ;
+        sh:minCount 1 ;
+        sh:datatype xsd:dateTime ;
+        sh:message "Decision requiere prov:atTime (timestamp PROV-O obligatorio)."@es ;
+        sh:severity sh:Violation
+    ] ;
+    sh:property [
+        sh:path :invocaAlgoritmo ;
+        sh:minCount 1 ;
+        sh:class :Algorithm ;
+        sh:message "Decision debe invocar al menos un :Algorithm."@es ;
+        sh:severity sh:Violation
+    ] ;
+    sh:property [
+        sh:path :razonamiento ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 10 ;
+        sh:message "Decision requiere :razonamiento textual (>= 10 caracteres) para auditoria."@es ;
+        sh:severity sh:Violation
+    ] .
+
+:TrendSignalShape a sh:NodeShape ;
+    sh:targetClass :TrendSignal ;
+    sh:name "Validacion de TrendSignal"@es ;
+    sh:property [
+        sh:path :confianzaExtraccion ;
+        sh:minCount 1 ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 1 ;
+        sh:message "TrendSignal :confianzaExtraccion debe estar en [0, 1]. Recibido: {?value}."@es ;
+        sh:severity sh:Violation
+    ] .

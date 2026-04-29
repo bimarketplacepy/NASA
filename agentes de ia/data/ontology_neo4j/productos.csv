@@ -1,0 +1,51 @@
+sku,codigo_barras,nombre,nombre_corto,unidad,pais_origen,precio_costo,perecedero,cantidad_stock,categoria_id
+SKU_001,SKU_001,Luces y Decoracion Luminica SKU_001,Luces y Decoracion Luminica SKU_001,UN,Paraguay,16.99,false,165,CAT_LUCES
+SKU_002,SKU_002,Luces y Decoracion Luminica SKU_002,Luces y Decoracion Luminica SKU_002,UN,Paraguay,11.66,false,531,CAT_LUCES
+SKU_003,SKU_003,Luces y Decoracion Luminica SKU_003,Luces y Decoracion Luminica SKU_003,UN,Paraguay,19.25,false,77,CAT_LUCES
+SKU_004,SKU_004,Luces y Decoracion Luminica SKU_004,Luces y Decoracion Luminica SKU_004,UN,Paraguay,20.3,false,566,CAT_LUCES
+SKU_005,SKU_005,Luces y Decoracion Luminica SKU_005,Luces y Decoracion Luminica SKU_005,UN,Paraguay,9.04,false,201,CAT_LUCES
+SKU_006,SKU_006,Luces y Decoracion Luminica SKU_006,Luces y Decoracion Luminica SKU_006,UN,Paraguay,10.84,false,564,CAT_LUCES
+SKU_007,SKU_007,Arboles y Guirnaldas SKU_007,Arboles y Guirnaldas SKU_007,UN,Paraguay,25.6,true,335,CAT_ARBOL
+SKU_008,SKU_008,Arboles y Guirnaldas SKU_008,Arboles y Guirnaldas SKU_008,UN,Paraguay,22.61,false,77,CAT_ARBOL
+SKU_009,SKU_009,Arboles y Guirnaldas SKU_009,Arboles y Guirnaldas SKU_009,UN,Paraguay,24.58,false,88,CAT_ARBOL
+SKU_010,SKU_010,Arboles y Guirnaldas SKU_010,Arboles y Guirnaldas SKU_010,UN,Paraguay,19.45,false,664,CAT_ARBOL
+SKU_011,SKU_011,Arboles y Guirnaldas SKU_011,Arboles y Guirnaldas SKU_011,UN,Paraguay,31.6,false,38,CAT_ARBOL
+SKU_012,SKU_012,Arboles y Guirnaldas SKU_012,Arboles y Guirnaldas SKU_012,UN,Paraguay,30.71,false,104,CAT_ARBOL
+SKU_013,SKU_013,Ornamentos SKU_013,Ornamentos SKU_013,UN,Paraguay,9.27,false,155,CAT_ORNAMENT
+SKU_014,SKU_014,Ornamentos SKU_014,Ornamentos SKU_014,UN,Paraguay,12.48,false,246,CAT_ORNAMENT
+SKU_015,SKU_015,Ornamentos SKU_015,Ornamentos SKU_015,UN,Paraguay,10.37,false,250,CAT_ORNAMENT
+SKU_016,SKU_016,Ornamentos SKU_016,Ornamentos SKU_016,UN,Paraguay,7.16,true,217,CAT_ORNAMENT
+SKU_017,SKU_017,Ornamentos SKU_017,Ornamentos SKU_017,UN,Paraguay,10.09,false,721,CAT_ORNAMENT
+SKU_018,SKU_018,Ornamentos SKU_018,Ornamentos SKU_018,UN,Paraguay,6.96,false,273,CAT_ORNAMENT
+SKU_019,SKU_019,Mesa y Vajilla Festiva SKU_019,Mesa y Vajilla Festiva SKU_019,UN,Paraguay,14.96,false,305,CAT_MESA
+SKU_020,SKU_020,Mesa y Vajilla Festiva SKU_020,Mesa y Vajilla Festiva SKU_020,UN,Paraguay,11.54,false,340,CAT_MESA
+SKU_021,SKU_021,Mesa y Vajilla Festiva SKU_021,Mesa y Vajilla Festiva SKU_021,UN,Paraguay,11.11,true,215,CAT_MESA
+SKU_022,SKU_022,Mesa y Vajilla Festiva SKU_022,Mesa y Vajilla Festiva SKU_022,UN,Paraguay,9.67,false,152,CAT_MESA
+SKU_023,SKU_023,Mesa y Vajilla Festiva SKU_023,Mesa y Vajilla Festiva SKU_023,UN,Paraguay,16.48,false,377,CAT_MESA
+SKU_024,SKU_024,Mesa y Vajilla Festiva SKU_024,Mesa y Vajilla Festiva SKU_024,UN,Paraguay,11.21,false,36,CAT_MESA
+SKU_025,SKU_025,Empaque y Regaleria SKU_025,Empaque y Regaleria SKU_025,UN,Paraguay,4.04,false,293,CAT_EMPAQUE
+SKU_026,SKU_026,Empaque y Regaleria SKU_026,Empaque y Regaleria SKU_026,UN,Paraguay,4.12,false,92,CAT_EMPAQUE
+SKU_027,SKU_027,Empaque y Regaleria SKU_027,Empaque y Regaleria SKU_027,UN,Paraguay,5.28,false,318,CAT_EMPAQUE
+SKU_028,SKU_028,Empaque y Regaleria SKU_028,Empaque y Regaleria SKU_028,UN,Paraguay,5.04,false,73,CAT_EMPAQUE
+SKU_029,SKU_029,Empaque y Regaleria SKU_029,Empaque y Regaleria SKU_029,UN,Paraguay,5.11,false,165,CAT_EMPAQUE
+SKU_030,SKU_030,Empaque y Regaleria SKU_030,Empaque y Regaleria SKU_030,UN,Paraguay,5.14,false,352,CAT_EMPAQUE
+SKU_031,SKU_031,Textiles Navidenos SKU_031,Textiles Navidenos SKU_031,UN,Paraguay,24.86,false,111,CAT_TEXTIL
+SKU_032,SKU_032,Textiles Navidenos SKU_032,Textiles Navidenos SKU_032,UN,Paraguay,12.18,false,115,CAT_TEXTIL
+SKU_033,SKU_033,Textiles Navidenos SKU_033,Textiles Navidenos SKU_033,UN,Paraguay,11.82,true,98,CAT_TEXTIL
+SKU_034,SKU_034,Textiles Navidenos SKU_034,Textiles Navidenos SKU_034,UN,Paraguay,10.87,false,514,CAT_TEXTIL
+SKU_035,SKU_035,Textiles Navidenos SKU_035,Textiles Navidenos SKU_035,UN,Paraguay,16.22,false,152,CAT_TEXTIL
+SKU_036,SKU_036,Textiles Navidenos SKU_036,Textiles Navidenos SKU_036,UN,Paraguay,18.73,false,367,CAT_TEXTIL
+SKU_037,SKU_037,Decoracion Exterior SKU_037,Decoracion Exterior SKU_037,UN,Paraguay,26.44,false,93,CAT_EXTERIOR
+SKU_038,SKU_038,Decoracion Exterior SKU_038,Decoracion Exterior SKU_038,UN,Paraguay,21.58,false,106,CAT_EXTERIOR
+SKU_039,SKU_039,Decoracion Exterior SKU_039,Decoracion Exterior SKU_039,UN,Paraguay,21.67,false,477,CAT_EXTERIOR
+SKU_040,SKU_040,Decoracion Exterior SKU_040,Decoracion Exterior SKU_040,UN,Paraguay,32.75,false,159,CAT_EXTERIOR
+SKU_041,SKU_041,Decoracion Exterior SKU_041,Decoracion Exterior SKU_041,UN,Paraguay,33.62,false,13,CAT_EXTERIOR
+SKU_042,SKU_042,Decoracion Exterior SKU_042,Decoracion Exterior SKU_042,UN,Paraguay,31.78,false,614,CAT_EXTERIOR
+SKU_043,SKU_043,Decoracion Exterior SKU_043,Decoracion Exterior SKU_043,UN,Paraguay,22.66,false,112,CAT_EXTERIOR
+SKU_044,SKU_044,Premium Coleccionable SKU_044,Premium Coleccionable SKU_044,UN,Paraguay,40.24,true,190,CAT_PREMIUM
+SKU_045,SKU_045,Premium Coleccionable SKU_045,Premium Coleccionable SKU_045,UN,Paraguay,38.95,false,103,CAT_PREMIUM
+SKU_046,SKU_046,Premium Coleccionable SKU_046,Premium Coleccionable SKU_046,UN,Paraguay,40.08,false,331,CAT_PREMIUM
+SKU_047,SKU_047,Premium Coleccionable SKU_047,Premium Coleccionable SKU_047,UN,Paraguay,48.12,false,564,CAT_PREMIUM
+SKU_048,SKU_048,Premium Coleccionable SKU_048,Premium Coleccionable SKU_048,UN,Paraguay,40.14,false,3,CAT_PREMIUM
+SKU_049,SKU_049,Premium Coleccionable SKU_049,Premium Coleccionable SKU_049,UN,Paraguay,45.59,false,473,CAT_PREMIUM
+SKU_050,SKU_050,Premium Coleccionable SKU_050,Premium Coleccionable SKU_050,UN,Paraguay,38.42,false,301,CAT_PREMIUM

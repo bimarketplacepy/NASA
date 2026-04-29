@@ -1,0 +1,85 @@
+{
+  "recomendacion_id": "REC_8CD16DA7BAC3",
+  "timestamp": "2026-04-28T13:48:21.679762Z",
+  "operador_id": "operador_demo",
+  "evento_objetivo_id": "EVT_BLACK_FRIDAY_2026",
+  "items": [
+    {
+      "sku": "SKU_002",
+      "proveedor_id": "PROV_ASIA_02",
+      "cantidad": 1476,
+      "costo_unitario": 6.7962,
+      "descuento_aplicado": 0.06,
+      "costo_total": 10031.19,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-07-04",
+      "semanas_buffer_pre_evento": 19.71
+    },
+    {
+      "sku": "SKU_001",
+      "proveedor_id": "PROV_ASIA_01",
+      "cantidad": 762,
+      "costo_unitario": 13.1532,
+      "descuento_aplicado": 0.03,
+      "costo_total": 10022.74,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-06-19",
+      "semanas_buffer_pre_evento": 21.86
+    },
+    {
+      "sku": "SKU_003",
+      "proveedor_id": "PROV_ASIA_02",
+      "cantidad": 745,
+      "costo_unitario": 8.8367,
+      "descuento_aplicado": 0.03,
+      "costo_total": 6583.34,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-07-04",
+      "semanas_buffer_pre_evento": 19.71
+    },
+    {
+      "sku": "SKU_005",
+      "proveedor_id": "PROV_ASIA_01",
+      "cantidad": 812,
+      "costo_unitario": 6.984,
+      "descuento_aplicado": 0.03,
+      "costo_total": 5671.01,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-06-19",
+      "semanas_buffer_pre_evento": 21.86
+    },
+    {
+      "sku": "SKU_004",
+      "proveedor_id": "PROV_REG_01",
+      "cantidad": 376,
+      "costo_unitario": 23.2558,
+      "descuento_aplicado": 0.015,
+      "costo_total": 8744.2,
+      "fecha_pedido_estimada": "2026-04-28",
+      "fecha_arribo_estimada": "2026-05-18",
+      "semanas_buffer_pre_evento": 26.43
+    }
+  ],
+  "metricas": {
+    "stock_muerto_esperado": 17328.23285991345,
+    "stock_muerto_p95": 18876.247792695853,
+    "ventas_perdidas_esperadas": 0.0,
+    "ventas_perdidas_p95": 0.0,
+    "costo_total": 41052.4599,
+    "retorno_esperado": -27276.87823298016,
+    "retorno_p5": -33078.48219909008,
+    "retorno_p95": -21629.112067641472,
+    "var_95": 33078.48219909008,
+    "cvar_95": 34596.85644477043,
+    "probabilidad_perdida": 1.0,
+    "sharpe_ratio": -7.810107295127029
+  },
+  "vulnerabilidades": [],
+  "grafo_causal_id": "GRAFO_REC_8CD16DA7BAC3",
+  "justificacion_texto": "Plan generado con ruta heuristica (metodo solicitado=saa, timeout=30s). Se priorizo factibilidad y costo con evaluacion Monte Carlo. VaR95 estimado=33078.48. Observaciones: Recorte por presupuesto activado: total=73380.89 presupuesto=45000.00",
+  "nivel_confianza_global": 0.05,
+  "perfil_operador_aplicado": "operador_demo:v1",
+  "estado": "BORRADOR",
+  "presupuesto_consumido": 41052.48,
+  "presupuesto_total": 45000.0
+}

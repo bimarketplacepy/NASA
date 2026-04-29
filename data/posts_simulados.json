@@ -1,0 +1,82 @@
+[
+  {
+    "post_id": "tt_001",
+    "platform": "TIKTOK",
+    "autor": "decoholic_paraguay",
+    "fecha": "2026-11-10T18:30:00Z",
+    "texto": "Estas esferas de Navidad LED doradas son lo mas, estilo nordico minimalista #navidad #decoracion #esferas #led",
+    "metricas": {"views": 145000, "likes": 12300, "shares": 890, "comments": 234}
+  },
+  {
+    "post_id": "tt_002",
+    "platform": "TIKTOK",
+    "autor": "casa_navidena_py",
+    "fecha": "2026-11-11T20:15:00Z",
+    "texto": "Esfera dorada minimalista para arbol navideno, look 2026 #navidad #esferas #doradas #nordico",
+    "metricas": {"views": 89000, "likes": 7200, "shares": 540, "comments": 180}
+  },
+  {
+    "post_id": "tt_003",
+    "platform": "TIKTOK",
+    "autor": "deco_trends_ar",
+    "fecha": "2026-11-12T16:00:00Z",
+    "texto": "Esferas LED doradas viralizandose en TikTok navidad 2026 #esferas #led #navidad",
+    "metricas": {"views": 67000, "likes": 5400, "shares": 420, "comments": 95}
+  },
+  {
+    "post_id": "ig_001",
+    "platform": "INSTAGRAM",
+    "autor": "tienda_navidena",
+    "fecha": "2026-11-13T14:00:00Z",
+    "texto": "Arboles artificiales preiluminados con app WiFi para programar luces desde el celular. La novedad de este 2026 #arbol #wifi #smart #navidad #luces",
+    "metricas": {"views": 230000, "likes": 18500, "shares": 1200, "comments": 450}
+  },
+  {
+    "post_id": "ig_002",
+    "platform": "INSTAGRAM",
+    "autor": "tech_xmas_review",
+    "fecha": "2026-11-14T10:30:00Z",
+    "texto": "Arbol artificial 2.10m con luces controladas por app Bluetooth, increible #arbol #bluetooth #navidad #smart",
+    "metricas": {"views": 145000, "likes": 11800, "shares": 720, "comments": 290}
+  },
+  {
+    "post_id": "pin_001",
+    "platform": "PINTEREST",
+    "autor": "xmas_decor_inspo",
+    "fecha": "2026-11-15T09:00:00Z",
+    "texto": "Lamparas inflables animatronic con bluetooth speaker y sincronizacion de luces a la musica para fiestas navidenas #navidad #inflable #bluetooth #luces",
+    "metricas": {"views": 56000, "likes": 4200, "shares": 380, "comments": 67}
+  },
+  {
+    "post_id": "pin_002",
+    "platform": "PINTEREST",
+    "autor": "indoor_party_light",
+    "fecha": "2026-11-16T11:00:00Z",
+    "texto": "Inflable navideno con bluetooth speaker, una rareza para fiestas en casa, animatronic moves con la musica #navidad #inflable #animatronic",
+    "metricas": {"views": 38000, "likes": 3100, "shares": 240, "comments": 42}
+  },
+  {
+    "post_id": "ot_001",
+    "platform": "OTHER",
+    "autor": "anon",
+    "fecha": "2026-11-17T22:00:00Z",
+    "texto": "navidad navideno christmas xmas santa noel",
+    "metricas": {"views": 120, "likes": 8, "shares": 0, "comments": 1}
+  },
+  {
+    "post_id": "ot_002",
+    "platform": "INSTAGRAM",
+    "autor": "test_user",
+    "fecha": "2026-11-18T15:00:00Z",
+    "texto": "comprar productos online sin descripcion clara",
+    "metricas": {"views": 50, "likes": 2, "shares": 0, "comments": 0}
+  },
+  {
+    "post_id": "tt_004",
+    "platform": "TIKTOK",
+    "autor": "santa_collector",
+    "fecha": "2026-11-19T13:00:00Z",
+    "texto": "Coleccionable figura Santa Claus 27cm vintage trending en TikTok diciembre 2026 #santa #figura #navidad #coleccionable",
+    "metricas": {"views": 92000, "likes": 7800, "shares": 510, "comments": 144}
+  }
+]

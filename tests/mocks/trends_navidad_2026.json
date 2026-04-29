@@ -1,0 +1,97 @@
+{
+  "_descripcion": "Mock de 5 TrendSignals navidenas para testing del Bloque 9 (ACL Tarea 5). Cada caso cubre un escenario distinto del criterio de aceptacion: alta conf+similar (regla 020), baja conf manual review, sin similar (cold-start dudoso), trend con similar real (regla 020 + similar), stop-words rejected.",
+  "_generado": "2026-04-29",
+  "_origen_fixture": "Replica del contrato schemas.tendencias.TrendSignal de Mateo (Tarea 5)",
+  "tendencias": [
+    {
+      "trend_id": "trend_aabbcc001esfera",
+      "descripcion": "Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico viral en TikTok",
+      "palabras_clave": ["esferas", "navidad", "led", "doradas", "minimalistas", "nordico"],
+      "fuente": "TIKTOK",
+      "fecha_deteccion": "2026-11-15T18:30:00+00:00",
+      "metadata_fuente": {
+        "post_count": 142,
+        "engagement_rate": 0.087,
+        "score_match_semantico": 0.91
+      },
+      "velocidad_crecimiento": 245.0,
+      "confianza_extraccion": 0.92,
+      "productos_existentes_similares": [
+        {"sku": "247329", "score": 0.85, "nombre": "ESFERA DECOR 10X10", "categoria": "DECORACION", "precio_referencia": 4500.0},
+        {"sku": "247330", "score": 0.78, "nombre": "ESFERA NAVIDENA 8CM DORADA", "categoria": "DECORACION", "precio_referencia": 3800.0}
+      ],
+      "validado_shacl": true,
+      "provisional": true
+    },
+    {
+      "trend_id": "trend_aabbcc002dudoso",
+      "descripcion": "algo asi como decoracion alternativa con luces extranas",
+      "palabras_clave": ["decoracion", "alternativa", "luces"],
+      "fuente": "INSTAGRAM",
+      "fecha_deteccion": "2026-11-16T10:00:00+00:00",
+      "metadata_fuente": {
+        "post_count": 12,
+        "engagement_rate": 0.012,
+        "score_match_semantico": 0.18
+      },
+      "velocidad_crecimiento": 18.0,
+      "confianza_extraccion": 0.32,
+      "productos_existentes_similares": [],
+      "validado_shacl": true,
+      "provisional": true
+    },
+    {
+      "trend_id": "trend_aabbcc003coldstart",
+      "descripcion": "Lamparas inflables animatronic con Bluetooth speaker y sincronizacion de luces a la musica",
+      "palabras_clave": ["lamparas", "inflables", "animatronic", "bluetooth", "speaker", "sincronizacion"],
+      "fuente": "PINTEREST",
+      "fecha_deteccion": "2026-11-17T22:15:00+00:00",
+      "metadata_fuente": {
+        "post_count": 89,
+        "engagement_rate": 0.052,
+        "score_match_semantico": 0.41
+      },
+      "velocidad_crecimiento": 156.0,
+      "confianza_extraccion": 0.75,
+      "productos_existentes_similares": [],
+      "validado_shacl": true,
+      "provisional": true
+    },
+    {
+      "trend_id": "trend_aabbcc004arboles",
+      "descripcion": "Arboles artificiales preiluminados con app WiFi para programar patrones de luces desde el celular",
+      "palabras_clave": ["arboles", "artificiales", "preiluminados", "wifi", "app", "smart"],
+      "fuente": "GOOGLE_TRENDS",
+      "fecha_deteccion": "2026-11-18T09:00:00+00:00",
+      "metadata_fuente": {
+        "search_volume_index": 8800,
+        "growth_pct_weekly": 312.0,
+        "score_match_semantico": 0.83
+      },
+      "velocidad_crecimiento": 312.0,
+      "confianza_extraccion": 0.88,
+      "productos_existentes_similares": [
+        {"sku": "230101", "score": 0.82, "nombre": "ARBOL ARTIFICIAL 1.80M PRELIT", "categoria": "ARBOLES", "precio_referencia": 89000.0},
+        {"sku": "230102", "score": 0.74, "nombre": "ARBOL ARTIFICIAL 2.10M LED", "categoria": "ARBOLES", "precio_referencia": 125000.0}
+      ],
+      "validado_shacl": true,
+      "provisional": true
+    },
+    {
+      "trend_id": "trend_aabbcc005ruido",
+      "descripcion": "navidad navideno christmas xmas santa noel",
+      "palabras_clave": ["navidad", "navideno", "christmas"],
+      "fuente": "OTHER",
+      "fecha_deteccion": "2026-11-19T14:00:00+00:00",
+      "metadata_fuente": {
+        "post_count": 5,
+        "score_match_semantico": 0.05
+      },
+      "velocidad_crecimiento": 8.0,
+      "confianza_extraccion": 0.66,
+      "productos_existentes_similares": [],
+      "validado_shacl": true,
+      "provisional": true
+    }
+  ]
+}

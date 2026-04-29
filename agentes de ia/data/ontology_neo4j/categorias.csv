@@ -1,0 +1,9 @@
+id,nombre,grupo_id
+CAT_LUCES,Luces y Decoracion Luminica,GRP_CAT_LUCES
+CAT_ARBOL,Arboles y Guirnaldas,GRP_CAT_ARBOL
+CAT_ORNAMENT,Ornamentos,GRP_CAT_ORNAMENT
+CAT_MESA,Mesa y Vajilla Festiva,GRP_CAT_MESA
+CAT_EMPAQUE,Empaque y Regaleria,GRP_CAT_EMPAQUE
+CAT_TEXTIL,Textiles Navidenos,GRP_CAT_TEXTIL
+CAT_EXTERIOR,Decoracion Exterior,GRP_CAT_EXTERIOR
+CAT_PREMIUM,Premium Coleccionable,GRP_CAT_PREMIUM

@@ -1,0 +1,108 @@
+{
+  "grafo_id": "GRAFO_REC_031B2B1CCE93",
+  "recomendacion_id": "REC_031B2B1CCE93",
+  "nodos": [
+    {
+      "id": "evento:EVT_BLACK_FRIDAY_2026",
+      "tipo": "evento",
+      "label": "EVT_BLACK_FRIDAY_2026",
+      "peso_influencia": 1.0,
+      "metadata": {
+        "recomendacion_id": "REC_031B2B1CCE93"
+      }
+    },
+    {
+      "id": "sku:SKU_002",
+      "tipo": "sku",
+      "label": "SKU_002",
+      "peso_influencia": 0.4948,
+      "metadata": {
+        "cantidad": 1476,
+        "costo_total": 10031.19
+      }
+    },
+    {
+      "id": "prov:PROV_ASIA_02",
+      "tipo": "proveedor",
+      "label": "PROV_ASIA_02",
+      "peso_influencia": 0.3766,
+      "metadata": {
+        "costo_total": 10031.19
+      }
+    },
+    {
+      "id": "sku:SKU_001",
+      "tipo": "sku",
+      "label": "SKU_001",
+      "peso_influencia": 0.2554,
+      "metadata": {
+        "cantidad": 762,
+        "costo_total": 10022.74
+      }
+    },
+    {
+      "id": "prov:PROV_ASIA_01",
+      "tipo": "proveedor",
+      "label": "PROV_ASIA_01",
+      "peso_influencia": 0.3763,
+      "metadata": {
+        "costo_total": 10022.74
+      }
+    },
+    {
+      "id": "sku:SKU_003",
+      "tipo": "sku",
+      "label": "SKU_003",
+      "peso_influencia": 0.2497,
+      "metadata": {
+        "cantidad": 745,
+        "costo_total": 6583.34
+      }
+    }
+  ],
+  "aristas": [
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_002",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.4948,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_002",
+      "target_id": "prov:PROV_ASIA_02",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.3766,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_001",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.2554,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_001",
+      "target_id": "prov:PROV_ASIA_01",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.3763,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_003",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.2497,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_003",
+      "target_id": "prov:PROV_ASIA_02",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.2471,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    }
+  ],
+  "nodo_central_id": "evento:EVT_BLACK_FRIDAY_2026"
+}

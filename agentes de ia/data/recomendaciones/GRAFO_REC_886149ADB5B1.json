@@ -1,0 +1,400 @@
+{
+  "grafo_id": "GRAFO_REC_886149ADB5B1",
+  "recomendacion_id": "REC_886149ADB5B1",
+  "nodos": [
+    {
+      "id": "evento:EVT_BLACK_FRIDAY_2026",
+      "tipo": "evento",
+      "label": "EVT_BLACK_FRIDAY_2026",
+      "peso_influencia": 1.0,
+      "metadata": {
+        "recomendacion_id": "REC_886149ADB5B1"
+      }
+    },
+    {
+      "id": "sku:SKU_001",
+      "tipo": "sku",
+      "label": "SKU_001",
+      "peso_influencia": 0.1272,
+      "metadata": {
+        "cantidad": 264,
+        "costo_total": 5881.92
+      }
+    },
+    {
+      "id": "prov:PROV_NAC_02",
+      "tipo": "proveedor",
+      "label": "PROV_NAC_02",
+      "peso_influencia": 0.1612,
+      "metadata": {
+        "costo_total": 5881.92
+      }
+    },
+    {
+      "id": "sku:SKU_002",
+      "tipo": "sku",
+      "label": "SKU_002",
+      "peso_influencia": 0.1349,
+      "metadata": {
+        "cantidad": 280,
+        "costo_total": 3880.8
+      }
+    },
+    {
+      "id": "sku:SKU_003",
+      "tipo": "sku",
+      "label": "SKU_003",
+      "peso_influencia": 0.0747,
+      "metadata": {
+        "cantidad": 155,
+        "costo_total": 2472.25
+      }
+    },
+    {
+      "id": "prov:PROV_REG_01",
+      "tipo": "proveedor",
+      "label": "PROV_REG_01",
+      "peso_influencia": 0.0678,
+      "metadata": {
+        "costo_total": 2472.25
+      }
+    },
+    {
+      "id": "sku:SKU_004",
+      "tipo": "sku",
+      "label": "SKU_004",
+      "peso_influencia": 0.1436,
+      "metadata": {
+        "cantidad": 298,
+        "costo_total": 7035.78
+      }
+    },
+    {
+      "id": "sku:SKU_005",
+      "tipo": "sku",
+      "label": "SKU_005",
+      "peso_influencia": 0.1875,
+      "metadata": {
+        "cantidad": 389,
+        "costo_total": 4704.25
+      }
+    },
+    {
+      "id": "prov:PROV_NAC_01",
+      "tipo": "proveedor",
+      "label": "PROV_NAC_01",
+      "peso_influencia": 0.1289,
+      "metadata": {
+        "costo_total": 4704.25
+      }
+    },
+    {
+      "id": "sku:SKU_006",
+      "tipo": "sku",
+      "label": "SKU_006",
+      "peso_influencia": 0.1518,
+      "metadata": {
+        "cantidad": 315,
+        "costo_total": 3406.82
+      }
+    },
+    {
+      "id": "sku:SKU_007",
+      "tipo": "sku",
+      "label": "SKU_007",
+      "peso_influencia": 0.094,
+      "metadata": {
+        "cantidad": 195,
+        "costo_total": 4598.1
+      }
+    },
+    {
+      "id": "sku:SKU_008",
+      "tipo": "sku",
+      "label": "SKU_008",
+      "peso_influencia": 0.0863,
+      "metadata": {
+        "cantidad": 179,
+        "costo_total": 4505.43
+      }
+    },
+    {
+      "id": "vuln:OBSOLESCENCIA_POST_EVENTO:8",
+      "tipo": "vulnerabilidad",
+      "label": "OBSOLESCENCIA_POST_EVENTO",
+      "peso_influencia": 0.4111239168597807,
+      "metadata": {
+        "severidad": "ALTA",
+        "impacto_p95": 25000.0
+      }
+    },
+    {
+      "id": "vuln:QUIEBRE_PROVEEDOR:3",
+      "tipo": "vulnerabilidad",
+      "label": "QUIEBRE_PROVEEDOR",
+      "peso_influencia": 0.17815369730590497,
+      "metadata": {
+        "severidad": "MEDIA",
+        "impacto_p95": 11000.0
+      }
+    },
+    {
+      "id": "vuln:CAIDA_DEMANDA:8",
+      "tipo": "vulnerabilidad",
+      "label": "CAIDA_DEMANDA",
+      "peso_influencia": 0.12333717505793422,
+      "metadata": {
+        "severidad": "BAJA",
+        "impacto_p95": 7000.0
+      }
+    }
+  ],
+  "aristas": [
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_001",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.1272,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_001",
+      "target_id": "prov:PROV_NAC_02",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.1612,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_002",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.1349,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_002",
+      "target_id": "prov:PROV_NAC_02",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.1064,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_003",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.0747,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_003",
+      "target_id": "prov:PROV_REG_01",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.0678,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_004",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.1436,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_004",
+      "target_id": "prov:PROV_REG_01",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.1928,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_005",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.1875,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_005",
+      "target_id": "prov:PROV_NAC_01",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.1289,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_006",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.1518,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_006",
+      "target_id": "prov:PROV_NAC_02",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.0934,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_007",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.094,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_007",
+      "target_id": "prov:PROV_NAC_01",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.126,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "evento:EVT_BLACK_FRIDAY_2026",
+      "target_id": "sku:SKU_008",
+      "tipo_relacion": "AFECTA",
+      "peso": 0.0863,
+      "explicacion": "El evento objetivo incrementa demanda del SKU."
+    },
+    {
+      "source_id": "sku:SKU_008",
+      "target_id": "prov:PROV_NAC_01",
+      "tipo_relacion": "SUMINISTRA",
+      "peso": 0.1235,
+      "explicacion": "El proveedor participa en el abastecimiento del SKU."
+    },
+    {
+      "source_id": "vuln:OBSOLESCENCIA_POST_EVENTO:8",
+      "target_id": "sku:SKU_001",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Todos los productos son para la temporada navideña, lo que implica un alto riesgo de obsolescencia y depreciación si no se venden antes del fin de la temporada."
+    },
+    {
+      "source_id": "vuln:OBSOLESCENCIA_POST_EVENTO:8",
+      "target_id": "sku:SKU_002",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Todos los productos son para la temporada navideña, lo que implica un alto riesgo de obsolescencia y depreciación si no se venden antes del fin de la temporada."
+    },
+    {
+      "source_id": "vuln:OBSOLESCENCIA_POST_EVENTO:8",
+      "target_id": "sku:SKU_003",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Todos los productos son para la temporada navideña, lo que implica un alto riesgo de obsolescencia y depreciación si no se venden antes del fin de la temporada."
+    },
+    {
+      "source_id": "vuln:OBSOLESCENCIA_POST_EVENTO:8",
+      "target_id": "sku:SKU_004",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Todos los productos son para la temporada navideña, lo que implica un alto riesgo de obsolescencia y depreciación si no se venden antes del fin de la temporada."
+    },
+    {
+      "source_id": "vuln:OBSOLESCENCIA_POST_EVENTO:8",
+      "target_id": "sku:SKU_005",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Todos los productos son para la temporada navideña, lo que implica un alto riesgo de obsolescencia y depreciación si no se venden antes del fin de la temporada."
+    },
+    {
+      "source_id": "vuln:OBSOLESCENCIA_POST_EVENTO:8",
+      "target_id": "sku:SKU_006",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Todos los productos son para la temporada navideña, lo que implica un alto riesgo de obsolescencia y depreciación si no se venden antes del fin de la temporada."
+    },
+    {
+      "source_id": "vuln:OBSOLESCENCIA_POST_EVENTO:8",
+      "target_id": "sku:SKU_007",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Todos los productos son para la temporada navideña, lo que implica un alto riesgo de obsolescencia y depreciación si no se venden antes del fin de la temporada."
+    },
+    {
+      "source_id": "vuln:OBSOLESCENCIA_POST_EVENTO:8",
+      "target_id": "sku:SKU_008",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "Todos los productos son para la temporada navideña, lo que implica un alto riesgo de obsolescencia y depreciación si no se venden antes del fin de la temporada."
+    },
+    {
+      "source_id": "vuln:QUIEBRE_PROVEEDOR:3",
+      "target_id": "sku:SKU_001",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El proveedor PROV_NAC_02 concentra el 37.87% del costo total del plan (5881.92 + 3880.8 + 3406.82 = 13169.54 USD de un total de 34933.95 USD en items), lo que representa un riesgo si este proveedor experimenta problemas."
+    },
+    {
+      "source_id": "vuln:QUIEBRE_PROVEEDOR:3",
+      "target_id": "sku:SKU_002",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El proveedor PROV_NAC_02 concentra el 37.87% del costo total del plan (5881.92 + 3880.8 + 3406.82 = 13169.54 USD de un total de 34933.95 USD en items), lo que representa un riesgo si este proveedor experimenta problemas."
+    },
+    {
+      "source_id": "vuln:QUIEBRE_PROVEEDOR:3",
+      "target_id": "sku:SKU_006",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El proveedor PROV_NAC_02 concentra el 37.87% del costo total del plan (5881.92 + 3880.8 + 3406.82 = 13169.54 USD de un total de 34933.95 USD en items), lo que representa un riesgo si este proveedor experimenta problemas."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_001",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El stock muerto P95 es de 3835.48, lo que indica un riesgo significativo de exceso de inventario y posible obsolescencia de productos."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_002",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El stock muerto P95 es de 3835.48, lo que indica un riesgo significativo de exceso de inventario y posible obsolescencia de productos."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_003",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El stock muerto P95 es de 3835.48, lo que indica un riesgo significativo de exceso de inventario y posible obsolescencia de productos."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_004",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El stock muerto P95 es de 3835.48, lo que indica un riesgo significativo de exceso de inventario y posible obsolescencia de productos."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_005",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El stock muerto P95 es de 3835.48, lo que indica un riesgo significativo de exceso de inventario y posible obsolescencia de productos."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_006",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El stock muerto P95 es de 3835.48, lo que indica un riesgo significativo de exceso de inventario y posible obsolescencia de productos."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_007",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El stock muerto P95 es de 3835.48, lo que indica un riesgo significativo de exceso de inventario y posible obsolescencia de productos."
+    },
+    {
+      "source_id": "vuln:CAIDA_DEMANDA:8",
+      "target_id": "sku:SKU_008",
+      "tipo_relacion": "INFLUYE_NEGATIVO",
+      "peso": 0.8,
+      "explicacion": "El stock muerto P95 es de 3835.48, lo que indica un riesgo significativo de exceso de inventario y posible obsolescencia de productos."
+    }
+  ],
+  "nodo_central_id": "evento:EVT_BLACK_FRIDAY_2026"
+}

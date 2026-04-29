@@ -1,0 +1,26 @@
+{
+  "_descripcion": "Compra de perecedero (shelf life 14d) con lead time 30d. Esperado: BLOQUEADA por F_compra_perecedero_sin_viabilidad (no defeasible).",
+  "decision": {
+    "tipo": "compra",
+    "monto_usd": 1500.0,
+    "lead_time_dias": 30.0,
+    "aprobacion_supervisor": true,
+    "aprobacion_excepcion": false,
+    "validacion_humana": false,
+    "justificacion_escrita": false,
+    "exceso_budget_pct": 0.0,
+    "cantidad": 200.0,
+    "descuento_volumen_pct": 0.0
+  },
+  "contexto": {
+    "now": "2026-04-29T10:00:00+00:00",
+    "perecedero": true,
+    "shelf_life_dias": 14.0,
+    "sku_critico": false,
+    "sku_piloto": false,
+    "cold_start": false,
+    "proveedor_activo": true,
+    "proveedor_exterior": false,
+    "proveedores_disponibles": 3
+  }
+}

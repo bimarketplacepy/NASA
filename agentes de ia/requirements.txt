@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+numpy
+pandas
+scikit-learn
+PyPDF2
+statsmodels
+PuLP
+neo4j
+rdflib
+python-dotenv
+pytest
+httpx
+google-genai

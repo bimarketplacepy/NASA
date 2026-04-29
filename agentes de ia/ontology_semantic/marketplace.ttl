@@ -1,0 +1,339 @@
+# =============================================================================
+# Ontologia Marketplace SA Paraguay - Capa semantica decisional (Tarea 1 v2)
+# Bloque 1: TBox (vocabulario)
+# Formato fuente: Turtle. Build artifact en RDF/XML: marketplace.owl
+# =============================================================================
+
+@prefix :        <http://marketplace.com.py/onto/v1#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# =============================================================================
+# Header de la ontologia
+# =============================================================================
+
+<http://marketplace.com.py/onto/v1> a owl:Ontology ;
+    rdfs:label "Ontologia Marketplace SA Paraguay v1"@es ;
+    rdfs:comment "Capa semantica decisional para retail navideno: dominio + decision + deontico."@es ;
+    dcterms:creator "Equipo Tarea 1 - NASA Marketplace" ;
+    dcterms:created "2026-04-28T00:00:00"^^xsd:dateTime ;
+    owl:versionInfo "1.2.0-bloque4" .
+
+# =============================================================================
+# CLASES - Dominio retail
+# =============================================================================
+
+:Producto a owl:Class ;
+    rdfs:label "Producto"@es ;
+    rdfs:comment "SKU comercializable del catalogo retail. Identificado por :sku."@es .
+
+:Seccion a owl:Class ;
+    rdfs:label "Seccion"@es ;
+    rdfs:comment "Nivel mas alto de la jerarquia merceologica (ej: 'Navidad')."@es .
+
+:SubSeccion a owl:Class ;
+    rdfs:label "SubSeccion"@es ;
+    rdfs:comment "Subdivision de una Seccion (ej: 'Adornos')."@es .
+
+:Grupo a owl:Class ;
+    rdfs:label "Grupo"@es ;
+    rdfs:comment "Subdivision de una SubSeccion (ej: 'Arboles artificiales')."@es .
+
+:Categoria a owl:Class ;
+    rdfs:label "Categoria"@es ;
+    rdfs:comment "Hoja de la jerarquia merceologica donde cuelgan los Productos."@es .
+
+:Proveedor a owl:Class ;
+    rdfs:label "Proveedor"@es ;
+    rdfs:comment "Entidad que suministra Productos al marketplace."@es .
+
+:EventoComercial a owl:Class ;
+    rdfs:label "EventoComercial"@es ;
+    rdfs:comment "Periodo temporal con caracteristicas comerciales (ej: 'Navidad 2026')."@es .
+
+:Stock a owl:Class ;
+    rdfs:label "Stock"@es ;
+    rdfs:comment "Estado de inventario de un Producto en un momento dado. Reificado para soportar historial."@es .
+
+:Producto owl:disjointWith :Proveedor .
+
+# =============================================================================
+# CLASES - Subclases derivables (las inferira el razonador)
+# =============================================================================
+
+:ProductoCritico a owl:Class ;
+    rdfs:subClassOf :Producto ;
+    rdfs:label "ProductoCritico"@es ;
+    rdfs:comment "Producto cuya falta impacta fuertemente al negocio (ej: alta rotacion + sin sustituto)."@es .
+
+:ProductoAltaRotacion a owl:Class ;
+    rdfs:subClassOf :Producto ;
+    rdfs:label "ProductoAltaRotacion"@es ;
+    rdfs:comment "Producto con velocidad de venta superior al umbral del Grupo."@es .
+
+:ProductoPerecedero a owl:Class ;
+    rdfs:subClassOf :Producto ;
+    rdfs:label "ProductoPerecedero"@es ;
+    rdfs:comment "Producto con vencimiento o degradacion temporal (impacta optimizacion de stock)."@es .
+
+:ProveedorExterior a owl:Class ;
+    rdfs:subClassOf :Proveedor ;
+    rdfs:label "ProveedorExterior"@es ;
+    rdfs:comment "Proveedor con sede fuera de Paraguay (afecta lead-time y normas aduaneras)."@es .
+
+:ProductoColdStart a owl:Class ;
+    rdfs:subClassOf :Producto ;
+    rdfs:label "ProductoColdStart"@es ;
+    rdfs:comment "Producto sin historico de ventas suficiente. Activa logica de similitud ponderada."@es .
+
+# =============================================================================
+# CLASES - Capa decisional
+# =============================================================================
+
+:Decision a owl:Class ;
+    rdfs:label "Decision"@es ;
+    rdfs:comment "Acto decisional registrado en el sistema."@es .
+
+:DecisionContext a owl:Class ;
+    rdfs:label "DecisionContext"@es ;
+    rdfs:comment "Snapshot de variables del entorno en el momento de decidir (producto, stock, evento, etc.)."@es .
+
+:Algorithm a owl:Class ;
+    rdfs:label "Algorithm"@es ;
+    rdfs:comment "Algoritmo de optimizacion candidato (ej: 'GreedyKnapsack', 'MILP', 'ColdStartSimilarity')."@es .
+
+:AlgorithmRecommendation a owl:Class ;
+    rdfs:subClassOf :Decision ;
+    rdfs:label "AlgorithmRecommendation"@es ;
+    rdfs:comment "Decision concreta de invocar un Algorithm dado un DecisionContext."@es .
+
+:SimilarityScore a owl:Class ;
+    rdfs:label "SimilarityScore"@es ;
+    rdfs:comment "Resultado de medir similitud entre un Producto cold-start y otro establecido."@es .
+
+:TrendSignal a owl:Class ;
+    rdfs:label "TrendSignal"@es ;
+    rdfs:comment "Senal de tendencia comercial (estacionalidad, demanda externa, etc.) con valor numerico."@es .
+
+:Decision owl:disjointWith :Algorithm .
+
+# =============================================================================
+# CLASES - Capa deontica
+# =============================================================================
+
+:Norm a owl:Class ;
+    rdfs:label "Norma"@es ;
+    rdfs:comment "Regla deontica del marketplace. Subclases especifican modalidad."@es .
+
+:Obligation a owl:Class ;
+    rdfs:subClassOf :Norm ;
+    rdfs:label "Obligacion"@es .
+
+:Permission a owl:Class ;
+    rdfs:subClassOf :Norm ;
+    rdfs:label "Permiso"@es .
+
+:Prohibition a owl:Class ;
+    rdfs:subClassOf :Norm ;
+    rdfs:label "Prohibicion"@es .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( :Obligation :Permission :Prohibition ) .
+
+# =============================================================================
+# OBJECT PROPERTIES
+# =============================================================================
+
+:perteneceA a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ;
+        owl:unionOf ( :Producto :Categoria :Grupo :SubSeccion ) ] ;
+    rdfs:range [ a owl:Class ;
+        owl:unionOf ( :Categoria :Grupo :SubSeccion :Seccion ) ] ;
+    a owl:TransitiveProperty .
+
+:suministradoPor a owl:ObjectProperty ;
+    rdfs:domain :Producto ;
+    rdfs:range :Proveedor .
+
+:tieneStock a owl:ObjectProperty ;
+    rdfs:domain :Producto ;
+    rdfs:range :Stock ;
+    a owl:FunctionalProperty .
+
+:similarA a owl:ObjectProperty ;
+    rdfs:domain :Producto ;
+    rdfs:range :Producto ;
+    a owl:SymmetricProperty .
+
+:invocaAlgoritmo a owl:ObjectProperty ;
+    rdfs:domain :Decision ;
+    rdfs:range :Algorithm .
+
+:derivadaDe a owl:ObjectProperty ;
+    rdfs:domain :AlgorithmRecommendation ;
+    rdfs:range :DecisionContext .
+
+:defeats a owl:ObjectProperty ;
+    rdfs:domain :Norm ;
+    rdfs:range :Norm ;
+    a owl:AsymmetricProperty .
+
+# =============================================================================
+# DATA PROPERTIES
+# =============================================================================
+
+:sku a owl:DatatypeProperty ;
+    rdfs:domain :Producto ;
+    rdfs:range xsd:string ;
+    a owl:FunctionalProperty .
+
+:cantidadStock a owl:DatatypeProperty ;
+    rdfs:domain :Stock ;
+    rdfs:range xsd:decimal ;
+    a owl:FunctionalProperty .
+
+:enStock a owl:DatatypeProperty ;
+    rdfs:domain :Producto ;
+    rdfs:range xsd:boolean ;
+    a owl:FunctionalProperty .
+
+:fechaUltimaCompra a owl:DatatypeProperty ;
+    rdfs:domain :Producto ;
+    rdfs:range xsd:dateTime ;
+    a owl:FunctionalProperty .
+
+:priority a owl:DatatypeProperty ;
+    rdfs:domain :Norm ;
+    rdfs:range xsd:int ;
+    a owl:FunctionalProperty .
+
+:validFrom a owl:DatatypeProperty ;
+    rdfs:domain :Norm ;
+    rdfs:range xsd:dateTime ;
+    a owl:FunctionalProperty .
+
+:validTo a owl:DatatypeProperty ;
+    rdfs:domain :Norm ;
+    rdfs:range xsd:dateTime ;
+    a owl:FunctionalProperty .
+
+:defeasible a owl:DatatypeProperty ;
+    rdfs:domain :Norm ;
+    rdfs:range xsd:boolean ;
+    a owl:FunctionalProperty .
+
+:proveedorId a owl:DatatypeProperty ;
+    rdfs:domain :Proveedor ;
+    rdfs:range xsd:string ;
+    a owl:FunctionalProperty .
+
+:pais a owl:DatatypeProperty ;
+    rdfs:domain :Proveedor ;
+    rdfs:range xsd:string ;
+    a owl:FunctionalProperty .
+
+:razonamiento a owl:DatatypeProperty ;
+    rdfs:domain :Decision ;
+    rdfs:range xsd:string ;
+    a owl:FunctionalProperty .
+
+:confianzaExtraccion a owl:DatatypeProperty ;
+    rdfs:domain :TrendSignal ;
+    rdfs:range xsd:decimal ;
+    a owl:FunctionalProperty .
+
+:perecedero a owl:DatatypeProperty ;
+    rdfs:domain :Producto ;
+    rdfs:range xsd:boolean ;
+    a owl:FunctionalProperty .
+
+:altaRotacion a owl:DatatypeProperty ;
+    rdfs:domain :Producto ;
+    rdfs:range xsd:boolean ;
+    a owl:FunctionalProperty .
+
+:velocidad a owl:DatatypeProperty ;
+    rdfs:domain :Producto ;
+    rdfs:range xsd:decimal ;
+    a owl:FunctionalProperty .
+
+:tieneHistorial a owl:DatatypeProperty ;
+    rdfs:domain :Producto ;
+    rdfs:range xsd:boolean ;
+    a owl:FunctionalProperty .
+
+:esExterior a owl:DatatypeProperty ;
+    rdfs:domain :Proveedor ;
+    rdfs:range xsd:boolean ;
+    a owl:FunctionalProperty .
+
+:ProveedorLocal a owl:Class ;
+    rdfs:subClassOf :Proveedor .
+
+:ProveedorLocal owl:disjointWith :ProveedorExterior .
+
+# =============================================================================
+# AXIOMAS equivalentClass para clasificacion automatica HermiT
+# =============================================================================
+
+:ProductoPerecedero owl:equivalentClass [
+    a owl:Class ;
+    owl:intersectionOf (
+        :Producto
+        [ a owl:Restriction ;
+          owl:onProperty :perecedero ;
+          owl:hasValue "true"^^xsd:boolean ]
+    )
+] .
+
+:ProductoAltaRotacion owl:equivalentClass [
+    a owl:Class ;
+    owl:intersectionOf (
+        :Producto
+        [ a owl:Restriction ;
+          owl:onProperty :altaRotacion ;
+          owl:hasValue "true"^^xsd:boolean ]
+    )
+] .
+
+:ProductoCritico owl:equivalentClass [
+    a owl:Class ;
+    owl:intersectionOf (
+        :Producto
+        [ a owl:Class ;
+          owl:unionOf ( :ProductoPerecedero :ProductoAltaRotacion ) ]
+    )
+] .
+
+:ProductoColdStart owl:equivalentClass [
+    a owl:Class ;
+    owl:intersectionOf (
+        :Producto
+        [ a owl:Restriction ;
+          owl:onProperty :tieneHistorial ;
+          owl:hasValue "false"^^xsd:boolean ]
+    )
+] .
+
+:ProveedorExterior owl:equivalentClass [
+    a owl:Class ;
+    owl:intersectionOf (
+        :Proveedor
+        [ a owl:Restriction ;
+          owl:onProperty :esExterior ;
+          owl:hasValue "true"^^xsd:boolean ]
+    )
+] .
+
+:ProveedorLocal owl:equivalentClass [
+    a owl:Class ;
+    owl:intersectionOf (
+        :Proveedor
+        [ a owl:Restriction ;
+          owl:onProperty :esExterior ;
+          owl:hasValue "false"^^xsd:boolean ]
+    )
+] .

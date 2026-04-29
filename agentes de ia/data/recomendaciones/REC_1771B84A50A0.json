@@ -1,0 +1,74 @@
+{
+  "recomendacion_id": "REC_1771B84A50A0",
+  "timestamp": "2026-04-29T15:59:56.870322Z",
+  "operador_id": "operador_demo",
+  "evento_objetivo_id": "EVT_BLACK_FRIDAY_2026",
+  "items": [
+    {
+      "sku": "SKU_001",
+      "proveedor_id": "PROV_NAC_02",
+      "cantidad": 261,
+      "costo_unitario": 22.28,
+      "descuento_aplicado": 0.0,
+      "costo_total": 5815.08,
+      "fecha_pedido_estimada": "2026-04-29",
+      "fecha_arribo_estimada": "2026-05-14",
+      "semanas_buffer_pre_evento": 27.0
+    },
+    {
+      "sku": "SKU_002",
+      "proveedor_id": "PROV_NAC_02",
+      "cantidad": 281,
+      "costo_unitario": 13.86,
+      "descuento_aplicado": 0.0,
+      "costo_total": 3894.66,
+      "fecha_pedido_estimada": "2026-04-29",
+      "fecha_arribo_estimada": "2026-05-14",
+      "semanas_buffer_pre_evento": 27.0
+    },
+    {
+      "sku": "SKU_003",
+      "proveedor_id": "PROV_REG_01",
+      "cantidad": 154,
+      "costo_unitario": 15.95,
+      "descuento_aplicado": 0.0,
+      "costo_total": 2456.3,
+      "fecha_pedido_estimada": "2026-04-29",
+      "fecha_arribo_estimada": "2026-05-19",
+      "semanas_buffer_pre_evento": 26.29
+    },
+    {
+      "sku": "SKU_004",
+      "proveedor_id": "PROV_REG_01",
+      "cantidad": 293,
+      "costo_unitario": 23.61,
+      "descuento_aplicado": 0.0,
+      "costo_total": 6917.73,
+      "fecha_pedido_estimada": "2026-04-29",
+      "fecha_arribo_estimada": "2026-05-19",
+      "semanas_buffer_pre_evento": 26.29
+    }
+  ],
+  "metricas": {
+    "stock_muerto_esperado": 446.79211736323253,
+    "stock_muerto_p95": 1841.0205092140284,
+    "ventas_perdidas_esperadas": 222.68932363971314,
+    "ventas_perdidas_p95": 851.6558219990676,
+    "costo_total": 19083.769999999997,
+    "retorno_esperado": 4981.603593033494,
+    "retorno_p5": 1176.9274264948583,
+    "retorno_p95": 6334.732535197795,
+    "var_95": 0.0,
+    "cvar_95": 123.92907875292957,
+    "probabilidad_perdida": 0.0196,
+    "sharpe_ratio": 2.869483461297283
+  },
+  "vulnerabilidades": [],
+  "grafo_causal_id": "GRAFO_REC_1771B84A50A0",
+  "justificacion_texto": "Plan generado con ruta heuristica (metodo solicitado=dispatcher, timeout=30s). Se priorizo factibilidad y costo con evaluacion Monte Carlo. VaR95 estimado=0.00. Observaciones: SKU_001: affine_simple -> PROV_NAC_02 (261 u.) | SKU_002: affine_simple -> PROV_NAC_02 (281 u.) | SKU_003: affine_simple -> PROV_REG_01 (154 u.)",
+  "nivel_confianza_global": 0.78,
+  "perfil_operador_aplicado": "operador_demo:v1",
+  "estado": "BORRADOR",
+  "presupuesto_consumido": 19083.77,
+  "presupuesto_total": 35000.0
+}

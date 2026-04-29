@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TrendSignal canonical schema (Tarea 5 contract, Bloque 9 consumer)",
+  "description": "Replica del contrato TrendSignal de schemas/tendencias.py de Mateo. Validacion sintactica primaria; la validacion semantica fuerte la hace pydantic en TrendSignalIn.",
+  "type": "object",
+  "required": [
+    "trend_id",
+    "descripcion",
+    "fuente",
+    "fecha_deteccion",
+    "velocidad_crecimiento",
+    "confianza_extraccion",
+    "productos_existentes_similares"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "trend_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador estable del trend (ej: 'trend_<sha256-12-hex>'). Idempotencia depende de esto."
+    },
+    "descripcion": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 500
+    },
+    "palabras_clave": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "fuente": {
+      "type": "string",
+      "enum": ["TIKTOK", "INSTAGRAM", "PINTEREST", "GOOGLE_TRENDS", "OTHER"]
+    },
+    "fecha_deteccion": {
+      "type": "string",
+      "description": "ISO-8601 datetime (acepta sufijo Z o +00:00)."
+    },
+    "metadata_fuente": {
+      "type": "object",
+      "default": {}
+    },
+    "velocidad_crecimiento": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1000
+    },
+    "confianza_extraccion": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "productos_existentes_similares": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["sku"],
+        "properties": {
+          "sku": { "type": ["string", "integer"] },
+          "score": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.0 },
+          "nombre": { "type": "string", "default": "" },
+          "categoria": { "type": "string", "default": "" },
+          "precio_referencia": { "type": "number", "minimum": 0, "default": 0.0 }
+        }
+      }
+    },
+    "validado_shacl": {
+      "type": "boolean",
+      "default": false
+    },
+    "provisional": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

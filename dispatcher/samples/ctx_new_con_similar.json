@@ -1,0 +1,13 @@
+{
+  "_descripcion": "SKU nuevo (cold-start) con similar top-1 score 0.85. Esperado: dispara regla_010_cold_start_similar_alto -> open_loop + cold_start_similarity (heredar_de_sku=247329 via template) + uniform_weighting + bounded(eps=3.0). Confianza ajustada por cold_start_confidence=0.8.",
+  "sku": "246295",
+  "tipo_sku": "new",
+  "nombre": "ESFERA NAVIDENA NUEVA",
+  "semanas_historia": 0,
+  "cold_start_confidence": 0.8,
+  "similar_top_k": [
+    {"sku": "247329", "score_total": 0.85, "confidence": 0.8},
+    {"sku": "247330", "score_total": 0.78, "confidence": 0.7}
+  ],
+  "proveedores_disponibles": 2
+}

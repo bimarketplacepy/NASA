@@ -1,0 +1,743 @@
+# =============================================================================
+# Audit log PROV-O - Marketplace SA Paraguay (Bloque 8)
+# =============================================================================
+# Append-only. Cada decision genera un subgrafo cerrado con timestamps,
+# agente, contexto consumido, normas evaluadas y stages recomendados.
+# Este archivo es CONSULTABLE con SPARQL (ver audit/queries.sparql).
+#
+# Version del formato: v1 (Bloque 8). NO modificar las URIs ni properties
+# de un subgrafo ya escrito. Para evolucionar el schema, crear v2 en un
+# archivo nuevo (audit_log_v2.ttl).
+# =============================================================================
+
+@prefix :     <http://marketplace.com.py/onto/v1#> .
+@prefix mkt:  <http://marketplace.com.py/onto/v1#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+
+# ---- dec_a7dc5bf8ac6d4de090c4afe0e48c4b4e ----
+mkt:dec_a7dc5bf8ac6d4de090c4afe0e48c4b4e a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_001_existing_estable" ;
+    mkt:decisionId "dec_a7dc5bf8ac6d4de090c4afe0e48c4b4e" ;
+    mkt:hadConfidence 0.9 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "bounded_deviations",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_bounded_deviations,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:22:27.804955+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:22:27.781318+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_53382da7176a4af3bbd5e5f8f5ca60af ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_53382da7176a4af3bbd5e5f8f5ca60af a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "DECORACION" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"DECORACION\", \"cold_start_confidence\": 1.0, \"evaluated_at\": \"2026-04-29T16:22:27.781185+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"ESFERA DECOR 10x10\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 0, \"semanas_historia\": 104, \"similar_top_k\": [], \"sku\": \"247329\", \"tipo_sku\": \"existing\", \"velocidad\": 0.0, \"volatilidad_forecast\": 0.18}" ;
+    mkt:nombreProducto "ESFERA DECOR 10x10" ;
+    mkt:semanasHistoria 104 ;
+    mkt:sku "247329" ;
+    mkt:tipoSku "existing" ;
+    prov:atTime "2026-04-29T16:22:27.781318+00:00"^^xsd:dateTime .
+
+# ---- dec_0c48f929917b4e64b23dc02963254242 ----
+mkt:dec_0c48f929917b4e64b23dc02963254242 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_002_existing_volatil" ;
+    mkt:decisionId "dec_0c48f929917b4e64b23dc02963254242" ;
+    mkt:hadConfidence 0.8 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "bounded_deviations",
+        "correlated_deviations",
+        "dynamic_control_framing",
+        "ewma_smoothing" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_bounded_deviations,
+        mkt:algo_correlated_deviations,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:22:27.838617+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:22:27.836128+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_6285c353431645978dc2c339bb06d9d7 ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_6285c353431645978dc2c339bb06d9d7 a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "DECORACION" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"DECORACION\", \"cold_start_confidence\": 1.0, \"evaluated_at\": \"2026-04-29T16:22:27.781192+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"GUIRNALDA\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 0, \"semanas_historia\": 78, \"similar_top_k\": [], \"sku\": \"247330\", \"tipo_sku\": \"existing\", \"velocidad\": 0.0, \"volatilidad_forecast\": 0.55}" ;
+    mkt:nombreProducto "GUIRNALDA" ;
+    mkt:semanasHistoria 78 ;
+    mkt:sku "247330" ;
+    mkt:tipoSku "existing" ;
+    prov:atTime "2026-04-29T16:22:27.836128+00:00"^^xsd:dateTime .
+
+# ---- dec_86ea30eb94754407955a781967b46058 ----
+mkt:dec_86ea30eb94754407955a781967b46058 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_010_cold_start_similar_alto" ;
+    mkt:decisionId "dec_86ea30eb94754407955a781967b46058" ;
+    mkt:hadConfidence 0.65 ;
+    mkt:hasStageDescriptor "bounded_deviations",
+        "cold_start_similarity",
+        "open_loop",
+        "simple_absolute_deviation",
+        "static_robust_framing",
+        "uniform_recency_weighting" ;
+    mkt:invocaAlgoritmo mkt:algo_bounded_deviations,
+        mkt:algo_cold_start_similarity,
+        mkt:algo_open_loop,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_static_robust_framing,
+        mkt:algo_uniform_recency_weighting ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:22:27.867169+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:22:27.864592+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_0ec212b20a5242b6b0c4144a9402493e ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_0ec212b20a5242b6b0c4144a9402493e a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "DECORACION" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"DECORACION\", \"cold_start_confidence\": 0.8, \"evaluated_at\": \"2026-04-29T16:22:27.781198+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"ESFERA NAVIDENA NUEVA\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 0, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.5, \"score_total\": 0.85, \"sku\": \"247329\"}], \"sku\": \"246295\", \"tipo_sku\": \"new\", \"velocidad\": 0.0, \"volatilidad_forecast\": 0.5}" ;
+    mkt:nombreProducto "ESFERA NAVIDENA NUEVA" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "246295" ;
+    mkt:tipoSku "new" ;
+    prov:atTime "2026-04-29T16:22:27.864592+00:00"^^xsd:dateTime .
+
+# ---- dec_590354625de2455dae1e9d5db508539c ----
+mkt:dec_590354625de2455dae1e9d5db508539c a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_590354625de2455dae1e9d5db508539c" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:22:27.907036+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:22:27.903763+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_2d141f69f83946318c909580ac6e2dce ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_2d141f69f83946318c909580ac6e2dce a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "ARBOLES" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"ARBOLES\", \"cold_start_confidence\": 1.0, \"evaluated_at\": \"2026-04-29T16:22:27.781202+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"ARBOL TRENDY\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 0, \"semanas_historia\": 60, \"similar_top_k\": [], \"sku\": \"555\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.85, \"fuente\": \"google_trends\", \"valor\": 2.1}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.5}" ;
+    mkt:nombreProducto "ARBOL TRENDY" ;
+    mkt:semanasHistoria 60 ;
+    mkt:sku "555" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:22:27.903763+00:00"^^xsd:dateTime .
+
+# ---- dec_546c4bfb7bb140b89f37a37abb2759c2 ----
+mkt:dec_546c4bfb7bb140b89f37a37abb2759c2 a mkt:Decision,
+        prov:Activity ;
+    mkt:consultedNorma mkt:F_compra_perecedero_sin_viabilidad ;
+    mkt:decisionId "dec_546c4bfb7bb140b89f37a37abb2759c2" ;
+    mkt:hadConfidence 0.0 ;
+    mkt:wasBlockedBy mkt:F_compra_perecedero_sin_viabilidad ;
+    mkt:wasBlockedByDeontic true ;
+    prov:endedAtTime "2026-04-29T16:22:27.940518+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:22:27.936353+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_61d64432b94348b28e8018ecdbb0730f ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_61d64432b94348b28e8018ecdbb0730f a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "DECORACION" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"DECORACION\", \"cold_start_confidence\": 1.0, \"eval_deontica\": {\"bloqueada_por\": [\"F_compra_perecedero_sin_viabilidad\"], \"obligaciones_pendientes\": [], \"permitida\": false}, \"evaluated_at\": \"2026-04-29T16:22:27.781205+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"ESFERA\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 0, \"semanas_historia\": 100, \"similar_top_k\": [], \"sku\": \"247329\", \"tipo_sku\": \"existing\", \"velocidad\": 0.0, \"volatilidad_forecast\": 0.5}" ;
+    mkt:nombreProducto "ESFERA" ;
+    mkt:semanasHistoria 100 ;
+    mkt:sku "247329" ;
+    mkt:tipoSku "existing" ;
+    prov:atTime "2026-04-29T16:22:27.936353+00:00"^^xsd:dateTime .
+
+# ---- dec_4f92c517a19047cf97622c9be1a11294 ----
+mkt:dec_4f92c517a19047cf97622c9be1a11294 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_001_existing_estable" ;
+    mkt:decisionId "dec_4f92c517a19047cf97622c9be1a11294" ;
+    mkt:hadConfidence 0.9 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "bounded_deviations",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_bounded_deviations,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:22:28.222098+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:22:28.218345+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_33ec1ec4a3a14805aa57ffc3e0860cf0 ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_33ec1ec4a3a14805aa57ffc3e0860cf0 a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "DECORACION" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"DECORACION\", \"cold_start_confidence\": 1.0, \"evaluated_at\": \"2026-04-29T16:22:27.781185+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"ESFERA DECOR 10x10\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 0, \"semanas_historia\": 104, \"similar_top_k\": [], \"sku\": \"247329\", \"tipo_sku\": \"existing\", \"velocidad\": 0.0, \"volatilidad_forecast\": 0.18}" ;
+    mkt:nombreProducto "ESFERA DECOR 10x10" ;
+    mkt:semanasHistoria 104 ;
+    mkt:sku "247329" ;
+    mkt:tipoSku "existing" ;
+    prov:atTime "2026-04-29T16:22:28.218345+00:00"^^xsd:dateTime .
+
+# ---- dec_4b5e08bd862b4057bd7130b896ab71d3 ----
+mkt:dec_4b5e08bd862b4057bd7130b896ab71d3 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_4b5e08bd862b4057bd7130b896ab71d3" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:51:57.597697+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:51:57.567819+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_4d23b2f258e04a7995f8f9a212473ed4 ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_4d23b2f258e04a7995f8f9a212473ed4 a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "DECORACION" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"DECORACION\", \"cold_start_confidence\": 0.92, \"evaluated_at\": \"2026-04-29T16:51:57.567677+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.85, \"score_total\": 0.85, \"sku\": \"247329\"}, {\"confidence\": 0.78, \"score_total\": 0.78, \"sku\": \"247330\"}], \"sku\": \"trend_aabbcc001esfera\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.92, \"fuente\": \"TIKTOK\", \"valor\": 245.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc001esfera" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:51:57.567819+00:00"^^xsd:dateTime .
+
+# ---- dec_121c0a5f51b84cde9aa0819c4153f721 ----
+mkt:dec_121c0a5f51b84cde9aa0819c4153f721 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_121c0a5f51b84cde9aa0819c4153f721" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:51:57.621330+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:51:57.567819+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_0d7206809c2e435489df20ca81406165 ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_0d7206809c2e435489df20ca81406165 a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "DECORACION" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"DECORACION\", \"cold_start_confidence\": 0.92, \"evaluated_at\": \"2026-04-29T16:51:57.567677+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.85, \"score_total\": 0.85, \"sku\": \"247329\"}, {\"confidence\": 0.78, \"score_total\": 0.78, \"sku\": \"247330\"}], \"sku\": \"trend_aabbcc001esfera\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.92, \"fuente\": \"TIKTOK\", \"valor\": 245.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc001esfera" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:51:57.567819+00:00"^^xsd:dateTime .
+
+# ---- dec_d6cf76b6a77a4919b7f04d77e9355993 ----
+mkt:dec_d6cf76b6a77a4919b7f04d77e9355993 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_999_fallback" ;
+    mkt:decisionId "dec_d6cf76b6a77a4919b7f04d77e9355993" ;
+    mkt:hadConfidence 0.3 ;
+    mkt:hasStageDescriptor "bounded_deviations",
+        "open_loop",
+        "simple_absolute_deviation",
+        "static_robust_framing",
+        "uniform_recency_weighting" ;
+    mkt:invocaAlgoritmo mkt:algo_bounded_deviations,
+        mkt:algo_open_loop,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_static_robust_framing,
+        mkt:algo_uniform_recency_weighting ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:51:57.652071+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:51:57.627031+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_53c5a41b76df404592fd147c00b84c9b ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_53c5a41b76df404592fd147c00b84c9b a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"\", \"cold_start_confidence\": 0.75, \"evaluated_at\": \"2026-04-29T16:51:57.626694+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Lamparas inflables animatronic con Bluetooth speaker y sincronizacion de luces a\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [], \"sku\": \"trend_aabbcc003coldstart\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.75, \"fuente\": \"PINTEREST\", \"valor\": 156.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Lamparas inflables animatronic con Bluetooth speaker y sincronizacion de luces a" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc003coldstart" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:51:57.627031+00:00"^^xsd:dateTime .
+
+# ---- dec_8c06da82a2d145099a6255e49ab704e1 ----
+mkt:dec_8c06da82a2d145099a6255e49ab704e1 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_999_fallback" ;
+    mkt:decisionId "dec_8c06da82a2d145099a6255e49ab704e1" ;
+    mkt:hadConfidence 0.3 ;
+    mkt:hasStageDescriptor "bounded_deviations",
+        "open_loop",
+        "simple_absolute_deviation",
+        "static_robust_framing",
+        "uniform_recency_weighting" ;
+    mkt:invocaAlgoritmo mkt:algo_bounded_deviations,
+        mkt:algo_open_loop,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_static_robust_framing,
+        mkt:algo_uniform_recency_weighting ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:51:57.676568+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:51:57.627031+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_05ca113e54534b72981a6839634b8f5b ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_05ca113e54534b72981a6839634b8f5b a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"\", \"cold_start_confidence\": 0.75, \"evaluated_at\": \"2026-04-29T16:51:57.626694+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Lamparas inflables animatronic con Bluetooth speaker y sincronizacion de luces a\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [], \"sku\": \"trend_aabbcc003coldstart\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.75, \"fuente\": \"PINTEREST\", \"valor\": 156.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Lamparas inflables animatronic con Bluetooth speaker y sincronizacion de luces a" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc003coldstart" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:51:57.627031+00:00"^^xsd:dateTime .
+
+# ---- dec_54a6699f193f494292749c1d6463cf25 ----
+mkt:dec_54a6699f193f494292749c1d6463cf25 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_54a6699f193f494292749c1d6463cf25" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:51:57.695911+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:51:57.681783+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_4aee443e8da6474e937f563c4ead3742 ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_4aee443e8da6474e937f563c4ead3742 a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "ARBOLES" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"ARBOLES\", \"cold_start_confidence\": 0.88, \"evaluated_at\": \"2026-04-29T16:51:57.681608+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Arboles artificiales preiluminados con app WiFi para programar patrones de luces\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.82, \"score_total\": 0.82, \"sku\": \"230101\"}, {\"confidence\": 0.74, \"score_total\": 0.74, \"sku\": \"230102\"}], \"sku\": \"trend_aabbcc004arboles\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.88, \"fuente\": \"GOOGLE_TRENDS\", \"valor\": 312.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Arboles artificiales preiluminados con app WiFi para programar patrones de luces" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc004arboles" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:51:57.681783+00:00"^^xsd:dateTime .
+
+# ---- dec_53f7342f95d5415b976253ffca2494c9 ----
+mkt:dec_53f7342f95d5415b976253ffca2494c9 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_53f7342f95d5415b976253ffca2494c9" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:51:57.719784+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:51:57.681783+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_d17a888b6b784c6bbba05259fcbfb248 ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_d17a888b6b784c6bbba05259fcbfb248 a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "ARBOLES" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"ARBOLES\", \"cold_start_confidence\": 0.88, \"evaluated_at\": \"2026-04-29T16:51:57.681608+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Arboles artificiales preiluminados con app WiFi para programar patrones de luces\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.82, \"score_total\": 0.82, \"sku\": \"230101\"}, {\"confidence\": 0.74, \"score_total\": 0.74, \"sku\": \"230102\"}], \"sku\": \"trend_aabbcc004arboles\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.88, \"fuente\": \"GOOGLE_TRENDS\", \"valor\": 312.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Arboles artificiales preiluminados con app WiFi para programar patrones de luces" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc004arboles" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:51:57.681783+00:00"^^xsd:dateTime .
+
+# ---- dec_9d061321632c47cf99ea08ec3dcfd154 ----
+mkt:dec_9d061321632c47cf99ea08ec3dcfd154 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_9d061321632c47cf99ea08ec3dcfd154" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:52:25.358261+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:52:25.344222+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_41b61114612c4dd6891e7c65c553e2ab ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_41b61114612c4dd6891e7c65c553e2ab a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "DECORACION" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"DECORACION\", \"cold_start_confidence\": 0.92, \"evaluated_at\": \"2026-04-29T16:52:25.344077+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.85, \"score_total\": 0.85, \"sku\": \"247329\"}, {\"confidence\": 0.78, \"score_total\": 0.78, \"sku\": \"247330\"}], \"sku\": \"trend_aabbcc001esfera\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.92, \"fuente\": \"TIKTOK\", \"valor\": 245.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc001esfera" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:52:25.344222+00:00"^^xsd:dateTime .
+
+# ---- dec_82b75ddd515141af82d9be9a87f48711 ----
+mkt:dec_82b75ddd515141af82d9be9a87f48711 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_82b75ddd515141af82d9be9a87f48711" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:52:25.380188+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:52:25.344222+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_1c00868ab3ff489ea1da7fb06488176e ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_1c00868ab3ff489ea1da7fb06488176e a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "DECORACION" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"DECORACION\", \"cold_start_confidence\": 0.92, \"evaluated_at\": \"2026-04-29T16:52:25.344077+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.85, \"score_total\": 0.85, \"sku\": \"247329\"}, {\"confidence\": 0.78, \"score_total\": 0.78, \"sku\": \"247330\"}], \"sku\": \"trend_aabbcc001esfera\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.92, \"fuente\": \"TIKTOK\", \"valor\": 245.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc001esfera" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:52:25.344222+00:00"^^xsd:dateTime .
+
+# ---- dec_b8821fd7df33454b9a500dcd2722c276 ----
+mkt:dec_b8821fd7df33454b9a500dcd2722c276 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_999_fallback" ;
+    mkt:decisionId "dec_b8821fd7df33454b9a500dcd2722c276" ;
+    mkt:hadConfidence 0.3 ;
+    mkt:hasStageDescriptor "bounded_deviations",
+        "open_loop",
+        "simple_absolute_deviation",
+        "static_robust_framing",
+        "uniform_recency_weighting" ;
+    mkt:invocaAlgoritmo mkt:algo_bounded_deviations,
+        mkt:algo_open_loop,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_static_robust_framing,
+        mkt:algo_uniform_recency_weighting ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:52:25.395059+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:52:25.384666+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_0f0d130c0e83413f83dcabbe219f945f ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_0f0d130c0e83413f83dcabbe219f945f a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"\", \"cold_start_confidence\": 0.75, \"evaluated_at\": \"2026-04-29T16:52:25.384283+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Lamparas inflables animatronic con Bluetooth speaker y sincronizacion de luces a\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [], \"sku\": \"trend_aabbcc003coldstart\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.75, \"fuente\": \"PINTEREST\", \"valor\": 156.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Lamparas inflables animatronic con Bluetooth speaker y sincronizacion de luces a" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc003coldstart" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:52:25.384666+00:00"^^xsd:dateTime .
+
+# ---- dec_d169320410804339afae1e07853fb4c3 ----
+mkt:dec_d169320410804339afae1e07853fb4c3 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_999_fallback" ;
+    mkt:decisionId "dec_d169320410804339afae1e07853fb4c3" ;
+    mkt:hadConfidence 0.3 ;
+    mkt:hasStageDescriptor "bounded_deviations",
+        "open_loop",
+        "simple_absolute_deviation",
+        "static_robust_framing",
+        "uniform_recency_weighting" ;
+    mkt:invocaAlgoritmo mkt:algo_bounded_deviations,
+        mkt:algo_open_loop,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_static_robust_framing,
+        mkt:algo_uniform_recency_weighting ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:52:25.410474+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:52:25.384666+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_0b30aadfa93840369066e7cbd69144f6 ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_0b30aadfa93840369066e7cbd69144f6 a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"\", \"cold_start_confidence\": 0.75, \"evaluated_at\": \"2026-04-29T16:52:25.384283+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Lamparas inflables animatronic con Bluetooth speaker y sincronizacion de luces a\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [], \"sku\": \"trend_aabbcc003coldstart\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.75, \"fuente\": \"PINTEREST\", \"valor\": 156.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Lamparas inflables animatronic con Bluetooth speaker y sincronizacion de luces a" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc003coldstart" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:52:25.384666+00:00"^^xsd:dateTime .
+
+# ---- dec_d1d746c4e7034c9d9cf993ed60663da7 ----
+mkt:dec_d1d746c4e7034c9d9cf993ed60663da7 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_d1d746c4e7034c9d9cf993ed60663da7" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:52:25.425723+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:52:25.415121+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_e0eae7df5ac842a4b1cad422482d1c58 ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_e0eae7df5ac842a4b1cad422482d1c58 a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "ARBOLES" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"ARBOLES\", \"cold_start_confidence\": 0.88, \"evaluated_at\": \"2026-04-29T16:52:25.414956+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Arboles artificiales preiluminados con app WiFi para programar patrones de luces\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.82, \"score_total\": 0.82, \"sku\": \"230101\"}, {\"confidence\": 0.74, \"score_total\": 0.74, \"sku\": \"230102\"}], \"sku\": \"trend_aabbcc004arboles\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.88, \"fuente\": \"GOOGLE_TRENDS\", \"valor\": 312.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Arboles artificiales preiluminados con app WiFi para programar patrones de luces" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc004arboles" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:52:25.415121+00:00"^^xsd:dateTime .
+
+# ---- dec_3768a1de689d4c9a91028d57c8d422b4 ----
+mkt:dec_3768a1de689d4c9a91028d57c8d422b4 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_3768a1de689d4c9a91028d57c8d422b4" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:52:25.444653+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:52:25.415121+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_ae0cee75000f48368e09b19cc7fb94c8 ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_ae0cee75000f48368e09b19cc7fb94c8 a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "ARBOLES" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"ARBOLES\", \"cold_start_confidence\": 0.88, \"evaluated_at\": \"2026-04-29T16:52:25.414956+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Arboles artificiales preiluminados con app WiFi para programar patrones de luces\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.82, \"score_total\": 0.82, \"sku\": \"230101\"}, {\"confidence\": 0.74, \"score_total\": 0.74, \"sku\": \"230102\"}], \"sku\": \"trend_aabbcc004arboles\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.88, \"fuente\": \"GOOGLE_TRENDS\", \"valor\": 312.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Arboles artificiales preiluminados con app WiFi para programar patrones de luces" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc004arboles" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:52:25.415121+00:00"^^xsd:dateTime .
+
+# ---- dec_dffe69c8cc624cff850c5792efce5dbc ----
+mkt:dec_dffe69c8cc624cff850c5792efce5dbc a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_dffe69c8cc624cff850c5792efce5dbc" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:52:26.265726+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:52:26.248007+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_48bfd542522b43fabd0888b968c6f7de ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_48bfd542522b43fabd0888b968c6f7de a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "DECORACION" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"DECORACION\", \"cold_start_confidence\": 0.92, \"evaluated_at\": \"2026-04-29T16:52:26.247846+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.85, \"score_total\": 0.85, \"sku\": \"247329\"}, {\"confidence\": 0.78, \"score_total\": 0.78, \"sku\": \"247330\"}], \"sku\": \"trend_aabbcc001esfera\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.92, \"fuente\": \"TIKTOK\", \"valor\": 245.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc001esfera" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:52:26.248007+00:00"^^xsd:dateTime .
+
+# ---- dec_a7217eafaa684fdab97e0e2a6c97f229 ----
+mkt:dec_a7217eafaa684fdab97e0e2a6c97f229 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_a7217eafaa684fdab97e0e2a6c97f229" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:52:26.294001+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:52:26.248007+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_a129943647c44ef49e80a1360e4a3dba ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_a129943647c44ef49e80a1360e4a3dba a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "DECORACION" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"DECORACION\", \"cold_start_confidence\": 0.92, \"evaluated_at\": \"2026-04-29T16:52:26.247846+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.85, \"score_total\": 0.85, \"sku\": \"247329\"}, {\"confidence\": 0.78, \"score_total\": 0.78, \"sku\": \"247330\"}], \"sku\": \"trend_aabbcc001esfera\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.92, \"fuente\": \"TIKTOK\", \"valor\": 245.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc001esfera" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:52:26.248007+00:00"^^xsd:dateTime .
+
+# ---- dec_2bc81f9c31f14a7f92ebc15514f19f7f ----
+mkt:dec_2bc81f9c31f14a7f92ebc15514f19f7f a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_2bc81f9c31f14a7f92ebc15514f19f7f" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:59:16.172394+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:59:16.170401+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_0ac202fd96414b37b03783a10b56e1bc ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_0ac202fd96414b37b03783a10b56e1bc a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "DECORACION" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"DECORACION\", \"cold_start_confidence\": 0.92, \"evaluated_at\": \"2026-04-29T16:59:16.170401+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.85, \"score_total\": 0.85, \"sku\": \"247329\"}, {\"confidence\": 0.78, \"score_total\": 0.78, \"sku\": \"247330\"}], \"sku\": \"trend_aabbcc001esfera\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.92, \"fuente\": \"TIKTOK\", \"valor\": 245.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Esferas de Navidad LED doradas minimalistas con luz calida, nuevo estilo nordico" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc001esfera" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:59:16.170401+00:00"^^xsd:dateTime .
+
+# ---- dec_23415001e891494ca47673711a0dd95d ----
+mkt:dec_23415001e891494ca47673711a0dd95d a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_999_fallback" ;
+    mkt:decisionId "dec_23415001e891494ca47673711a0dd95d" ;
+    mkt:hadConfidence 0.3 ;
+    mkt:hasStageDescriptor "bounded_deviations",
+        "open_loop",
+        "simple_absolute_deviation",
+        "static_robust_framing",
+        "uniform_recency_weighting" ;
+    mkt:invocaAlgoritmo mkt:algo_bounded_deviations,
+        mkt:algo_open_loop,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_static_robust_framing,
+        mkt:algo_uniform_recency_weighting ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:59:16.205105+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:59:16.204115+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_9062acdc2a2148b592c49636effac391 ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_9062acdc2a2148b592c49636effac391 a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"\", \"cold_start_confidence\": 0.75, \"evaluated_at\": \"2026-04-29T16:59:16.204115+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Lamparas inflables animatronic con Bluetooth speaker y sincronizacion de luces a\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [], \"sku\": \"trend_aabbcc003coldstart\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.75, \"fuente\": \"PINTEREST\", \"valor\": 156.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Lamparas inflables animatronic con Bluetooth speaker y sincronizacion de luces a" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc003coldstart" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:59:16.204115+00:00"^^xsd:dateTime .
+
+# ---- dec_e361ec7613f8431ebd40efa1180a8912 ----
+mkt:dec_e361ec7613f8431ebd40efa1180a8912 a mkt:Decision,
+        prov:Activity ;
+    mkt:appliedRule "regla_020_trend_signal_alta_confidence" ;
+    mkt:decisionId "dec_e361ec7613f8431ebd40efa1180a8912" ;
+    mkt:hadConfidence 0.7875000000000001 ;
+    mkt:hasStageDescriptor "affine_ordering_policy",
+        "dynamic_control_framing",
+        "ewma_smoothing",
+        "simple_absolute_deviation",
+        "unbounded_deviations" ;
+    mkt:invocaAlgoritmo mkt:algo_affine_ordering_policy,
+        mkt:algo_dynamic_control_framing,
+        mkt:algo_ewma_smoothing,
+        mkt:algo_simple_absolute_deviation,
+        mkt:algo_unbounded_deviations ;
+    mkt:wasBlockedByDeontic false ;
+    prov:endedAtTime "2026-04-29T16:59:16.251398+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-04-29T16:59:16.250405+00:00"^^xsd:dateTime ;
+    prov:used mkt:ctx_9feb387194114519aa873b1f47d88757 ;
+    prov:wasAssociatedWith mkt:agente_dispatcher_v1 .
+
+mkt:ctx_9feb387194114519aa873b1f47d88757 a mkt:DecisionContext,
+        prov:Entity ;
+    mkt:categoria "ARBOLES" ;
+    mkt:contextSnapshot "{\"cantidad_stock\": 0.0, \"categoria\": \"ARBOLES\", \"cold_start_confidence\": 0.88, \"evaluated_at\": \"2026-04-29T16:59:16.250405+00:00\", \"moq_unidades\": 0.0, \"nombre\": \"Arboles artificiales preiluminados con app WiFi para programar patrones de luces\", \"presupuesto_categoria_disponible_usd\": 0.0, \"proveedores_disponibles\": 2, \"semanas_historia\": 0, \"similar_top_k\": [{\"confidence\": 0.82, \"score_total\": 0.82, \"sku\": \"230101\"}, {\"confidence\": 0.74, \"score_total\": 0.74, \"sku\": \"230102\"}], \"sku\": \"trend_aabbcc004arboles\", \"tipo_sku\": \"trending\", \"trend_signal\": {\"confianza\": 0.88, \"fuente\": \"GOOGLE_TRENDS\", \"valor\": 312.0}, \"velocidad\": 0.0, \"volatilidad_forecast\": 0.6}" ;
+    mkt:nombreProducto "Arboles artificiales preiluminados con app WiFi para programar patrones de luces" ;
+    mkt:semanasHistoria 0 ;
+    mkt:sku "trend_aabbcc004arboles" ;
+    mkt:tipoSku "trending" ;
+    prov:atTime "2026-04-29T16:59:16.250405+00:00"^^xsd:dateTime .

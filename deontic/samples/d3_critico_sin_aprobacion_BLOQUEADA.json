@@ -1,0 +1,25 @@
+{
+  "_descripcion": "Mismo escenario que d2 pero SIN aprobacion_excepcion. Esperado: BLOQUEADA con O_sku_critico_dos_proveedores en obligaciones_pendientes (P5 no aplica porque su predicado pide aprobacion=true).",
+  "decision": {
+    "tipo": "compra",
+    "monto_usd": 4000.0,
+    "lead_time_dias": 5.0,
+    "aprobacion_supervisor": true,
+    "aprobacion_excepcion": false,
+    "validacion_humana": false,
+    "justificacion_escrita": false,
+    "exceso_budget_pct": 0.0,
+    "cantidad": 50.0,
+    "descuento_volumen_pct": 0.0
+  },
+  "contexto": {
+    "now": "2026-04-29T10:00:00+00:00",
+    "perecedero": false,
+    "sku_critico": true,
+    "sku_piloto": false,
+    "cold_start": false,
+    "proveedor_activo": true,
+    "proveedor_exterior": false,
+    "proveedores_disponibles": 1
+  }
+}

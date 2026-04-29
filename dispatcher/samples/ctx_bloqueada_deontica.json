@@ -1,0 +1,12 @@
+{
+  "_descripcion": "Decision pre-evaluada deonticamente y BLOQUEADA por F_compra_perecedero_sin_viabilidad. Esperado: dispatcher NO invoca algoritmo, devuelve bloqueada_por_deontica=['F_...'], exit 1.",
+  "sku": "247329",
+  "tipo_sku": "existing",
+  "semanas_historia": 100,
+  "volatilidad_forecast": 0.18,
+  "eval_deontica": {
+    "permitida": false,
+    "bloqueada_por": ["F_compra_perecedero_sin_viabilidad"],
+    "obligaciones_pendientes": []
+  }
+}

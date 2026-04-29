@@ -1,0 +1,7 @@
+id,nombre,ruc,pais,email,telefono,proveedor_exterior
+PROV_NAC_01,Norte Festivo SA,,Argentina,ventas@nortefestivo.ar,+54-11-4000-1001,true
+PROV_NAC_02,Navidad Urbana SRL,,Argentina,contacto@navidadurbana.ar,+54-11-4000-1002,true
+PROV_ASIA_01,Shenzhen Bright Decor Co.,,China,sales@brightdecor.cn,+86-755-1000-2001,true
+PROV_ASIA_02,Yiwu Holiday MegaTrade,,China,biz@holidaymega.cn,+86-579-2000-3001,true
+PROV_EUR_01,Milano Natale Premium,,Italia,sales@milanonatale.it,+39-02-7000-5001,true
+PROV_REG_01,Sul Festas Ltda,,Brasil,comercial@sulfestas.br,+55-11-5000-7001,true
